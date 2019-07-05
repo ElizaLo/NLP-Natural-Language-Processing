@@ -25,7 +25,7 @@
   5. 
 
 
-## Cources:
+## Courses:
   - [ ] [Natural Language Processing | Dan Jurafsky, Christopher](https://www.youtube.com/playlist?list=PLQiyVNMpDLKnZYBTUOlSI9mi9wAErFtFm)
   - [ ] [CS224n: Natural Language Processing with Deep Learning](http://web.stanford.edu/class/cs224n/)
 

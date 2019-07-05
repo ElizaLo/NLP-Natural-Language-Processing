@@ -8,12 +8,12 @@
   
 ## Models and Algorithms:
   1. **_Word Embedings_**
-      - Word2Vec
+      - **Word2Vec**
         - [Word2Vec Tutorial](http://mccormickml.com/2017/01/11/word2vec-tutorial-part-2-negative-sampling/)
-      - GloVe: Global Vectors for Word Representation
-        - [GloVe: Global Vectors for Word Representation](https://nlp.stanford.edu/pubs/glove.pdf)
+      - **GloVe: Global Vectors for Word Representation**
+        - [GloVe: Global Vectors for Word Representation Article](https://nlp.stanford.edu/pubs/glove.pdf)
         - [GloVE](https://nlp.stanford.edu/projects/glove/)
-      - Sequence to Sequence Model (Seq2Seq)
+      - **Sequence to Sequence Model (Seq2Seq)**
   2. **_Levenshtein Distance_**
       - [Wikipedia](https://en.wikipedia.org/wiki/Levenshtein_distance)
       - [Levenshtein Distance Calculator](https://phiresky.github.io/levenshtein-demo/)

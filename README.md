@@ -24,6 +24,9 @@
       - [FCA Online](https://fca-tools-bundle.com)
   5. **_Non-negative Matrix Factorization_**
       - [Wikipedia](https://en.wikipedia.org/wiki/Non-negative_matrix_factorization)
+      - Algorithms for Non-negative Matrix Factorization
+        - [Algorithms for Non-negative Matrix Factorization](https://www.researchgate.net/publication/2538030_Algorithms_for_Non-negative_Matrix_Factorization) (Daniel D. **Lee** and H. Sebastian **Seung**) 
+          - [Article at GitHub]()
 
 
 ## Courses:

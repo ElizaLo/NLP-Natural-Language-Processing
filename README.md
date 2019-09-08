@@ -22,7 +22,8 @@
   4. **_Formal Concept Analysis_**
       - [Formal Concept Analysis Examples](https://www.upriss.org.uk/fca/examples.html)
       - [FCA Online](https://fca-tools-bundle.com)
-  5. 
+  5. **_Non-negative Matrix Factorization_**
+      - [Wikipedia](https://en.wikipedia.org/wiki/Non-negative_matrix_factorization)
 
 
 ## Courses:

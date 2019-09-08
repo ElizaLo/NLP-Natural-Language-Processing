@@ -27,6 +27,8 @@
       - **_Algorithms for Non-negative Matrix Factorization_**
         - [Algorithms for Non-negative Matrix Factorization](https://www.researchgate.net/publication/2538030_Algorithms_for_Non-negative_Matrix_Factorization) (Daniel D. **Lee** and H. Sebastian **Seung**) 
           - [Article at GitHub](https://github.com/ElizaLo/NLP/blob/master/Articles/Algorithms_for_Non-negative_Matrix_Factorization.pdf)
+   6. **_Kullback–Leibler divergence (relative entropy)_**
+       - [Wikipedia](https://en.wikipedia.org/wiki/Kullback–Leibler_divergence)
 
 
 ## Courses:

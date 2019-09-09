@@ -50,4 +50,4 @@ Implemented a Bidirectional Attention Flow neural network as a baseline on SQuAD
   # Articles
   
   - [ ] [Interpretation of Natural Language Rules in Conversational Machine Reading](https://arxiv.org/abs/1809.01494)
-  - [ ] []()
+  - [ ] [Skip-Thought Vectors](https://github.com/ElizaLo/NLP/blob/master/University%20Course%20of%20NLP/Articles/5950-skip-thought-vectors.pdf)

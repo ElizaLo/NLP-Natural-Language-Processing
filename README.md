@@ -46,6 +46,16 @@ Implemented a Bidirectional Attention Flow neural network as a baseline on SQuAD
   - [Useful Articles](https://github.com/ElizaLo/Question-Answering-based-on-SQuAD#useful-articles)
   - [Useful Links](https://github.com/ElizaLo/Question-Answering-based-on-SQuAD#useful-links)
   
+ # [Diploma](https://github.com/ElizaLo/NLP/tree/master/Diploma/Articles)
+ 
+ ## Used [Articles](https://github.com/ElizaLo/NLP/tree/master/Diploma/Articles):
+
+1. "**_A Tensor-based Factorization Model of Semantic Compositionality_**" (Tim Van de Cruys, Thierry Poibeau, Anna Korhonen)
+2. "**_A Neural Network Approach to Selectional Preference Acquisition_**" (Tim Van de Cruys)
+3. "**_A Generalisation of Lexical Functions for Composition in Distributional Semantics_**" (Antoine Bride, Tim Van de Cruys, Nicholas Asher)
+4. "**_Mining Discourse Markers
+for Unsupervised Sentence Representation Learning_**" (Damien Sileo, Tim Van De Cruys, Camille Pradel and Philippe Muller)
+5. "**_Метод автоматического построения онтологических баз знаний. I. Разработка семантико-синтаксической модели есественного языка._**" (А. А. Марченко)
   
   # Articles
   

@@ -64,7 +64,7 @@ for Unsupervised Sentence Representation Learning_**" (Damien Sileo, Tim Van De 
   
  # Some Concepts
  
- - [ ] **Selectional Preference** - (Katz and Fodor, 1963; Wilks, 1975; Resnik, 1993) are the tendency for a word to semantically select or constrain which other words may appear in a direct syntactic relation with it." In case this selection is expressed in binary term (**_allowed/not-allowed_**), it is also called selectional restriction (Séaghdha and Korhonen, 2014). SP can be contrasted with **_verb subcategorization_** "with subcategorization describing the syntactic arguments taken by a verb, and selectional preferences describing the semantic preferences verbs have for their arguments" (Van de Cruys et al., 2012)
+ - [x] **Selectional Preference** - (Katz and Fodor, 1963; Wilks, 1975; Resnik, 1993) are the tendency for a word to semantically select or constrain which other words may appear in a direct syntactic relation with it." In case this selection is expressed in binary term (**_allowed/not-allowed_**), it is also called selectional restriction (Séaghdha and Korhonen, 2014). SP can be contrasted with **_verb subcategorization_** "with subcategorization describing the syntactic arguments taken by a verb, and selectional preferences describing the semantic preferences verbs have for their arguments" (Van de Cruys et al., 2012)
     - [Selectional preference, Natural Language Understanding Wiki](https://natural-language-understanding.fandom.com/wiki/Selectional_preference)
- - [ ] **Selectional Restrictions** - 
+ - [x] **Selectional Restrictions** - 
     - [Selectional Restrictions, Jurafsky](https://web.stanford.edu/~jurafsky/slp3/slides/22_select.pdf)

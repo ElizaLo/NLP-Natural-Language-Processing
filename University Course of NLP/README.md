@@ -18,3 +18,6 @@
     - **Delete, Retrieve, Generate: A Simple Approach to Sentiment and Style Transfer** (GitHub Link on [Paper](https://github.com/ElizaLo/NLP/blob/master/University%20Course%20of%20NLP/Articles/1804.06437.pdf)), [Article link](https://arxiv.org/pdf/1804.06437.pdf)
         - [GitHub Link](https://github.com/lijuncen/Sentiment-and-Style-Transfer) on project
     - **A Hierarchical Reinforced Sequence Operation Method for Unsupervised Text Style Transfer** (GitHub Link on [Paper](https://github.com/ElizaLo/NLP/blob/master/University%20Course%20of%20NLP/Articles/P19-1482.pdf)), [Article link](https://www.aclweb.org/anthology/P19-1482)
+
+- [ ] **Lecture 4**
+    - **Domain Adaptive Text Style Transfer** (GitHub Link on [Paper](https://github.com/ElizaLo/NLP/blob/master/University%20Course%20of%20NLP/Articles/1908.09395.pdf)), [Article link](https://arxiv.org/pdf/1908.09395.pdf)

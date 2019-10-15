@@ -1,12 +1,17 @@
 # Natural Language Processing 
 
-## Projects:
+🔹 [100 Must-Read NLP Papers](http://masatohagiwara.net/100-nlp-papers/)
+
+## 🔺 Projects:
   - [**_Spam Detection_**](https://github.com/ElizaLo/ML-with-Jupiter#spam-detection)
   - [**_Text Generator_**](https://github.com/ElizaLo/ML-with-Jupiter#text-generator)
   - **_Quora Insincere Questions Classification_**
   - [**_Question Answering System using BiDAF Model on SQuAD_**](https://github.com/ElizaLo/Question-Answering-based-on-SQuAD)
-  
-## Models and Algorithms:
+
+## 🔺 Embedings
+
+🔹 [Everything about Embeddings](https://medium.com/@b.terryjack/nlp-everything-about-word-embeddings-9ea21f51ccfe)
+
   1. **_Word Embedings_**
       - **Word2Vec**
         - [Word2Vec Tutorial](http://mccormickml.com/2017/01/11/word2vec-tutorial-part-2-negative-sampling/)
@@ -14,25 +19,32 @@
         - [GloVe: Global Vectors for Word Representation Article](https://nlp.stanford.edu/pubs/glove.pdf)
         - [GloVE](https://nlp.stanford.edu/projects/glove/)
       - **Sequence to Sequence Model (Seq2Seq)**
-  2. **_Levenshtein Distance_**
+  2. **Sentence Embedings**
+      - [How to obtain Sentence Vectors?](https://medium.com/explorations-in-language-and-learning/how-to-obtain-sentence-vectors-2a6d88bd3c8b)
+      - [Deep-learning-free Text and Sentence Embedding](https://www.offconvex.org/2018/06/17/textembeddings/)
+  3. **Text / Document Embedings**
+      - [Document Embedding Techniques](https://towardsdatascience.com/document-embedding-techniques-fed3e7a6a25d)
+      
+## 🔺 Models and Algorithms:      
+  1. **_Levenshtein Distance_**
       - [Wikipedia](https://en.wikipedia.org/wiki/Levenshtein_distance)
       - [Levenshtein Distance Calculator](https://phiresky.github.io/levenshtein-demo/)
-  3. **_Conditional Random Fields_**
+  2. **_Conditional Random Fields_**
       - [Overview of Conditional Random Fields](https://medium.com/ml2vec/overview-of-conditional-random-fields-68a2a20fa541)
-  4. **_Formal Concept Analysis_**
+  3. **_Formal Concept Analysis_**
       - [Formal Concept Analysis Examples](https://www.upriss.org.uk/fca/examples.html)
       - [FCA Online](https://fca-tools-bundle.com)
-  5. **_Non-negative Matrix Factorization_**
+  4. **_Non-negative Matrix Factorization_**
       - [Wikipedia](https://en.wikipedia.org/wiki/Non-negative_matrix_factorization)
       - **_Algorithms for Non-negative Matrix Factorization_**
         - [Algorithms for Non-negative Matrix Factorization](https://www.researchgate.net/publication/2538030_Algorithms_for_Non-negative_Matrix_Factorization) (Daniel D. **Lee** and H. Sebastian **Seung**) 
           - [Article at GitHub](https://github.com/ElizaLo/NLP/blob/master/Articles/Algorithms_for_Non-negative_Matrix_Factorization.pdf)
-   6. **_Kullback–Leibler divergence (relative entropy)_**
+   5. **_Kullback–Leibler divergence (relative entropy)_**
        - [Wikipedia](https://en.wikipedia.org/wiki/Kullback–Leibler_divergence)
 
 
-## Courses:
-  - [ ] [Natural Language Processing | Dan Jurafsky, Christopher](https://www.youtube.com/playlist?list=PLQiyVNMpDLKnZYBTUOlSI9mi9wAErFtFm)
+## 🔺 Courses:
+  - [ ] [Natural Language Processing | Dan Jurafsky, Christopher](https://www.youtube.com/playlist?list=PLQiyVNMpDLKnZYBTUOlSI9mi9wAErFtFm
   - [ ] [CS224n: Natural Language Processing with Deep Learning](http://web.stanford.edu/class/cs224n/)
 
 

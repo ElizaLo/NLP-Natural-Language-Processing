@@ -27,4 +27,4 @@
     - **IMaT: Unsupervised Text Attribute Transfer via Iterative Matching and Translation** (GitHub Link on [Paper](https://github.com/ElizaLo/NLP/blob/master/University%20Course%20of%20NLP/Articles/1901.11333.pdf)), [Article link](https://arxiv.org/pdf/1901.11333.pdf)
 
 - [ ] **Lecture 6**
-    - **...** (GitHub Link on [Paper]( )), [Article link]( )
+    - **Adversarial Decomposition of Text Representation** (GitHub Link on [Paper](https://github.com/ElizaLo/NLP/blob/master/University%20Course%20of%20NLP/Articles/1808.09042.pdf)), [Article link](https://arxiv.org/pdf/1808.09042.pdf)

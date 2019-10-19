@@ -15,6 +15,7 @@
 - [ ] **Lecture 3**
     - **Style Transfer from Non-Parallel Text by Cross-Alignment** (GitHub Link on [Paper](https://github.com/ElizaLo/NLP/blob/master/University%20Course%20of%20NLP/Articles/7259-style-transfer-from-non-parallel-text-by-cross-alignment.pdf)), [Article link](https://papers.nips.cc/paper/7259-style-transfer-from-non-parallel-text-by-cross-alignment.pdf)
         - [GitHub Link](https://github.com/shentianxiao/language-style-transfer) on project
+        - [Video](https://www.youtube.com/watch?v=OyjXG44j-gs)
     - **Delete, Retrieve, Generate: A Simple Approach to Sentiment and Style Transfer** (GitHub Link on [Paper](https://github.com/ElizaLo/NLP/blob/master/University%20Course%20of%20NLP/Articles/1804.06437.pdf)), [Article link](https://arxiv.org/pdf/1804.06437.pdf)
         - [GitHub Link](https://github.com/lijuncen/Sentiment-and-Style-Transfer) on project
     - **A Hierarchical Reinforced Sequence Operation Method for Unsupervised Text Style Transfer** (GitHub Link on [Paper](https://github.com/ElizaLo/NLP/blob/master/University%20Course%20of%20NLP/Articles/P19-1482.pdf)), [Article link](https://www.aclweb.org/anthology/P19-1482)
@@ -26,4 +27,7 @@
     - **IMaT: Unsupervised Text Attribute Transfer via Iterative Matching and Translation** (GitHub Link on [Paper](https://github.com/ElizaLo/NLP/blob/master/University%20Course%20of%20NLP/Articles/1901.11333.pdf)), [Article link](https://arxiv.org/pdf/1901.11333.pdf)
 
 - [ ] **Lecture 6**
+    - **Adversarial Decomposition of Text Representation** (GitHub Link on [Paper](https://github.com/ElizaLo/NLP/blob/master/University%20Course%20of%20NLP/Articles/1808.09042.pdf)), [Article link](https://arxiv.org/pdf/1808.09042.pdf)
+
+- [ ] **Lecture 7**
     - **...** (GitHub Link on [Paper]( )), [Article link]( )

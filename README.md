@@ -17,7 +17,7 @@
         - [Word2Vec Tutorial](http://mccormickml.com/2017/01/11/word2vec-tutorial-part-2-negative-sampling/)
       - **GloVe: Global Vectors for Word Representation**
         - [GloVe: Global Vectors for Word Representation Article](https://nlp.stanford.edu/pubs/glove.pdf)
-        - [GloVE](https://nlp.stanford.edu/projects/glove/)
+        - [GloVe](https://nlp.stanford.edu/projects/glove/)
       - **Sequence to Sequence Model (Seq2Seq)**
   2. **_Sentence Embedings_**
       - [How to obtain Sentence Vectors?](https://medium.com/explorations-in-language-and-learning/how-to-obtain-sentence-vectors-2a6d88bd3c8b)
@@ -41,7 +41,13 @@
           - [Article at GitHub](https://github.com/ElizaLo/NLP/blob/master/Articles/Algorithms_for_Non-negative_Matrix_Factorization.pdf)
    5. **_Kullback–Leibler divergence (relative entropy)_**
        - [Wikipedia](https://en.wikipedia.org/wiki/Kullback–Leibler_divergence)
-
+   6. **_Latent Dirichlet Allocation (LDA)_**
+      - [Article](http://www.jmlr.org/papers/volume3/blei03a/blei03a.pdf) (David M. **Blei**, Andrew Y. **Ng**, Michael I. **Jordan**)
+      - [...]()
+   7. **_Gibbs sampling_**
+      - [Wikipedia](https://en.wikipedia.org/wiki/Gibbs_sampling)
+      - [...]()
+   8. 
 
 ## 🔺 Courses:
   - [ ] [Natural Language Processing | Dan Jurafsky, Christopher](https://www.youtube.com/playlist?list=PLQiyVNMpDLKnZYBTUOlSI9mi9wAErFtFm

@@ -15,3 +15,4 @@ for Unsupervised Sentence Representation Learning_**" (Damien Sileo, Tim Van De 
 ## Towards Data Science
 
 1. "**_Creation of Sentence Embeddings Based on Topical Word Representations_**", [**Article**](https://towardsdatascience.com/creation-of-sentence-embeddings-based-on-topical-word-representations-d325d50f99e)
+  - [Research Gate](https://www.researchgate.net/publication/330761695_Creation_of_Sentence_Embeddings_Based_on_Topical_Word_Representations)

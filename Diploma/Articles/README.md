@@ -11,3 +11,7 @@ for Unsupervised Sentence Representation Learning_**" (Damien Sileo, Tim Van De 
 [GitHub](https://github.com/ElizaLo/NLP/blob/master/Diploma/Articles/N19-1351.pdf), [**Article**](https://www.aclweb.org/anthology/N19-1351))
 5. "**_Метод автоматического построения онтологических баз знаний. I. Разработка семантико-синтаксической модели есественного языка._**" (А. А. Марченко) (Paper at 
 [GitHub](https://github.com/ElizaLo/NLP/blob/master/Diploma/Articles/3.pdf), [**Article**](http://www.kibernetika.org/volumes/2016/numbers/01/articles/03/3.pdf))
+
+## Towards Data Science
+
+1. "**_Creation of Sentence Embeddings Based on Topical Word Representations_**", [**Article**](https://towardsdatascience.com/creation-of-sentence-embeddings-based-on-topical-word-representations-d325d50f99e)

@@ -52,7 +52,7 @@
       - [Intuitive Guide to Latent Dirichlet Allocation](https://towardsdatascience.com/light-on-math-machine-learning-intuitive-guide-to-latent-dirichlet-allocation-437c81220158)
    8. **_Gibbs sampling_**
       - [Wikipedia](https://en.wikipedia.org/wiki/Gibbs_sampling)
-      - [...]()
+      - [Topic modeling using Latent Dirichlet Allocation(LDA) and Gibbs Sampling explained!](https://medium.com/analytics-vidhya/topic-modeling-using-lda-and-gibbs-sampling-explained-49d49b3d1045)
    9. 
 
 ## 🔺 Courses:

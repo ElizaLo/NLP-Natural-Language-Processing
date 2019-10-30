@@ -28,6 +28,11 @@
 
 - [ ] **Lecture 6**
     - **Adversarial Decomposition of Text Representation** (GitHub Link on [Paper](https://github.com/ElizaLo/NLP/blob/master/University%20Course%20of%20NLP/Articles/1808.09042.pdf)), [Article link](https://arxiv.org/pdf/1808.09042.pdf)
-    
+
+## BERT
+
 - [ ] **Lecture 7**
+    - **RoBERTa: A Robustly Optimized BERT Pretraining Approach** (GitHub Link on [Paper](https://github.com/ElizaLo/NLP/blob/master/University%20Course%20of%20NLP/Articles/1907.11692.pdf)), [Article link](https://arxiv.org/pdf/1907.11692.pdf)
+    
+- [ ] **Lecture 8**
     - **...** (GitHub Link on [Paper]( )), [Article link]( )

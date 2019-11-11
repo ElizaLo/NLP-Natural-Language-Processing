@@ -3,7 +3,9 @@
 ## 🔹 Sentence Representation 🔹
 
 - [ ] **Lecture 1**
+
     - **Skip-Thought Vectors** (GitHub Link on [Paper](https://github.com/ElizaLo/NLP/blob/master/University%20Course%20of%20NLP/Articles/5950-skip-thought-vectors.pdf)), [Article link](https://papers.nips.cc/paper/5950-skip-thought-vectors.pdf)
+    
     - **Distributed Representations of Sentences and Documents** (GitHub Link on [Paper](https://github.com/ElizaLo/NLP/blob/master/University%20Course%20of%20NLP/Articles/1405.4053v2.pdf)), [Article link](https://arxiv.org/pdf/1405.4053v2.pdf)
     - **Assessing Composition in Sentence Vector Representations** (GitHub Link on [Paper](https://github.com/ElizaLo/NLP/blob/master/University%20Course%20of%20NLP/Articles/C18-1152.pdf)), [Article link](https://aclweb.org/anthology/C18-1152)
 - [ ] **Lecture 2**

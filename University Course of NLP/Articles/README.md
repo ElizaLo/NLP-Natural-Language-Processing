@@ -45,6 +45,8 @@
 
 - [ ] **Lecture 7**
 
+    - **BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding**, [Article link](https://arxiv.org/pdf/1810.04805.pdf)
+    
     - **RoBERTa: A Robustly Optimized BERT Pretraining Approach** (GitHub Link on [Paper](https://github.com/ElizaLo/NLP/blob/master/University%20Course%20of%20NLP/Articles/1907.11692.pdf)), [Article link](https://arxiv.org/pdf/1907.11692.pdf)
     
 ## 🔸 Word Embeddings 🔸

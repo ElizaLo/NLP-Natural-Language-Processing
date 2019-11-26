@@ -54,7 +54,13 @@
 - [ ] **Lecture 8**
 
     - **Specializing Word Embeddings (for Parsing) by Information Bottleneck** (GitHub Link on [Paper](https://github.com/ElizaLo/NLP/blob/master/University%20Course%20of%20NLP/Articles/1910.00163.pdf)), [Article link](https://arxiv.org/pdf/1910.00163.pdf)
-    
+
+________________________________
+
 - [ ] **Lecture 9**
+
+    - **Exploring the Limits of Transfer Learning with a Unified Text-to-Text Transformer** (GitHub Link on [Paper](https://github.com/ElizaLo/NLP/blob/master/University%20Course%20of%20NLP/Articles/1910.10683.pdf)), [Article link](https://arxiv.org/pdf/1910.10683.pdf)
+    
+- [ ] **Lecture 10**
 
     - **...** (GitHub Link on [Paper]( )), [Article link]( )

@@ -46,6 +46,7 @@
 - [ ] **Lecture 7**
 
     - **BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding**, [Article link](https://arxiv.org/pdf/1810.04805.pdf)
+        - [ BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding](https://nlp.stanford.edu/seminar/details/jdevlin.pdf)
     
     - **RoBERTa: A Robustly Optimized BERT Pretraining Approach** (GitHub Link on [Paper](https://github.com/ElizaLo/NLP/blob/master/University%20Course%20of%20NLP/Articles/1907.11692.pdf)), [Article link](https://arxiv.org/pdf/1907.11692.pdf)
     
@@ -61,6 +62,3 @@ ________________________________
 
     - **Exploring the Limits of Transfer Learning with a Unified Text-to-Text Transformer** (GitHub Link on [Paper](https://github.com/ElizaLo/NLP/blob/master/University%20Course%20of%20NLP/Articles/1910.10683.pdf)), [Article link](https://arxiv.org/pdf/1910.10683.pdf)
     
-- [ ] **Lecture 10**
-
-    - **...** (GitHub Link on [Paper]( )), [Article link]( )

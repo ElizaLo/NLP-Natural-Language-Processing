@@ -56,8 +56,9 @@
    9. 
 
 ## 🔺 Courses:
-  - [ ] [Natural Language Processing | Dan Jurafsky, Christopher](https://www.youtube.com/playlist?list=PLQiyVNMpDLKnZYBTUOlSI9mi9wAErFtFm
+  - [ ] [Natural Language Processing | Dan Jurafsky, Christopher](https://www.youtube.com/playlist?list=PLQiyVNMpDLKnZYBTUOlSI9mi9wAErFtFm)
   - [ ] [CS224n: Natural Language Processing with Deep Learning](http://web.stanford.edu/class/cs224n/)
+  - [ ] [Natural Language Processing | University of Michigan](https://www.youtube.com/playlist?list=PLLssT5z_DsK8BdawOVCCaTCO99Ya58ryR)
 
 
 # Question Answering System using BiDAF Model on SQuAD

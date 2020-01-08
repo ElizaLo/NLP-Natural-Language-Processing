@@ -13,6 +13,10 @@
 🔹 [Everything about Embeddings](https://medium.com/@b.terryjack/nlp-everything-about-word-embeddings-9ea21f51ccfe)
 
   1. **_Word Embedings_**
+      - **One-hot encoding**
+      - **Feature vectors**
+      - **Cooccurrence vectors**
+      - **Sparse Distributed Representations (SDRs)**
       - **Word2Vec**
         - [Word2Vec Tutorial](http://mccormickml.com/2017/01/11/word2vec-tutorial-part-2-negative-sampling/)
       - **GloVe: Global Vectors for Word Representation**

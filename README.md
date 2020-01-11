@@ -17,8 +17,14 @@
       - **Feature vectors**
       - **Cooccurrence vectors**
       - **Sparse Distributed Representations (SDRs)**
+      - **Continuous Bag-of-Words (CBOW)**
+        - [Efficient Estimation of Word Representations in Vector Space](https://arxiv.org/pdf/1301.3781.pdf)
+      - **Continuous Skip-gram Model**
+        - []()
+        - [Efficient Estimation of Word Representations in Vector Space](https://arxiv.org/pdf/1301.3781.pdf)
       - **Word2Vec**
         - [Word2Vec Tutorial](http://mccormickml.com/2017/01/11/word2vec-tutorial-part-2-negative-sampling/)
+        - [Implementing Deep Learning Methods and Feature Engineering for Text Data: The Continuous Bag of Words (CBOW)](https://www.kdnuggets.com/2018/04/implementing-deep-learning-methods-feature-engineering-text-data-cbow.html)
       - **GloVe: Global Vectors for Word Representation**
         - [GloVe: Global Vectors for Word Representation Article](https://nlp.stanford.edu/pubs/glove.pdf)
         - [GloVe](https://nlp.stanford.edu/projects/glove/)

@@ -19,8 +19,8 @@
       - **Sparse Distributed Representations (SDRs)**
       - **Continuous Bag-of-Words (CBOW)**
         - [Efficient Estimation of Word Representations in Vector Space](https://arxiv.org/pdf/1301.3781.pdf)
-      - **Continuous Skip-gram Model**
-        - []()
+      - **Skip-gram Model**
+        - [Distributed Representations of Words and Phrases and their Compositionality](https://papers.nips.cc/paper/5021-distributed-representations-of-words-and-phrases-and-their-compositionality.pdf)
         - [Efficient Estimation of Word Representations in Vector Space](https://arxiv.org/pdf/1301.3781.pdf)
       - **Word2Vec**
         - [Word2Vec Tutorial](http://mccormickml.com/2017/01/11/word2vec-tutorial-part-2-negative-sampling/)

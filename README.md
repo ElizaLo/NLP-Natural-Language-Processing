@@ -12,7 +12,7 @@
 
 🔹 [Everything about Embeddings](https://medium.com/@b.terryjack/nlp-everything-about-word-embeddings-9ea21f51ccfe)
 
-  1. **_Word Embedings_**
+  1. ### **_Word Embedings_**
       - **One-hot encoding**
       - **Feature vectors**
       - **Cooccurrence vectors**

@@ -58,11 +58,11 @@
          - ENRIE (Enhanced Representation through kNowledge IntEgration)
          - (FlairEmbeddings (Contextual String Embeddings for Sequence Labelling))
 ---------------------------
-  2. **_Sentence Embedings_**
+  2. ### **_Sentence Embedings_**
       - [How to obtain Sentence Vectors?](https://medium.com/explorations-in-language-and-learning/how-to-obtain-sentence-vectors-2a6d88bd3c8b)
       - [Deep-learning-free Text and Sentence Embedding](https://www.offconvex.org/2018/06/17/textembeddings/)
 -------------------------------------------------------      
-  3. **_Text / Document Embedings_**
+  3. ### **_Text / Document Embedings_**
       - [Document Embedding Techniques](https://towardsdatascience.com/document-embedding-techniques-fed3e7a6a25d)
       
 ## 🔺 Models and Algorithms:      

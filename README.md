@@ -47,17 +47,21 @@
          - CoVe (Contextualized Word-Embeddings)
          - CVT (Cross-View Training)
          - ELMO (Embeddings from Language Models)
+            - [Deep contextualized word representations](https://arxiv.org/pdf/1802.05365.pdf)
          - ULMFiT (Universal Language Model Fine-tuning)
          - BERT (Bidirectional Encoder Representations from Transformers)
+            - [BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding](https://arxiv.org/pdf/1810.04805.pdf)
+            - [FROM Pre-trained Word Embeddings TO Pre-trained Language Models — Focus on BERT](https://medium.com/@adriensieg/from-pre-trained-word-embeddings-to-pre-trained-language-models-focus-on-bert-343815627598)
          - GPT & GPT-2 (Generative Pre-Training)
          - Transformer XL (meaning extra long)
          - XLNet (Generalized Autoregressive Pre-training)
          - ENRIE (Enhanced Representation through kNowledge IntEgration)
          - (FlairEmbeddings (Contextual String Embeddings for Sequence Labelling))
-      ---------------------------
+---------------------------
   2. **_Sentence Embedings_**
       - [How to obtain Sentence Vectors?](https://medium.com/explorations-in-language-and-learning/how-to-obtain-sentence-vectors-2a6d88bd3c8b)
       - [Deep-learning-free Text and Sentence Embedding](https://www.offconvex.org/2018/06/17/textembeddings/)
+-------------------------------------------------------      
   3. **_Text / Document Embedings_**
       - [Document Embedding Techniques](https://towardsdatascience.com/document-embedding-techniques-fed3e7a6a25d)
       

@@ -64,7 +64,7 @@
 -------------------------------------------------------      
   3. ### **_Text / Document Embedings_**
       - [Document Embedding Techniques](https://towardsdatascience.com/document-embedding-techniques-fed3e7a6a25d)
-      
+
 ## 🔺 Models and Algorithms:      
   1. **_Levenshtein Distance_**
       - [Wikipedia](https://en.wikipedia.org/wiki/Levenshtein_distance)
@@ -94,6 +94,11 @@
       - [Wikipedia](https://en.wikipedia.org/wiki/Gibbs_sampling)
       - [Topic modeling using Latent Dirichlet Allocation(LDA) and Gibbs Sampling explained!](https://medium.com/analytics-vidhya/topic-modeling-using-lda-and-gibbs-sampling-explained-49d49b3d1045)
    9. 
+-----------------------------------------------------------------------
+
+## Knowlrdge Graphs
+
+- [ON UNDERSTANDING KNOWLEDGE GRAPH REPRESENTATION](https://arxiv.org/pdf/1909.11611.pdf)
 
 ## 🔺 Courses:
   - [ ] [Natural Language Processing | Dan Jurafsky, Christopher](https://www.youtube.com/playlist?list=PLQiyVNMpDLKnZYBTUOlSI9mi9wAErFtFm)

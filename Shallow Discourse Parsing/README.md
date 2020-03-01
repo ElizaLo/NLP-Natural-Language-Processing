@@ -7,7 +7,7 @@
 Download or clone [the workshop repository](https://github.com/TScheffler/2020grammarly_ws). See the "Clone or download" button on the right.
 
 
-# Workshop on Shallow Discourse Parsing at Grammarly, Kyiv, 2020
+# Workshop on Shallow Discourse Parsing at Grammarly, Kyiv, 2020 by [Tatjana Scheffler](https://github.com/TScheffler)
 
 [Workshop announcement](https://grammarly.ai/compling-workshop-shallow-discourse-parsing/)
 

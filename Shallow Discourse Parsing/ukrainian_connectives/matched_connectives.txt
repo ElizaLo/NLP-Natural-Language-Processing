@@ -1,0 +1,179 @@
+accordingly	відповідно
+after	после
+after	після
+also	теж
+also	Також
+also	также
+also	також
+although	хоч
+although	хотя
+although	хоча
+and	а
+and	и
+and	і
+and	та
+as	як
+as	как
+because	бо
+because	адже
+because	тому
+because	через
+because	потому
+because	оскільки
+before	до того
+before	перш ніж
+before	перед
+before	прежде
+before	раньше
+before	раніше
+besides	крім
+besides	кроме
+besides	окрім
+besides	помимо
+but	а
+but	но
+but	але
+but	проте
+earlier	ранее
+earlier	ранніх
+earlier	раньше
+earlier	раніше
+else	ще
+else	еще
+else	ещё
+else	інше
+else	іншого
+except	крім
+except	кроме
+except	окрім
+except	винятком
+finally	Нарешті
+finally	наконец
+finally	нарешті
+for	за
+for	на
+for	для
+for example	например
+for example	Наприклад
+for example	наприклад
+for instance	наприклад
+further	далі
+further	дальнейших
+hence	СЛЕДОВАТЕЛЬНО
+however	однак
+if	Якщо
+if	если
+if	якби
+if	якщо
+in fact	фактично
+in fact	насправді
+in particular	Зокрема
+in particular	зокрема
+in short	коротше
+in the end	вінець
+in the end	зрештою
+instead	вместо
+instead	Замість
+instead	замість
+instead	натомість
+later	по тому
+later	позже
+later	згодом
+later	потому
+later	пізніше
+meantime	же час
+meantime	же время
+meantime	временем
+meanwhile	тим часом
+nevertheless	не менш
+nevertheless	не менше
+nevertheless	тим не
+next	поруч
+next	наступне
+next	наступні
+next	наступний
+next	наступних
+next	следующей
+next	следующий
+next	наступного
+next	наступному
+nonetheless	тим не
+nonetheless	тем не менее
+nor	ні
+nor	ані
+once	як тільки
+once	раз
+once	разу
+once	колись
+once	відразу
+once	однажды
+or	чи
+or	або
+or	или
+otherwise	в іншому
+otherwise	інакше
+otherwise	іншому випадку
+overall	в цілому
+overall	загальним
+plus	плюс
+plus	додати
+previously	ранее
+rather	радше
+rather	скоріше
+regardless	не зважаючи
+regardless	незалежно
+regardless	незважаючи
+separately	окремо
+separately	отдельно
+simultaneously	одночасно
+since	пор
+since	так як
+since	оскільки
+so	так
+so	тож
+so	отже
+so	тому
+so	настільки
+specifically	точніше
+specifically	конкретно
+specifically	спеціально
+still	ще
+still	еще
+still	ещё
+still	досі
+then	то
+then	тоді
+then	Потім
+then	затем
+then	потом
+then	потім
+then	тогда
+thereby	тим самим
+though	хоч
+though	хотя
+though	хоча
+thus	таким чином
+till	доки
+till	пока
+till	поки
+ultimately	итоге
+ultimately	врешті
+ultimately	зрештою
+ultimately	кінцевому
+unless	доки
+unless	хіба
+unless	якщо тільки
+until	доки
+until	пока
+until	поки
+until	допоки
+when	Коли
+when	коли
+when	когда
+whereas	в той час як
+while	час як
+while	той час
+while	пока
+while	поки
+while	время
+yet	все ж

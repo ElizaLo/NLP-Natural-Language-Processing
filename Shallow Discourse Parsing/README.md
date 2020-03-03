@@ -6,6 +6,8 @@
 4. Install the visualization package [seaborn](https://seaborn.pydata.org/installing.html). Follow the installation guide on the web page.
 Download or clone [the workshop repository](https://github.com/TScheffler/2020grammarly_ws). See the "Clone or download" button on the right.
 
+- [Connective-Lex.info](http://connective-lex.info)
+
 
 # Workshop on Shallow Discourse Parsing at Grammarly, Kyiv, 2020 by [Tatjana Scheffler](https://github.com/TScheffler)
 
@@ -37,7 +39,7 @@ Finally, we will be using the following dataset in two formats (passwords are di
 
 ### Theory of discourse coherence
 
-slides
+[slides](https://github.com/ElizaLo/NLP-Natural-Language-Processing/blob/master/Shallow%20Discourse%20Parsing/disc-parsing-workshop-slides-compressed.pdf)
 
 ### Discourse Annotations
 
@@ -49,8 +51,8 @@ slides
 
 ### Introduction to shallow discourse parsing
 
-Error analysis on existing parsers
+[Error analysis on existing parsers](https://github.com/TScheffler/2019ESSLLI-discparsing/tree/master/day3#existing-discourse-parsers-for-english_)
 
 ### Implementing a discourse parser
 
-Modify/play around with a connective detection module
+Modify/play around with a connective detection module: [discopy](https://github.com/rknaebel/discopy)

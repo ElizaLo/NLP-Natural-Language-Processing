@@ -6,6 +6,8 @@
 
 🔹 [Stanford, NLP Seminar Schedule](https://nlp.stanford.edu/seminar/)
 
+🔹 [Harvard NLP](http://nlp.seas.harvard.edu)
+
 ## 🔺 Projects:
   - [**_Spam Detection_**](https://github.com/ElizaLo/ML-with-Jupiter#spam-detection)
   - [**_Text Generator_**](https://github.com/ElizaLo/ML-with-Jupiter#text-generator)

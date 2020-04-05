@@ -4,6 +4,8 @@
 
 🔹 [Sci-Hub(Papers)](https://sci-hub.tw)
 
+🔹 [Stanford, NLP Seminar Schedule](https://nlp.stanford.edu/seminar/)
+
 ## 🔺 Projects:
   - [**_Spam Detection_**](https://github.com/ElizaLo/ML-with-Jupiter#spam-detection)
   - [**_Text Generator_**](https://github.com/ElizaLo/ML-with-Jupiter#text-generator)

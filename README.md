@@ -8,7 +8,11 @@
 
 🔹 [CS224n: Natural Language Processing with Deep Learning](http://web.stanford.edu/class/cs224n/)
 
+🔹 [CIS 700-008 - Interactive Fiction and Text Generation](http://interactive-fiction-class.org/)
+
 🔹 [Harvard NLP](http://nlp.seas.harvard.edu)
+
+🔹 [The Illustrated Transformer](http://jalammar.github.io/illustrated-transformer/)
 
 ## 🔺 Projects:
   - [**_Spam Detection_**](https://github.com/ElizaLo/ML-with-Jupiter#spam-detection)

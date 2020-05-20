@@ -1,4 +1,10 @@
-# Natural Language Processing 
+<img src="https://github.com/ElizaLo/NLP-Natural-Language-Processing/blob/master/img/Banner_NLP.png" width="900" height="100">
+
+> - [ ] For **Machine Learning**  algorithms please check [Machine Learning](https://github.com/ElizaLo/Machine-Learning) repository.
+
+> - [ ] For **Deep Learning** algorithms please check [Deep Learning](https://github.com/ElizaLo/Deep-Learning) repository.
+
+> - [ ] For **Computer Vision** please check [Computer Vision](https://github.com/ElizaLo/Computer-Vision) repository.
 
 🔹 [100 Must-Read NLP Papers](http://masatohagiwara.net/100-nlp-papers/)
 

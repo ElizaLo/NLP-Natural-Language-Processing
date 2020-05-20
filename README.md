@@ -6,6 +6,10 @@
 
 > - [ ] For **Computer Vision** please check [Computer Vision](https://github.com/ElizaLo/Computer-Vision) repository.
 
+## GitHub Repositories
+
+- [ ] [Awesome NLP References](https://github.com/JudePark96/awesome-nlp-references), A curated list of resources dedicated to Knowledge Distillation, Recommendation System, especially Natural Language Processing (NLP).
+
 🔹 [100 Must-Read NLP Papers](http://masatohagiwara.net/100-nlp-papers/)
 
 🔹 [Sci-Hub(Papers)](https://sci-hub.tw)

@@ -6,6 +6,14 @@
 
 > - [ ] For **Computer Vision** please check [Computer Vision](https://github.com/ElizaLo/Computer-Vision) repository.
 
+## 🎓 Top University Courses 
+
+  - [ ] [Natural Language Processing | Dan Jurafsky, Christopher](https://www.youtube.com/playlist?list=PLQiyVNMpDLKnZYBTUOlSI9mi9wAErFtFm)
+  - [ ] [Natural Language Processing with Deep Learning (Stanford CS224N)](https://www.youtube.com/playlist?list=PLoROMvodv4rOhcuXMZkNm7j3fVwBBY42z) 
+     - [Course website](http://web.stanford.edu/class/cs224n/)
+     - Modern NLP techniques from recurrent neural networks and word embeddings to transformers and self-attention. Covers applied topics like questions answering and text generation.
+  - [ ] [Natural Language Processing | University of Michigan](https://www.youtube.com/playlist?list=PLLssT5z_DsK8BdawOVCCaTCO99Ya58ryR)
+
 ## GitHub Repositories
 
 - [ ] [Awesome NLP References](https://github.com/JudePark96/awesome-nlp-references), A curated list of resources dedicated to Knowledge Distillation, Recommendation System, especially Natural Language Processing (NLP).
@@ -17,6 +25,7 @@
 🔹 [Stanford, NLP Seminar Schedule](https://nlp.stanford.edu/seminar/)
 
 🔹 [CS224n: Natural Language Processing with Deep Learning](http://web.stanford.edu/class/cs224n/)
+
 
 🔹 [CIS 700-008 - Interactive Fiction and Text Generation](http://interactive-fiction-class.org/)
 
@@ -122,10 +131,6 @@
 
 - [ON UNDERSTANDING KNOWLEDGE GRAPH REPRESENTATION](https://arxiv.org/pdf/1909.11611.pdf)
 
-## 🔺 Courses:
-  - [ ] [Natural Language Processing | Dan Jurafsky, Christopher](https://www.youtube.com/playlist?list=PLQiyVNMpDLKnZYBTUOlSI9mi9wAErFtFm)
-  - [ ] [CS224n: Natural Language Processing with Deep Learning](http://web.stanford.edu/class/cs224n/)
-  - [ ] [Natural Language Processing | University of Michigan](https://www.youtube.com/playlist?list=PLLssT5z_DsK8BdawOVCCaTCO99Ya58ryR)
 
 
 # Question Answering System using BiDAF Model on SQuAD

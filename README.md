@@ -6,13 +6,17 @@
 
 > - [ ] For **Computer Vision** please check [Computer Vision](https://github.com/ElizaLo/Computer-Vision) repository.
 
-## 🎓 Top University Courses 
+## 🎓 Courses 
 
   - [ ] [Natural Language Processing | Dan Jurafsky, Christopher](https://www.youtube.com/playlist?list=PLQiyVNMpDLKnZYBTUOlSI9mi9wAErFtFm)
   - [ ] [Natural Language Processing with Deep Learning (Stanford CS224N)](https://www.youtube.com/playlist?list=PLoROMvodv4rOhcuXMZkNm7j3fVwBBY42z) 
      - [Course website](http://web.stanford.edu/class/cs224n/)
      - Modern NLP techniques from recurrent neural networks and word embeddings to transformers and self-attention. Covers applied topics like questions answering and text generation.
   - [ ] [Natural Language Processing | University of Michigan](https://www.youtube.com/playlist?list=PLLssT5z_DsK8BdawOVCCaTCO99Ya58ryR)
+  
+## Books
+
+- [ ] [A lot of NLP books](https://www.dropbox.com/sh/b1c2ulwua9zy574/AACswS1E0IB9LdPDxQ6fexm4a?dl=0) (Natural Language Processing)
 
 ## GitHub Repositories
 

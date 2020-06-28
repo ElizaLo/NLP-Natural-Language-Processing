@@ -13,6 +13,8 @@
      - [Course website](http://web.stanford.edu/class/cs224n/)
      - Modern NLP techniques from recurrent neural networks and word embeddings to transformers and self-attention. Covers applied topics like questions answering and text generation.
   - [ ] [Natural Language Processing | University of Michigan](https://www.youtube.com/playlist?list=PLLssT5z_DsK8BdawOVCCaTCO99Ya58ryR)
+  - [ ] Coursera:
+    - [Специализация Обработка текстов, написанных на естественных языках](https://www.coursera.org/specializations/natural-language-processing?utm_source=deeplearningai&utm_medium=institutions&utm_content=NLP_6/17_ppt#howItWorks)
   
 
   

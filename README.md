@@ -48,6 +48,11 @@
   - **_Quora Insincere Questions Classification_**
   - [**_Question Answering System using BiDAF Model on SQuAD_**](https://github.com/ElizaLo/Question-Answering-based-on-SQuAD)
 
+## Data Analysis for Natural Language Processing
+
+- [Exploratory Data Analysis for Natural Language Processing: A Complete Guide to Python Tools](https://neptune.ai/blog/exploratory-data-analysis-natural-language-processing-tools?utm_source=linkedin&utm_medium=post-in-group&utm_campaign=blog-exploratory-data-analysis-natural-language-processing-tools&utm_content=3063585)
+
+
 ## 🔺 Embedings
 
 🔹 [Everything about Embeddings](https://medium.com/@b.terryjack/nlp-everything-about-word-embeddings-9ea21f51ccfe)
@@ -141,7 +146,6 @@
 - [ON UNDERSTANDING KNOWLEDGE GRAPH REPRESENTATION](https://arxiv.org/pdf/1909.11611.pdf)
 
 
-
 # Question Answering System using BiDAF Model on SQuAD
 
 Implemented a Bidirectional Attention Flow neural network as a baseline on SQuAD, improving Chris Chute's model [implementation](https://github.com/chrischute/squad/blob/master/layers.py), adding word-character inputs as described in the original paper and improving [GauthierDmns' code](https://github.com/GauthierDmn/question_answering).
@@ -152,18 +156,8 @@ Implemented a Bidirectional Attention Flow neural network as a baseline on SQuAD
   - [Useful Articles](https://github.com/ElizaLo/Question-Answering-based-on-SQuAD#useful-articles)
   - [Useful Links](https://github.com/ElizaLo/Question-Answering-based-on-SQuAD#useful-links)
   
- # [Diploma](https://github.com/ElizaLo/NLP/tree/master/Diploma/Articles)
- 
- ## Used [Articles](https://github.com/ElizaLo/NLP/tree/master/Diploma/Articles):
-
-1. "**_A Tensor-based Factorization Model of Semantic Compositionality_**" (Tim Van de Cruys, Thierry Poibeau, Anna Korhonen)
-2. "**_A Neural Network Approach to Selectional Preference Acquisition_**" (Tim Van de Cruys)
-3. "**_A Generalisation of Lexical Functions for Composition in Distributional Semantics_**" (Antoine Bride, Tim Van de Cruys, Nicholas Asher)
-4. "**_Mining Discourse Markers
-for Unsupervised Sentence Representation Learning_**" (Damien Sileo, Tim Van De Cruys, Camille Pradel and Philippe Muller)
-5. "**_Метод автоматического построения онтологических баз знаний. I. Разработка семантико-синтаксической модели есественного языка._**" (А. А. Марченко)
   
-  # Articles
+  # Useful Articles
   
   - [ ] [Interpretation of Natural Language Rules in Conversational Machine Reading](https://arxiv.org/abs/1809.01494)
   - [ ] [Skip-Thought Vectors](https://github.com/ElizaLo/NLP/blob/master/University%20Course%20of%20NLP/Articles/5950-skip-thought-vectors.pdf), [Article](https://arxiv.org/abs/1506.06726)

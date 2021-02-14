@@ -12,7 +12,7 @@
 
 ## 🎓 Courses 
 
-  - [Natural Language Processing | Dan Jurafsky, Christopher](https://www.youtube.com/playlist?list=PLQiyVNMpDLKnZYBTUOlSI9mi9wAErFtFm)
+  - [Natural Language Processing - Stanford University| Dan Jurafsky, Christopher](https://www.youtube.com/playlist?list=PLLssT5z_DsK8HbD2sPcUIDfQ7zmBarMYv)
   - [Natural Language Processing with Deep Learning (Stanford CS224N)](https://www.youtube.com/playlist?list=PLoROMvodv4rOhcuXMZkNm7j3fVwBBY42z) 
      - [Course website](http://web.stanford.edu/class/cs224n/)
      - Modern NLP techniques from recurrent neural networks and word embeddings to transformers and self-attention. Covers applied topics like questions answering and text generation.
@@ -49,6 +49,10 @@
 🔹 [Harvard NLP](http://nlp.seas.harvard.edu)
 
 🔹 [The Illustrated Transformer](http://jalammar.github.io/illustrated-transformer/)
+
+## Useful NLP Libraries for Python 
+
+- [ ] [Gensim](https://radimrehurek.com/gensim/index.html)
 
 ## 🔺 Projects:
   - [**_Spam Detection_**](https://github.com/ElizaLo/ML-with-Jupiter#spam-detection)

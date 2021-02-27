@@ -30,6 +30,11 @@
 - [Speech and Language Processing (3rd ed. draft)](https://web.stanford.edu/~jurafsky/slp3/), Dan Jurafsky and James H. Martin
 - [Neural Network Methods for Natural Language Processing](http://www.morganclaypoolpublishers.com/catalog_Orig/samples/9781627052955_sample.pdf)
 
+## YouTube 
+
+- [Natural Language Processing (NLP) Zero to Hero](https://www.youtube.com/playlist?list=PLQY2H8rRoyvzDbLUZkbudP-MFQZwNmU4S) by TensorFlow
+- [Zero to Hero: NLP with Tensorflow and Keras (GDG Sofia meetup)](https://www.youtube.com/watch?v=ECRUJTKuKKs)
+
 ## GitHub Repositories
 
 - [ ] [Awesome NLP References](https://github.com/JudePark96/awesome-nlp-references), A curated list of resources dedicated to Knowledge Distillation, Recommendation System, especially Natural Language Processing (NLP)

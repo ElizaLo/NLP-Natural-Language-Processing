@@ -162,6 +162,7 @@
 
 - [ON UNDERSTANDING KNOWLEDGE GRAPH REPRESENTATION](https://arxiv.org/pdf/1909.11611.pdf)
 
+## Coreference
 
 # Question Answering System using BiDAF Model on SQuAD
 

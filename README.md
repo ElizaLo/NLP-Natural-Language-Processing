@@ -35,6 +35,10 @@
 - [Natural Language Processing (NLP) Zero to Hero](https://www.youtube.com/playlist?list=PLQY2H8rRoyvzDbLUZkbudP-MFQZwNmU4S) by TensorFlow
 - [Zero to Hero: NLP with Tensorflow and Keras (GDG Sofia meetup)](https://www.youtube.com/watch?v=ECRUJTKuKKs)
 
+## Atricles
+
+- [Карьера в IT: NLP Engineer и NLP Researcher](https://dou.ua/lenta/articles/nlp-specialist/?from=tg)
+
 ## GitHub Repositories
 
 - [ ] [Awesome NLP References](https://github.com/JudePark96/awesome-nlp-references), A curated list of resources dedicated to Knowledge Distillation, Recommendation System, especially Natural Language Processing (NLP)

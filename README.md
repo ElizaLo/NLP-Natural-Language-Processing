@@ -21,7 +21,7 @@
     - [Специализация Обработка текстов, написанных на естественных языках](https://www.coursera.org/specializations/natural-language-processing?utm_source=deeplearningai&utm_medium=institutions&utm_content=NLP_6/17_ppt#howItWorks)
   - LinkedIn Learning:
     - [Advanced NLP with Python for Machine Learning](https://www.linkedin.com/learning/advanced-nlp-with-python-for-machine-learning)
-      - Folder with [code]()
+      - Folder with [code](https://github.com/ElizaLo/NLP-Natural-Language-Processing/blob/master/Courses/LinkedIn%20Learning/Advanced%20NLP%20with%20Python%20for%20Machine%20Learning/Exercises.ipynb)
   - [Матеріали для курсу NLP в Проджекторі](https://github.com/sudodoki/prj-nlp/tree/master)
   - [Advaced NLP with spaCy](https://course.spacy.io/en/)
   
@@ -82,6 +82,8 @@
 ## 🔺 Embedings
 
 🔹 [Everything about Embeddings](https://medium.com/@b.terryjack/nlp-everything-about-word-embeddings-9ea21f51ccfe)
+
+- [TF-IDF Vectorizer](https://github.com/ElizaLo/NLP-Natural-Language-Processing/tree/master/Word%20Embedings/TF-IDF%20Vectorizer)
 
   1. ### **_Word Embedings_**
       - **One-hot encoding**

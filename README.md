@@ -17,6 +17,14 @@
      - [Course website](http://web.stanford.edu/class/cs224n/)
      - Modern NLP techniques from recurrent neural networks and word embeddings to transformers and self-attention. Covers applied topics like questions answering and text generation.
   - [Natural Language Processing | University of Michigan](https://www.youtube.com/playlist?list=PLLssT5z_DsK8BdawOVCCaTCO99Ya58ryR)
+  - [A Code-First Introduction to NLP course](https://github.com/fastai/course-nlp) by fast.ai
+  - [From Languages to Information](https://web.stanford.edu/class/cs124/) by Stanford University
+  - [Deep Learning for Natural Language Processing]https://www.cs.ox.ac.uk/teaching/courses/2016-2017/dl/() by University of Oxford
+  - [Natural Language Processing](https://courses.cs.washington.edu/courses/cse517/17wi/) by University of Washington
+  - [Natural Language Processing](https://github.com/yandexdataschool/nlp_course/tree/master) by Yandex Data School
+  - [Natural Language Processing](https://www.coursera.org/learn/language-processing) by National Research University Higher School of Economics (via Coursera)
+  - [Applied Natural Language Processing](http://people.ischool.berkeley.edu/~dbamman/info256.html) by UC Berkeley
+  - [Advanced Methods in Natural Language Processing](https://www.cs.tau.ac.il/~joberant/teaching/nlp_spring_2019/index.html) by Tel Aviv University
   - Coursera:
     - [Специализация Обработка текстов, написанных на естественных языках](https://www.coursera.org/specializations/natural-language-processing?utm_source=deeplearningai&utm_medium=institutions&utm_content=NLP_6/17_ppt#howItWorks)
   - LinkedIn Learning:

@@ -19,7 +19,11 @@
   - [Natural Language Processing | University of Michigan](https://www.youtube.com/playlist?list=PLLssT5z_DsK8BdawOVCCaTCO99Ya58ryR)
   - Coursera:
     - [Специализация Обработка текстов, написанных на естественных языках](https://www.coursera.org/specializations/natural-language-processing?utm_source=deeplearningai&utm_medium=institutions&utm_content=NLP_6/17_ppt#howItWorks)
+  - LinkedIn Learning:
+    - [Advanced NLP with Python for Machine Learning](https://www.linkedin.com/learning/advanced-nlp-with-python-for-machine-learning)
+      - Folder with [code]()
   - [Матеріали для курсу NLP в Проджекторі](https://github.com/sudodoki/prj-nlp/tree/master)
+  - [Advaced NLP with spaCy](https://course.spacy.io/en/)
   
 
   

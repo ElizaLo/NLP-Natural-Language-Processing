@@ -54,8 +54,14 @@
 ## GitHub Repositories
 
 - [ ] [Awesome NLP References](https://github.com/JudePark96/awesome-nlp-references), A curated list of resources dedicated to Knowledge Distillation, Recommendation System, especially Natural Language Processing (NLP)
-- [ ] [Introduction to Deep Learning for Natural Language Processing](https://github.com/rouseguy/europython2016_dl-nlp)
 - [ ] [NLP - Tutorial](https://github.com/makcedward/nlp)
+- [ ] [Natural Language-Process Tutorials](https://github.com/skuchkula/Natural-Language-Processing-Tutorials)
+- [ ] [NLP with Python](https://github.com/susanli2016/NLP-with-Python) - Scikit-Learn, NLTK, Spacy, Gensim, Textblob and more
+
+### Deep Learning architectures for NLP
+
+- [ ] [Introduction to Deep Learning for Natural Language Processing](https://github.com/rouseguy/europython2016_dl-nlp)
+- [ ] [Deep Learning architectures for NLP](https://github.com/Tixierae/deep_learning_NLP) - Keras, PyTorch, and NumPy Implementations of Deep Learning Architectures for NLP
 
 🔹 [100 Must-Read NLP Papers](http://masatohagiwara.net/100-nlp-papers/)
 
@@ -64,7 +70,6 @@
 🔹 [Stanford, NLP Seminar Schedule](https://nlp.stanford.edu/seminar/)
 
 🔹 [CS224n: Natural Language Processing with Deep Learning](http://web.stanford.edu/class/cs224n/)
-
 
 🔹 [CIS 700-008 - Interactive Fiction and Text Generation](http://interactive-fiction-class.org/)
 

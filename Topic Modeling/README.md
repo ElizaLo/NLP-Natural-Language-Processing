@@ -4,6 +4,14 @@ Topic modelling is an unsupervised machine learning method that **helps us disco
 
 > Ещё можно называть мягкой би-кластеризацией
 
+> Dataset for this task:
+  > - [A Million News Headlines](https://www.kaggle.com/therohk/million-headlines) - News headlines published over a period of 18 Years 
+  
+- [Topic Modeling with LSA, PLSA, LDA & lda2Vec](https://medium.com/nanonets/topic-modeling-with-lsa-psla-lda-and-lda2vec-555ff65b0b05)
+- [Topic Modeling with Gensim (Python)](https://www.machinelearningplus.com/nlp/topic-modeling-gensim-python/#18dominanttopicineachsentence)
+- [Topic Modeling in Python](https://ourcodingclub.github.io/tutorials/topic-modelling-python/)
+- [Topic modeling visualization – How to present the results of LDA models?](https://www.machinelearningplus.com/nlp/topic-modeling-visualization-how-to-present-results-lda-models/)
+
 - классификация и категоризация документов
 - тематическая сегментация документов
 - атоматическое аннотирование документов
@@ -67,13 +75,11 @@ Topic modelling is an unsupervised machine learning method that **helps us disco
 
 <img src="https://github.com/ElizaLo/NLP-Natural-Language-Processing/blob/master/img/formula_7.png" width="594" height="469">
 
-> Dataset for this task:
-  > - [A Million News Headlines](https://www.kaggle.com/therohk/million-headlines) - News headlines published over a period of 18 Years 
-  
-- [Topic Modeling with LSA, PLSA, LDA & lda2Vec](https://medium.com/nanonets/topic-modeling-with-lsa-psla-lda-and-lda2vec-555ff65b0b05)
-- [Topic Modeling with Gensim (Python)](https://www.machinelearningplus.com/nlp/topic-modeling-gensim-python/#18dominanttopicineachsentence)
-- [Topic Modeling in Python](https://ourcodingclub.github.io/tutorials/topic-modelling-python/)
-- [Topic modeling visualization – How to present the results of LDA models?](https://www.machinelearningplus.com/nlp/topic-modeling-visualization-how-to-present-results-lda-models/)
+<img src="https://github.com/ElizaLo/NLP-Natural-Language-Processing/blob/master/img/formula_8.png" width="590" height="500">
+<img src="https://github.com/ElizaLo/NLP-Natural-Language-Processing/blob/master/img/formula_9.png" width="482" height="156">
+
+<img src="https://github.com/ElizaLo/NLP-Natural-Language-Processing/blob/master/img/formula_16.png" width="597" height="460">
+
 
 ##  Latent Dirichlet Allocation (LDA)
 
@@ -88,10 +94,17 @@ Topic modelling is an unsupervised machine learning method that **helps us disco
 - Each document is represented as a distribution over topics.
 - Each topic is represented as a distribution over words.
 
+<img src="https://github.com/ElizaLo/NLP-Natural-Language-Processing/blob/master/img/formula_10.png" width="598" height="337">
+<img src="https://github.com/ElizaLo/NLP-Natural-Language-Processing/blob/master/img/formula_11.png" width="601" height="428">
+<img src="https://github.com/ElizaLo/NLP-Natural-Language-Processing/blob/master/img/formula_12.png" width="577" height="291">
+
 
 ### Code examples
 
 - [LDA_news_headlines](https://github.com/susanli2016/NLP-with-Python/blob/master/LDA_news_headlines.ipynb)
+
+
+<img src="https://github.com/ElizaLo/NLP-Natural-Language-Processing/blob/master/img/formula_15.png" width="606" height="502">
 
 
 ## Guided Latent Dirichlet Allocation (LDA)
@@ -157,3 +170,14 @@ The package that this is built of off is LDA and it installed with no issue. I m
 3. Drop the *.py files from the GuidedLDA_WorkAround repo in the lda folder under site-packages for your specific enviroment.
 
 4. Profit...
+
+
+
+## Regulariazation
+
+### Kullback–Leibler divergence (relative entropy)
+
+Способ померять растояние между двумя распределениями
+
+<img src="https://github.com/ElizaLo/NLP-Natural-Language-Processing/blob/master/img/formula_13.png" width="618" height="456">
+<img src="https://github.com/ElizaLo/NLP-Natural-Language-Processing/blob/master/img/formula_14.png" width="613" height="189">

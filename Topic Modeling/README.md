@@ -181,3 +181,13 @@ The package that this is built of off is LDA and it installed with no issue. I m
 
 <img src="https://github.com/ElizaLo/NLP-Natural-Language-Processing/blob/master/img/formula_13.png" width="618" height="456">
 <img src="https://github.com/ElizaLo/NLP-Natural-Language-Processing/blob/master/img/formula_14.png" width="613" height="189">
+
+<img src="https://github.com/ElizaLo/NLP-Natural-Language-Processing/blob/master/img/formula_17.png" width="614" height="500">
+<img src="https://github.com/ElizaLo/NLP-Natural-Language-Processing/blob/master/img/formula_18.png" width="602" height="552">
+<img src="https://github.com/ElizaLo/NLP-Natural-Language-Processing/blob/master/img/formula_19.png" width="571" height="188">
+<img src="https://github.com/ElizaLo/NLP-Natural-Language-Processing/blob/master/img/formula_20.png" width="605" height="507">
+<img src="https://github.com/ElizaLo/NLP-Natural-Language-Processing/blob/master/img/formula_21.png" width="595" height="493">
+<img src="https://github.com/ElizaLo/NLP-Natural-Language-Processing/blob/master/img/formula_22.png" width="610" height="329">
+<img src="https://github.com/ElizaLo/NLP-Natural-Language-Processing/blob/master/img/formula_23.png" width="610" height="515">
+<img src="https://github.com/ElizaLo/NLP-Natural-Language-Processing/blob/master/img/formula_24.png" width="593" height="430">
+<img src="https://github.com/ElizaLo/NLP-Natural-Language-Processing/blob/master/img/formula_25.png" width="598" height="484">

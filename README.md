@@ -27,6 +27,7 @@
   - [Advanced Methods in Natural Language Processing](https://www.cs.tau.ac.il/~joberant/teaching/nlp_spring_2019/index.html) by Tel Aviv University
   - Coursera:
     - [Специализация Обработка текстов, написанных на естественных языках](https://www.coursera.org/specializations/natural-language-processing?utm_source=deeplearningai&utm_medium=institutions&utm_content=NLP_6/17_ppt#howItWorks)
+    - [Text Mining](https://www.coursera.org/learn/text-mining) (Анализ текстовой информации и аналитика)
   - LinkedIn Learning:
     - [Advanced NLP with Python for Machine Learning](https://www.linkedin.com/learning/advanced-nlp-with-python-for-machine-learning)
       - Folder with [code](https://github.com/ElizaLo/NLP-Natural-Language-Processing/blob/master/Courses/LinkedIn%20Learning/Advanced%20NLP%20with%20Python%20for%20Machine%20Learning/Exercises.ipynb)

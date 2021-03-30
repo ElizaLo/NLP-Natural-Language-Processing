@@ -98,6 +98,18 @@ Topic modelling is an unsupervised machine learning method that **helps us disco
 <img src="https://github.com/ElizaLo/NLP-Natural-Language-Processing/blob/master/img/formula_11.png" width="601" height="428">
 <img src="https://github.com/ElizaLo/NLP-Natural-Language-Processing/blob/master/img/formula_12.png" width="577" height="291">
 
+### Two important parameters of the algorithm are:
+
+- **Topic concentration / Beta**
+- **Document concentration / Alpha**
+
+For the symmetric distribution, a high alpha-value means that each document is likely to contain a mixture of most of the topics, and not any single topic specifically. A low alpha value puts less such constraints on documents and means that it is more likely that a document may contain mixture of just a few, or even only one, of the topics. Likewise, a high beta-value means that each topic is likely to contain a mixture of most of the words, and not any word specifically, while a low value means that a topic may contain a mixture of just a few of the words.
+
+If, on the other hand, the distribution is asymmetric, a high alpha-value means that a specific topic distribution (depending on the base measure) is more likely for each document. Similarly, high beta-values means each topic is more likely to contain a specific word mix defined by the base measure.
+
+In practice, a high alpha-value will lead to documents being more similar in terms of what topics they contain. A high beta-value will similarly lead to topics being more similar in terms of what words they contain.
+
+
 
 ### Code examples
 

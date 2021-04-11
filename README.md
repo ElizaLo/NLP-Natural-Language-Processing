@@ -10,6 +10,16 @@
 
 > - [ ] For **Computer Vision** please check [Computer Vision](https://github.com/ElizaLo/Computer-Vision) repository.
 
+## Natural Language Processing Tasks 
+
+> Folders with all materials for specific task/domain
+
+- [Sentiment Analysis](https://github.com/ElizaLo/NLP-Natural-Language-Processing/tree/master/Sentiment%20Analysis)
+- [Text Classification](https://github.com/ElizaLo/NLP-Natural-Language-Processing/tree/master/Text%20Classification)
+- [Topic Modeling](https://github.com/ElizaLo/NLP-Natural-Language-Processing/tree/master/Topic%20Modeling)
+- [Word Embedings](https://github.com/ElizaLo/NLP-Natural-Language-Processing/tree/master/Word%20Embedings)
+
+
 ## 🎓 Courses 
 
   - [Natural Language Processing - Stanford University| Dan Jurafsky, Christopher](https://www.youtube.com/playlist?list=PLLssT5z_DsK8HbD2sPcUIDfQ7zmBarMYv)
@@ -47,6 +57,10 @@
 
 - [Natural Language Processing (NLP) Zero to Hero](https://www.youtube.com/playlist?list=PLQY2H8rRoyvzDbLUZkbudP-MFQZwNmU4S) by TensorFlow
 - [Zero to Hero: NLP with Tensorflow and Keras (GDG Sofia meetup)](https://www.youtube.com/watch?v=ECRUJTKuKKs)
+
+## Web Sites
+
+- [Natural Language Processing](https://paperswithcode.com/area/natural-language-processing) on Papers with Code
 
 ## Atricles
 

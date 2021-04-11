@@ -1,16 +1,26 @@
 # Topic Modeling
 
+
 Topic modelling is an unsupervised machine learning method that **helps us discover hidden semantic structures in a paper**, that allows us to learn topic representations of papers in a corpus. The model can be applied to any kinds of labels on documents, such as tags on posts on the website.
 
 > Ещё можно называть мягкой би-кластеризацией
 
+- [Topic Modeling](https://paperswithcode.com/task/topic-models) on Papers with Code
+- [Topic Modeling](https://stackoverflow.com/questions/tagged/topic-modeling) on StackOverflow
+
+
 > Dataset for this task:
   > - [A Million News Headlines](https://www.kaggle.com/therohk/million-headlines) - News headlines published over a period of 18 Years 
   
+## Useful Articles 
+
 - [Topic Modeling with LSA, PLSA, LDA & lda2Vec](https://medium.com/nanonets/topic-modeling-with-lsa-psla-lda-and-lda2vec-555ff65b0b05)
 - [Topic Modeling with Gensim (Python)](https://www.machinelearningplus.com/nlp/topic-modeling-gensim-python/#18dominanttopicineachsentence)
 - [Topic Modeling in Python](https://ourcodingclub.github.io/tutorials/topic-modelling-python/)
 - [Topic modeling visualization – How to present the results of LDA models?](https://www.machinelearningplus.com/nlp/topic-modeling-visualization-how-to-present-results-lda-models/)
+
+
+______________________________________________________________
 
 - классификация и категоризация документов
 - тематическая сегментация документов
@@ -118,6 +128,7 @@ In practice, a high alpha-value will lead to documents being more similar in ter
 
 <img src="https://github.com/ElizaLo/NLP-Natural-Language-Processing/blob/master/img/formula_15.png" width="606" height="502">
 
+# Semi-Supervised Topic Modeling
 
 ## Guided Latent Dirichlet Allocation (LDA)
 
@@ -183,6 +194,30 @@ The package that this is built of off is LDA and it installed with no issue. I m
 
 4. Profit...
 
+
+## Anchored CorEx: Hierarchical Topic Modeling with Minimal Domain Knowledge (2017)
+
+**Cor**relation **Ex**planation (**CorEx**) is a topic model that yields rich topics that are maximally informative about a set of documents. The advantage of using CorEx versus other topic models is that it can be easily run as an unsupervised, semi-supervised, or hierarchical topic model depending on a user's needs. For semi-supervision, CorEx allows a user to integrate their domain knowledge via **"anchor words"**. This integration is flexible and allows the user to guide the topic model in the direction of those words. This allows for creative strategies that promote topic representation, separability, and aspects. More generally, this implementation of CorEx is good for clustering any sparse binary data.
+
+- **Paper**: Gallagher, R. J., Reing, K., Kale, D., and Ver Steeg, G. [**"Anchored Correlation Explanation: Topic Modeling with Minimal Domain Knowledge"**](https://www.transacl.org/ojs/index.php/tacl/article/view/1244). Transactions of the Association for Computational Linguistics (TACL), 2017.
+- [GitHub repository](https://github.com/gregversteeg/corex_topic)
+- [Example Notebook](https://github.com/gregversteeg/corex_topic/blob/master/corextopic/example/corex_topic_example.ipynb)
+- [PyPI page for CorEx](https://pypi.org/project/corextopic/)
+- [Anchored Correlation Explanation: Topic Modeling With Minimal Domain Knowledge (TACL) : Ryan J. Gallagher, Kyle Reing, David Kal](https://vimeo.com/276403824) at ACL Performance
+
+
+### Modifications of CorEx
+
+- [Bio CorEx: recover latent factors with Correlation Explanation (CorEx)](https://github.com/gregversteeg/bio_corex)
+- [Correlation Explanation Methods](https://github.com/hrayrhar/T-CorEx)
+	- Linear CorEx
+	- T-CorEx
+- [Latent Factor Models Based on Linear Total Correlation Explanation (CorEx)](https://github.com/gregversteeg/LinearCorex)
+
+
+### Useful Articles 
+
+- [Interactive Search using BioBERT and CorEx Topic Modeling](https://www.kaggle.com/jdparsons/biobert-corex-topic-search)
 
 
 ## Regulariazation

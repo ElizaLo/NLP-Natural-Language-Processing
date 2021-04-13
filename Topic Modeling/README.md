@@ -9,6 +9,16 @@ Topic modelling is an unsupervised machine learning method that **helps us disco
 - [Topic Modeling](https://stackoverflow.com/questions/tagged/topic-modeling) on StackOverflow
 
 
+### Available Models
+
+- **Unsupervised**
+	- Latent Dirichlet Allocation (LDA)
+	- Expectation–maximization algorithm (EM Algorithm)
+- **Sepervised or semi-supervised**
+	- Guided Latent Dirichlet Allocation (Guided LDA)
+	- Anchored CorEx: Hierarchical Topic Modeling with Minimal Domain Knowledge (CorEx)
+
+
 > Dataset for this task:
   > - [A Million News Headlines](https://www.kaggle.com/therohk/million-headlines) - News headlines published over a period of 18 Years 
   
@@ -93,6 +103,10 @@ ______________________________________________________________
 
 ##  Latent Dirichlet Allocation (LDA)
 
+- **Generative model**
+
+### Articles
+
 - [Topic Modelling in Python with NLTK and Gensim](https://towardsdatascience.com/topic-modelling-in-python-with-nltk-and-gensim-4ef03213cd21)
 - [Topic Modeling and Latent Dirichlet Allocation (LDA) in Python](https://towardsdatascience.com/topic-modeling-and-latent-dirichlet-allocation-in-python-9bf156893c24)
 - [Topic Modelling in Python with NLTK and Gensim](https://towardsdatascience.com/topic-modelling-in-python-with-nltk-and-gensim-4ef03213cd21)
@@ -127,6 +141,7 @@ In practice, a high alpha-value will lead to documents being more similar in ter
 
 
 <img src="https://github.com/ElizaLo/NLP-Natural-Language-Processing/blob/master/img/formula_15.png" width="606" height="502">
+
 
 # Semi-Supervised Topic Modeling
 

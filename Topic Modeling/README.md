@@ -9,11 +9,13 @@ Topic modelling is an unsupervised machine learning method that **helps us disco
 - [Topic Modeling](https://stackoverflow.com/questions/tagged/topic-modeling) on StackOverflow
 
 
-### Available Models
+## Models
 
 - **Unsupervised**
 	- Latent Dirichlet Allocation (LDA)
 	- Expectation–maximization algorithm (EM Algorithm)
+	- Probabilistic latent semantic analysis (PLSA)
+	- LDA2Vec
 - **Sepervised or semi-supervised**
 	- Guided Latent Dirichlet Allocation (Guided LDA)
 	- Anchored CorEx: Hierarchical Topic Modeling with Minimal Domain Knowledge (CorEx)
@@ -24,7 +26,7 @@ Topic modelling is an unsupervised machine learning method that **helps us disco
   
 ## Useful Articles 
 
-- [Topic Modeling with LSA, PLSA, LDA & lda2Vec](https://medium.com/nanonets/topic-modeling-with-lsa-psla-lda-and-lda2vec-555ff65b0b05)
+- [Topic Modeling with LSA, PLSA, LDA & Lda2Vec](https://medium.com/nanonets/topic-modeling-with-lsa-psla-lda-and-lda2vec-555ff65b0b05)
 - [Topic Modeling with Gensim (Python)](https://www.machinelearningplus.com/nlp/topic-modeling-gensim-python/#18dominanttopicineachsentence)
 - [Topic Modeling in Python](https://ourcodingclub.github.io/tutorials/topic-modelling-python/)
 - [Topic modeling visualization – How to present the results of LDA models?](https://www.machinelearningplus.com/nlp/topic-modeling-visualization-how-to-present-results-lda-models/)

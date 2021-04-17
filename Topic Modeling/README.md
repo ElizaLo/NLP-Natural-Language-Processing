@@ -16,6 +16,7 @@ Topic modelling is an unsupervised machine learning method that **helps us disco
 	- Expectation–maximization algorithm (EM Algorithm)
 	- Probabilistic latent semantic analysis (PLSA)
 	- LDA2Vec
+	- Sentence-BERT (SBERT)
 - **Sepervised or semi-supervised**
 	- Guided Latent Dirichlet Allocation (Guided LDA)
 	- Anchored CorEx: Hierarchical Topic Modeling with Minimal Domain Knowledge (CorEx)

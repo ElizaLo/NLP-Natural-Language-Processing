@@ -35,6 +35,10 @@
   - [Natural Language Processing](https://www.coursera.org/learn/language-processing) by National Research University Higher School of Economics (via Coursera)
   - [Applied Natural Language Processing](http://people.ischool.berkeley.edu/~dbamman/info256.html) by UC Berkeley
   - [Advanced Methods in Natural Language Processing](https://www.cs.tau.ac.il/~joberant/teaching/nlp_spring_2019/index.html) by Tel Aviv University
+  - [Text Retrieval and Search Engines [FULL COURSE] | UIUC](https://www.youtube.com/playlist?list=PLLssT5z_DsK8Jk8mpFc_RPzn2obhotfDO)
+    - This course will cover search engine technologies, which play an important role in any data mining applications involving text data for two reasons. First, while the raw data may be large for any particular problem, it is often a relatively small subset of the data that are relevant, and a search engine is an essential tool for quickly discovering a small subset of relevant text data in a large text collection. Second, search engines are needed to help analysts interpret any patterns discovered in the data by allowing them to examine the relevant original text data to make sense of any discovered pattern. You will learn the basic concepts, principles, and the major techniques in text retrieval, which is the underlying science of search engines. 
+  - [Text Mining and Analytics [FULL COURSE] | UIUC](https://www.youtube.com/playlist?list=PLLssT5z_DsK8Xwnh_0bjN4KNT81bekvtt)
+  - [Mining Massive Datasets - Stanford University [FULL COURSE]](https://www.youtube.com/playlist?list=PLLssT5z_DsK9JDLcT8T62VtzwyW9LNepV)
   - Coursera:
     - [Специализация Обработка текстов, написанных на естественных языках](https://www.coursera.org/specializations/natural-language-processing?utm_source=deeplearningai&utm_medium=institutions&utm_content=NLP_6/17_ppt#howItWorks)
     - [Text Mining](https://www.coursera.org/learn/text-mining) (Анализ текстовой информации и аналитика)
@@ -55,12 +59,16 @@
 
 ## YouTube 
 
+- [ACL](https://vimeo.com/aclweb) at Vimeo
 - [Natural Language Processing (NLP) Zero to Hero](https://www.youtube.com/playlist?list=PLQY2H8rRoyvzDbLUZkbudP-MFQZwNmU4S) by TensorFlow
 - [Zero to Hero: NLP with Tensorflow and Keras (GDG Sofia meetup)](https://www.youtube.com/watch?v=ECRUJTKuKKs)
 
 ## Web Sites
 
 - [Natural Language Processing](https://paperswithcode.com/area/natural-language-processing) on Papers with Code
+- [Chris McCormick](https://mccormickml.com) Blog
+  - [ChrisMcCormickAI](https://www.youtube.com/channel/UCoRX98PLOsaN8PtekB9kWrw/videos) YouTube Channel
+-  
 
 ## Atricles
 

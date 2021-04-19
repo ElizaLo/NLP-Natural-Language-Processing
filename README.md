@@ -15,7 +15,7 @@
 > Folders with all materials for specific task/domain
 
 - [Sentiment Analysis](https://github.com/ElizaLo/NLP-Natural-Language-Processing/tree/master/Sentiment%20Analysis)
-- [Text Classification](https://github.com/ElizaLo/NLP-Natural-Language-Processing/tree/master/Text%20Classification)
+- [Text Classification](https://github.com/ElizaLo/NLP-Natural-Language-Processing/tree/master/Text%20Classification%20)
 - [Topic Modeling](https://github.com/ElizaLo/NLP-Natural-Language-Processing/tree/master/Topic%20Modeling)
 - [Word Embedings](https://github.com/ElizaLo/NLP-Natural-Language-Processing/tree/master/Word%20Embedings)
 

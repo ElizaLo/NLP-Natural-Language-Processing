@@ -24,3 +24,11 @@ In the hands-on component of this project, we will be focused on applying a BERT
 4. For more advanced learners, here's the original BERT paper: [BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding](https://arxiv.org/abs/1810.04805)
 
 5. (Optional) [Sentiment Analysis with Deep Learning using BERT](https://www.coursera.org/projects/sentiment-analysis-bert) (PyTorch)
+
+
+
+Inputs to BERT have to be tokenized before inference. In what order are the following steps supposed to be performed?
+
+1. Split input string into tokens
+2. Append [CLS] and prepend [SEP] tokens
+3. Substitute tokens with their ids

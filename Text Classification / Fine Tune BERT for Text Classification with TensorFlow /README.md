@@ -17,13 +17,15 @@ In the hands-on component of this project, we will be focused on applying a BERT
 
 1. [The Illustrated Transformer (Jay Alammar)](https://jalammar.github.io/illustrated-transformer/)
 
-2. [The Illustrated BERT, ELMo, and co. (How NLP Cracked Transfer Learning)](https://jalammar.github.io/illustrated-bert/)
+2. [Visual Guide to Using BERT for the First Time](https://jalammar.github.io/a-visual-guide-to-using-bert-for-the-first-time/)
 
-3. [The Annotated Transformer (Harvard NLP)](https://nlp.seas.harvard.edu/2018/04/03/attention.html)
+3. [The Illustrated BERT, ELMo, and co. (How NLP Cracked Transfer Learning)](https://jalammar.github.io/illustrated-bert/)
 
-4. For more advanced learners, here's the original BERT paper: [BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding](https://arxiv.org/abs/1810.04805)
+4. [The Annotated Transformer (Harvard NLP)](https://nlp.seas.harvard.edu/2018/04/03/attention.html)
 
-5. (Optional) [Sentiment Analysis with Deep Learning using BERT](https://www.coursera.org/projects/sentiment-analysis-bert) (PyTorch)
+5. For more advanced learners, here's the original BERT paper: [BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding](https://arxiv.org/abs/1810.04805)
+
+6. (Optional) [Sentiment Analysis with Deep Learning using BERT](https://www.coursera.org/projects/sentiment-analysis-bert) (PyTorch)
 
 
 

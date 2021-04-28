@@ -69,7 +69,7 @@
 - [Natural Language Processing](https://paperswithcode.com/area/natural-language-processing) on Papers with Code
 - [Chris McCormick](https://mccormickml.com) Blog
   - [ChrisMcCormickAI](https://www.youtube.com/channel/UCoRX98PLOsaN8PtekB9kWrw/videos) YouTube Channel
--  
+- [The NLP Index](https://index.quantumstat.com)
 
 ## Atricles
 

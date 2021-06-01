@@ -14,6 +14,8 @@
 
 > Folders with all materials for specific task/domain
 
+- [Knowledge Graph](https://github.com/ElizaLo/NLP-Natural-Language-Processing/tree/master/Knowledge%20Graph)
+- [Ontologies](https://github.com/ElizaLo/NLP-Natural-Language-Processing/tree/master/Ontologies)
 - [Sentiment Analysis](https://github.com/ElizaLo/NLP-Natural-Language-Processing/tree/master/Sentiment%20Analysis)
 - [Text Classification](https://github.com/ElizaLo/NLP-Natural-Language-Processing/tree/master/Text%20Classification%20)
 - [Topic Modeling](https://github.com/ElizaLo/NLP-Natural-Language-Processing/tree/master/Topic%20Modeling)

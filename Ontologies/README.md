@@ -22,3 +22,12 @@ The domain ontology tells people which are the main concepts of a domain, how ar
 ## List of Ontologies
 
 - [List of all ontologies in OLS](https://www.ebi.ac.uk/ols/ontologies)
+- Google Product Taxonomy:
+  - [google_product_category](https://support.google.com/merchants/answer/6324436?hl=en)
+  - [Visualised](http://vocabulary.semantic-web.at/GoogleProductTaxonomy.html)
+- [NAPCS – North American Product Classification System](https://www.census.gov/newsroom/press-releases/2020/north-american-product-classification-codes.html)
+
+### Knowledge models:
+
+- [FOAF](http://xmlns.com/foaf/spec/) - This specification describes the FOAF language, defined as a dictionary of named properties and classes using W3C's RDF technology
+- [Schema.org](https://schema.org) - Schema.org is a collaborative, community activity with a mission to create, maintain, and promote schemas for structured data on the Internet, on web pages, in email messages, and beyond.

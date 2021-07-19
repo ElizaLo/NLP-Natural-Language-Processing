@@ -19,3 +19,4 @@
 ## Few-Shot Text Classification
 
 - [Few-Shot Text Classification](https://paperswithcode.com/task/few-shot-text-classification#code) om Papers With Code
+- [Few-Shot Text Classification](https://few-shot-text-classification.fastforwardlabs.com)

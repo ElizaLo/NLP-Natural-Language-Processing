@@ -29,6 +29,7 @@ Topic modelling is an unsupervised machine learning method that **helps us disco
 
 - [Latent Dirichlet Allocation (LDA) and Topic modeling: models, applications, a survey](https://paperswithcode.com/paper/171104305/review/)
 - [Bag of Tricks for Efficient Text Classification](https://arxiv.org/abs/1607.01759)
+- [Incorporating Lexical Priors into Topic Models](https://aclanthology.org/E12-1021.pdf)
 
 ## Articles 
 
@@ -39,6 +40,7 @@ Topic modelling is an unsupervised machine learning method that **helps us disco
 		-  Some other ideas that have cropped up are leveraging a **concept ontology** (or **word embedding**) to enhance the depth of my seed words, synthetically duplicating the curated documents to increase the size of the test set (to make a training set for supervised learning), or applying **transfer learning** from a large, external corpus and hope that the topics align with the internal business topics. And, of course, there’s the world of **deep learning**.
 		-  Other things I plan to try with my data set (other than continue to lobby for more, better data) are **hierarchical agglomerative clustering**, multiple individual binary classifiers, and a series of hierarchical classifiers (we have learned that certain topics are linked to certain countries, which we have been able to tag with >90% accuracy in these same documents). The most promising seems to be using business knowledge to narrow down the number of possible topics (from 26 to 10 or 11) and then attempt the classification.
 		-  So each document was tagged (albeit potentially incorrectly) with multiple tags. It ranged from 2 to 10 tags per document. When I was attempting my stratified sampling (100 records per topic), I selected documents that had only 2 tags. My assumption here was that if a document only had two topics, it was going to be more specific for the topic. Using that logic, I selected 100 records per topic, where each document had two topics. I also ensured that I was doing sampling without replacement, so there was no possibility that the model was learning the same subset of frequent terms for different topics. **_For example,_** I can talk at a high level about science and politics and sports, but if I’m only talking about science, then I’m more likely to use topic-specific words more frequently. This would help bump the relative frequency of topic-specific terms, helping my model learn more clearly.
+- [Topic Modeling with Gensim (Python)](https://www.machinelearningplus.com/nlp/topic-modeling-gensim-python/)
 - [Topic Modeling with LSA, PLSA, LDA & Lda2Vec](https://medium.com/nanonets/topic-modeling-with-lsa-psla-lda-and-lda2vec-555ff65b0b05)
 - [Topic Modeling with Gensim (Python)](https://www.machinelearningplus.com/nlp/topic-modeling-gensim-python/#18dominanttopicineachsentence)
 - [Topic Modeling in Python](https://ourcodingclub.github.io/tutorials/topic-modelling-python/)
@@ -52,6 +54,7 @@ Topic modelling is an unsupervised machine learning method that **helps us disco
 - [Latent Dirichlet Allocation for Beginners: A high level intuition](https://medium.com/@pratikbarhate/latent-dirichlet-allocation-for-beginners-a-high-level-intuition-23f8a5cbad71)
 - [Topic modeling made just simple enough.](https://tedunderwood.com/2012/04/07/topic-modeling-made-just-simple-enough/)
 - [How Stuff Works: A Comprehensive Topic Modelling Guide with NMF, LSA, PLSA, LDA & lda2vec (Part-2)](https://medium.com/@souravboss.bose/comprehensive-topic-modelling-with-nmf-lsa-plsa-lda-lda2vec-part-2-e3921e712f11)
+- [Topic Modeling with Latent Dirichlet Allocation](https://towardsdatascience.com/topic-modeling-with-latent-dirichlet-allocation-e7ff75290f8)
 
 ______________________________________________________________
 
@@ -181,7 +184,7 @@ In practice, a high alpha-value will lead to documents being more similar in ter
 
 - [How did I tackle a real-world problem with GuidedLDA?](https://medium.com/analytics-vidhya/how-i-tackled-a-real-world-problem-with-guidedlda-55ee803a6f0d)
   - [Guided LDA_6topics-4-grams](https://github.com/ShahrzadH/Insight_Project_SHV/blob/master/notebook/Guided%20LDA_6topics-4-grams.ipynb) Code Exapmle
-- 
+- [Labeled LDA + Guided LDA topic modelling](https://stackoverflow.com/questions/54814727/labeled-lda-guided-lda-topic-modelling)
 
 ### Code examples
 
@@ -327,4 +330,17 @@ So, in this case, you might be able to do to transfer learning, whereby you take
 	- [BERTopic](https://github.com/MaartenGr/BERTopic)
 		- > BERTopic is a topic modeling technique that leverages 🤗 transformers and c-TF-IDF to create dense clusters allowing for easily interpretable topics whilst keeping important words in the topic descriptions.
 	- 
+- [Short Text Topic Modeling](https://towardsdatascience.com/short-text-topic-modeling-70e50a57c883)
+	- Gibbs Sampling Dirichlet Mixture Model (GSDMM)
+		- [GSDMM: Short text clustering](https://github.com/rwalk/gsdmm)
+	- [A dirichlet multinomial mixture model-based approach for short text clustering](https://dl.acm.org/doi/10.1145/2623330.2623715)
+	- [Short Text Topic Modeling Techniques, Applications, and Performance: A Survey](https://arxiv.org/pdf/1904.07695.pdf)
+- [Probabilistic Topic Models: Expectation-Maximization Algorithm](https://www.coursera.org/lecture/text-mining/3-5-probabilistic-topic-models-expectation-maximization-algorithm-part-2-naLsv)
+- [kNN](https://stackoverflow.com/questions/16782114/topic-modelling-but-with-known-topics)
+
+
+## Tools
+
+- [pyLDAvis](https://github.com/bmabey/pyLDAvis)
+	- > Python library for interactive topic model visualization.
 - 

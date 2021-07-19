@@ -25,8 +25,19 @@ Topic modelling is an unsupervised machine learning method that **helps us disco
 > Dataset for this task:
   > - [A Million News Headlines](https://www.kaggle.com/therohk/million-headlines) - News headlines published over a period of 18 Years 
   
-## Useful Articles 
+## Papers
 
+- [Latent Dirichlet Allocation (LDA) and Topic modeling: models, applications, a survey](https://paperswithcode.com/paper/171104305/review/)
+
+## Articles 
+
+- [My First Foray into Data Science: Semi-Supervised Topic Modeling](https://www.nuwavesolutions.com/my-first-foray-into-data-science-semi-supervised-topic-modeling/)
+	- **Some key points:**
+		-  Taking 100 records from each topic to create an evenly distributed training data set increased my accuracy by at least 10%. 
+		-  Here are a few other hyperparameters to tune (alpha, beta, etc.), and I can always gather a larger quasi-stratified sample to throw at the model (keeping in mind that I can’t be sure exactly how evenly distributed it is).
+		-  Some other ideas that have cropped up are leveraging a **concept ontology** (or **word embedding**) to enhance the depth of my seed words, synthetically duplicating the curated documents to increase the size of the test set (to make a training set for supervised learning), or applying **transfer learning** from a large, external corpus and hope that the topics align with the internal business topics. And, of course, there’s the world of **deep learning**.
+		-  Other things I plan to try with my data set (other than continue to lobby for more, better data) are **hierarchical agglomerative clustering**, multiple individual binary classifiers, and a series of hierarchical classifiers (we have learned that certain topics are linked to certain countries, which we have been able to tag with >90% accuracy in these same documents). The most promising seems to be using business knowledge to narrow down the number of possible topics (from 26 to 10 or 11) and then attempt the classification.
+		-  So each document was tagged (albeit potentially incorrectly) with multiple tags. It ranged from 2 to 10 tags per document. When I was attempting my stratified sampling (100 records per topic), I selected documents that had only 2 tags. My assumption here was that if a document only had two topics, it was going to be more specific for the topic. Using that logic, I selected 100 records per topic, where each document had two topics. I also ensured that I was doing sampling without replacement, so there was no possibility that the model was learning the same subset of frequent terms for different topics. **_For example,_** I can talk at a high level about science and politics and sports, but if I’m only talking about science, then I’m more likely to use topic-specific words more frequently. This would help bump the relative frequency of topic-specific terms, helping my model learn more clearly.
 - [Topic Modeling with LSA, PLSA, LDA & Lda2Vec](https://medium.com/nanonets/topic-modeling-with-lsa-psla-lda-and-lda2vec-555ff65b0b05)
 - [Topic Modeling with Gensim (Python)](https://www.machinelearningplus.com/nlp/topic-modeling-gensim-python/#18dominanttopicineachsentence)
 - [Topic Modeling in Python](https://ourcodingclub.github.io/tutorials/topic-modelling-python/)
@@ -237,6 +248,12 @@ The package that this is built of off is LDA and it installed with no issue. I m
 
 - [Interactive Search using BioBERT and CorEx Topic Modeling](https://www.kaggle.com/jdparsons/biobert-corex-topic-search)
 
+### Issues on GitHub
+
+- Update original model with the new data → https://github.com/gregversteeg/corex_topic/issues/31
+- Test the model on new data → https://github.com/gregversteeg/corex_topic/issues/24
+- How change the model, in particular, recalculation of probability estimates document-topic → https://github.com/gregversteeg/corex_topic/issues/33
+- 
 
 ## Regulariazation
 

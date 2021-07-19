@@ -28,6 +28,7 @@ Topic modelling is an unsupervised machine learning method that **helps us disco
 ## Papers
 
 - [Latent Dirichlet Allocation (LDA) and Topic modeling: models, applications, a survey](https://paperswithcode.com/paper/171104305/review/)
+- [Bag of Tricks for Efficient Text Classification](https://arxiv.org/abs/1607.01759)
 
 ## Articles 
 
@@ -318,4 +319,12 @@ The original paper: [Mixing Dirichlet Topic Models and Word Embeddings to Make l
 - [Bayesian topic modeling](https://tedunderwood.com/category/methodology/topic-modeling/bayesian-topic-modeling/)
 - [LDA in Python – How to grid search best topic models?](https://www.machinelearningplus.com/nlp/topic-modeling-python-sklearn-examples/#10diagnosemodelperformancewithperplexityandloglikelihood)
 	- > Python’s Scikit Learn provides a convenient interface for topic modeling using algorithms like Latent Dirichlet allocation(LDA), LSI and Non-Negative Matrix Factorization. In this tutorial, you will learn how to build the best possible LDA topic model and explore how to showcase the outputs as meaningful results.
+- Topic Modeling with BERT
+	- > Topic modelling on the other hand focuses on categorising texts into particular topics. For this task, it is arguably arbitrary to use a language model since topic modelling focuses more on categorisation of texts, rather than the fluency of those texts. 
+Thinking about it though, as well as the suggest given above, you could also develop separate language models, where for example, one is trained on texts within topic A, another in topic B, etc. Then you could categorise texts by outputting a probability distribution over topics. 
+So, in this case, you might be able to do to transfer learning, whereby you take the pre-trained BERT model, add any additional layers, including a final output softmax layer, which produces the probability distribution over topics. To re-train the model, you essentially freeze the parameters within the BERT model itself and only train the additional layers you added
+	- [Topic Modeling with BERT](https://towardsdatascience.com/topic-modeling-with-bert-779f7db187e6)
+	- [BERTopic](https://github.com/MaartenGr/BERTopic)
+		- > BERTopic is a topic modeling technique that leverages 🤗 transformers and c-TF-IDF to create dense clusters allowing for easily interpretable topics whilst keeping important words in the topic descriptions.
+	- 
 - 

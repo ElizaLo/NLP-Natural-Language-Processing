@@ -42,7 +42,15 @@ Topic modelling is an unsupervised machine learning method that **helps us disco
 - [Topic Modeling with Gensim (Python)](https://www.machinelearningplus.com/nlp/topic-modeling-gensim-python/#18dominanttopicineachsentence)
 - [Topic Modeling in Python](https://ourcodingclub.github.io/tutorials/topic-modelling-python/)
 - [Topic modeling visualization – How to present the results of LDA models?](https://www.machinelearningplus.com/nlp/topic-modeling-visualization-how-to-present-results-lda-models/)
-
+- [2 latent methods for dimension reduction and topic modeling](https://towardsdatascience.com/2-latent-methods-for-dimension-reduction-and-topic-modeling-20ff6d7d547)
+	- Latent Semantic Analysis (LSA)
+	- Latent Dirichlet Allocation (LDA)
+- [Topic Modelling using Word Embeddings and Latent Dirichlet Allocation](https://medium.com/analytics-vidhya/topic-modelling-using-word-embeddings-and-latent-dirichlet-allocation-3494778307bc)
+	- Clustering using ‘wordtovec’ embeddings
+	- Clustering using LDA ( Latent Dirichlet Analysis)
+- [Latent Dirichlet Allocation for Beginners: A high level intuition](https://medium.com/@pratikbarhate/latent-dirichlet-allocation-for-beginners-a-high-level-intuition-23f8a5cbad71)
+- [Topic modeling made just simple enough.](https://tedunderwood.com/2012/04/07/topic-modeling-made-just-simple-enough/)
+- [How Stuff Works: A Comprehensive Topic Modelling Guide with NMF, LSA, PLSA, LDA & lda2vec (Part-2)](https://medium.com/@souravboss.bose/comprehensive-topic-modelling-with-nmf-lsa-plsa-lda-lda2vec-part-2-e3921e712f11)
 
 ______________________________________________________________
 
@@ -273,3 +281,41 @@ The package that this is built of off is LDA and it installed with no issue. I m
 <img src="https://github.com/ElizaLo/NLP-Natural-Language-Processing/blob/master/img/formula_23.png" width="610" height="515">
 <img src="https://github.com/ElizaLo/NLP-Natural-Language-Processing/blob/master/img/formula_24.png" width="593" height="430">
 <img src="https://github.com/ElizaLo/NLP-Natural-Language-Processing/blob/master/img/formula_25.png" width="598" height="484">
+
+## Other models, tools and possible solutions
+
+- [tomotopy](https://github.com/bab2min/tomotopy)
+	- > tomotopy is a Python extension of tomoto (Topic Modeling Tool) which is a Gibbs-sampling based topic model library written in C++. It utilizes a vectorization of modern CPUs for maximizing speed. The current version of tomoto supports several major topic models
+	- [tomotopy API documentation (v0.11.1)](https://bab2min.github.io/tomotopy/v0.11.1/en/) 
+- [BigARTM](https://bigartm.readthedocs.io/en/stable/)
+	- > BigARTM is a powerful tool for topic modeling based on a novel technique called Additive Regularization of Topic Models. This technique effectively builds multi-objective models by adding the weighted sums of regularizers to the optimization criterion. BigARTM is known to combine well very different objectives, including sparsing, smoothing, topics decorrelation and many others. Such combination of regularizers significantly improves several quality measures at once almost without any loss of the perplexity.
+	- [BigARTM Documentation](https://bigartm.readthedocs.io/_/downloads/en/v0.8.3/pdf/)
+	- [GitHub](https://github.com/bigartm/bigartm)
+	- [Пример использования библиотеки BigARTM для построения тематической модели](https://www.coursera.org/lecture/unsupervised-learning/primier-ispol-zovaniia-bibliotieki-bigartm-dlia-postroieniia-tiematichieskoi-IOfXa)
+	- [Hierarchical topic modeling with BigARTM library](https://towardsdatascience.com/hierarchical-topic-modeling-with-bigartm-library-6f2ff730689f)
+- Stochastic block model
+	- [A network approach to topic models](https://advances.sciencemag.org/content/4/7/eaaq1360)
+	- [Bayesian Core-Periphery Stochastic Block Models](https://ryanjgallagher.github.io/code/sbms/overview)
+		- > Core-periphery structure is one of the most ubiquitous mesoscale patterns in networks. This code implements two Bayesian stochastic block models in Python for modeling hub-and-spoke and layered core-periphery structures. It can be used for probabilistic inference of core-periphery structure and model selection between the two core-periphery characterizations.
+		- [GitHub](https://github.com/ryanjgallagher/core_periphery_sbm)
+	- [TopSBM: Topic Models based on Stochastic Block Models](https://topsbm.github.io)
+	- [hSBM_Topicmodel](https://github.com/martingerlach/hSBM_Topicmodel)
+		- >  A tutorial for topic-modeling with hierarchical stochastic blockmodels using graph-tool.
+	- [A scikit-learn extension for Topic Models based on Stochastic Block Models](https://github.com/TopSBM/topsbm)
+	- 
+- [Neural Topic Model](https://github.com/zll17/Neural_Topic_Models)
+- [LDA2vec: Word Embeddings in Topic Models](https://www.datacamp.com/community/tutorials/lda2vec-topic-model)
+	- [Introducing our Hybrid lda2vec Algorithm](https://multithreaded.stitchfix.com/blog/2016/05/27/lda2vec/#topic=38&lambda=1&term=)
+	- [lda2vec: Tools for interpreting natural language](https://github.com/cemoody/lda2vec)
+	- [lda2vec-tf](https://github.com/meereeum/lda2vec-tf)
+		- > `TensorFlow` implementation of Christopher Moody's lda2vec, a hybrid of Latent Dirichlet Allocation & word2vec
+	- [lda2vec](https://github.com/TropComplique/lda2vec-pytorch)
+		- > `pytorch` implementation of Moody's lda2vec, a way of topic modeling using word embeddings.
+The original paper: [Mixing Dirichlet Topic Models and Word Embeddings to Make lda2vec](https://arxiv.org/abs/1605.02019).
+	- [lda2vec – flexible & interpretable NLP models](https://lda2vec.readthedocs.io/en/latest/?badge=latest)
+		- > An overview of the lda2vec Python module can be found here.
+	- https://nbviewer.jupyter.org/github/cemoody/lda2vec/blob/master/examples/twenty_newsgroups/lda2vec/lda2vec.ipynb
+- [Bayesian topic modeling](https://tedunderwood.com/category/methodology/topic-modeling/bayesian-topic-modeling/)
+- [LDA in Python – How to grid search best topic models?](https://www.machinelearningplus.com/nlp/topic-modeling-python-sklearn-examples/#10diagnosemodelperformancewithperplexityandloglikelihood)
+	- > Python’s Scikit Learn provides a convenient interface for topic modeling using algorithms like Latent Dirichlet allocation(LDA), LSI and Non-Negative Matrix Factorization. In this tutorial, you will learn how to build the best possible LDA topic model and explore how to showcase the outputs as meaningful results.
+- 

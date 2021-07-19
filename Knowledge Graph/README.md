@@ -17,3 +17,9 @@ Knowledge graphs are data. They have to be stored, managed, extended, quality-as
 Thus graph databases form the foundation of every knowledge graph. Typically, these are technologies based either on the **Resource Description Framework (RDF)**, a W3C standard, or on Labeled Property Graphs (LPG).
 
 In order to roll out knowledge graphs in companies, however, more than a database is required: Only with the help of components such as taxonomy and ontology editors, entity extractors, graph mappers, validation, visualization and search tools, etc. can it be ensured that a knowledge graph can be sustainably developed and managed. While graph databases are typically maintained by highly qualified data engineers or Semantic Web experts, the interfaces of the Semantic Middleware also allow people to interact with the knowledge graph who can contribute less technical knowledge instead of business and expert knowledge to the graphs.
+
+## Graph Databases
+
+- [Neo4j](https://neo4j.com/?_gl=1%2A16rmv03%2A_ga%2AOTM3OTY0NzAxLjE2MjY2OTk4Nzc.%2A_ga_DL38Q8KGQC%2AMTYyNjY5OTg3Ni4xLjEuMTYyNjcwMDA4My4w&_ga=2.37309350.780889525.1626699877-937964701.1626699877)
+  - > Neo4j gives developers and data scientists the most trusted and advanced tools to quickly build today’s intelligent applications and machine learning workflows. Available as a fully managed cloud service or self-hosted.
+- 

@@ -193,6 +193,7 @@
           - [Article at GitHub](https://github.com/ElizaLo/NLP/blob/master/Articles/Algorithms_for_Non-negative_Matrix_Factorization.pdf)
    5. **_Kullback–Leibler divergence (relative entropy)_**
        - [Wikipedia](https://en.wikipedia.org/wiki/Kullback–Leibler_divergence)
+       - [Kullback-Leibler Divergence Explained](https://www.countbayesie.com/blog/2017/5/9/kullback-leibler-divergence-explained)
    6. **_Latent Semantic Analysis (LSA)_**
        - [Wikipedia](https://en.wikipedia.org/wiki/Latent_semantic_analysis)
        - **_Probabilistic Latent Semantic Analysis (PLSA)_**

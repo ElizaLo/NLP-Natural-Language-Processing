@@ -35,3 +35,9 @@
 
 
 It needs special loss functions, sampling at training time and methods like building a stack of multiple classifiers each refining the results of previous one to solve this problem.
+
+---------------------------------
+
+## Webinars 
+
+- [Boost your Customer Experience in AEM with Auto Tagging](https://www.poolparty.biz/thank-you/Boost-your-Customer-Experience-in-AEM-with-Auto-Tagging?submissionGuid=8f44d7a0-c6a4-4203-859f-1ee70845d9ba)

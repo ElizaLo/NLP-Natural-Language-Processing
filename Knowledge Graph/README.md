@@ -28,6 +28,9 @@ In order to roll out knowledge graphs in companies, however, more than a databas
 |[GraphDB Downloads and Resources](https://graphdb.ontotext.com/)| Semantic graph databases (also called RDF triplestores)|
 |[Neo4j Graph Platform](https://neo4j.com/?_gl=1%2A16rmv03%2A_ga%2AOTM3OTY0NzAxLjE2MjY2OTk4Nzc.%2A_ga_DL38Q8KGQC%2AMTYyNjY5OTg3Ni4xLjEuMTYyNjcwMDA4My4w&_ga=2.37309350.780889525.1626699877-937964701.1626699877)| Neo4j gives developers and data scientists the most trusted and advanced tools to quickly build today’s intelligent applications and machine learning workflows. Available as a fully managed cloud service or self-hosted.|
 | [GraphDB™ Ontotext](https://www.ontotext.com/products/graphdb/)| GraphDB allows you to link diverse data, index it for semantic search and enrich it via text analysis to build big knowledge graphs.|
+|[AllegroGraph](https://allegrograph.com/products/allegrograph/)| AllegroGraph is a Horizontally Distributed, Multi-model (Document and Graph), Entity-Event Knowledge Graph technology that enables businesses to extract sophisticated decision insights and predictive analytics from their highly complex, distributed data that can’t be answered with conventional databases.|
+|[Stardog](https://www.stardog.com)|<ul><li>Stardog is the only graph platform to connect data at the compute layer instead of the storage layer.</li><li>No migrations. No rip and replace. No copies of copies of data. Just a seamless data fabric. </li><li>Stardog is the critical data infrastructure that powers your business’ apps, AI, and analytics.</li></ul>|
+|[Eclipse RDF4J](https://rdf4j.org)|Eclipse RDF4J™ is a powerful Java framework for processing and handling RDF data. This includes creating, parsing, scalable storage, reasoning and querying with RDF and Linked Data. It offers an easy-to-use API that can be connected to all leading RDF database solutions. It allows you to connect with SPARQL endpoints and create applications that leverage the power of linked data and Semantic Web.|
 
 ## Papers
 
@@ -40,6 +43,7 @@ In order to roll out knowledge graphs in companies, however, more than a databas
 | Title | Description |
 | :---:         |          :--- |
 |[Knowledge Graph & NLP Tutorial-(BERT,spaCy,NLTK)](https://www.kaggle.com/pavansanagapati/knowledge-graph-nlp-tutorial-bert-spacy-nltk) |Tutorial |
+|[Which is the best tool to build Knowledge Graph or Knowledge Tree?](https://www.quora.com/Which-is-the-best-tool-to-build-Knowledge-Graph-or-Knowledge-Tree)| |
 
 ## Courses
 
@@ -52,6 +56,11 @@ In order to roll out knowledge graphs in companies, however, more than a databas
 |[Graph Analytics for Big Data](https://www.coursera.org/learn/big-data-graph-analytics?ranMID=40328&ranEAID=SAyYsTvLiGQ&ranSiteID=SAyYsTvLiGQ-MdBZ_xdvndXDAKb7c3F0qg&siteID=SAyYsTvLiGQ-MdBZ_xdvndXDAKb7c3F0qg&utm_content=10&utm_medium=partners&utm_source=linkshare&utm_campaign=SAyYsTvLiGQ)| Want to understand your data network structure and how it changes under different conditions? Curious to know how to identify closely interacting clusters within a graph? Have you heard of the fast-growing area of graph analytics and want to learn more? This course gives you a broad overview of the field of graph analytics so you can learn new ways to model, store, retrieve and analyze graph-structured data.|
 |[Knowledge Graph solution development using TigerGraph](https://www.udemy.com/course/rapid-prototyping-to-build-knowledge-graph-solutions/?utm_source=adwords&utm_medium=udemyads&utm_campaign=LongTail_la.EN_cc.ROW&utm_content=deal4584&utm_term=_._ag_77879423894_._ad_437497333815_._kw__._de_c_._dm__._pl__._ti_dsa-1007766171032_._li_9061018_._pd__._&matchtype=b&gclid=Cj0KCQjwktKFBhCkARIsAJeDT0giKQv3Vpn8d1QOph_XL-awLsL-Re_gl1GQyTzoyea10w1ZkDdRKqIaAsqEEALw_wcB) | "Rapid Prototyping of Knowledge Graph Solutions using TigerGraph" course will help you strategize knowledge graph use cases and help you build or prototype a use case for your knowledge graph engagement.|
 |List of Knowledge Graphs  courses |<ul><li>[What online courses explain knowledge graphs in depth?](https://www.quora.com/What-online-courses-explain-knowledge-graphs-in-depth)</li><li>[Ontotext](https://www.ontotext.com/knowledge-hub/videos/)</li></ul> | 
+
+## Webinars
+
+- [PoolParty Semantic Classifier - Bringing Machine Learning, NLP and Knowledge Graphs together](https://www.youtube.com/watch?v=SU2to2SVk8M&t=1s)
+- [How to Choose The Right Database on AWS](https://www.slideshare.net/ranman96734/how-to-choose-the-right-database-on-aws-berlin-summit-2019/48) - Berlin Summit - 2019
 
 
 ## Ready Solutions

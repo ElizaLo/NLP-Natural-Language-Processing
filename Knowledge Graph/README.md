@@ -1,5 +1,7 @@
 # Knowledge Graph
 
+- [Knowledge Graphs](https://paperswithcode.com/task/knowledge-graphs) on PapersWithCode
+
 ## Knowledge Graph vs Ontology
 
 ### What is the difference?
@@ -20,6 +22,41 @@ In order to roll out knowledge graphs in companies, however, more than a databas
 
 ## Graph Databases
 
-- [Neo4j](https://neo4j.com/?_gl=1%2A16rmv03%2A_ga%2AOTM3OTY0NzAxLjE2MjY2OTk4Nzc.%2A_ga_DL38Q8KGQC%2AMTYyNjY5OTg3Ni4xLjEuMTYyNjcwMDA4My4w&_ga=2.37309350.780889525.1626699877-937964701.1626699877)
-  - > Neo4j gives developers and data scientists the most trusted and advanced tools to quickly build today’s intelligent applications and machine learning workflows. Available as a fully managed cloud service or self-hosted.
-- 
+| Title | Description |
+| :---         |          :--- |
+|[Amazon Neptune](https://aws.amazon.com/neptune/?nc1=h_ls )| [Knowledge Graphs on AWS](https://aws.amazon.com/neptune/knowledge-graphs-on-aws/)|
+|[GraphDB Downloads and Resources](https://graphdb.ontotext.com/)| Semantic graph databases (also called RDF triplestores)|
+|[Neo4j Graph Platform](https://neo4j.com/?_gl=1%2A16rmv03%2A_ga%2AOTM3OTY0NzAxLjE2MjY2OTk4Nzc.%2A_ga_DL38Q8KGQC%2AMTYyNjY5OTg3Ni4xLjEuMTYyNjcwMDA4My4w&_ga=2.37309350.780889525.1626699877-937964701.1626699877)| Neo4j gives developers and data scientists the most trusted and advanced tools to quickly build today’s intelligent applications and machine learning workflows. Available as a fully managed cloud service or self-hosted.|
+| [GraphDB™ Ontotext](https://www.ontotext.com/products/graphdb/)| GraphDB allows you to link diverse data, index it for semantic search and enrich it via text analysis to build big knowledge graphs.|
+
+## Papers
+
+| Title | Description |
+| :---:         |          :--- |
+|[Enriching BERT with Knowledge Graph Embeddings for Document Classification](https://arxiv.org/abs/1909.08402) | In this paper, we focus on the classification of books using short descriptive texts (cover blurbs) and additional metadata. Building upon BERT, a deep neural language model, we demonstrate how to combine text representations with metadata and knowledge graph embeddings, which encode author information. Compared to the standard BERT approach we achieve considerably better results for the classification task. For a more coarse-grained classification using eight labels we achieve an F1- score of 87.20, while a detailed classification using 343 labels yields an F1-score of 64.70. We make the source code and trained models of our experiments publicly available.|
+
+## Articles
+
+| Title | Description |
+| :---:         |          :--- |
+|[Knowledge Graph & NLP Tutorial-(BERT,spaCy,NLTK)](https://www.kaggle.com/pavansanagapati/knowledge-graph-nlp-tutorial-bert-spacy-nltk) |Tutorial |
+
+## Courses
+
+| Title | Description |
+| :---:         |          :--- |
+|[CS 520 Knowledge Graphs](https://web.stanford.edu/class/cs520/)| Knowledge graphs have emerged as a compelling abstraction for organizing world's structured knowledge over the internet, capturing relationships among key entities of interest to enterprises, and a way to integrate information extracted from multiple data sources. Knowledge graphs have also started to play a central role in machine learning and natural language processing as a method to incorporate world knowledge, as a target knowledge representation for extracted knowledge, and for explaining what is being learned. This class is a graduate level research seminar and will include lectures on knowledge graph topics (e.g., data models, creation, inference, access) and invited lectures from prominent researchers and industry practitioners. The seminar emphasizes synthesis of AI, database systems and HCI in creating integrated intelligent systems centered around knowledge graphs. |
+|[Knowledge Graphs](https://open.hpi.de/courses/knowledgegraphs2020)| In this course you will learn what is necessary to design, implement, and use knowledge graphs. The focus of this course will be on basic semantic technologies including the principles of knowledge representation and symbolic AI. This includes information encoding via RDF triples, knowledge representation via ontologies with OWL, efficiently querying knowledge graphs via SPARQL, latent representation of knowledge in vector space, as well as knowledge graph applications in innovative information systems, as e.g., semantic and exploratory search.|
+|[KG Course 2021](https://migalkin.github.io/kgcourse2021/)| Курс лекций по Графам Знаний (Knowledge Graphs). **Graph Representation Learning (GRL)** - одна из самых быстро растущих тем в академическом и деловом сообществах. В настоящее время на русском языке крайне мало структурированной информации и обучающих курсов по основам и использованию Knowledge Graphs (KGs). Мы создали этот курс для всех желающих познакомиться с KGs, релевантными технологиями и перспективными применениями. Концептуально, курс состоит из двух частей - способов работы с KGs. <ul><li>Символьное представление: онтологии, логика, запросы, СУБД;</li><li>Векторное представление: эмбеддинги, graph mining, графовые нейросети, приложения в NLP и Graph ML.</li></ul>|
+|[Building Knowledge Graphs with Python](https://www.pluralsight.com/courses/building-knowledge-graphs-python?aid=7010a000002LUv2AAG&promo=&utm_source=non_branded&utm_medium=digital_paid_search_google&utm_campaign=XYZ_EMEA_Dynamic&utm_content=&cq_cmp=1576650371&gclid=Cj0KCQjwktKFBhCkARIsAJeDT0i54h1l8GMTgIT3VpkLsG_tMHDvZE5IbEIDQwm774sOveLHqnu1BRYaAu9yEALw_wcB) | This course will teach you how to create knowledge graphs out of textual information. It will show you how to extract information such as topics and entities and uncover how they are linked into so-called knowledge graphs.|
+|[Graph Analytics for Big Data](https://www.coursera.org/learn/big-data-graph-analytics?ranMID=40328&ranEAID=SAyYsTvLiGQ&ranSiteID=SAyYsTvLiGQ-MdBZ_xdvndXDAKb7c3F0qg&siteID=SAyYsTvLiGQ-MdBZ_xdvndXDAKb7c3F0qg&utm_content=10&utm_medium=partners&utm_source=linkshare&utm_campaign=SAyYsTvLiGQ)| Want to understand your data network structure and how it changes under different conditions? Curious to know how to identify closely interacting clusters within a graph? Have you heard of the fast-growing area of graph analytics and want to learn more? This course gives you a broad overview of the field of graph analytics so you can learn new ways to model, store, retrieve and analyze graph-structured data.|
+|[Knowledge Graph solution development using TigerGraph](https://www.udemy.com/course/rapid-prototyping-to-build-knowledge-graph-solutions/?utm_source=adwords&utm_medium=udemyads&utm_campaign=LongTail_la.EN_cc.ROW&utm_content=deal4584&utm_term=_._ag_77879423894_._ad_437497333815_._kw__._de_c_._dm__._pl__._ti_dsa-1007766171032_._li_9061018_._pd__._&matchtype=b&gclid=Cj0KCQjwktKFBhCkARIsAJeDT0giKQv3Vpn8d1QOph_XL-awLsL-Re_gl1GQyTzoyea10w1ZkDdRKqIaAsqEEALw_wcB) | "Rapid Prototyping of Knowledge Graph Solutions using TigerGraph" course will help you strategize knowledge graph use cases and help you build or prototype a use case for your knowledge graph engagement.|
+|List of Knowledge Graphs  courses |<ul><li>[What online courses explain knowledge graphs in depth?](https://www.quora.com/What-online-courses-explain-knowledge-graphs-in-depth)</li><li>[Ontotext](https://www.ontotext.com/knowledge-hub/videos/)</li></ul> | 
+
+
+## Ready Solutions
+
+| Title | Description |
+| :---:         |          :--- |
+|[Google Knowledge Graph Search API](https://developers.google.com/knowledge-graph)| The Knowledge Graph Search API lets you find entities in the Google Knowledge Graph. The API uses standard schema.org types and is compliant with the JSON-LD specification.|
+

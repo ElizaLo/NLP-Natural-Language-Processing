@@ -1,6 +1,7 @@
 # Knowledge Graph
 
 - [Knowledge Graphs](https://paperswithcode.com/task/knowledge-graphs) on PapersWithCode
+- [Knowledge Graph](https://stackoverflow.com/search?tab=relevance&q=knowledge%20graph) on StackOverflow
 
 ## Knowledge Graph vs Ontology
 
@@ -32,6 +33,7 @@ In order to roll out knowledge graphs in companies, however, more than a databas
 |[Stardog](https://www.stardog.com)|<ul><li>Stardog is the only graph platform to connect data at the compute layer instead of the storage layer.</li><li>No migrations. No rip and replace. No copies of copies of data. Just a seamless data fabric. </li><li>Stardog is the critical data infrastructure that powers your business’ apps, AI, and analytics.</li></ul>|
 |[Eclipse RDF4J](https://rdf4j.org)|Eclipse RDF4J™ is a powerful Java framework for processing and handling RDF data. This includes creating, parsing, scalable storage, reasoning and querying with RDF and Linked Data. It offers an easy-to-use API that can be connected to all leading RDF database solutions. It allows you to connect with SPARQL endpoints and create applications that leverage the power of linked data and Semantic Web.|
 
+
 ## Papers
 
 | Title | Description |
@@ -57,6 +59,13 @@ In order to roll out knowledge graphs in companies, however, more than a databas
 |[Knowledge Graph solution development using TigerGraph](https://www.udemy.com/course/rapid-prototyping-to-build-knowledge-graph-solutions/?utm_source=adwords&utm_medium=udemyads&utm_campaign=LongTail_la.EN_cc.ROW&utm_content=deal4584&utm_term=_._ag_77879423894_._ad_437497333815_._kw__._de_c_._dm__._pl__._ti_dsa-1007766171032_._li_9061018_._pd__._&matchtype=b&gclid=Cj0KCQjwktKFBhCkARIsAJeDT0giKQv3Vpn8d1QOph_XL-awLsL-Re_gl1GQyTzoyea10w1ZkDdRKqIaAsqEEALw_wcB) | "Rapid Prototyping of Knowledge Graph Solutions using TigerGraph" course will help you strategize knowledge graph use cases and help you build or prototype a use case for your knowledge graph engagement.|
 |List of Knowledge Graphs  courses |<ul><li>[What online courses explain knowledge graphs in depth?](https://www.quora.com/What-online-courses-explain-knowledge-graphs-in-depth)</li><li>[Ontotext](https://www.ontotext.com/knowledge-hub/videos/)</li></ul> | 
 
+## Libraries
+
+| Title | Description |
+| :---:         |          :--- |
+|[DEEP GRAPH LIBRARY](https://www.dgl.ai)|<ul><li>Build your models with PyTorch, TensorFlow or Apache MXNet.</li><li>DGL empowers a variety of domain-specific projects including DGL-KE for learning large-scale knowledge graph embeddings, DGL-LifeSci for bioinformatics and cheminformatics, and many others.</li>
+</ul> |
+
 ## Webinars
 
 - [PoolParty Semantic Classifier - Bringing Machine Learning, NLP and Knowledge Graphs together](https://www.youtube.com/watch?v=SU2to2SVk8M&t=1s)
@@ -69,3 +78,11 @@ In order to roll out knowledge graphs in companies, however, more than a databas
 | :---:         |          :--- |
 |[Google Knowledge Graph Search API](https://developers.google.com/knowledge-graph)| The Knowledge Graph Search API lets you find entities in the Google Knowledge Graph. The API uses standard schema.org types and is compliant with the JSON-LD specification.|
 
+# Knowledge Graph for Recommender Systems
+
+| Title | Description |
+| :---:         |          :--- |
+|[Knowledge Graph – A Powerful Data Science Technique to Mine Information from Text (with Python code)](https://www.analyticsvidhya.com/blog/2019/10/how-to-build-knowledge-graph-text-using-spacy/)|<ul><li>Knowledge graphs are one of the most fascinating concepts in data science<li><li>Learn how to build a knowledge graph to mine information from Wikipedia pages</li><li>You will be working hands-on in Python to build a knowledge graph using the popular spaCy library</li></ul>|
+|[Exploiting Knowledge Graph to Improve Text-based Prediction](https://ieeexplore.ieee.org/document/8622123)|As a special kind of "big data," text data can be regarded as data reported by human sensors. Since humans are far more intelligent than physical sensors, text data contains useful information and knowledge about the real world, making it possible to make predictions about real-world phenomena based on text. As all application domains involve humans, text-based prediction has widespread applications, especially for optimization of decision making. While the problem of text-based prediction resembles text classification when formulated as a supervised learning problem, it is more challenging because the variable to be predicted may not be directly derivable from the text and thus there is a semantic gap between the target variable and the surface features that are often used for representing text data in conventional approaches. In this paper, we propose to bridge this gap by using knowledge graph to construct more effective features for text representation. We propose a two-step filtering algorithm to enhance such a knowledge-aware text representation for a family of entity-centric text regression tasks where the response variable can be treated as an attribute of a group of central entities. We evaluate the proposed algorithm by using two revenue prediction tasks based on reviews. The results show that the proposed algorithm can effectively leverage knowledge graphs to construct interpretable features, leading to significant improvement of the prediction accuracy over traditional features.|
+|[Enhancing explanations in recommender systems with knowledge graphs](https://www.sciencedirect.com/science/article/pii/S1877050918316259)|Recommender systems are becoming must-have facilities on e-commerce websites to alleviate information overload and to improve user experience. One important component of such systems is the explanations of the recommendations. Existing explanation approaches have been classified by style and the classes are aligned with the ones for recommendation approaches, such as collaborative-based and content-based. Thanks to the semantically interconnected data, knowledge graphs have been boosting the development of content-based explanation approaches. However, most approaches focus on the exploitation of the structured semantic data to which recommended items are linked (e.g. actor, director, genre for movies). In this paper, we address the under-studied problem of leveraging knowledge graphs to explain the recommendations with items’ unstructured textual description data. We point out 3 shortcomings of the state of the art entity-based explanation approach: absence of entity filtering, lack of intelligibility and poor user-friendliness. Accordingly, 3 novel approaches are proposed to alleviate these shortcomings. The first approach leverages a DBpedia category tree for filtering out incorrect and irrelevant entities. The second approach increases the intelligibility of entities with the classes of an integrated ontology (DBpedia, schema.org and YAGO). The third approach explains the recommendations with the best sentences from the textual descriptions selected by means of the entities. We showcase our approaches within a tourist tour recommendation explanation scenario and present a thorough face-to-face user study with a real commercial dataset containing 1310 tours in 106 countries. We showed the advantages of the proposed explanation approaches on five quality aspects: intelligibility, effectiveness, efficiency, relevance and satisfaction.|
+|[Knowledge Graph(KG) for Recommendation System](https://techfirst.medium.com/knowledge-graph-kg-for-recommendation-system-8fe2c6cd354)|This is an introduction on how to integrate Knowledge Graph with Recommendation System.|

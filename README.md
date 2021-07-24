@@ -62,9 +62,12 @@
 
 ## YouTube 
 
-- [ACL](https://vimeo.com/aclweb) at Vimeo
-- [Natural Language Processing (NLP) Zero to Hero](https://www.youtube.com/playlist?list=PLQY2H8rRoyvzDbLUZkbudP-MFQZwNmU4S) by TensorFlow
-- [Zero to Hero: NLP with Tensorflow and Keras (GDG Sofia meetup)](https://www.youtube.com/watch?v=ECRUJTKuKKs)
+| Title | Description |
+| :---         |          :--- |
+|[ACL](https://vimeo.com/aclweb)| at Vimeo|
+|[Natural Language Processing (NLP) Zero to Hero](https://www.youtube.com/playlist?list=PLQY2H8rRoyvzDbLUZkbudP-MFQZwNmU4S)| by TensorFlow|
+|[Zero to Hero: NLP with Tensorflow and Keras (GDG Sofia meetup)](https://www.youtube.com/watch?v=ECRUJTKuKKs)| |
+|[Natural Language Processing](https://www.youtube.com/playlist?list=PL8P_Z6C4GcuWfAq8Pt6PBYlck4OprHXsw)|This content is based on Machine Learning University (MLU) Accelerated Natural Language Processing class. Slides, notebooks and datasets are available on [GitHub](https://github.com/aws-samples/aws-machine-learning-university-accelerated-nlp)|
 
 ## Web Sites
 

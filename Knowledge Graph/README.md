@@ -46,6 +46,7 @@ In order to roll out knowledge graphs in companies, however, more than a databas
 | :---:         |          :--- |
 |[Knowledge Graph & NLP Tutorial-(BERT,spaCy,NLTK)](https://www.kaggle.com/pavansanagapati/knowledge-graph-nlp-tutorial-bert-spacy-nltk) |Tutorial |
 |[Which is the best tool to build Knowledge Graph or Knowledge Tree?](https://www.quora.com/Which-is-the-best-tool-to-build-Knowledge-Graph-or-Knowledge-Tree)| |
+|[Knowledge Graphs with Machine Learning [Guide]](https://neptune.ai/blog/web-scraping-and-knowledge-graphs-machine-learning)| In this article, I’m going to explain how to scrape publicly available data and build knowledge graphs from scraped data, along with some key concepts from Natural Language Processing (NLP). |
 
 ## Courses
 

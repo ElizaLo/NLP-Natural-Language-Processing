@@ -59,6 +59,8 @@
 - [Natural Language Processing with Python – Analyzing Text with the Natural Language Toolkit](http://www.nltk.org/book/), Steven Bird, Ewan Klein, and Edward Loper
 - [Speech and Language Processing (3rd ed. draft)](https://web.stanford.edu/~jurafsky/slp3/), Dan Jurafsky and James H. Martin
 - [Neural Network Methods for Natural Language Processing](http://www.morganclaypoolpublishers.com/catalog_Orig/samples/9781627052955_sample.pdf)
+- [Natural Language Processing with Python – Analyzing Text with the Natural Language Toolkit](http://www.nltk.org/book/)
+  - [NLTK_book](https://github.com/nltk/nltk_book) on GitHub
 
 ## YouTube 
 

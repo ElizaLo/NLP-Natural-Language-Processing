@@ -60,6 +60,13 @@ In order to roll out knowledge graphs in companies, however, more than a databas
 |[Knowledge Graph solution development using TigerGraph](https://www.udemy.com/course/rapid-prototyping-to-build-knowledge-graph-solutions/?utm_source=adwords&utm_medium=udemyads&utm_campaign=LongTail_la.EN_cc.ROW&utm_content=deal4584&utm_term=_._ag_77879423894_._ad_437497333815_._kw__._de_c_._dm__._pl__._ti_dsa-1007766171032_._li_9061018_._pd__._&matchtype=b&gclid=Cj0KCQjwktKFBhCkARIsAJeDT0giKQv3Vpn8d1QOph_XL-awLsL-Re_gl1GQyTzoyea10w1ZkDdRKqIaAsqEEALw_wcB) | "Rapid Prototyping of Knowledge Graph Solutions using TigerGraph" course will help you strategize knowledge graph use cases and help you build or prototype a use case for your knowledge graph engagement.|
 |List of Knowledge Graphs  courses |<ul><li>[What online courses explain knowledge graphs in depth?](https://www.quora.com/What-online-courses-explain-knowledge-graphs-in-depth)</li><li>[Ontotext](https://www.ontotext.com/knowledge-hub/videos/)</li></ul> | 
 
+## GitHub Repositories :octocat:
+
+| Title | Description |
+| :---:         |          :--- |
+|[Awesome Knowledge Graph](https://github.com/totogo/awesome-knowledge-graph)| A curated list of Knowledge Graph related learning materials, databases, tools and other resources. |
+| [awesome-graph](https://github.com/jbmusso/awesome-graph)| A curated list of resources for graph databases and graph computing tools. |
+
 ## Libraries
 
 | Title | Description |

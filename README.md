@@ -14,7 +14,6 @@
 
 ## Natural Language Processing Tasks 
 
-<img src="https://raw.githubusercontent.com/ElizaLo/NLP-Natural-Language-Processing/master/img/NLP_Tasks.png" width="900" height="100">
 
 > Folders with all materials for specific task/domain
 
@@ -27,8 +26,6 @@
 
 
 ## 🎓 Courses 
-
-<img src="https://raw.githubusercontent.com/ElizaLo/NLP-Natural-Language-Processing/master/img/Courses.png" width="900" height="100">
 
   - [Natural Language Processing - Stanford University| Dan Jurafsky, Christopher](https://www.youtube.com/playlist?list=PLLssT5z_DsK8HbD2sPcUIDfQ7zmBarMYv)
   - [Natural Language Processing with Deep Learning (Stanford CS224N)](https://www.youtube.com/playlist?list=PLoROMvodv4rOhcuXMZkNm7j3fVwBBY42z) 
@@ -64,8 +61,6 @@
   
 ## Books
 
-<img src="https://raw.githubusercontent.com/ElizaLo/NLP-Natural-Language-Processing/master/img/Books.png" width="900" height="100">
-
 - [A lot of NLP books](https://www.dropbox.com/sh/b1c2ulwua9zy574/AACswS1E0IB9LdPDxQ6fexm4a?dl=0) (Natural Language Processing)
 - [Natural Language Processing with Python – Analyzing Text with the Natural Language Toolkit](http://www.nltk.org/book/), Steven Bird, Ewan Klein, and Edward Loper
 - [Speech and Language Processing (3rd ed. draft)](https://web.stanford.edu/~jurafsky/slp3/), Dan Jurafsky and James H. Martin
@@ -74,8 +69,6 @@
   - [NLTK_book](https://github.com/nltk/nltk_book) on GitHub
 
 ## YouTube 
-
-<img src="https://raw.githubusercontent.com/ElizaLo/NLP-Natural-Language-Processing/master/img/YouTube.png" width="900" height="100">
 
 | Title | Description |
 | :---         |          :--- |
@@ -86,8 +79,6 @@
 
 ## Web Sites
 
-<img src="https://raw.githubusercontent.com/ElizaLo/NLP-Natural-Language-Processing/master/img/Web_Sites.png" width="900" height="100">
-
 - [Natural Language Processing](https://paperswithcode.com/area/natural-language-processing) on Papers with Code
 - [Chris McCormick](https://mccormickml.com) Blog
   - [ChrisMcCormickAI](https://www.youtube.com/channel/UCoRX98PLOsaN8PtekB9kWrw/videos) YouTube Channel
@@ -95,13 +86,9 @@
 
 ## Atricles
 
-<img src="https://raw.githubusercontent.com/ElizaLo/NLP-Natural-Language-Processing/master/img/Articles.png" width="900" height="100">
-
 - [Карьера в IT: NLP Engineer и NLP Researcher](https://dou.ua/lenta/articles/nlp-specialist/?from=tg)
 
 ## GitHub Repositories :octocat:
-
-<img src="https://raw.githubusercontent.com/ElizaLo/NLP-Natural-Language-Processing/master/img/GitHub_Repositories.png" width="900" height="100">
 
 - [Awesome NLP References](https://github.com/JudePark96/awesome-nlp-references), A curated list of resources dedicated to Knowledge Distillation, Recommendation System, especially Natural Language Processing (NLP)
 - [NLP - Tutorial](https://github.com/makcedward/nlp)
@@ -134,8 +121,6 @@
 -------------------------------------------------------
 
 # 🔺 Projects
-
-<img src="https://raw.githubusercontent.com/ElizaLo/NLP-Natural-Language-Processing/master/img/Projects.png" width="900" height="100">
 
 - [**_Spam Detection_**](https://github.com/ElizaLo/ML-with-Jupiter#spam-detection)
 - [**_Text Generator_**](https://github.com/ElizaLo/ML-with-Jupiter#text-generator)

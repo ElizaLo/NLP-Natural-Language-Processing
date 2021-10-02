@@ -17,9 +17,14 @@
 
 > Folders with all materials for specific task/domain
 
+- [Data Analysis](https://github.com/ElizaLo/NLP-Natural-Language-Processing/tree/master/Data%20Analysis)
 - [Knowledge Graph](https://github.com/ElizaLo/NLP-Natural-Language-Processing/tree/master/Knowledge%20Graph)
+- [Models and Algorithms](https://github.com/ElizaLo/NLP-Natural-Language-Processing/tree/master/Models%20and%20Algorithms)
 - [Ontologies](https://github.com/ElizaLo/NLP-Natural-Language-Processing/tree/master/Ontologies)
+- [Question Answering System](https://github.com/ElizaLo/NLP-Natural-Language-Processing/tree/master/Question%20Answering%20System)
+- [Search Engine](https://github.com/ElizaLo/NLP-Natural-Language-Processing/tree/master/Search%20Engine)
 - [Sentiment Analysis](https://github.com/ElizaLo/NLP-Natural-Language-Processing/tree/master/Sentiment%20Analysis)
+- [Shallow Discourse Parsing](https://github.com/ElizaLo/NLP-Natural-Language-Processing/tree/master/Shallow%20Discourse%20Parsing)
 - [Text Classification](https://github.com/ElizaLo/NLP-Natural-Language-Processing/tree/master/Text%20Classification%20)
 - [Topic Modeling](https://github.com/ElizaLo/NLP-Natural-Language-Processing/tree/master/Topic%20Modeling)
 - [Word Embedings](https://github.com/ElizaLo/NLP-Natural-Language-Processing/tree/master/Word%20Embedings)

@@ -62,8 +62,6 @@
     - [A Code-First Intro to Natural Language Processing](https://github.com/fastai/course-nlp) on GitHub :octocat:
   - 
   
-
-  
 ## Books
 
 - [A lot of NLP books](https://www.dropbox.com/sh/b1c2ulwua9zy574/AACswS1E0IB9LdPDxQ6fexm4a?dl=0) (Natural Language Processing)
@@ -72,6 +70,11 @@
 - [Neural Network Methods for Natural Language Processing](http://www.morganclaypoolpublishers.com/catalog_Orig/samples/9781627052955_sample.pdf)
 - [Natural Language Processing with Python – Analyzing Text with the Natural Language Toolkit](http://www.nltk.org/book/)
   - [NLTK_book](https://github.com/nltk/nltk_book) on GitHub
+- [Practical Natural Language Processing](https://github.com/practical-nlp/practical-nlp-code)
+  - > Official Repository for **'Practical Natural Language Processing'** by _O'Reilly Media_
+- [Natural Language Processing Notebooks](https://github.com/NirantK/NLP_Quickbook)
+  - > Available as a Book: [NLP in Python - Quickstart Guide](https://www.amazon.in/dp/B07L3PLQS1)
+- 
 
 ## YouTube 
 
@@ -95,10 +98,35 @@
 
 ## GitHub Repositories :octocat:
 
-- [Awesome NLP References](https://github.com/JudePark96/awesome-nlp-references), A curated list of resources dedicated to Knowledge Distillation, Recommendation System, especially Natural Language Processing (NLP)
-- [NLP - Tutorial](https://github.com/makcedward/nlp)
-- [Natural Language-Process Tutorials](https://github.com/skuchkula/Natural-Language-Processing-Tutorials)
-- [NLP with Python](https://github.com/susanli2016/NLP-with-Python) - Scikit-Learn, NLTK, Spacy, Gensim, Textblob and more
+| Title | Description |
+| :---:         |          :--- |
+|[Awesome NLP References](https://github.com/JudePark96/awesome-nlp-references)|A curated list of resources dedicated to Knowledge Distillation, Recommendation System, especially Natural Language Processing (NLP)|
+|[NLP - Tutorial](https://github.com/makcedward/nlp)| |
+|[Natural Language-Process Tutorials](https://github.com/skuchkula/Natural-Language-Processing-Tutorials)| |
+|[NLP with Python](https://github.com/susanli2016/NLP-with-Python)|Scikit-Learn, NLTK, Spacy, Gensim, Textblob and more...|
+|[NLP and Data Science GitHub Repository Spotlight](https://github.com/ivan-bilan/NLP-and-Data-Science-Spotlights)|Daily spotlights of some underrated NLP and Data Science GitHub repositories.|
+|[NLP 101: a Resource Repository for Deep Learning and Natural Language Processing](https://github.com/Huffon/NLP101)|This document is drafted for those who have enthusiasm for Deep Learning in natural language processing. If there are any good recommendations or suggestions, I will try to add more.|
+
+
+## Tools
+
+### Modules
+
+| Title | Description |
+| :---:         |          :--- |
+|[Natural Language Toolkit (NLTK)](https://github.com/nltk/nltk)|NLTK - the Natural Language Toolkit - is a suite of open source Python modules, data sets, and tutorials supporting research and development in Natural Language Processing.|
+|[flair](https://github.com/flairNLP/flair)|<ul><p>A very simple framework for state-of-the-art Natural Language Processing (NLP).</p><p>Flair is:</p><li>**A powerful NLP library.** Flair allows you to apply our state-of-the-art natural language processing (NLP) models to your text, such as **named entity recognition (NER), part-of-speech tagging (PoS), special support for biomedical data, sense disambiguation and classification**, with support for a rapidly growing number of languages.</li><li>**A text embedding library.** Flair has simple interfaces that allow you to use and combine different word and document embeddings, including our proposed Flair embeddings, BERT embeddings and ELMo embeddings.</li><li>**A PyTorch NLP framework.** Our framework builds directly on PyTorch, making it easy to train your own models and experiment with new approaches using Flair embeddings and classes.</li></ul>|
+
+
+### Libraries 
+
+| Title | Description |
+| :---:         |          :--- |
+|[AllenNLP](https://github.com/allenai/allennlp)|NLP research library, built on PyTorch, for developing state-of-the-art deep learning models on a wide variety of linguistic tasks.|
+
+## Leaderboard for NLP
+
+- [ExplainaBoard: An Explainable Leaderboard for NLP](https://github.com/neulab/ExplainaBoard)
 
 ### Deep Learning architectures for NLP
 

@@ -67,6 +67,8 @@ In order to roll out knowledge graphs in companies, however, more than a databas
 | :---:         |          :--- |
 |[Awesome Knowledge Graph](https://github.com/totogo/awesome-knowledge-graph)| A curated list of Knowledge Graph related learning materials, databases, tools and other resources. |
 | [awesome-graph](https://github.com/jbmusso/awesome-graph)| A curated list of resources for graph databases and graph computing tools. |
+|[Knowledge Graph Tutorials and Papers](https://github.com/heathersherry/Knowledge-Graph-Tutorials-and-Papers)|Insightful Tutorials and Papers about Knowledge Graphs|
+|[graph4nlp_literature](https://github.com/graph4ai/graph4nlp_literature)|This repo is to provide a list of literature regarding Deep Learning on Graphs for NLP.|
 
 ## Libraries
 

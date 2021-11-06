@@ -1,4 +1,4 @@
-# Knowledge Graph
+<img src="https://raw.githubusercontent.com/ElizaLo/NLP-Natural-Language-Processing/master/img/Knowledge_Graph.png" width="1050" height="150">
 
 - [Knowledge Graphs](https://paperswithcode.com/task/knowledge-graphs) on PapersWithCode
 - [Knowledge Graph](https://stackoverflow.com/search?tab=relevance&q=knowledge%20graph) on StackOverflow
@@ -24,14 +24,20 @@ In order to roll out knowledge graphs in companies, however, more than a databas
 ## Graph Databases
 
 | Title | Description |
-| :---         |          :--- |
-|[Amazon Neptune](https://aws.amazon.com/neptune/?nc1=h_ls )|<ul><li>[Knowledge Graphs on AWS](https://aws.amazon.com/neptune/knowledge-graphs-on-aws/)</li><li>[Building a Knowledge Graph Application on Amazon Neptune](https://github.com/aws/graph-notebook/blob/7e8e689f74edb9f6b34be2b972182c7d01704202/src/graph_notebook/notebooks/03-Sample-Applications/02-Knowledge-Graphs/01-Building-a-Knowledge-Graph-Application.ipynb)</li><li>[Graph Application with Amazon Neptune](https://neptune-deep-dive.workshop.aws/en/)</li><li>[Tutorial Notebooks](https://github.com/aws/graph-notebook/tree/7e8e689f74edb9f6b34be2b972182c7d01704202/src/graph_notebook/notebooks)</li><li>[eptune’s integration with Elasticsearch](https://docs.aws.amazon.com/neptune/latest/userguide/full-text-search.html)</li><li>[Amazon Neptune](https://aws.amazon.com/ru/blogs/database/category/database/amazon-neptune/) on AWS Database Blog</li><li>[Knowledge Graphs on AWS](https://aws.amazon.com/ru/neptune/knowledge-graphs-on-aws/)</li></ul>|
+| :---:         |          :--- |
+|[Amazon Neptune](https://aws.amazon.com/neptune/?nc1=h_ls )|<ul><li>[Building a Knowledge Graph Application on Amazon Neptune](https://github.com/aws/graph-notebook/blob/7e8e689f74edb9f6b34be2b972182c7d01704202/src/graph_notebook/notebooks/03-Sample-Applications/02-Knowledge-Graphs/01-Building-a-Knowledge-Graph-Application.ipynb)</li><li>[Amazon Neptune, User Guide](https://docs.aws.amazon.com/neptune/latest/userguide/intro.html)</li><li>[Graph Application with Amazon Neptune](https://neptune-deep-dive.workshop.aws/en/)</li><li>[Neptune’s integration with Elasticsearch](https://docs.aws.amazon.com/neptune/latest/userguide/full-text-search.html)</li><li>[Amazon Neptune](https://aws.amazon.com/ru/blogs/database/category/database/amazon-neptune/) on AWS Database Blog</li><li>[Knowledge Graphs on AWS](https://aws.amazon.com/ru/neptune/knowledge-graphs-on-aws/)</li><li>[Build a knowledge graph in Amazon Neptune using Data Lens](https://aws.amazon.com/ru/blogs/database/build-a-knowledge-graph-in-amazon-neptune-using-data-lens/)</li><p> </p><li>[:octocat: Reference Architectures for Graph Databases on AWS](https://github.com/aws-samples/aws-dbs-refarch-graph)</li><li>[:octocat: Tutorial Notebooks](https://github.com/aws/graph-notebook/tree/7e8e689f74edb9f6b34be2b972182c7d01704202/src/graph_notebook/notebooks)</li></ul>|
 |[GraphDB Downloads and Resources](https://graphdb.ontotext.com/)| Semantic graph databases (also called RDF triplestores)|
 |[Neo4j Graph Platform](https://neo4j.com/?_gl=1%2A16rmv03%2A_ga%2AOTM3OTY0NzAxLjE2MjY2OTk4Nzc.%2A_ga_DL38Q8KGQC%2AMTYyNjY5OTg3Ni4xLjEuMTYyNjcwMDA4My4w&_ga=2.37309350.780889525.1626699877-937964701.1626699877)| Neo4j gives developers and data scientists the most trusted and advanced tools to quickly build today’s intelligent applications and machine learning workflows. Available as a fully managed cloud service or self-hosted.|
 | [GraphDB™ Ontotext](https://www.ontotext.com/products/graphdb/)| GraphDB allows you to link diverse data, index it for semantic search and enrich it via text analysis to build big knowledge graphs.|
 |[AllegroGraph](https://allegrograph.com/products/allegrograph/)| AllegroGraph is a Horizontally Distributed, Multi-model (Document and Graph), Entity-Event Knowledge Graph technology that enables businesses to extract sophisticated decision insights and predictive analytics from their highly complex, distributed data that can’t be answered with conventional databases.|
 |[Stardog](https://www.stardog.com)|<ul><li>Stardog is the only graph platform to connect data at the compute layer instead of the storage layer.</li><li>No migrations. No rip and replace. No copies of copies of data. Just a seamless data fabric. </li><li>Stardog is the critical data infrastructure that powers your business’ apps, AI, and analytics.</li></ul>|
 |[Eclipse RDF4J](https://rdf4j.org)|Eclipse RDF4J™ is a powerful Java framework for processing and handling RDF data. This includes creating, parsing, scalable storage, reasoning and querying with RDF and Linked Data. It offers an easy-to-use API that can be connected to all leading RDF database solutions. It allows you to connect with SPARQL endpoints and create applications that leverage the power of linked data and Semantic Web.|
+
+## Graph traversal languages
+
+| Title | Description |
+| :---:         |          :--- |
+|GREMLIN|<ul><li> 📚 [PRACTICAL GREMLIN: An Apache TinkerPop Tutorial](http://kelvinlawrence.net/book/Gremlin-Graph-Guide.html#_some_simple_graph_traversal_examples) book by Kelvin R. Lawrence</li><li>[Apache TinkerPop™](https://tinkerpop.apache.org) is a graph computing framework for both graph databases (OLTP) and graph analytic systems (OLAP).</li><li>[TinkerPop Documentation](https://tinkerpop.apache.org/docs/current/reference/#_tinkerpop_documentation)</li></ul>|
 
 
 ## Papers

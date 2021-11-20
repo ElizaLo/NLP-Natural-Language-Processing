@@ -32,6 +32,7 @@ In order to roll out knowledge graphs in companies, however, more than a databas
 |[AllegroGraph](https://allegrograph.com/products/allegrograph/)| AllegroGraph is a Horizontally Distributed, Multi-model (Document and Graph), Entity-Event Knowledge Graph technology that enables businesses to extract sophisticated decision insights and predictive analytics from their highly complex, distributed data that can’t be answered with conventional databases.|
 |[Stardog](https://www.stardog.com)|<ul><li>Stardog is the only graph platform to connect data at the compute layer instead of the storage layer.</li><li>No migrations. No rip and replace. No copies of copies of data. Just a seamless data fabric. </li><li>Stardog is the critical data infrastructure that powers your business’ apps, AI, and analytics.</li></ul>|
 |[Eclipse RDF4J](https://rdf4j.org)|Eclipse RDF4J™ is a powerful Java framework for processing and handling RDF data. This includes creating, parsing, scalable storage, reasoning and querying with RDF and Linked Data. It offers an easy-to-use API that can be connected to all leading RDF database solutions. It allows you to connect with SPARQL endpoints and create applications that leverage the power of linked data and Semantic Web.|
+|[JanusGraph](https://janusgraph.org)|JanusGraph is a scalable graph database optimized for storing and querying graphs containing hundreds of billions of vertices and edges distributed across a multi-machine cluster.|
 
 ## Graph traversal languages
 

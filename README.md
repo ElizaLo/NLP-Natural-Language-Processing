@@ -117,6 +117,12 @@
 |[Natural Language Toolkit (NLTK)](https://github.com/nltk/nltk)|NLTK - the Natural Language Toolkit - is a suite of open source Python modules, data sets, and tutorials supporting research and development in Natural Language Processing.|
 |[flair](https://github.com/flairNLP/flair)|<ul><p>A very simple framework for state-of-the-art Natural Language Processing (NLP).</p><p>Flair is:</p><li>**A powerful NLP library.** Flair allows you to apply our state-of-the-art natural language processing (NLP) models to your text, such as **named entity recognition (NER), part-of-speech tagging (PoS), special support for biomedical data, sense disambiguation and classification**, with support for a rapidly growing number of languages.</li><li>**A text embedding library.** Flair has simple interfaces that allow you to use and combine different word and document embeddings, including our proposed Flair embeddings, BERT embeddings and ELMo embeddings.</li><li>**A PyTorch NLP framework.** Our framework builds directly on PyTorch, making it easy to train your own models and experiment with new approaches using Flair embeddings and classes.</li></ul>|
 
+### Tutorials
+
+| Title | Description |
+| :---:         |          :--- |
+|[nlp-tutorial](https://github.com/graykode/nlp-tutorial)|<ul><p>Natural Language Processing Tutorial for Deep Learning Researchers</p><p>`nlp-tutorial` is a tutorial for who is studying NLP(Natural Language Processing) using **Pytorch**. Most of the models in NLP were implemented with less than 100 lines of code.(except comments or blank lines)</p></ul>|
+
 
 ### Libraries 
 

@@ -100,6 +100,7 @@
 
 | Title | Description |
 | :---:         |          :--- |
+|[NVIDIA Deep Learning Examples for Tensor Cores - Natural Language Processing](https://github.com/NVIDIA/DeepLearningExamples#natural-language-processing)|Deep Learning Examples|
 |[Awesome NLP References](https://github.com/JudePark96/awesome-nlp-references)|A curated list of resources dedicated to Knowledge Distillation, Recommendation System, especially Natural Language Processing (NLP)|
 |[NLP - Tutorial](https://github.com/makcedward/nlp)| |
 |[Natural Language-Process Tutorials](https://github.com/skuchkula/Natural-Language-Processing-Tutorials)| |

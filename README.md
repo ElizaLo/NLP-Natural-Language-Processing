@@ -65,6 +65,7 @@
 ## Books
 
 - [A lot of NLP books](https://www.dropbox.com/sh/b1c2ulwua9zy574/AACswS1E0IB9LdPDxQ6fexm4a?dl=0) (Natural Language Processing)
+- [Advanced Natural Language Processing with TensorFlow 2](https://github.com/PacktPublishing/Advanced-Natural-Language-Processing-with-TensorFlow-2), published by Packt
 - [Natural Language Processing with Python – Analyzing Text with the Natural Language Toolkit](http://www.nltk.org/book/), Steven Bird, Ewan Klein, and Edward Loper
 - [Speech and Language Processing (3rd ed. draft)](https://web.stanford.edu/~jurafsky/slp3/), Dan Jurafsky and James H. Martin
 - [Neural Network Methods for Natural Language Processing](http://www.morganclaypoolpublishers.com/catalog_Orig/samples/9781627052955_sample.pdf)

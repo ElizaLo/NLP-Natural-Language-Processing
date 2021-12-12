@@ -60,6 +60,14 @@
 
 -----------------------------------------------------------------------
 
+## Tokenization
+
+### Readady Solutions
+
+| Title | Description, Information |
+| :---:         |          :--- |
+|[Tokenizers](https://github.com/huggingface/tokenizers)|Fast State-of-the-Art Tokenizers optimized for Research and Production by [HuggingFace](https://huggingface.co/)|
+
 ## Bag of Words(BoW)
 
 ### Count Vectorizer

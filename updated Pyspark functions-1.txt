@@ -1,0 +1,100 @@
+﻿--Pyspark select:Select single & Multiple columns from PySpark
+
+1.data1 = [("James","Smith","USA","CA"),
+    ("Michael","Rose","USA","NY"),
+    ("Robert","Williams","USA","CA"),
+    ("Maria","Jones","USA","FL")
+  ]
+2.columns = ["firstname","lastname","country","state"]
+3.df = spark.createDataFrame(data = data1, schema = columns)
+4.df.show()
+    
+5.df.select("firstname").show()
+
+6.df.select("firstname","lastname").show()
+
+
+PySpark withColumn: withColumn() is a transformation function of DataFrame which is used
+ to change or update the value, convert the datatype of an existing DataFrame column, 
+add/create a new column.
+
+1. Change column DataType using PySpark withcolumn
+from pyspark.sql.functions import col
+
+df2 = df.withColumn("salary",col("salary").cast("Integer"))
+df2.printSchema()
+
+2. Update the value of an existing column
+
+df3 = df.withColumn("salary",col("salary")*100)
+df3.printSchema()
+
+3. Create a new column from an existing
+
+df4 = df.withColumn("CopiedColumn",col("salary")* -1)
+df3.printSchema()
+
+4. Add a new column using withColumn()
+
+df5 = df.withColumn("Country", lit("USA"))
+df5.printSchema()
+
+5.Drop a column from PySpark DataFrame
+
+df4.drop("CopiedColumn").show() 
+
+5. Rename column
+df.withColumnRenamed("old_name","new_name").printSchema()
+
+df.withColumnRenamed("dob","DateOfBirth").printSchema()
+
+For multiple columns:
+df2 = df.withColumnRenamed("dob","DateOfBirth") \
+or
+df2 = df.withColumnRenamed("dob","DateOfBirth") \
+    .withColumnRenamed("salary","salary_amount")
+df2.printSchema()
+
+PySpark Where Filter Function:
+
+DataFrame filter() with Column Condition
+
+df.filter(df.salary == "OH").show()
+
+For multiple conditions:
+//multiple condition
+df.filter( (df.state  == "OH") & (df.gender  == "M") ).show()  
+
+PySpark Groupby:
+df.groupBy("department").sum("salary").show()//  groupBy() on department column of DataFrame and then find the sum of salary for each department using sum() aggregate function.
+
+PySpark Join
+
+emp = [(1,"Smith",-1,"2018","10","M",3000), \
+    (2,"Rose",1,"2010","20","M",4000), \
+    (3,"Williams",1,"2010","10","M",1000), \
+    (4,"Jones",2,"2005","10","F",2000), \
+    (5,"Brown",2,"2010","40","",-1), \
+      (6,"Brown",2,"2010","50","",-1) \
+  ]
+empColumns = ["emp_id","name","superior_emp_id","year_joined", \
+       "emp_dept_id","gender","salary"]
+
+empDF = spark.createDataFrame(data=emp, schema = empColumns)
+empDF.printSchema()
+empDF.show()
+
+dept = [("Finance",10), \
+    ("Marketing",20), \
+    ("Sales",30), \
+    ("IT",40) \
+  ]
+deptColumns = ["dept_name","dept_id"]
+deptDF = spark.createDataFrame(data=dept, schema = deptColumns)
+deptDF.printSchema()
+deptDF.show()
+
+empDF.join(deptDF,empDF.emp_dept_id ==  deptDF.dept_id,"inner") \
+     .show(truncate=False)
+
+    .withColumnRenamed("salary","salary_amount")

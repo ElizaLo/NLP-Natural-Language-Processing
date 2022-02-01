@@ -92,6 +92,9 @@
 - [Chris McCormick](https://mccormickml.com) Blog
   - [ChrisMcCormickAI](https://www.youtube.com/channel/UCoRX98PLOsaN8PtekB9kWrw/videos) YouTube Channel
 - [The NLP Index](https://index.quantumstat.com)
+- [Sebastian Ruder](https://ruder.io)
+  - > I'm a research scientist at Google. I blog about natural language processing and machine learning.  
+- 
 
 ## Atricles
 
@@ -108,6 +111,7 @@
 |[NLP with Python](https://github.com/susanli2016/NLP-with-Python)|Scikit-Learn, NLTK, Spacy, Gensim, Textblob and more...|
 |[NLP and Data Science GitHub Repository Spotlight](https://github.com/ivan-bilan/NLP-and-Data-Science-Spotlights)|Daily spotlights of some underrated NLP and Data Science GitHub repositories.|
 |[NLP 101: a Resource Repository for Deep Learning and Natural Language Processing](https://github.com/Huffon/NLP101)|This document is drafted for those who have enthusiasm for Deep Learning in natural language processing. If there are any good recommendations or suggestions, I will try to add more.|
+|[NLP-progress](https://github.com/sebastianruder/NLP-progress)|Repository to track the progress in Natural Language Processing (NLP), including the datasets and the current state-of-the-art for the most common NLP tasks.|
 
 
 ## Tools

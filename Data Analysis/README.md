@@ -11,3 +11,10 @@
 ### Papers
 
 - [A Survey of Data Augmentation Approaches for NLP](https://arxiv.org/abs/2105.03075)
+
+
+## Tools
+
+| Title | Description |
+| :---:         |          :--- |
+|[Zingg](https://github.com/zinggAI/zingg)|Scalable data mastering, deduplication and entity resolution.|

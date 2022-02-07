@@ -94,6 +94,8 @@
 - [The NLP Index](https://index.quantumstat.com)
 - [Sebastian Ruder](https://ruder.io)
   - > I'm a research scientist at Google. I blog about natural language processing and machine learning.  
+- :octocat: [Software Engineering Blogs](https://github.com/kilimchoi/engineering-blogs)
+  - > A curated list of engineering blogs
 - 
 
 ## Atricles
@@ -105,6 +107,7 @@
 | Title | Description |
 | :---:         |          :--- |
 |[NVIDIA Deep Learning Examples for Tensor Cores - Natural Language Processing](https://github.com/NVIDIA/DeepLearningExamples#natural-language-processing)|Deep Learning Examples|
+|[Natural Language Processing with Transformers](https://github.com/nlp-with-transformers)|Notebooks and materials for the O'Reilly book ["Natural Language Processing with Transformers"](https://learning.oreilly.com/library/view/natural-language-processing/9781098103231/)|
 |[Awesome NLP References](https://github.com/JudePark96/awesome-nlp-references)|A curated list of resources dedicated to Knowledge Distillation, Recommendation System, especially Natural Language Processing (NLP)|
 |[NLP - Tutorial](https://github.com/makcedward/nlp)| |
 |[Natural Language-Process Tutorials](https://github.com/skuchkula/Natural-Language-Processing-Tutorials)| |
@@ -112,9 +115,11 @@
 |[NLP and Data Science GitHub Repository Spotlight](https://github.com/ivan-bilan/NLP-and-Data-Science-Spotlights)|Daily spotlights of some underrated NLP and Data Science GitHub repositories.|
 |[NLP 101: a Resource Repository for Deep Learning and Natural Language Processing](https://github.com/Huffon/NLP101)|This document is drafted for those who have enthusiasm for Deep Learning in natural language processing. If there are any good recommendations or suggestions, I will try to add more.|
 |[NLP-progress](https://github.com/sebastianruder/NLP-progress)|Repository to track the progress in Natural Language Processing (NLP), including the datasets and the current state-of-the-art for the most common NLP tasks.|
+|[Hugging Face](https://github.com/huggingface/blog)|Public repo for HF blog posts|
 
 
 ## Tools
+
 
 ### Modules
 
@@ -123,11 +128,13 @@
 |[Natural Language Toolkit (NLTK)](https://github.com/nltk/nltk)|NLTK - the Natural Language Toolkit - is a suite of open source Python modules, data sets, and tutorials supporting research and development in Natural Language Processing.|
 |[flair](https://github.com/flairNLP/flair)|<ul><p>A very simple framework for state-of-the-art Natural Language Processing (NLP).</p><p>Flair is:</p><li>**A powerful NLP library.** Flair allows you to apply our state-of-the-art natural language processing (NLP) models to your text, such as **named entity recognition (NER), part-of-speech tagging (PoS), special support for biomedical data, sense disambiguation and classification**, with support for a rapidly growing number of languages.</li><li>**A text embedding library.** Flair has simple interfaces that allow you to use and combine different word and document embeddings, including our proposed Flair embeddings, BERT embeddings and ELMo embeddings.</li><li>**A PyTorch NLP framework.** Our framework builds directly on PyTorch, making it easy to train your own models and experiment with new approaches using Flair embeddings and classes.</li></ul>|
 
+
 ### Tutorials
 
 | Title | Description |
 | :---:         |          :--- |
 |[nlp-tutorial](https://github.com/graykode/nlp-tutorial)|<ul><p>Natural Language Processing Tutorial for Deep Learning Researchers</p><p>`nlp-tutorial` is a tutorial for who is studying NLP(Natural Language Processing) using **Pytorch**. Most of the models in NLP were implemented with less than 100 lines of code.(except comments or blank lines)</p></ul>|
+|[Natural Language Processing in Python Tutorial](https://github.com/adashofdata/nlp-in-python-tutorial)|comparing stand up comedians using natural language processing|
 
 
 ### Libraries 
@@ -135,6 +142,14 @@
 | Title | Description |
 | :---:         |          :--- |
 |[AllenNLP](https://github.com/allenai/allennlp)|NLP research library, built on PyTorch, for developing state-of-the-art deep learning models on a wide variety of linguistic tasks.|
+
+
+## Toolkit
+
+| Title | Description |
+| :---:         |          :--- |
+|[NLPGym](https://github.com/rajcscw/nlp-gym)|NLPGym is a toolkit to bridge the gap between applications of RL and NLP. This aims at facilitating research and benchmarking of DRL application on natural language processing tasks. The toolkit provides interactive environments for standard NLP tasks such as sequence tagging, question answering, and sequence classification.|
+
 
 ## Leaderboard for NLP
 

@@ -26,3 +26,9 @@
 | Title | Description, Information |
 | :---:         |          :--- |
 |[Pattern-Exploiting Training (PET)](https://github.com/timoschick/pet)|This repository contains the code for [Exploiting Cloze Questions for Few-Shot Text Classification and Natural Language Inference](https://arxiv.org/abs/2001.07676) and [It's Not Just Size That Matters: Small Language Models Are Also Few-Shot Learners](https://arxiv.org/abs/2009.07118). The papers introduce pattern-exploiting training (PET), a semi-supervised training procedure that reformulates input examples as cloze-style phrases. In low-resource settings, PET and iPET significantly outperform regular supervised training, various semi-supervised baselines and even GPT-3 despite requiring 99.9% less parameters. The iterative variant of PET (iPET) trains multiple generations of models and can even be used without any training data.|
+
+## Python packages
+
+| Title | Description |
+| :---:         |          :--- |
+|[PySS3](https://github.com/sergioburdisso/pyss3)|SS3 text classifier is a novel and simple supervised machine learning model for text classification which is interpretable, that is, it has the ability to naturally (self)explain its rationale.|

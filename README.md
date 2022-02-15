@@ -116,6 +116,7 @@
 |[NLP 101: a Resource Repository for Deep Learning and Natural Language Processing](https://github.com/Huffon/NLP101)|This document is drafted for those who have enthusiasm for Deep Learning in natural language processing. If there are any good recommendations or suggestions, I will try to add more.|
 |[NLP-progress](https://github.com/sebastianruder/NLP-progress)|Repository to track the progress in Natural Language Processing (NLP), including the datasets and the current state-of-the-art for the most common NLP tasks.|
 |[Hugging Face](https://github.com/huggingface/blog)|Public repo for HF blog posts|
+|[AllenNLP](https://github.com/allenai/allennlp)|An open-source NLP research library, built on PyTorch. [Allenai.org](https://allenai.org/allennlp)|
 
 
 ## Tools

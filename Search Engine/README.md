@@ -12,6 +12,12 @@
 | :---:         |          :--- |
 |[Typesense](https://github.com/typesense/typesense)|Fast, typo tolerant, fuzzy search engine for building delightful search experiences ⚡ 🔍 ✨ An Open Source alternative to Algolia and an Easier-to-Use alternative to ElasticSearch.|
 
+## AutoML 
+
+| Title | Description, Information |
+| :---:         |          :--- |
+|[Amazon Kendra](https://aws.amazon.com/ru/kendra/?c=ml&sec=srv)|Amazon Kendra is an intelligent search service powered by machine learning (ML). Kendra reimagines enterprise search for your websites and applications so your employees and customers can easily find the content they’re looking for, even when it’s scattered across multiple locations and content repositories within your organization.|
+
 ## Articles
 
 - [How we built an AI-powered search engine (without being Google)](https://towardsdatascience.com/how-we-built-an-ai-powered-search-engine-without-being-google-5ad93e5a8591)

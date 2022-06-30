@@ -17,6 +17,7 @@
 | Title | Description, Information |
 | :---:         |          :--- |
 |[Amazon Kendra](https://aws.amazon.com/ru/kendra/?c=ml&sec=srv)|Amazon Kendra is an intelligent search service powered by machine learning (ML). Kendra reimagines enterprise search for your websites and applications so your employees and customers can easily find the content they’re looking for, even when it’s scattered across multiple locations and content repositories within your organization.|
+|[Amazon Comprehend](https://aws.amazon.com/comprehend/)|Uncover valuable insights from text in documents, customer support tickets, product reviews, emails, social media feeds, and more. Simplify document processing workflows by extracting text, key phrases, topics, sentiment, and more from documents such as insurance claims.|
 
 ## Articles
 

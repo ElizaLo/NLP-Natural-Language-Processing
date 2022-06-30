@@ -16,6 +16,15 @@
 | :---:         |          :--- |
 |[Bert multi-label text classification by PyTorch](https://github.com/lonePatient/Bert-Multi-Label-Text-Classification)|This repo contains a PyTorch implementation of a pretrained BERT model for multi-label text classification.|
 
+
+## Ready solutions from the AWS
+
+| Title | Description, Information |
+| :---:         |          :--- |
+|[Amazon Comprehend](https://aws.amazon.com/comprehend/)|Uncover valuable insights from text in documents, customer support tickets, product reviews, emails, social media feeds, and more. Simplify document processing workflows by extracting text, key phrases, topics, sentiment, and more from documents such as insurance claims.|
+|[Explainable AI for Text Classification](https://aws.amazon.com/marketplace/pp/prodview-xolgpdp52ke44)|The solution applies deep learning model (CNN) to classify text data such as reviews and transcripts to identify features leading to prediction of user defined classes. It has explainable AI functionality which helps to understand why the model predicts the class based on key words and phrases in the text. The solution is adaptable and can be trained on any textual dataset containing user defined classes.|
+|[Text Classification API](https://aws.amazon.com/marketplace/pp/prodview-ztfazwmcw7pxc)|When given text, this API classifies and recommends highly related categories for e-commerce and other uses. Text classification can be used to automatically categorize many articles and texts into our default categories. Enterprise customers can create their own predefined categories. Contact support for more info.|
+
 --------------------
 - [5 Data Augmentation Techniques for Text Classification](https://saurabhk30.medium.com/5-data-augmentation-techniques-for-text-classification-d14f6d8bd6aa)
 

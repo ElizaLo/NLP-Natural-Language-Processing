@@ -25,6 +25,12 @@
 |[Explainable AI for Text Classification](https://aws.amazon.com/marketplace/pp/prodview-xolgpdp52ke44)|The solution applies deep learning model (CNN) to classify text data such as reviews and transcripts to identify features leading to prediction of user defined classes. It has explainable AI functionality which helps to understand why the model predicts the class based on key words and phrases in the text. The solution is adaptable and can be trained on any textual dataset containing user defined classes.|
 |[Text Classification API](https://aws.amazon.com/marketplace/pp/prodview-ztfazwmcw7pxc)|When given text, this API classifies and recommends highly related categories for e-commerce and other uses. Text classification can be used to automatically categorize many articles and texts into our default categories. Enterprise customers can create their own predefined categories. Contact support for more info.|
 
+## Other Platforms
+
+| Title | Description, Information |
+| :---:         |          :--- |
+|[Classifying Text Platform — Innodata](https://solutions.innodata.com/annotation-platform/?dyn_keyword=Classifying%20Text&gclid=Cj0KCQjw8O-VBhCpARIsACMvVLM_94OOkREEsFIGsIycHRY16R_rmbHTzqApQP6cWBnMRBgQ8HBVesIaAlPzEALw_wcB)|Innodata’s web-based Classifying Text platform enables teams to expertly label data at scale. Upload complex documents or unstructured data to generate more informed insights and deliver better customer experiences.|
+
 --------------------
 - [5 Data Augmentation Techniques for Text Classification](https://saurabhk30.medium.com/5-data-augmentation-techniques-for-text-classification-d14f6d8bd6aa)
 
@@ -45,3 +51,11 @@
 | Title | Description |
 | :---:         |          :--- |
 |[PySS3](https://github.com/sergioburdisso/pyss3)|SS3 text classifier is a novel and simple supervised machine learning model for text classification which is interpretable, that is, it has the ability to naturally (self)explain its rationale.|
+
+------------------------------
+
+## Text Labelling
+
+| Title | Description, Information |
+| :---:         |          :--- |
+|[Text Classification (Single Label)](https://docs.aws.amazon.com/sagemaker/latest/dg/sms-text-classification.html)|To categorize articles and text into predefined categories, use text classification. For example, you can use text classification to identify the sentiment conveyed in a review or the emotion underlying a section of text. Use **Amazon SageMaker Ground Truth** text classification to have workers sort text into categories that you define.|

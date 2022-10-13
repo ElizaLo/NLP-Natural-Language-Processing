@@ -1,5 +1,7 @@
 # Text Summarization
 
+<img src="https://raw.githubusercontent.com/ElizaLo/NLP-Natural-Language-Processing/master/Text%20Summarization/img/ML7062-img1.jpg" width="644" height="233">
+
 - You can apply text summarization to **identify key sentences within a document** or **identify key sentences across multiple documents**.
 - Text summarization can produce two types of summaries: **extractive** and **abstractive**. 
   - **Extractive** summaries don’t contain any machine-generated text and are a collection of important sentences selected from the input document. 

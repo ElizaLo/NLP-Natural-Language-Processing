@@ -24,7 +24,23 @@
 
 | Title | Description, Information |
 | :---:         |          :--- |
-| **BART: Denoising Sequence-to-Sequence Pre-training for Natural Language Generation, Translation, and Comprehension - Model Overview** | 📄 **Paper:** [BART: Denoising Sequence-to-Sequence Pre-training for Natural Language Generation, Translation, and Comprehension](https://arxiv.org/abs/1910.13461) |
+| **BART: Denoising Sequence-to-Sequence Pre-training for Natural Language Generation, Translation, and Comprehension - Model Overview** | 📄 **Paper:** [BART: Denoising Sequence-to-Sequence Pre-training for Natural Language Generation, Translation, and Comprehension](https://arxiv.org/abs/1910.13461), **abstractive** summarization |
+| **SBERT: Sentence-BERT: Sentence Embeddings using Siamese BERT-Networks** | 📄 **Paper:** [Sentence-BERT: Sentence Embeddings using Siamese BERT-Networks](https://arxiv.org/abs/1908.10084), **extractive** summarization |
+
+### Extractive summarization
+
+### SBERT: Sentence-BERT: Sentence Embeddings using Siamese BERT-Networks
+
+ In SBERT you can create a summary with the ability to say how many sentences you want. 
+
+- 📄 **Paper:** [Sentence-BERT: Sentence Embeddings using Siamese BERT-Networks](https://arxiv.org/abs/1908.10084)
+- **Implementations:**
+  - [SentenceTransformers Documentation](https://www.sbert.net/index.html)
+  - [bert-extractive-summarizer](https://pypi.org/project/bert-extractive-summarizer/)
+  - 🤗 **HuggingFace:** 
+    - [sentence-transformers](https://huggingface.co/models?library=sentence-transformers&sort=downloads)
+
+### Abstractive summarization
 
 ### BART: Denoising Sequence-to-Sequence Pre-training for Natural Language Generation, Translation, and Comprehension - Model Overview
 
@@ -59,9 +75,10 @@ BART outperforms RoBERTa in several fine-tuning tasks.
   - 🤗 **HuggingFace:** 
     - [facebook/bart-large-cnn](https://huggingface.co/facebook/bart-large-cnn)
     - [sshleifer/distilbart-cnn-12-6](https://huggingface.co/sshleifer/distilbart-cnn-12-6)
+      - 📄 **Paper:** [Pre-trained Summarization Distillation](https://arxiv.org/abs/2010.13002)
       - > The model has been trained on two datasets: The [CNN Dailymail dataset](https://huggingface.co/datasets/cnn_dailymail) and the [Extreme Summarization (XSum) dataset](https://huggingface.co/datasets/xsum). The numbers 12 and 6 in the model name refer to the number of encoder layers and decoder layers, respectively.
     - 
-- **Articles:**
+-  📰 **Articles:**
   - [Transformers BART Model Explained for Text Summarization](https://www.projectpro.io/article/transformers-bart-model-explained/553)
 
 #### :bangbang: Issues
@@ -138,6 +155,18 @@ The main con we see with long text summarization using **BertSum** is the underl
 - [Simple Application to summarize data using GPT-3 Openai model](https://techcommunity.microsoft.com/t5/ai-machine-learning-blog/simple-application-to-summarize-data-using-gpt-3-openai-model/ba-p/3047978)
 - [GPT3-text-summarization](https://github.com/juan-csv/GPT3-text-summarization)
 - [Awesome GPT-3](https://github.com/elyase/awesome-gpt3)
+
+### GPT-3: Generative Pre-trained Transformer
+
+- 📄 **Paper:** [Language Models are Few-Shot Learners](https://arxiv.org/abs/2005.14165)
+  - 📃 Other related papers: [News Summarization and Evaluation in the Era of GPT-3](https://arxiv.org/abs/2209.12356)
+- **Implementations:**
+- 📰 **Articles:**
+  - [State of the Art GPT-3 Summarizer For Any Size Document or Format](https://www.width.ai/post/gpt3-summarizer)
+
+#### Zero Shot Text Summarization With GPT-3
+
+Zero shot text summarization refers to using GPT-3 to summarize a given text input without providing any examples in the prompt.
 
 ## Evaluation
 

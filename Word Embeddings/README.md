@@ -99,9 +99,10 @@ In one hot encoding, every word (even symbols) which are part of the given text 
 ### 📰 Articles
 
 - [One-hot](https://en.wikipedia.org/wiki/One-hot)
-- [](https://medium.com/analytics-vidhya/one-hot-encoding-of-text-data-in-natural-language-processing-2242fefb2148)
+- [One Hot encoding of text data in Natural Language Processing](https://medium.com/analytics-vidhya/one-hot-encoding-of-text-data-in-natural-language-processing-2242fefb2148)
 - [How to One Hot Encode Sequence Data in Python](https://machinelearningmastery.com/how-to-one-hot-encode-sequence-data-in-python/)
 - [One Hot Encoding to treat Categorical data parameters](https://www.geeksforgeeks.org/ml-one-hot-encoding-of-datasets-in-python/)
+- [Natural Language Processing: Count Vectorization with scikit-learn](https://towardsdatascience.com/natural-language-processing-count-vectorization-with-scikit-learn-e7804269bb5e)
 
 ### Implementation
 
@@ -161,6 +162,16 @@ When used for language modelling, independence assumptions are made so that each
 
 Note that in a simple n-gram language model, the probability of a word, conditioned on some number of previous words (one word in a bigram model, two words in a trigram model, etc.) can be described as following a categorical distribution (often imprecisely called a "multinomial distribution").
 
+### Pros and Cons
+
+**Pros:**
+
+- 
+
+**Cons:**
+
+- The major drawback of feature spaces represented by n-gram models is extreme **sparcity**. But even more unsettling is that it can only interpret unseen instances with respect to learned training data. That is, if a classifier learned from the instances _'today was a good day'_ and _'that is a ridiculous thing to say'_, it is unable to say much about the instance _'i love this song!'_ since the features are _'today', 'was', 'a', 'good', 'day', 'that', 'is', 'ridiculous', 'thing', 'to', 'say'_.
+
 ### 📚 Books
 
 - [N-gram Language Models](https://web.stanford.edu/~jurafsky/slp3/3.pdf) chapter, _“Speech and Language Processing”_ by Daniel Jurafsky & James H. Martin, 2021.
@@ -182,6 +193,15 @@ Note that in a simple n-gram language model, the probability of a word, conditio
 | Title | Description, Information |
 | :---:         |          :--- |
 |[Tokenizers](https://github.com/huggingface/tokenizers)|Fast State-of-the-Art Tokenizers optimized for Research and Production by [HuggingFace](https://huggingface.co/)|
+
+------
+
+## 📄 Articles
+
+- [Word embedding](https://en.wikipedia.org/wiki/Word_embedding), Wikipedia
+
+
+------
 
 ## Models
 

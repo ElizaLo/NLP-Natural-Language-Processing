@@ -121,10 +121,25 @@ An encoded vector is returned with a length of the entire vocabulary and an inte
 The row of the above matrix represents the document, and the columns contain all the unique words with their frequency. In case a word did not occur, then it is assigned zero correspondings to the document in a row.
 Imagine it as a one-hot encoded vector and due to that, it is pretty obvious to get a sparse matrix with a lot of zeros.
 
+### Pros and Cons
+
+**Pros:**
+
+- The most significant advantage of the bag-of-words model is its simplicity and ease of use.
+
+**Cons:**
+
+- The vocabulary/dictionary needs to be designed very carefully. Considering its size has an impact on the sparsity of the document representations and must be managed well.
+- The model **ignores context** by discarding the meaning of the words and focusing on the frequency of occurrence. This can be a major problem because the arrangement of the words in a sentence can completely change the meaning of the sentence and the model cannot account for this.
+- Another major drawback of this model is that it is rather **difficult to model [sparse representations](https://en.wikipedia.org/wiki/Sparse_approximation)**. This is due to informational reasons as well as computational reasons. The model finds it difficult to harness a small amount of information in a vast representational space.
+- If the new sentences contain new words, then our vocabulary size would increase and thereby, the length of the vectors would increase too. Additionally, the vectors would also contain many 0s, thereby resulting in a sparse matrix (which is what we would like to avoid).
+
 ### 📰 Articles
 
 - [Bag of words model](https://thatascience.com/learn-machine-learning/bag-of-words/)
 - [10+ Examples for Using CountVectorizer](https://kavita-ganesan.com/how-to-use-countvectorizer/#.YGMSUy1c5WO)
+- [Bag of words Model](https://www.engati.com/glossary/bag-of-words)
+- [All You Need to Know About Bag of Words and Word2Vec — Text Feature Extraction](https://towardsdatascience.com/all-you-need-to-know-about-bag-of-words-and-word2vec-text-feature-extraction-e386d9ed84aa)
 
 ### Implmentation 
 

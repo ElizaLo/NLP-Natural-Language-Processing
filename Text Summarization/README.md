@@ -168,6 +168,24 @@ The main con we see with long text summarization using **BertSum** is the underl
 
 Zero shot text summarization refers to using GPT-3 to summarize a given text input without providing any examples in the prompt.
 
+**Large Document Zero Shot Summarization Problems**
+
+You’ll need to split the input text into smaller chunks to pass through GPT-3. Should I just try to fill up as much of the prompt as I can with each run to minimize the total runs? One problem with this is that your model's ability to understand each sentence and its importance to the overall chunk will go down as the size grows. This doesn’t really affect extractive summarization as much you can simply just increase the sentence count, but abstractive will take a hit as it becomes harder to decide what information is valuable enough to fit into a summary as the “possible information pool” grows. You also limit the size of your summary that can be generated. 
+
+Smaller chunks allow for more understanding per chunk but increase the risk of split contextual information. Let’s say you split a dialog or topic in half when chunking to summarize. If the contextual information from that dialog or topic is small or hard to decipher per chunk that model might not include it at all in the summary for either chunk. You’ve now taken an important part of the overall text and split the contextual information about it in half reducing the model's likelihood to consider it important. On the other side you might produce two summaries of the two chunks dominated by that dialog or topic.
+
+**Few Shot Summarization**
+
+Few shot learning with GPT-3 refers to taking the underlying task agnostic large language model and showing the prompt actual examples of how to complete the task. The model combines its trained understanding of how to predict the next token in a language sequence and the “pattern” it picks up on in the prompt through examples to produce a much higher accuracy result. Accuracy is an odd idea here, as it really just follows the examples and tries to fit its quick learning to the new input. As you can imagine, if your examples are incorrect (sentiment analysis) or don't contain the output you would want, you’ll get a result that you don’t want. 
+
+Few shot learning with relevant examples has been shown to **boost the accuracy of GPT-3 up to 30%** for some tasks, and the boost for summarization is no different. Relevant prompt examples help guide our GPT-3 summarizer to include specific language and topics in our summary without needing overly structured prompt instructions that can lead to overfitting. 
+
+One key difference is our new ability to steer the model towards results that exactly fit what we want without needing multiple steps. We can use our examples to affect both extractive and abstractive type summarizations to account for what we want. 
+
+One of the main differences between the two systems is how we set up the architecture for producing summaries. It’s no secret that GPT-3 performs better when the examples provided are relevant to the input text. Examples that discuss the same topics, are from the same news article or are closely related help GPT-3 better understand how to map input language to output language for our specific task. 
+
+Most of full scale production summarization architectures are few shot learning based as seen them to produce the most flexibility and highest “accuracy” towards our goal. 
+
 ## Evaluation
 
 - [SummEval: Re-evaluating Summarization Evaluation](https://direct.mit.edu/tacl/article/doi/10.1162/tacl_a_00373/100686/SummEval-Re-evaluating-Summarization-Evaluation) by **MIT Press Direct**

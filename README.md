@@ -35,6 +35,7 @@
   - [Natural Language Processing - Stanford University| Dan Jurafsky, Christopher](https://www.youtube.com/playlist?list=PLLssT5z_DsK8HbD2sPcUIDfQ7zmBarMYv)
   - [Natural Language Processing with Deep Learning (Stanford CS224N)](https://www.youtube.com/playlist?list=PLoROMvodv4rOhcuXMZkNm7j3fVwBBY42z) 
      - [Course website](http://web.stanford.edu/class/cs224n/)
+     - [Stanford CS224N: Natural Language Processing with Deep Learning | Winter 2021](https://www.youtube.com/playlist?list=PLoROMvodv4rOSH4v6133s9LFPRHjEmbmJ) 
      - Modern NLP techniques from recurrent neural networks and word embeddings to transformers and self-attention. Covers applied topics like questions answering and text generation.
   - [Stanford CS224U: Natural Language Understanding | Spring 2019](https://www.youtube.com/playlist?list=PLoROMvodv4rObpMCir6rNNUlFAn56Js20)
   - [Natural Language Processing | University of Michigan](https://www.youtube.com/playlist?list=PLLssT5z_DsK8BdawOVCCaTCO99Ya58ryR)
@@ -82,6 +83,7 @@
 | Title | Description |
 | :---         |          :--- |
 |[ACL](https://vimeo.com/aclweb)| at Vimeo|
+| [Stanford CS224N: Natural Language Processing with Deep Learning | Winter 2021](https://www.youtube.com/playlist?list=PLoROMvodv4rOSH4v6133s9LFPRHjEmbmJ) |  |
 |[Natural Language Processing (NLP) Zero to Hero](https://www.youtube.com/playlist?list=PLQY2H8rRoyvzDbLUZkbudP-MFQZwNmU4S)| by TensorFlow|
 |[Zero to Hero: NLP with Tensorflow and Keras (GDG Sofia meetup)](https://www.youtube.com/watch?v=ECRUJTKuKKs)| |
 |[Natural Language Processing](https://www.youtube.com/playlist?list=PL8P_Z6C4GcuWfAq8Pt6PBYlck4OprHXsw)|This content is based on Machine Learning University (MLU) Accelerated Natural Language Processing class. Slides, notebooks and datasets are available on [GitHub](https://github.com/aws-samples/aws-machine-learning-university-accelerated-nlp)|

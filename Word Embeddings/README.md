@@ -1,5 +1,7 @@
 # Word Embeddings
 
+- [Word Embeddings](https://paperswithcode.com/task/word-embeddings) on Papers with Code
+
 ## Classification of Word Embeddings
 
 > **Vector space model** or **term vector model** is an algebraic model for representing text documents (and any objects, in general) as vectors of identifiers (such as index terms). It is used in **_information filtering, information retrieval, indexing and relevancy rankings_**. 
@@ -8,15 +10,25 @@
 ### Count based Vector space model (Non-semantic)
 
 - Bag-of-words model
-- 
+- TF-IDF (Term Frequency, Inverse Document Frequency)
+- Hashing Vectorization
+
+### Non Context-Based Vector Space Model (Semantic)
+
+- Word2Vec
+- FastText
+- GloVe
+
+### Context-Based Vector Space Model (Semantic)
+
+- ELMo
+- Transformers (BERT)
 
 ### Other
 
 - Ohe-hot encoding
 
 ## 
-
-🔹 [Everything about Embeddings](https://medium.com/@b.terryjack/nlp-everything-about-word-embeddings-9ea21f51ccfe)
 
 - [TF-IDF Vectorizer](https://github.com/ElizaLo/NLP-Natural-Language-Processing/tree/master/Word%20Embedings/TF-IDF%20Vectorizer)
 
@@ -145,6 +157,7 @@ Imagine it as a one-hot encoded vector and due to that, it is pretty obvious to 
 ### Implmentation 
 
 - [Counting words in Python with sklearn's CountVectorizer](https://investigate.ai/text-analysis/counting-words-with-scikit-learns-countvectorizer/)
+- [Basics of CountVectorizer](https://towardsdatascience.com/basics-of-countvectorizer-e26677900f9c)
 
 ## N-gram Language Models
 
@@ -186,6 +199,50 @@ Note that in a simple n-gram language model, the probability of a word, conditio
 
 - [N-gram Language Model with NLTK](https://www.kaggle.com/code/alvations/n-gram-language-model-with-nltk), Kaggle notebook
 
+##  TF–IDF (Term Frequency, Inverse Document Frequency)
+
+TF-IDF (Term Frequency, Inverse Document Frequency) is a numerical statistic that is intended to reflect how important a word is to a document in a collection or [corpus](https://en.wikipedia.org/wiki/Text_corpus). The tf–idf value increases proportionally to the number of times a word appears in the document and is offset by the number of documents in the corpus that contain the word, which helps to adjust for the fact that some words appear more frequently in general.
+
+**This is done by multiplying two metrics:** how many times a word appears in a document, and the inverse document frequency of the word across a set of documents.
+
+- **Term Frequency** of a word in a document. There are several ways of calculating this frequency, with the simplest being a raw count of instances a word appears in a document. Then, there are ways to adjust the frequency, by the length of a document, or by the raw frequency of the most frequent word in a document.
+- **Inverse Document Frequency** of the word across a set of documents. This means, how common or rare a word is in the entire document set. The closer it is to 0, the more common a word is. This metric can be calculated by taking the total number of documents, dividing it by the number of documents that contain a word, and calculating the logarithm.
+
+So, if the word is very common and appears in many documents, this number will approach 0. Otherwise, it will approach 1.
+
+Multiplying these two numbers results in the TF-IDF score of a word in a document. The higher the score, the more relevant that word is in that particular document.
+
+A survey conducted in 2015 showed that 83% of text-based recommender systems in digital libraries use TF–IDF.
+
+TF-IDF was invented for document search and information retrieval. It works by increasing proportionally to the number of times a word appears in a document but is offset by the number of documents that contain the word. So, words that are common in every document, such as _the_, _a_, and _of_, rank low even though they may appear many times since they don’t mean much to that document in particular.
+
+However, if the word _Politics_ appears many times in a document, while not appearing many times in others, it probably means that it’s very relevant.
+
+### Pros and Cons
+
+**Pros:**
+
+- 
+
+**Cons:**
+
+- The drawback of this method is that it **doesn’t hold the semantic meaning of the words**.
+
+### 📚 Books
+
+- [6. Vector Semantics and Embeddings](https://web.stanford.edu/~jurafsky/slp3/6.pdf), 6.5 TF-IDF: Weighing terms in the vector, page 11, "Speech and Language Processing" by Daniel Jurafsky & James H. Martin.
+  - [Vector 5 TF IDF](https://www.youtube.com/watch?v=TBUpxFw8oIA&list=PLaZQkZp6WhWxIvz74aEvvVc99o7WuOoQ6&index=6)
+  - [TF-IDF](https://web.stanford.edu/~jurafsky/slp3/slides/6_Vector_Apr18_2021.pdf), slides
+
+### 📰 Articles
+
+- [TF–IDF](https://en.wikipedia.org/wiki/Tf–idf), Wikipedia
+
+### Implementation
+
+- [sklearn.feature_extraction.text.TfidfVectorizer](https://scikit-learn.org/stable/modules/generated/sklearn.feature_extraction.text.TfidfVectorizer.html)
+
+
 ## Tokenization
 
 ### Readady Solutions
@@ -196,12 +253,35 @@ Note that in a simple n-gram language model, the probability of a word, conditio
 
 ------
 
-## 📄 Articles
+## 📚 Books
 
-- [Word embedding](https://en.wikipedia.org/wiki/Word_embedding), Wikipedia
-
+- [6. Vector Semantics and Embeddings](https://web.stanford.edu/~jurafsky/slp3/6.pdf), “Speech and Language Processing” by Daniel Jurafsky & James H. Martin
 
 ------
+
+## Courses, Videos
+
+- [Week 4: Vector Semantics and Embeddings](https://www.youtube.com/playlist?list=PLaZQkZp6WhWxIvz74aEvvVc99o7WuOoQ6), by Dan Jurafsky
+
+------
+
+## 📰 Articles
+
+- [Word embedding](https://en.wikipedia.org/wiki/Word_embedding), Wikipedia
+- [A Complete Guide To Understand Evolution of Word to Vector](https://medium.com/co-learning-lounge/nlp-word-embedding-tfidf-bert-word2vec-d7f04340af7f)
+- [Everything about Embeddings](https://medium.com/@b.terryjack/nlp-everything-about-word-embeddings-9ea21f51ccfe)
+- []()
+
+---
+- [Language model](https://en.wikipedia.org/wiki/Language_model)
+
+------
+
+## Implementation
+
+- [Word embeddings  |  Text  |  TensorFlow](https://www.tensorflow.org/text/guide/word_embeddings)
+
+-------
 
 ## Models
 

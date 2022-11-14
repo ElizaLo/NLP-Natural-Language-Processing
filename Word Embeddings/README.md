@@ -222,11 +222,14 @@ However, if the word _Politics_ appears many times in a document, while not appe
 
 **Pros:**
 
-- 
+- The biggest advantages of TF-IDF come from how **simple and easy to use it** is. It is simple to calculate, it is computationally cheap, and it is a simple starting point for similarity calculations (via TF-IDF vectorization + cosine similarity).
+- You have some basic metric to extract the most descriptive terms in a document.
+- You can easily compute the similarity between 2 documents using it.
 
 **Cons:**
 
 - The drawback of this method is that it **doesn’t hold the semantic meaning of the words**.
+- TF-IDF is based on the bag-of-words (BoW) model, therefore it does not capture position in text, co-occurrences in different documents, etc. For this reason, TF-IDF is only useful as a lexical level feature.
 
 ### 📚 Books
 
@@ -237,10 +240,13 @@ However, if the word _Politics_ appears many times in a document, while not appe
 ### 📰 Articles
 
 - [TF–IDF](https://en.wikipedia.org/wiki/Tf–idf), Wikipedia
+- [The Ultimate Guide To Different Word Embedding Techniques In NLP - KDnuggets](https://www.kdnuggets.com/2021/11/guide-word-embedding-techniques-nlp.html)
 
 ### Implementation
 
 - [sklearn.feature_extraction.text.TfidfVectorizer](https://scikit-learn.org/stable/modules/generated/sklearn.feature_extraction.text.TfidfVectorizer.html)
+- [TF-IDF with Scikit-Learn](https://melaniewalsh.github.io/Intro-Cultural-Analytics/05-Text-Analysis/03-TF-IDF-Scikit-Learn.html)
+- [Text Vectorization Using Python: TF-IDF](https://okan.cloud/posts/2022-01-16-text-vectorization-using-python-tf-idf/)
 
 
 ## Tokenization
@@ -270,7 +276,7 @@ However, if the word _Politics_ appears many times in a document, while not appe
 - [Word embedding](https://en.wikipedia.org/wiki/Word_embedding), Wikipedia
 - [A Complete Guide To Understand Evolution of Word to Vector](https://medium.com/co-learning-lounge/nlp-word-embedding-tfidf-bert-word2vec-d7f04340af7f)
 - [Everything about Embeddings](https://medium.com/@b.terryjack/nlp-everything-about-word-embeddings-9ea21f51ccfe)
-- []()
+- [The Ultimate Guide To Different Word Embedding Techniques In NLP - KDnuggets](https://www.kdnuggets.com/2021/11/guide-word-embedding-techniques-nlp.html)
 
 ---
 - [Language model](https://en.wikipedia.org/wiki/Language_model)

@@ -7,7 +7,7 @@
 > **Vector space model** or **term vector model** is an algebraic model for representing text documents (and any objects, in general) as vectors of identifiers (such as index terms). It is used in **_information filtering, information retrieval, indexing and relevancy rankings_**. 
 > **Semantics:** In linguistics, semantics is the subfield that studies meaning. Semantics can address meaning at the levels of words, phrases, sentences, or larger units of [discourse](https://en.wikipedia.org/wiki/Discourse). 
 
-### Count based Vector space model (Non-semantic)
+### Count based Vector Space Model (Non-semantic)
 
 - Bag-of-words model
 - TF-IDF (Term Frequency, Inverse Document Frequency)
@@ -87,6 +87,8 @@
 
 -----------------------------------------------------------------------
 
+# Count based Vector Space Model (Non-semantic)
+
 ## One-hot encodding
 
 > Also known as _**“1-of-N”**_ encoding (meaning the vector is composed of a single one and a number of zeros).
@@ -97,12 +99,12 @@ In one hot encoding, every word (even symbols) which are part of the given text 
 
 ### Pros and Cons
 
-**Pros:**
+➕ **Pros:**
 
 - One-hot encoding ensures that machine learning does not assume that higher numbers are more important. For example, the value '8' is bigger than the value '1', but that does not make '8' more important than '1'. The same is true for words: the value 'laughter' is not more important than 'laugh'.
 - One-Hot-Encoding has the advantage that the result is binary rather than ordinal and that everything sits in an orthogonal vector space.
 
-**Cons:**
+➖ **Cons:**
 
 - Curse of **dimensionality**, which refers to all sorts of problems that arise with data in high dimensions. Even with relatively small eight dimensions, our example text requires exponentially large memory space. Most of the matrix is taken up by zeros, so useful data becomes sparse. Imagine we have a vocabulary of 50,000. (There are roughly a million words in English language.) Each word is represented with 49,999 zeros and a single one, and we need 50,000 squared = 2.5 billion units of memory space. Not computationally efficient.
 - **Hard to extract meanings.** Each word is embedded in isolation, and every word contains a single one and N zeros where N is the number of dimensions. The resulting set of vectors do not say much about one another. If our vocabulary had _“orange”, “banana”_ and _“watermelon”_, we can see the similarity between those words, such as the fact that they are types of fruit, or that they usually follow some form of the verb _“eat”_. We can easily form a mental map or cluster where these words exist close to each other. But with one-hot vectors, all words are equal distance apart.
@@ -136,11 +138,11 @@ Imagine it as a one-hot encoded vector and due to that, it is pretty obvious to 
 
 ### Pros and Cons
 
-**Pros:**
+➕ **Pros:**
 
 - The most significant advantage of the bag-of-words model is its simplicity and ease of use.
 
-**Cons:**
+➖ **Cons:**
 
 - The vocabulary/dictionary needs to be designed very carefully. Considering its size has an impact on the sparsity of the document representations and must be managed well.
 - The model **ignores context** by discarding the meaning of the words and focusing on the frequency of occurrence. This can be a major problem because the arrangement of the words in a sentence can completely change the meaning of the sentence and the model cannot account for this.
@@ -177,11 +179,11 @@ Note that in a simple n-gram language model, the probability of a word, conditio
 
 ### Pros and Cons
 
-**Pros:**
+➕ **Pros:**
 
 - 
 
-**Cons:**
+➖ **Cons:**
 
 - The major drawback of feature spaces represented by n-gram models is extreme **sparcity**. But even more unsettling is that it can only interpret unseen instances with respect to learned training data. That is, if a classifier learned from the instances _'today was a good day'_ and _'that is a ridiculous thing to say'_, it is unable to say much about the instance _'i love this song!'_ since the features are _'today', 'was', 'a', 'good', 'day', 'that', 'is', 'ridiculous', 'thing', 'to', 'say'_.
 
@@ -199,7 +201,7 @@ Note that in a simple n-gram language model, the probability of a word, conditio
 
 - [N-gram Language Model with NLTK](https://www.kaggle.com/code/alvations/n-gram-language-model-with-nltk), Kaggle notebook
 
-##  TF–IDF (Term Frequency, Inverse Document Frequency)
+## TF–IDF (Term Frequency, Inverse Document Frequency)
 
 TF-IDF (Term Frequency, Inverse Document Frequency) is a numerical statistic that is intended to reflect how important a word is to a document in a collection or [corpus](https://en.wikipedia.org/wiki/Text_corpus). The tf–idf value increases proportionally to the number of times a word appears in the document and is offset by the number of documents in the corpus that contain the word, which helps to adjust for the fact that some words appear more frequently in general.
 
@@ -220,13 +222,13 @@ However, if the word _Politics_ appears many times in a document, while not appe
 
 ### Pros and Cons
 
-**Pros:**
+➕ **Pros:**
 
 - The biggest advantages of TF-IDF come from how **simple and easy to use it** is. It is simple to calculate, it is computationally cheap, and it is a simple starting point for similarity calculations (via TF-IDF vectorization + cosine similarity).
 - You have some basic metric to extract the most descriptive terms in a document.
 - You can easily compute the similarity between 2 documents using it.
 
-**Cons:**
+➖ **Cons:**
 
 - The drawback of this method is that it **doesn’t hold the semantic meaning of the words**.
 - TF-IDF is based on the bag-of-words (BoW) model, therefore it does not capture position in text, co-occurrences in different documents, etc. For this reason, TF-IDF is only useful as a lexical level feature.
@@ -247,7 +249,16 @@ However, if the word _Politics_ appears many times in a document, while not appe
 - [sklearn.feature_extraction.text.TfidfVectorizer](https://scikit-learn.org/stable/modules/generated/sklearn.feature_extraction.text.TfidfVectorizer.html)
 - [TF-IDF with Scikit-Learn](https://melaniewalsh.github.io/Intro-Cultural-Analytics/05-Text-Analysis/03-TF-IDF-Scikit-Learn.html)
 - [Text Vectorization Using Python: TF-IDF](https://okan.cloud/posts/2022-01-16-text-vectorization-using-python-tf-idf/)
+- [TF IDF | TFIDF Python Example](https://towardsdatascience.com/natural-language-processing-feature-engineering-using-tf-idf-e8b9d00e7e76)
 
+------
+
+# Non-Context-Based Vector Space Model (Semantic)
+
+## Word2Vec
+
+
+------
 
 ## Tokenization
 

@@ -186,6 +186,8 @@ One of the main differences between the two systems is how we set up the archite
 
 Most of full scale production summarization architectures are few shot learning based as seen them to produce the most flexibility and highest “accuracy” towards our goal. 
 
+
+
 ## Evaluation
 
 - [SummEval: Re-evaluating Summarization Evaluation](https://direct.mit.edu/tacl/article/doi/10.1162/tacl_a_00373/100686/SummEval-Re-evaluating-Summarization-Evaluation) by **MIT Press Direct**
@@ -202,8 +204,6 @@ ROUGE, or Recall-Oriented Understudy for Gisting Evaluation, measures the simila
 - ROUGE-1: refers to the overlap of unigram (each word) between the two
 - ROUGE-2: refers to the overlap of bigram (each two consecutive words) between the two
 - ROUGE-L: refers to the longest common sequence between the two
-
-
 
 ## Articles
 

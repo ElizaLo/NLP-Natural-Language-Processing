@@ -160,6 +160,7 @@ The main con we see with long text summarization using **BertSum** is the underl
 
 - 📄 **Paper:** [Language Models are Few-Shot Learners](https://arxiv.org/abs/2005.14165)
   - 📃 Other related papers: [News Summarization and Evaluation in the Era of GPT-3](https://arxiv.org/abs/2209.12356)
+  - [Papers with Code - GPT-3 Explained](https://paperswithcode.com/method/gpt-3)
 - **Implementations:**
 - 📰 **Articles:**
   - [State of the Art GPT-3 Summarizer For Any Size Document or Format](https://www.width.ai/post/gpt3-summarizer)

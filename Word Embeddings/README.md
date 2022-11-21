@@ -16,6 +16,8 @@
 ### Non Context-Based Vector Space Model (Semantic)
 
 - Word2Vec
+  - Continuous Bag-of-Words Model
+  - Continuous Skip-gram Model
 - FastText
 - GloVe
 
@@ -45,8 +47,8 @@
           - [Distributed Representations of Words and Phrases and their Compositionality](https://papers.nips.cc/paper/5021-distributed-representations-of-words-and-phrases-and-their-compositionality.pdf)
           - [Efficient Estimation of Word Representations in Vector Space](https://arxiv.org/pdf/1301.3781.pdf)
         - **Word2Vec**
-          - [Word2Vec Tutorial](http://mccormickml.com/2017/01/11/word2vec-tutorial-part-2-negative-sampling/)
-          - [Implementing Deep Learning Methods and Feature Engineering for Text Data: The Continuous Bag of Words (CBOW)](https://www.kdnuggets.com/2018/04/implementing-deep-learning-methods-feature-engineering-text-data-cbow.html)
+          - Continuous Bag-of-Words Model
+          - Continuous Skip-gram Model
         - **FastText**
           - [Bag of Tricks for Efficient Text Classification](https://arxiv.org/pdf/1607.01759.pdf)
           - [Enriching Word Vectors with Subword Information](https://arxiv.org/pdf/1607.04606.pdf)
@@ -259,6 +261,12 @@ However, if the word _Politics_ appears many times in a document, while not appe
 
 - 📄 **Paper:** [Efficient Estimation of Word Representations in Vector Space](https://arxiv.org/abs/1301.3781), 16 Jan 2013 by Tomas Mikolov, Kai Chen, Greg Corrado, Jeffrey Dean
 
+Word2Vec was presented in two initial papers released within a month of each other. The original authors are a team of researchers from Google.
+
+### Continuous Bag-of-Words Model
+
+### Continuous Skip-gram Model
+
 ### 📄 Papers
 
 - **Original Paper:** [Efficient Estimation of Word Representations in Vector Space](https://arxiv.org/abs/1301.3781), 16 Jan 2013 by Tomas Mikolov, Kai Chen, Greg Corrado, Jeffrey Dean
@@ -266,6 +274,11 @@ However, if the word _Politics_ appears many times in a document, while not appe
 - [Exploiting Similarities among Languages for Machine Translation](https://arxiv.org/abs/1309.4168), 17 Sep 2013 by Tomas Mikolov, Quoc V. Le, Ilya Sutskever
 - [Distributed Representations of Words and Phrases and their Compositionality](https://arxiv.org/abs/1310.4546), 16 Oct 2013 by Tomas Mikolov, Ilya Sutskever, Kai Chen, Greg Corrado, Jeffrey Dean
 
+### 📰 Articles
+
+- [Word2Vec Resources · Chris McCormick](http://mccormickml.com/2016/04/27/word2vec-resources/#original-papers--resources-from-google-team)
+- [Word2Vec Tutorial](http://mccormickml.com/2017/01/11/word2vec-tutorial-part-2-negative-sampling/)
+- [Implementing Deep Learning Methods and Feature Engineering for Text Data: The Continuous Bag of Words (CBOW)](https://www.kdnuggets.com/2018/04/implementing-deep-learning-methods-feature-engineering-text-data-cbow.html)
 
 ------
 

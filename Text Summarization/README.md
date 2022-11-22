@@ -162,6 +162,8 @@ The main con we see with long text summarization using **BertSum** is the underl
   - 📃 Other related papers: [News Summarization and Evaluation in the Era of GPT-3](https://arxiv.org/abs/2209.12356)
   - [Papers with Code - GPT-3 Explained](https://paperswithcode.com/method/gpt-3)
 - **Implementations:**
+  - [OpenAI API - GPT-3 Documentation](https://beta.openai.com/docs/models/gpt-3)
+  - [Fine-tuning](https://beta.openai.com/docs/guides/fine-tuning)
 - 📰 **Articles:**
   - [State of the Art GPT-3 Summarizer For Any Size Document or Format](https://www.width.ai/post/gpt3-summarizer)
 
@@ -187,7 +189,22 @@ One of the main differences between the two systems is how we set up the archite
 
 Most of full scale production summarization architectures are few shot learning based as seen them to produce the most flexibility and highest “accuracy” towards our goal. 
 
+#### GPT-3 Tokenization
 
+- [GPT-3 Online Tokenizer](https://beta.openai.com/tokenizer)
+
+Tokenizer for GPT-3 is the same as GPT-2: 🤗 (OpenAI GPT2)[https://huggingface.co/docs/transformers/model_doc/gpt2#gpt2tokenizerfast].
+
+A helpful rule of thumb is that one token generally corresponds to ~4 characters of text for common English text. This translates to roughly ¾ of a word (so 100 tokens ~= 75 words).
+
+The GPT-3 model can take as input from 4,000 to 2,000 tokens (**not confused with words!**). GPT-3 generates ~125-140% tokenks from the input text). 
+> The text with 2,000 words approximately has 2,800 tokens.
+
+#### Conclusions
+
+- This model is very sensitive to the input end, which influences the tokenization and consequently affects the summarized text
+
+> **Warning:** Your text ends in a trailing space, which causes worse performance due to how the API splits text into tokens.
 
 ## Evaluation
 

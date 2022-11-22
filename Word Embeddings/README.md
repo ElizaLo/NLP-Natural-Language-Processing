@@ -2,6 +2,16 @@
 
 - [Word Embeddings](https://paperswithcode.com/task/word-embeddings) on Papers with Code
 
+## What is word embedding?
+
+In natural language processing (NLP), word embedding is a term used for the representation of words for text analysis, typically in the form of a real-valued vector that encodes the meaning of the word such that the words that are closer in the vector space are expected to be similar in meaning.
+
+## 📜 A Brief History of Word Embeddings
+
+The underlying idea that _"a word is characterized by the company it keeps"_ was proposed in a **1957** article by [**John Rupert Firth**](https://en.wikipedia.org/wiki/J._R._Firth), but also has roots in the contemporaneous work on search systems and in cognitive psychology.
+
+The _first generation of semantic space models_ is the vector space model for information retrieval. Such vector space models for words and their distributional data implemented in their simplest form results in a very sparse vector space of high dimensionality (cf. Curse of dimensionality). Reducing the number of dimensions using linear algebraic methods such as singular value decomposition then led to the introduction of latent semantic analysis in the late 1980s and the Random indexing approach for collecting word cooccurrence contexts. In 2000 Bengio et al. provided in a series of papers the "Neural probabilistic language models" to reduce the high dimensionality of words representations in contexts by "learning a distributed representation for words".
+
 ## Classification of Word Embeddings
 
 > **Vector space model** or **term vector model** is an algebraic model for representing text documents (and any objects, in general) as vectors of identifiers (such as index terms). It is used in **_information filtering, information retrieval, indexing and relevancy rankings_**. 
@@ -265,19 +275,27 @@ Word2Vec was presented in two initial papers released within a month of each oth
 
 ### Continuous Bag-of-Words Model
 
+- [Papers with Code - CBoW Word2Vec Explained](https://paperswithcode.com/method/cbow-word2vec)
+
 ### Continuous Skip-gram Model
+
+- [Papers with Code - Skip-gram Word2Vec Explained](https://paperswithcode.com/method/skip-gram-word2vec)
 
 ### 📄 Papers
 
 - **Original Paper:** [Efficient Estimation of Word Representations in Vector Space](https://arxiv.org/abs/1301.3781), 16 Jan 2013 by Tomas Mikolov, Kai Chen, Greg Corrado, Jeffrey Dean
   - [Papers with Code - Efficient Estimation of Word Representations in Vector Space](https://paperswithcode.com/paper/efficient-estimation-of-word-representations)
+  - [Papers with Code - word2vec Explained: deriving Mikolov et al.'s negative-sampling word-embedding method](https://paperswithcode.com/paper/word2vec-explained-deriving-mikolov-et-als)
 - [Exploiting Similarities among Languages for Machine Translation](https://arxiv.org/abs/1309.4168), 17 Sep 2013 by Tomas Mikolov, Quoc V. Le, Ilya Sutskever
 - [Distributed Representations of Words and Phrases and their Compositionality](https://arxiv.org/abs/1310.4546), 16 Oct 2013 by Tomas Mikolov, Ilya Sutskever, Kai Chen, Greg Corrado, Jeffrey Dean
+- [Papers with Code - CBoW Word2Vec Explained](https://paperswithcode.com/method/cbow-word2vec)
+- [Papers with Code - Skip-gram Word2Vec Explained](https://paperswithcode.com/method/skip-gram-word2vec)
 
 ### 📰 Articles
 
 - [Word2Vec Resources · Chris McCormick](http://mccormickml.com/2016/04/27/word2vec-resources/#original-papers--resources-from-google-team)
 - [Word2Vec Tutorial](http://mccormickml.com/2017/01/11/word2vec-tutorial-part-2-negative-sampling/)
+- 
 - [Implementing Deep Learning Methods and Feature Engineering for Text Data: The Continuous Bag of Words (CBOW)](https://www.kdnuggets.com/2018/04/implementing-deep-learning-methods-feature-engineering-text-data-cbow.html)
 
 ------
@@ -307,7 +325,10 @@ Word2Vec was presented in two initial papers released within a month of each oth
 ## 📰 Articles
 
 - [Word embedding](https://en.wikipedia.org/wiki/Word_embedding), Wikipedia
+- [A Brief History of Word Embeddings | Gavagai](https://www.gavagai.io/text-analytics/a-brief-history-of-word-embeddings/)
+- [On word embeddings - Part 1](https://ruder.io/word-embeddings-1/index.html), 
 - [A Complete Guide To Understand Evolution of Word to Vector](https://medium.com/co-learning-lounge/nlp-word-embedding-tfidf-bert-word2vec-d7f04340af7f)
+- [Word Embedding in NLP: One-Hot Encoding and Skip-Gram Neural Network](https://towardsdatascience.com/word-embedding-in-nlp-one-hot-encoding-and-skip-gram-neural-network-81b424da58f2)
 - [Everything about Embeddings](https://medium.com/@b.terryjack/nlp-everything-about-word-embeddings-9ea21f51ccfe)
 - [The Ultimate Guide To Different Word Embedding Techniques In NLP - KDnuggets](https://www.kdnuggets.com/2021/11/guide-word-embedding-techniques-nlp.html)
 

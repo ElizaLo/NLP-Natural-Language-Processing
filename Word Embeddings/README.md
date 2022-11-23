@@ -242,6 +242,10 @@ Note that in a simple n-gram language model, the probability of a word, conditio
 
 - [N-gram Language Model with NLTK](https://www.kaggle.com/code/alvations/n-gram-language-model-with-nltk), Kaggle notebook
 
+## Co-Occurence Counts/Vectors
+
+Words that are related will often appear in the same documents. For instance, _"banks", "bonds", "stocks", "money"_, etc. are probably likely to appear together. But _"banks", "octopus", "banana"_, and _"hockey"_ would probably not consistently appear together. 
+
 ## TF–IDF (Term Frequency, Inverse Document Frequency)
 
 TF-IDF (Term Frequency, Inverse Document Frequency) is a numerical statistic that is intended to reflect how important a word is to a document in a collection or [corpus](https://en.wikipedia.org/wiki/Text_corpus). The tf–idf value increases proportionally to the number of times a word appears in the document and is offset by the number of documents in the corpus that contain the word, which helps to adjust for the fact that some words appear more frequently in general.

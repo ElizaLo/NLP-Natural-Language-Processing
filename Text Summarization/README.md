@@ -223,6 +223,12 @@ ROUGE, or Recall-Oriented Understudy for Gisting Evaluation, measures the simila
 - ROUGE-2: refers to the overlap of bigram (each two consecutive words) between the two
 - ROUGE-L: refers to the longest common sequence between the two
 
+## Tools
+
+| Title | Description, Information |
+| :---:         |          :--- |
+|[Cohere AI](https://docs.cohere.ai)|[Text Summarization](https://docs.cohere.ai/docs/text-summarization-guide) - This article demonstrates a simple way of using Cohere's generation models to summarize text.|
+
 ## Articles
 
 - [Bootcamp Tech Blog #4: Long Document Summarization](https://cinnamonai.medium.com/bootcamp-tech-blog-4-long-document-summarization-6bc25e3add94)

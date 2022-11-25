@@ -121,9 +121,15 @@
 |[Hugging Face](https://github.com/huggingface/blog)|Public repo for HF blog posts|
 |[AllenNLP](https://github.com/allenai/allennlp)|An open-source NLP research library, built on PyTorch. [Allenai.org](https://allenai.org/allennlp)|
 
+## Conferences
+
+- [NeurIPS](https://nips.cc) - Neural Information Processing Systems
+- [ACL](https://www.aclweb.org/portal/) - ACL Home Association for Computational Linguistics
+  - [ACL Anthology](https://aclanthology.org) - The ACL Anthology currently hosts 80890 papers on the study of computational linguistics and natural language processing.
+- 
+
 
 ## Tools
-
 
 ### Modules
 

@@ -60,7 +60,7 @@
       - Folder with [code](https://github.com/ElizaLo/NLP-Natural-Language-Processing/blob/master/Courses/LinkedIn%20Learning/Advanced%20NLP%20with%20Python%20for%20Machine%20Learning/Exercises.ipynb)
   - [Матеріали для курсу NLP в Проджекторі](https://github.com/sudodoki/prj-nlp/tree/master)
   - [Advaced NLP with spaCy](https://course.spacy.io/en/)
-  - [fast.ai course: A Code-First Introduction to Natural Language Processing](https://www.fast.ai/2019/07/08/fastai-nlp/)
+  - [fast.ai course: A Code-First Introduction to Natural Language Processing](https://www.fast.ai/posts/2019-07-08-fastai-nlp.html) 
     - [A Code-First Intro to Natural Language Processing](https://github.com/fastai/course-nlp) on GitHub :octocat:
   - 
   

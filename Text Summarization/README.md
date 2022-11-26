@@ -71,7 +71,7 @@ BART is constructed from a bi-directional encoder like in BERT and an autoregres
 BART outperforms RoBERTa in several fine-tuning tasks.
 
 - 📄 **Paper:** [BART: Denoising Sequence-to-Sequence Pre-training for Natural Language Generation, Translation, and Comprehension](https://arxiv.org/abs/1910.13461)
-- **Implementations:**
+- :hammer_and_wrench: **Implementations:**
   - 🤗 **HuggingFace:** 
     - [facebook/bart-large-cnn](https://huggingface.co/facebook/bart-large-cnn)
     - [sshleifer/distilbart-cnn-12-6](https://huggingface.co/sshleifer/distilbart-cnn-12-6)
@@ -161,7 +161,7 @@ The main con we see with long text summarization using **BertSum** is the underl
 - 📄 **Paper:** [Language Models are Few-Shot Learners](https://arxiv.org/abs/2005.14165)
   - 📃 Other related papers: [News Summarization and Evaluation in the Era of GPT-3](https://arxiv.org/abs/2209.12356)
   - [Papers with Code - GPT-3 Explained](https://paperswithcode.com/method/gpt-3)
-- **Implementations:**
+- :hammer_and_wrench: **Implementations:**
   - [OpenAI API - GPT-3 Documentation](https://beta.openai.com/docs/models/gpt-3)
   - [Fine-tuning](https://beta.openai.com/docs/guides/fine-tuning)
 - 📰 **Articles:**
@@ -193,20 +193,20 @@ Most of full scale production summarization architectures are few shot learning 
 
 - [GPT-3 Online Tokenizer](https://beta.openai.com/tokenizer)
 
-Tokenizer for GPT-3 is the same as GPT-2: 🤗 (OpenAI GPT2)[https://huggingface.co/docs/transformers/model_doc/gpt2#gpt2tokenizerfast].
+Tokenizer for GPT-3 is the same as GPT-2: 🤗 [OpenAI GPT2](https://huggingface.co/docs/transformers/model_doc/gpt2#gpt2tokenizerfast).
 
 A helpful rule of thumb is that one token generally corresponds to ~4 characters of text for common English text. This translates to roughly ¾ of a word (so 100 tokens ~= 75 words).
 
 The GPT-3 model can take as input from 4,000 to 2,000 tokens (**not confused with words!**). GPT-3 generates ~125-140% tokenks from the input text). 
 > The text with 2,000 words approximately has 2,800 tokens.
 
-#### Conclusions
+#### :thought_balloon: Conclusions
 
 - This model is very sensitive to the input end, which influences the tokenization and consequently affects the summarized text
 
 > **Warning:** Your text ends in a trailing space, which causes worse performance due to how the API splits text into tokens.
 
-## Evaluation
+## :test_tube: Evaluation
 
 - [SummEval: Re-evaluating Summarization Evaluation](https://direct.mit.edu/tacl/article/doi/10.1162/tacl_a_00373/100686/SummEval-Re-evaluating-Summarization-Evaluation) by **MIT Press Direct**
 - [NLP-progress - Summarization](http://nlpprogress.com/english/summarization.html) - Repository to track the progress in Natural Language Processing (NLP), including the datasets and the current state-of-the-art for the most common NLP tasks.
@@ -223,12 +223,12 @@ ROUGE, or Recall-Oriented Understudy for Gisting Evaluation, measures the simila
 - ROUGE-2: refers to the overlap of bigram (each two consecutive words) between the two
 - ROUGE-L: refers to the longest common sequence between the two
 
-## Tools
+## :gear: Tools
 
 | Title | Description, Information |
 | :---:         |          :--- |
 |[Cohere AI](https://docs.cohere.ai)|[Text Summarization](https://docs.cohere.ai/docs/text-summarization-guide) - This article demonstrates a simple way of using Cohere's generation models to summarize text.|
 
-## Articles
+## :page_facing_up: Articles
 
 - [Bootcamp Tech Blog #4: Long Document Summarization](https://cinnamonai.medium.com/bootcamp-tech-blog-4-long-document-summarization-6bc25e3add94)

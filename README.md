@@ -99,7 +99,9 @@
   - > I'm a research scientist at Google. I blog about natural language processing and machine learning.  
 - :octocat: [Software Engineering Blogs](https://github.com/kilimchoi/engineering-blogs)
   - > A curated list of engineering blogs
-- 
+- [The Gradient](https://thegradient.pub)
+  - > The Gradient is an organization with the missions of making it easier for anyone to learn about AI and of facilitating discussion within the AI community. We were founded in 2017 by a group of students and researchers at the Stanford AI Lab.
+-
 
 ## Atricles
 

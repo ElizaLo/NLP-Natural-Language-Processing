@@ -169,7 +169,19 @@ The main con we see with long text summarization using **BertSum** is the underl
 
 #### Zero Shot Text Summarization With GPT-3
 
-Zero shot text summarization refers to using GPT-3 to summarize a given text input without providing any examples in the prompt.
+Zero shot text summarization refers to using GPT-3 to summarize a given text input without providing any examples in the prompt. We simply provide the instructions for what we want GPT-3 to do and provide the text. 
+
+The GPT-3 playground provides another example of summarization by simply adding a “tl;dr” to the end of the text passage. They consider this a “no instruction” example as they have not specified an initial task and rely entirely on the underlying language models' understanding of what “tl;dr” means.
+
+**Zero Shot Summarization Explained**
+
+Zero shot based GPT-3 prompts allow you to utilize the underlying model's understanding of your task given through instructions or headers in the prompt without being affected by examples. The model is only steered by any headers and instructions and it leverages these to grow its understanding of what you consider correct. At the end of the day, most GPT-3 tasks are somewhat relative. What you consider a correct response vs what the model considers correct vs what a client considers correct can all be somewhat different. In summarization, it can mean an emphasis on specific keywords, topics, or phrases. It can mean a specific length or contain specific proper nouns. 
+
+Because we haven’t included any real information through examples or a more specific prompt you’re at the mercy of the models underlying understanding. This makes it more difficult to steer the model towards what we might consider a good summary. This is the key flaw in zero shot summarization, as it becomes much harder to fit our prompt to a test dataset as the variation grows. Language changes to just the header and instruction cause less and less change as a few things happen:
+1. The size of the input text grows or becomes exponentially shorter. This also depends on the [GPT-3 engine](https://beta.openai.com/docs/engines/gpt-3)
+2. The variance in the type or input text or origin of the input text grows. If we’ve fit a nice zero shot summarization model to paragraphs out of a textbook, then move to research papers we will most likely see a drop in accuracy.
+‍
+This makes zero shot summarizers relatively unstable and very hard to use in production without a full natural language processing pipeline. There are some use cases where it does make sense. 
 
 **Large Document Zero Shot Summarization Problems**
 
@@ -205,6 +217,14 @@ The GPT-3 model can take as input from 4,000 to 2,000 tokens (**not confused wit
 - This model is very sensitive to the input end, which influences the tokenization and consequently affects the summarized text
 
 > **Warning:** Your text ends in a trailing space, which causes worse performance due to how the API splits text into tokens.
+
+- It’s also worth taking note of the rather high temperature value and shorter max tokens. 
+- Each time model generates text of different lengths. Setting up `max_tokens` doesn’t guarantee that text would be this length.
+- Words in upper case are divided wrong into the tokens (e.g. FEBRUARY, CUISINE, RESEARCH, MENU, etc.). It is necessary to reduce all words to lowercase or to the form of ordinary sentences, where only the capital letter in the word is large.
+- Generally, the best work notes to summary, TL;DR summarization and extracting keywords. Summarize for a 2nd grader creates short, messy, not coherent summarization that does not cover not all key points or does not cover at all.
+- **TL;DR summarization:** create well-structured summarization, covering most key points, sometimes short or could be messy.
+- **Notes to summary:** generate the longest text and the most coherent, covering almost all key points and keywords.
+- **Keywords:** extract the most relevant keywords from the given text, which cover big generalized topics (e.g. alcohol, delivery, dining, upscale, restaurant, drink, menu, order).
 
 ## :test_tube: Evaluation
 

@@ -37,19 +37,21 @@
      - [Course website](http://web.stanford.edu/class/cs224n/)
      - [Stanford CS224N: Natural Language Processing with Deep Learning | Winter 2021](https://www.youtube.com/playlist?list=PLoROMvodv4rOSH4v6133s9LFPRHjEmbmJ) 
      - [Natural Language Processing with Dan Jurafsky and Chris Manning, 2012 Stanford Online](https://www.youtube.com/playlist?list=PLoROMvodv4rOFZnDyrlW3-nI7tMLtmiJZ)
-     - Modern NLP techniques from recurrent neural networks and word embeddings to transformers and self-attention. Covers applied topics like questions answering and text generation.
+     > Modern NLP techniques from recurrent neural networks and word embeddings to transformers and self-attention. Covers applied topics like questions answering and text generation.
   - [Stanford CS224U: Natural Language Understanding | Spring 2019](https://www.youtube.com/playlist?list=PLoROMvodv4rObpMCir6rNNUlFAn56Js20)
   - [Natural Language Processing | University of Michigan](https://www.youtube.com/playlist?list=PLLssT5z_DsK8BdawOVCCaTCO99Ya58ryR)
-  - [A Code-First Introduction to NLP course](https://github.com/fastai/course-nlp) by fast.ai
+  - :octocat: [A Code-First Introduction to NLP course](https://github.com/fastai/course-nlp) by fast.ai
   - [From Languages to Information](https://web.stanford.edu/class/cs124/) by Stanford University
   - [Deep Learning for Natural Language Processing](https://www.cs.ox.ac.uk/teaching/courses/2016-2017/dl/) by University of Oxford
   - [Natural Language Processing](https://courses.cs.washington.edu/courses/cse517/17wi/) by University of Washington
-  - [Natural Language Processing](https://github.com/yandexdataschool/nlp_course/tree/master) by Yandex Data School
+  - [Natural Language Processing](https://github.com/yandexdataschool/nlp_course) by Yandex Data School
+    - [NLP Course | For You](https://lena-voita.github.io/nlp_course.html)
+    > This is an extension to the (ML for) Natural Language Processing course teached at the Yandex School of Data Analysis (YSDA). For now, only part of the topics is likely to be covered here.
   - [Natural Language Processing](https://www.coursera.org/learn/language-processing) by National Research University Higher School of Economics (via Coursera)
   - [Applied Natural Language Processing](http://people.ischool.berkeley.edu/~dbamman/info256.html) by UC Berkeley
   - [Advanced Methods in Natural Language Processing](https://www.cs.tau.ac.il/~joberant/teaching/nlp_spring_2019/index.html) by Tel Aviv University
   - [Text Retrieval and Search Engines [FULL COURSE] | UIUC](https://www.youtube.com/playlist?list=PLLssT5z_DsK8Jk8mpFc_RPzn2obhotfDO)
-    - This course will cover search engine technologies, which play an important role in any data mining applications involving text data for two reasons. First, while the raw data may be large for any particular problem, it is often a relatively small subset of the data that are relevant, and a search engine is an essential tool for quickly discovering a small subset of relevant text data in a large text collection. Second, search engines are needed to help analysts interpret any patterns discovered in the data by allowing them to examine the relevant original text data to make sense of any discovered pattern. You will learn the basic concepts, principles, and the major techniques in text retrieval, which is the underlying science of search engines. 
+    > This course will cover search engine technologies, which play an important role in any data mining applications involving text data for two reasons. First, while the raw data may be large for any particular problem, it is often a relatively small subset of the data that are relevant, and a search engine is an essential tool for quickly discovering a small subset of relevant text data in a large text collection. Second, search engines are needed to help analysts interpret any patterns discovered in the data by allowing them to examine the relevant original text data to make sense of any discovered pattern. You will learn the basic concepts, principles, and the major techniques in text retrieval, which is the underlying science of search engines. 
   - [Text Mining and Analytics [FULL COURSE] | UIUC](https://www.youtube.com/playlist?list=PLLssT5z_DsK8Xwnh_0bjN4KNT81bekvtt)
   - [Mining Massive Datasets - Stanford University [FULL COURSE]](https://www.youtube.com/playlist?list=PLLssT5z_DsK9JDLcT8T62VtzwyW9LNepV)
   - Coursera:
@@ -58,11 +60,11 @@
   - LinkedIn Learning:
     - [Advanced NLP with Python for Machine Learning](https://www.linkedin.com/learning/advanced-nlp-with-python-for-machine-learning)
       - Folder with [code](https://github.com/ElizaLo/NLP-Natural-Language-Processing/blob/master/Courses/LinkedIn%20Learning/Advanced%20NLP%20with%20Python%20for%20Machine%20Learning/Exercises.ipynb)
-  - [Матеріали для курсу NLP в Проджекторі](https://github.com/sudodoki/prj-nlp/tree/master)
+  - :octocat: [Матеріали для курсу NLP в Проджекторі](https://github.com/sudodoki/prj-nlp/tree/master)
   - [Advaced NLP with spaCy](https://course.spacy.io/en/)
   - [fast.ai course: A Code-First Introduction to Natural Language Processing](https://www.fast.ai/posts/2019-07-08-fastai-nlp.html) 
-    - [A Code-First Intro to Natural Language Processing](https://github.com/fastai/course-nlp) on GitHub :octocat:
-  - 
+    - :octocat: [A Code-First Intro to Natural Language Processing](https://github.com/fastai/course-nlp) on GitHub :octocat:
+  - :octocat: [CS 4650 and 7650](https://github.com/jacobeisenstein/gt-nlp-class) - Course materials for Georgia Tech CS 4650 and 7650, "Natural Language"
   
 ## Books
 
@@ -131,7 +133,7 @@
 - 
 
 
-## Tools
+## :hammer_and_wrench: Tools
 
 ### Modules
 

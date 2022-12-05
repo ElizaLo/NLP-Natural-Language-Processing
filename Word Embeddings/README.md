@@ -131,7 +131,7 @@ As of the late 2010s, contextually-meaningful embeddings such as [ELMo](https://
 
 # Count based Vector Space Model (Non-semantic)
 
-## :small_blue_diamond: One-hot encodding
+## 🔹 One-hot encodding
 
 > Also known as _**“1-of-N”**_ encoding (meaning the vector is composed of a single one and a number of zeros).
 
@@ -165,7 +165,7 @@ In one hot encoding, every word (even symbols) which are part of the given text 
 - [sklearn.preprocessing.OneHotEncoder](https://scikit-learn.org/stable/modules/generated/sklearn.preprocessing.OneHotEncoder.html)
 - [Keras: to_categorical-function]([https://keras.io/api/utils/#to_categorical](https://keras.io/api/utils/python_utils/#to_categorical-function))
 
-## :small_blue_diamond: Bag-of-words model (BoW)
+## 🔹 Bag-of-words model (BoW)
 
 In this model, a text (such as a sentence or a document) is represented as the [bag (multiset)](https://en.wikipedia.org/wiki/Multiset) of its words, disregarding grammar and even word order but keeping multiplicity.
 
@@ -203,7 +203,7 @@ Imagine it as a one-hot encoded vector and due to that, it is pretty obvious to 
 - [Counting words in Python with sklearn's CountVectorizer](https://investigate.ai/text-analysis/counting-words-with-scikit-learns-countvectorizer/)
 - [Basics of CountVectorizer](https://towardsdatascience.com/basics-of-countvectorizer-e26677900f9c)
 
-## :small_blue_diamond: N-gram Language Models
+## 🔹 N-gram Language Models
 
 > An n-gram model is a type of probabilistic [language model](https://en.wikipedia.org/wiki/Language_model) for predicting the next item in such a sequence in the form of a (n − 1)–order [Markov model](https://en.wikipedia.org/wiki/Markov_chain).
 
@@ -243,13 +243,24 @@ Note that in a simple n-gram language model, the probability of a word, conditio
 
 - [N-gram Language Model with NLTK](https://www.kaggle.com/code/alvations/n-gram-language-model-with-nltk), Kaggle notebook
 
-## :small_blue_diamond: Co-Occurence Counts/Vectors
+## 🔹 Co-Occurence Counts/Vectors
 
 Words that are related will often appear in the same documents. For instance, _"banks", "bonds", "stocks", "money"_, etc. are probably likely to appear together. But _"banks", "octopus", "banana"_, and _"hockey"_ would probably not consistently appear together. 
 
 ### Window based Co-occurrence Matrix
 
-Еhe matrix X stores co-occurrences of words thereby becoming an [affinity matrix](https://deepai.org/machine-learning-glossary-and-terms/affinity-matrix). In this method we count the number of times each word appears inside a window of a particular size around the word of interest. We calculate this count for all the words in corpus.
+The general procedure is illustrated below and consists of the two steps:
+
+1. construct a word-context matrix,
+2. reduce its dimensionality. 
+
+There are two reasons to reduce dimensionality. First, a raw matrix is very large. Second, since a lot of words appear in only a few of possible contexts, this matrix potentially has a lot of uninformative elements (e.g., zeros).
+
+The simplest approach is to define _contexts_ as each _word_ in an _**L-sized window**_. The matrix element for a **word**-**context** pair _**(w, c)**_ is the number of times **_w_** appears in _context_ **_c_**. This is the very basic (and very, very old) method for obtaining embeddings.
+
+**_N(w, c)_** - number of times **word _w_** appears in **context _c_**.
+
+The matrix X stores co-occurrences of words thereby becoming an [affinity matrix](https://deepai.org/machine-learning-glossary-and-terms/affinity-matrix). In this method we count the number of times each word appears inside a window of a particular size around the word of interest. We calculate this count for all the words in corpus.
 
 Let our corpus contain just three sentences and the window size be 1:
 
@@ -259,18 +270,36 @@ Let our corpus contain just three sentences and the window size be 1:
 
 The resulting counts matrix will then be:
 
-The general procedure is illustrated below and consists of the two steps:
+But, remember this co-occurrence matrix is not the word vector representation that is generally used. Instead, this Co-occurrence matrix is decomposed using techniques like **Principal Component Analysis (PCA), Singular Value Decomposition (SVD)** etc. into factors and combination of these factors forms the word vector representation.
 
-1. construct a word-context matrix,
-2. reduce its dimensionality. 
+### Pros and Cons
 
-There are two reasons to reduce dimensionality. First, a raw matrix is very large. Second, since a lot of words appear in only a few of possible contexts, this matrix potentially has a lot of uninformative elements (e.g., zeros).
+➕ **Pros:**
 
-### Courses
+- It preserves the semantic relationship between words. i.e man and woman tend to be closer than man and apple.
+- It uses SVD at its core, which produces more accurate word vector representations than existing methods.
+- It uses factorization which is a well-defined problem and can be efficiently solved.
+- It has to be computed once and can be used anytime once computed. In this sense, it is faster in comparison to others.
+
+➖ **Cons:**
+
+- It requires huge memory to store the co-occurrence matrix. 
+  > But, this problem can be circumvented by factorizing the matrix out of the system for example in Hadoop clusters etc. and can be saved.
+
+### Problems with Singular Value Decomposition (SVD) method
+
+### 📰 Articles
+
+- [Word Embeddings](https://lena-voita.github.io/nlp_course/word_embeddings.html#pre_neural)
+- [Understanding Word Embeddings: From Word2Vec to Count Vectors](https://www.analyticsvidhya.com/blog/2017/06/word-embeddings-count-word2veec/)
+- [Co-occurrence matrix & Singular Value Decomposition (SVD)](https://medium.com/analytics-vidhya/co-occurrence-matrix-singular-value-decomposition-svd-31b3d3deb305)
+- [Word Vectors Intuition and Co-Occurrence Matrixes](https://towardsdatascience.com/word-vectors-intuition-and-co-occurence-matrixes-a7f67cae16cd)
+
+### 🧑‍🏫 Courses
 
 - **_CS224n: Natural Language Processing with Deep Learning_**, Lecture Notes: Part I, [“Word Vectors I: Introduction, SVD and Word2Vec”](https://web.stanford.edu/class/cs224n/readings/cs224n-2019-notes01-wordvecs1.pdf)
 
-## :small_blue_diamond: TF–IDF (Term Frequency, Inverse Document Frequency)
+## 🔹 TF–IDF (Term Frequency, Inverse Document Frequency)
 
 TF-IDF (Term Frequency, Inverse Document Frequency) is a numerical statistic that is intended to reflect how important a word is to a document in a collection or [corpus](https://en.wikipedia.org/wiki/Text_corpus). The tf–idf value increases proportionally to the number of times a word appears in the document and is offset by the number of documents in the corpus that contain the word, which helps to adjust for the fact that some words appear more frequently in general.
 
@@ -324,17 +353,17 @@ However, if the word _Politics_ appears many times in a document, while not appe
 
 # Non-Context-Based Vector Space Model (Semantic)
 
-## :small_blue_diamond: Word2Vec
+## 🔹 Word2Vec
 
 - 📄 **Paper:** [Efficient Estimation of Word Representations in Vector Space](https://arxiv.org/abs/1301.3781), 16 Jan 2013 by Tomas Mikolov, Kai Chen, Greg Corrado, Jeffrey Dean
 
 Word2Vec was presented in two initial papers released within a month of each other. The original authors are a team of researchers from Google.
 
-### :diamond_shape_with_a_dot_inside: Continuous Bag-of-Words Model
+### 💠 Continuous Bag-of-Words Model
 
 - [Papers with Code - CBoW Word2Vec Explained](https://paperswithcode.com/method/cbow-word2vec)
 
-### :diamond_shape_with_a_dot_inside: Continuous Skip-gram Model
+### 💠 Continuous Skip-gram Model
 
 - [Papers with Code - Skip-gram Word2Vec Explained](https://paperswithcode.com/method/skip-gram-word2vec)
 

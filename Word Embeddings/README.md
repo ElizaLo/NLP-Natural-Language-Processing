@@ -288,6 +288,14 @@ But, remember this co-occurrence matrix is not the word vector representation th
 
 ### Problems with Singular Value Decomposition (SVD) method
 
+SVD based methods do not scale well for big matrices and it is hard to incorporate new words or documents.
+
+1. The dimensions of the matrix change very often (new words are added very frequently and the corpus changes in size).
+2. The matrix is extremely sparse since most words do not co-occur.
+3. The matrix is very highly dimensional in general.
+4. Quadratic cost to train (i.e. to perform SVD). Computational cost for a m × n matrix is O(mn<sup>2</sup>)
+5. Requires the incorporation of some hacks on X to account for the drastic imbalance in word frequency.
+
 ### 📰 Articles
 
 - [Word Embeddings](https://lena-voita.github.io/nlp_course/word_embeddings.html#pre_neural)

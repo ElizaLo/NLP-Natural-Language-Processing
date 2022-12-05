@@ -66,7 +66,7 @@
     - :octocat: [A Code-First Intro to Natural Language Processing](https://github.com/fastai/course-nlp) on GitHub :octocat:
   - :octocat: [CS 4650 and 7650](https://github.com/jacobeisenstein/gt-nlp-class) - Course materials for Georgia Tech CS 4650 and 7650, "Natural Language"
   
-## Books
+## 📚 Books
 
 - [A lot of NLP books](https://www.dropbox.com/sh/b1c2ulwua9zy574/AACswS1E0IB9LdPDxQ6fexm4a?dl=0) (Natural Language Processing)
 - [Advanced Natural Language Processing with TensorFlow 2](https://github.com/PacktPublishing/Advanced-Natural-Language-Processing-with-TensorFlow-2), published by Packt

@@ -70,7 +70,7 @@ As of the late 2010s, contextually-meaningful embeddings such as [ELMo](https://
 
 - Ohe-hot encoding
 
-## 
+-----
 
 - [TF-IDF Vectorizer](https://github.com/ElizaLo/NLP-Natural-Language-Processing/tree/master/Word%20Embedings/TF-IDF%20Vectorizer)
 
@@ -160,7 +160,7 @@ In one hot encoding, every word (even symbols) which are part of the given text 
 - [One Hot Encoding to treat Categorical data parameters](https://www.geeksforgeeks.org/ml-one-hot-encoding-of-datasets-in-python/)
 - [Natural Language Processing: Count Vectorization with scikit-learn](https://towardsdatascience.com/natural-language-processing-count-vectorization-with-scikit-learn-e7804269bb5e)
 
-### Implementation
+### 🛠️ Implementation
 
 - [sklearn.preprocessing.OneHotEncoder](https://scikit-learn.org/stable/modules/generated/sklearn.preprocessing.OneHotEncoder.html)
 - [Keras: to_categorical-function]([https://keras.io/api/utils/#to_categorical](https://keras.io/api/utils/python_utils/#to_categorical-function))
@@ -198,7 +198,7 @@ Imagine it as a one-hot encoded vector and due to that, it is pretty obvious to 
 - [Bag of words Model](https://www.engati.com/glossary/bag-of-words)
 - [All You Need to Know About Bag of Words and Word2Vec — Text Feature Extraction](https://towardsdatascience.com/all-you-need-to-know-about-bag-of-words-and-word2vec-text-feature-extraction-e386d9ed84aa)
 
-### Implmentation 
+### 🛠️ Implmentation 
 
 - [Counting words in Python with sklearn's CountVectorizer](https://investigate.ai/text-analysis/counting-words-with-scikit-learns-countvectorizer/)
 - [Basics of CountVectorizer](https://towardsdatascience.com/basics-of-countvectorizer-e26677900f9c)
@@ -239,7 +239,7 @@ Note that in a simple n-gram language model, the probability of a word, conditio
 - [N-Grams](https://deepai.org/machine-learning-glossary-and-terms/n-gram)
 - [n-gram](https://en.wikipedia.org/wiki/N-gram), wikipedia
 
-### Implementation
+### 🛠️ Implementation
 
 - [N-gram Language Model with NLTK](https://www.kaggle.com/code/alvations/n-gram-language-model-with-nltk), Kaggle notebook
 
@@ -303,9 +303,13 @@ SVD based methods do not scale well for big matrices and it is hard to incorpora
 - [Co-occurrence matrix & Singular Value Decomposition (SVD)](https://medium.com/analytics-vidhya/co-occurrence-matrix-singular-value-decomposition-svd-31b3d3deb305)
 - [Word Vectors Intuition and Co-Occurrence Matrixes](https://towardsdatascience.com/word-vectors-intuition-and-co-occurence-matrixes-a7f67cae16cd)
 
-### 🧑‍🏫 Courses
+### 🎓 Courses
 
 - **_CS224n: Natural Language Processing with Deep Learning_**, Lecture Notes: Part I, [“Word Vectors I: Introduction, SVD and Word2Vec”](https://web.stanford.edu/class/cs224n/readings/cs224n-2019-notes01-wordvecs1.pdf)
+
+### 🛠️ Implementation
+
+- :octocat: [Co-occurrence Matrix and SVD](https://github.com/AparGarg99/NLP_BU_6thSem/blob/master/Lab%202/English_Code.ipynb)
 
 ## 🔹 TF–IDF (Term Frequency, Inverse Document Frequency)
 
@@ -350,7 +354,7 @@ However, if the word _Politics_ appears many times in a document, while not appe
 - [TF–IDF](https://en.wikipedia.org/wiki/Tf–idf), Wikipedia
 - [The Ultimate Guide To Different Word Embedding Techniques In NLP - KDnuggets](https://www.kdnuggets.com/2021/11/guide-word-embedding-techniques-nlp.html)
 
-### Implementation
+### 🛠️ Implementation
 
 - [sklearn.feature_extraction.text.TfidfVectorizer](https://scikit-learn.org/stable/modules/generated/sklearn.feature_extraction.text.TfidfVectorizer.html)
 - [TF-IDF with Scikit-Learn](https://melaniewalsh.github.io/Intro-Cultural-Analytics/05-Text-Analysis/03-TF-IDF-Scikit-Learn.html)
@@ -410,7 +414,7 @@ Word2Vec was presented in two initial papers released within a month of each oth
 
 ------
 
-## Courses, Videos
+## 🎓 Courses, Videos
 
 - [Week 4: Vector Semantics and Embeddings](https://www.youtube.com/playlist?list=PLaZQkZp6WhWxIvz74aEvvVc99o7WuOoQ6), by Dan Jurafsky
 
@@ -431,7 +435,7 @@ Word2Vec was presented in two initial papers released within a month of each oth
 
 ------
 
-## Implementation
+## 🛠️ Implementation
 
 - [Word embeddings  |  Text  |  TensorFlow](https://www.tensorflow.org/text/guide/word_embeddings)
 

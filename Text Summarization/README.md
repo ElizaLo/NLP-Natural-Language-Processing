@@ -44,6 +44,21 @@
 
 ### BART: Denoising Sequence-to-Sequence Pre-training for Natural Language Generation, Translation, and Comprehension - Model Overview
 
+- 📄 **Paper:** [BART: Denoising Sequence-to-Sequence Pre-training for Natural Language Generation, Translation, and Comprehension](https://arxiv.org/abs/1910.13461)
+- :hammer_and_wrench: **Implementations:**
+  - 🤗 **HuggingFace:** 
+    - [facebook/bart-large-cnn](https://huggingface.co/facebook/bart-large-cnn)
+    - [sshleifer/distilbart-cnn-12-6](https://huggingface.co/sshleifer/distilbart-cnn-12-6)
+      - 📄 **Paper:** [Pre-trained Summarization Distillation](https://arxiv.org/abs/2010.13002)
+      - > The model has been trained on two datasets: The [CNN Dailymail dataset](https://huggingface.co/datasets/cnn_dailymail) and the [Extreme Summarization (XSum) dataset](https://huggingface.co/datasets/xsum). The numbers 12 and 6 in the model name refer to the number of encoder layers and decoder layers, respectively.
+    - 
+-  📰 **Articles:**
+    - [Transformers BART Model Explained for Text Summarization](https://www.projectpro.io/article/transformers-bart-model-explained/553)
+- :gear: **Notebooks:** 
+    - [DistilBART-CNN-12-6](https://github.com/ElizaLo/NLP-Natural-Language-Processing/blob/master/Text%20Summarization/DistilBART-CNN-12-6_Hugging_Face.ipynb) - Text Summarization with Amazon SageMaker and Hugging Face
+    - [facebook_bart-large-cnn.ipynb](https://github.com/ElizaLo/NLP-Natural-Language-Processing/blob/master/Text%20Summarization/facebook_bart-large-cnn.ipynb) - BART (large-sized model), fine-tuned on CNN Daily Mail by Facebook
+
+
 BART is a transformer encoder-encoder (seq2seq) model that combines an autoregressive (GPT-like) decoder with a bidirectional (BERT-like) encoder.
 
 BART ( Bidirectional and Auto-Regressive) from transformers is a sequence-to-sequence model trained as a denoising autoencoder. This means that a fine-tuned BART model can take a text sequence (for example, English) as input and produce a different text sequence at the output (for example, French).
@@ -69,17 +84,6 @@ For the summarization task we need to not only stack the inputs but also prepare
 BART is constructed from a bi-directional encoder like in BERT and an autoregressive decoder like GPT. BERT has around 110M parameters while GPT has 117M, such trainable weights. BART being a sequenced version of the two, fittingly has nearly 140M parameters. Many parameters are justified by the supreme performance it yields on several tasks compared to fine-tuned BERT or its variations like RoBERTa, which has 125M parameters in its base model.
 
 BART outperforms RoBERTa in several fine-tuning tasks.
-
-- 📄 **Paper:** [BART: Denoising Sequence-to-Sequence Pre-training for Natural Language Generation, Translation, and Comprehension](https://arxiv.org/abs/1910.13461)
-- :hammer_and_wrench: **Implementations:**
-  - 🤗 **HuggingFace:** 
-    - [facebook/bart-large-cnn](https://huggingface.co/facebook/bart-large-cnn)
-    - [sshleifer/distilbart-cnn-12-6](https://huggingface.co/sshleifer/distilbart-cnn-12-6)
-      - 📄 **Paper:** [Pre-trained Summarization Distillation](https://arxiv.org/abs/2010.13002)
-      - > The model has been trained on two datasets: The [CNN Dailymail dataset](https://huggingface.co/datasets/cnn_dailymail) and the [Extreme Summarization (XSum) dataset](https://huggingface.co/datasets/xsum). The numbers 12 and 6 in the model name refer to the number of encoder layers and decoder layers, respectively.
-    - 
--  📰 **Articles:**
-  - [Transformers BART Model Explained for Text Summarization](https://www.projectpro.io/article/transformers-bart-model-explained/553)
 
 #### :bangbang: Issues
 
@@ -166,6 +170,8 @@ The main con we see with long text summarization using **BertSum** is the underl
   - [Fine-tuning](https://beta.openai.com/docs/guides/fine-tuning)
 - 📰 **Articles:**
   - [State of the Art GPT-3 Summarizer For Any Size Document or Format](https://www.width.ai/post/gpt3-summarizer)
+- :gear: **Notebook:** 
+  - [GPT-3.ipynb](https://github.com/ElizaLo/NLP-Natural-Language-Processing/blob/master/Text%20Summarization/GPT-3.ipynb) - GPT-3 - Generative Pre-trained Transformer 3, **_model_**: `text-davinci-003` (released: _November 2022_)
 
 #### Zero Shot Text Summarization With GPT-3
 

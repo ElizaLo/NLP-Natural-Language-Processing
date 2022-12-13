@@ -17,6 +17,8 @@
 - :gear: **Notebook:** 
   - [GPT-3.ipynb](https://github.com/ElizaLo/NLP-Natural-Language-Processing/blob/master/Text%20Summarization/GPT-3.ipynb) - GPT-3 - Generative Pre-trained Transformer 3, **_model_**: `text-davinci-003` (released: _November 2022_)
 
+<img src="[https://raw.githubusercontent.com/ElizaLo/NLP-Natural-Language-Processing/master/Language%20Models/img/ezgif.com-gif-maker.jpg](https://github.com/ElizaLo/NLP-Natural-Language-Processing/blob/master/Language%20Models/img/ezgif.com-gif-maker.jpg)" width="1400" height="787">
+
 ### Zero Shot Text Summarization with GPT-3
 
 Zero shot text summarization refers to using GPT-3 to summarize a given text input without providing any examples in the prompt. We simply provide the instructions for what we want GPT-3 to do and provide the text. 
@@ -74,7 +76,31 @@ Leike points out that the new GPT model still has “important limitations” an
 
 `“text-davinci-003”` can generate **“clearer, more engaging, and more compelling content”** and handle **more complex instructions**, according to OpenAI.
 
-`“text-davinci-003”` can also write longer texts, according to OpenAI. As a result, the language AI can now take on tasks that were previously unfeasible. 
+`“text-davinci-003”` can also write longer texts, according to OpenAI. As a result, the language AI can now take on tasks that were previously unfeasible.
+
+#### 📰 Articles
+
+- [OpenAI Released GPT-3 Text-davinci-003. I Compared It With 002. The Results Are Impressive!](https://pub.towardsai.net/openai-just-released-gpt-3-text-davinci-003-i-compared-it-with-002-the-results-are-impressive-dced9aed0cba)
+
+### Other models from OpenAI based on GPT-3
+
+Each of the GPT-3 models has its own USP. Pre-Davinci models such as **Curie**, **Babbage**, and **Ada** can do specific tasks very well at a faster rate and at a lower cost.
+
+- **Curie** `text-curie-001` is suitable for classification and sentiment analysis tasks. The model also produces results for queries, and answers questions, and can be used as a general-purpose chatbot. The comparison shows that it can do many of the tasks of Davinci, but for 10% of the cost.
+
+- **Babbage** `text-babbage-001` is best suited for simple classification tasks and performs SEO text analysis.
+
+- **Ada** `text-ada-001`, the fastest of all models, is capable of tasks such as text parsing, address correction, and less complex classification tasks.
+
+> **Другие модели от OpenAI на базе GPT-3**
+> 
+> Каждая из моделей GPT-3 имеет свое УТП. Модели, предшествовавшие **Davinci**, такие как **Curie**, **Babbage** и **Ada**, могут очень хорошо выполнять специфичные задачи с более высокой скоростью и за меньшую стоимость.
+> 
+> - **Curie** `text-curie-001` подходит для задач классификация и анализа настроений. Модель также выдает результаты на запросы, отвечает на вопросы и может использоваться в качестве чат-бота общего назначения. Сравнение показывает, что она может выполнять многие задачи Davinci, но за 10% стоимости.
+> 
+> - **Babbage** `text-babbage-001` лучше всего подходит для простых задач классификации и выполняет SEO-анализ текста.
+> 
+> - **Ada** `text-ada-001`, самая быстрая из всех моделей, способна выполнять такие задачи, как синтаксический анализ текста, исправление адреса и менее сложные задачи классификации.
 
 📰 **Articles:**
 

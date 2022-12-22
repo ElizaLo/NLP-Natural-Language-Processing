@@ -106,6 +106,31 @@ Each of the GPT-3 models has its own USP. Pre-Davinci models such as **Curie**, 
 
 - [OpenAI’s latest GPT-3 model generates better and longer texts](https://the-decoder.com/openais-latest-gpt-3-model-generates-better-and-longer-texts/)
 
+### Text/Topic Segmentation / Chuncking of long texts (longer than `4097`)
+
+Chunking can be made with Fast Tokenizers from HuggingFace ([Fast tokenizers in the QA pipeline - Hugging Face Course](https://huggingface.co/course/chapter6/3b?fw=pt#handling-long-contexts)) with GPT-2 tokenizer fast ([OpenAI GPT2](https://huggingface.co/docs/transformers/model_doc/gpt2#transformers.GPT2TokenizerFast)) since GPT-3 and GPT-2 has the same tokenizer.
+
+```python
+
+from transformers import GPT2TokenizerFast
+
+
+tokenizer = GPT2TokenizerFast.from_pretrained("gpt2")
+
+inputs = tokenizer(
+    long_context,
+    stride=50,
+    max_length=3400,
+    truncation=True,
+    return_overflowing_tokens=True,
+    return_offsets_mapping=True,
+)
+
+tokenizer.decode(inputs["input_ids"][0])[:50]
+```
+
+> There is another possible improvement of chunking with the SBERT model ([SentenceTransformers Documentation — Sentence-Transformers  documentation](https://www.sbert.net)) - 📰 [How to chunk text into paragraphs using python](https://medium.com/@npolovinkin/how-to-chunk-text-into-paragraphs-using-python-8ae66be38ea6).
+
 ### Fine-tuning model
 
 ### 💭 Conclusions

@@ -28,6 +28,8 @@
 ## Papers
 
 - [Papers with Code - Truecasing](https://paperswithcode.com/search?q_meta=&q_type=&q=Truecasing)
+- [Automatic Truecasing of Video Subtitles Using BERT: A Multilingual Adaptable Approach](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7274347/)
+- [Leveraging various Transformers Based Architectures for Truecasing](https://www.sciencedirect.com/science/article/pii/S187705092102086X)
 
 ## 📰 Articles
 

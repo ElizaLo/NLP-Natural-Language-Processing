@@ -1,6 +1,12 @@
 # Transformers
 
-## Tools
+## :octocat: GitHub Repositiories
+
+| Title | Description, Information |
+| :---:         |          :--- |
+|[Awesome Transformer & Transfer Learning in NLP](https://github.com/cedrickchee/awesome-transformer-nlp)|A curated list of NLP resources focused on Transformer networks, attention mechanism, GPT, BERT, ChatGPT, LLMs, and transfer learning.|
+
+## 🛠️ Tools
 
 | Title | Description, Information |
 | :---:         |          :--- |

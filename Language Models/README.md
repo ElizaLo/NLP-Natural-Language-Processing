@@ -3,6 +3,7 @@
 | Title | Description, Information |
 | :---:         |          :--- |
 | **GPT-3** | 📄 **Paper:** [Language Models are Few-Shot Learners](https://arxiv.org/abs/2005.14165v4), [News Summarization and Evaluation in the Era of GPT-3](https://arxiv.org/pdf/2209.12356.pdf), [Papers with Code - GPT-3 Explained](https://paperswithcode.com/method/gpt-3)|
+|**ChatGPT**| |
 
 ## 🔹 GPT-3: Generative Pre-trained Transformer
 
@@ -16,6 +17,12 @@
   - [State of the Art GPT-3 Summarizer For Any Size Document or Format](https://www.width.ai/post/gpt3-summarizer)
 - :gear: **Notebook:** 
   - [GPT-3.ipynb](https://github.com/ElizaLo/NLP-Natural-Language-Processing/blob/master/Text%20Summarization/GPT-3.ipynb) - GPT-3 - Generative Pre-trained Transformer 3, **_model_**: `text-davinci-003` (released: _November 2022_)
+  
+### :octocat: GitHub Repositiories
+
+| Title | Description, Information |
+| :---:         |          :--- |
+|[Gepetto](https://github.com/JusticeRage/Gepetto)|Gepetto is a Python script which uses OpenAI's `davinci-003` model to provide meaning to functions decompiled by IDA Pro. At the moment, it can ask davinci-003 to explain what a function does, and to automatically rename its variables.|
 
 <img src="https://github.com/ElizaLo/NLP-Natural-Language-Processing/blob/master/Language%20Models/img/ezgif.com-gif-maker.jpg" width="700" height="394"/>
 
@@ -154,3 +161,29 @@ tokenizer.decode(inputs["input_ids"][0])[:50]
 
 - How to evaluate results?
 - How to choose `temperature` value?
+
+## 🔹 ChatGPT
+
+- 📄 **Paper:** 
+  - 📃 Other related papers: 
+  - [Papers with Code]()
+- :hammer_and_wrench: **Implementations:**
+  - 
+- 📰 **Articles:**
+  - :hugs: [Illustrating Reinforcement Learning from Human Feedback (RLHF)](https://huggingface.co/blog/rlhf) by HuggingFace
+- :gear: **Notebook:** 
+  - 
+  
+### :octocat: GitHub Repositiories
+
+| Title | Description, Information |
+| :---:         |          :--- |
+|[Awesome ChatGPT](https://github.com/humanloop/awesome-chatgpt)|Curated list of awesome tools, demos, docs for ChatGPT and GPT-3|
+|[ChatGPT](https://github.com/acheong08/ChatGPT)|Lightweight package for interacting with ChatGPT's API by OpenAI. Uses reverse engineered official API.|
+|[]()| |
+
+## :octocat: GitHub Repositiories
+
+| Title | Description, Information |
+| :---:         |          :--- |
+|[Awesome Transformer & Transfer Learning in NLP](https://github.com/cedrickchee/awesome-transformer-nlp)|A curated list of NLP resources focused on Transformer networks, attention mechanism, GPT, BERT, ChatGPT, LLMs, and transfer learning.|

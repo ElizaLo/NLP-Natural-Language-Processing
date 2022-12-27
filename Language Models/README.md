@@ -3,7 +3,7 @@
 | Title | Description, Information |
 | :---:         |          :--- |
 | **GPT-3** | 📄 **Paper:** [Language Models are Few-Shot Learners](https://arxiv.org/abs/2005.14165v4), [News Summarization and Evaluation in the Era of GPT-3](https://arxiv.org/pdf/2209.12356.pdf), [Papers with Code - GPT-3 Explained](https://paperswithcode.com/method/gpt-3)|
-|**InstructGPT**| |
+|**InstructGPT**| 📄 **Paper:** [Training language models to follow instructions with human feedback](https://arxiv.org/abs/2203.02155)|
 |**Pathways Language Model (PaLM)**|📄 **Paper:** [PaLM: Scaling Language Modeling with Pathways](https://arxiv.org/abs/2204.02311) |
 
 ## 🔹 GPT-3: Generative Pre-trained Transformer
@@ -169,7 +169,7 @@ tokenizer.decode(inputs["input_ids"][0])[:50]
 - 🛠️ **Implementations:**
   - :octocat: [InstructGPT: Training Language Models to Follow Instructions with Human Feedback](https://github.com/openai/following-instructions-human-feedback)
 - 📰 **Articles:**
-  - [Aligning Language Models to Follow Instructions](https://openai.com/blog/instruction-following/)
+  - [Aligning Language Models to Follow Instructions](https://openai.com/blog/instruction-following/) by OpenAI
 - :gear: **Notebook:** 
 
 ## 🔹 ChatGPT

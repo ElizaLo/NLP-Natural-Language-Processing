@@ -3,7 +3,8 @@
 | Title | Description, Information |
 | :---:         |          :--- |
 | **GPT-3** | 📄 **Paper:** [Language Models are Few-Shot Learners](https://arxiv.org/abs/2005.14165v4), [News Summarization and Evaluation in the Era of GPT-3](https://arxiv.org/pdf/2209.12356.pdf), [Papers with Code - GPT-3 Explained](https://paperswithcode.com/method/gpt-3)|
-|**ChatGPT**| |
+|**InstructGPT**| |
+|**Pathways Language Model (PaLM)**|📄 **Paper:** [PaLM: Scaling Language Modeling with Pathways](https://arxiv.org/abs/2204.02311) |
 
 ## 🔹 GPT-3: Generative Pre-trained Transformer
 
@@ -162,17 +163,23 @@ tokenizer.decode(inputs["input_ids"][0])[:50]
 - How to evaluate results?
 - How to choose `temperature` value?
 
+## 🔹 InstructGPT
+
+- 📄 **Paper:** [Training language models to follow instructions with human feedback](https://arxiv.org/abs/2203.02155)
+- 🛠️ **Implementations:**
+  - :octocat: [InstructGPT: Training Language Models to Follow Instructions with Human Feedback](https://github.com/openai/following-instructions-human-feedback)
+- 📰 **Articles:**
+  - [Aligning Language Models to Follow Instructions](https://openai.com/blog/instruction-following/)
+- :gear: **Notebook:** 
+
 ## 🔹 ChatGPT
 
 - 📄 **Paper:** 
-  - 📃 Other related papers: 
-  - [Papers with Code]()
-- :hammer_and_wrench: **Implementations:**
-  - 
+- 🛠️ **Implementations:**
 - 📰 **Articles:**
   - :hugs: [Illustrating Reinforcement Learning from Human Feedback (RLHF)](https://huggingface.co/blog/rlhf) by HuggingFace
+  - [ChatGPT: Optimizing Language Models for Dialogue](https://openai.com/blog/chatgpt/) by OpenAI
 - :gear: **Notebook:** 
-  - 
   
 ### :octocat: GitHub Repositiories
 
@@ -181,6 +188,19 @@ tokenizer.decode(inputs["input_ids"][0])[:50]
 |[Awesome ChatGPT](https://github.com/humanloop/awesome-chatgpt)|Curated list of awesome tools, demos, docs for ChatGPT and GPT-3|
 |[ChatGPT](https://github.com/acheong08/ChatGPT)|Lightweight package for interacting with ChatGPT's API by OpenAI. Uses reverse engineered official API.|
 |[]()| |
+
+## 🔹 Pathways Language Model (PaLM)
+
+- 📄 **Paper:** [PaLM: Scaling Language Modeling with Pathways](https://arxiv.org/abs/2204.02311)
+- 📰 **Articles:**
+  - [Pathways Language Model (PaLM): Scaling to 540 Billion Parameters for Breakthrough Performance](https://ai.googleblog.com/2022/04/pathways-language-model-palm-scaling-to.html) by Google Research
+
+### :octocat: GitHub Repositiories
+
+| Title | Description, Information |
+| :---:         |          :--- |
+|[PaLM + RLHF - Pytorch (wip)](https://github.com/lucidrains/PaLM-rlhf-pytorch)|Implementation of RLHF (Reinforcement Learning with Human Feedback) on top of the PaLM architecture. Basically ChatGPT but with PaLM|
+
 
 ## :octocat: GitHub Repositiories
 

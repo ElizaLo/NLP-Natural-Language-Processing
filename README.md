@@ -12,8 +12,12 @@
 
 > - [ ] For **Computer Vision** please check [Computer Vision](https://github.com/ElizaLo/Computer-Vision) repository.
 
-## Natural Language Processing Tasks 
+-----
 
+- [NLP-progress](https://nlpprogress.com) - Repository to track the progress in Natural Language Processing (NLP), including the datasets and the current state-of-the-art for the most common NLP tasks.
+  - :octocat: [Tracking Progress in Natural Language Processing](https://github.com/sebastianruder/NLP-progress)
+
+## Natural Language Processing Tasks 
 
 > Folders with all materials for specific task/domain
 

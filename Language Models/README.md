@@ -11,9 +11,14 @@
 - 📄 **Paper:** [Language Models are Few-Shot Learners](https://arxiv.org/abs/2005.14165)
   - 📃 Other related papers: [News Summarization and Evaluation in the Era of GPT-3](https://arxiv.org/abs/2209.12356)
   - [Papers with Code - GPT-3 Explained](https://paperswithcode.com/method/gpt-3)
-- :hammer_and_wrench: **Implementations:**
+- 🛠️ **Implementations:**
   - [OpenAI API - GPT-3 Documentation](https://beta.openai.com/docs/models/gpt-3)
   - [Fine-tuning](https://beta.openai.com/docs/guides/fine-tuning)
+- **Modifications:**
+  - :octocat: [minGPT](https://github.com/karpathy/minGPT) by **Andrej Karpathy**
+  > A minimal PyTorch re-implementation of the OpenAI GPT (Generative Pretrained Transformer) training
+  - :octocat: [nanoGPT](https://github.com/karpathy/nanoGPT) by **Andrej Karpathy**
+  > The simplest, fastest repository for training/finetuning medium-sized GPTs.
 - 📰 **Articles:**
   - [State of the Art GPT-3 Summarizer For Any Size Document or Format](https://www.width.ai/post/gpt3-summarizer)
 - :gear: **Notebook:** 

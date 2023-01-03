@@ -13,6 +13,7 @@
   - [Papers with Code - GPT-3 Explained](https://paperswithcode.com/method/gpt-3)
 - 🛠️ **Implementations:**
   - [OpenAI API - GPT-3 Documentation](https://beta.openai.com/docs/models/gpt-3)
+  > Read more - [Model index for researchers](https://beta.openai.com/docs/model-index-for-researchers)
   - [Fine-tuning](https://beta.openai.com/docs/guides/fine-tuning)
 - **Modifications:**
   - :octocat: [minGPT](https://github.com/karpathy/minGPT) by **Andrej Karpathy**
@@ -77,6 +78,40 @@ A helpful rule of thumb is that one token generally corresponds to ~4 characters
 The GPT-3 model can take as input from 4,000 to 2,000 tokens (**not confused with words!**). GPT-3 generates ~125-140% tokenks from the input text). 
 > The text with 2,000 words approximately has 2,800 tokens.
 
+Models understand and process text by breaking it down into tokens. Tokens can be words or just chunks of characters. For example, the word _**“hamburger”**_ gets broken up into the tokens _**“ham”**_, _**“bur”**_ and _**“ger”**_, while a short and common word like _**“pear”**_ is a single token. Many tokens start with a whitespace, for example _**“ hello”**_ and _**“ bye”**_.
+
+<img src="https://raw.githubusercontent.com/ElizaLo/NLP-Natural-Language-Processing/master/Language%20Models/img/tokens.png" width="726" height="96"/>
+
+> Common words like _**“cat”**_ are a single token, while less common words are often broken down into multiple tokens. _For example,_ _**“Butterscotch”**_ translates to four tokens: _**“But”**_, _**“ters”**_, _**“cot”**_, and _**“ch”**_.
+
+The number of tokens processed in a given API request depends on the length of both your inputs and outputs. As a rough rule of thumb, 1 token is approximately 4 characters or 0.75 words for English text. One limitation to keep in mind is that your text prompt and generated completion combined must be no more than the model's maximum context length (for most models this is 2048 tokens, or about 1500 words). Check out [tokenizer tool](https://beta.openai.com/tokenizer) to learn more about how text translates to tokens.
+
+### Key concepts for GPT-3 by OpenAI
+
+> Our models are used for both research purposes and developer use cases in production. Researchers often learn about our models from papers that we have published, but there is often not a perfect match between what is available in the OpenAI API and what is published in a paper.
+>
+> The purpose of this page is to help clarify:
+>
+> - Some of the differences in the ways that our models are trained, which impacts the comparisons that can be made between models, and various evaluation results.
+> - The differences between various model series, such as GPT 3.5 and InstructGPT.
+> - Which if any of the models available in the API today match with a model in a paper. In some cases, there might not be a match.
+
+The [completions](https://beta.openai.com/docs/api-reference/completions) endpoint is at the center of our API. It provides a simple interface to our models that is extremely flexible and powerful. _You input some text as a **prompt**, and the model will generate a text **completion** that attempts to match whatever context or pattern you gave it._ 
+
+For example, if you give the API the prompt, _“Write a tagline for an ice cream shop”_, it will return a completion like _“We serve up smiles with every scoop!”_
+
+[Designing your prompt](https://beta.openai.com/docs/guides/completion/prompt-design) is essentially how you “program” the model, usually by providing some instructions or a few examples. This is different from most other NLP services which are designed for a single task, such as sentiment classification or named entity recognition. Instead, the completions endpoint can be used for virtually any task including content or code generation, summarization, expansion, conversation, creative writing, style transfer, and more.
+
+### Models referred to as "GPT 3.5"
+
+> Read more - [Model index for researchers](https://beta.openai.com/docs/model-index-for-researchers)
+
+GPT-3.5 series is a series of models that was trained on a blend of text and code from before Q4 2021. The following models are in the GPT-3.5 series:
+
+1. `code-davinci-002` is a base model, so good for pure code-completion tasks
+2. `text-davinci-002` is an InstructGPT model based on `code-davinci-002`
+3. `text-davinci-003` is an improvement on `text-davinci-002`
+
 ### `text-davinci-003` model
 
 > OpenAI releases a new language model for GPT-3 trained with human feedback (**November 2022**). It brings numerous improvements, according to OpenAI.
@@ -97,6 +132,8 @@ Leike points out that the new GPT model still has “important limitations” an
 
 ### Other models from OpenAI based on GPT-3
 
+The API is powered by a set of models with different capabilities and price points. **Codex** series is a descendant of GPT-3 that’s been trained on both natural language and code.
+
 Each of the GPT-3 models has its own USP. Pre-Davinci models such as **Curie**, **Babbage**, and **Ada** can do specific tasks very well at a faster rate and at a lower cost.
 
 - **Curie** `text-curie-001` is suitable for classification and sentiment analysis tasks. The model also produces results for queries, and answers questions, and can be used as a general-purpose chatbot. The comparison shows that it can do many of the tasks of Davinci, but for 10% of the cost.
@@ -114,6 +151,8 @@ Each of the GPT-3 models has its own USP. Pre-Davinci models such as **Curie**, 
 > - **Babbage** `text-babbage-001` лучше всего подходит для простых задач классификации и выполняет SEO-анализ текста.
 > 
 > - **Ada** `text-ada-001`, самая быстрая из всех моделей, способна выполнять такие задачи, как синтаксический анализ текста, исправление адреса и менее сложные задачи классификации.
+
+To learn more, visit [models documentation](https://beta.openai.com/docs/models).
 
 📰 **Articles:**
 
@@ -144,7 +183,27 @@ tokenizer.decode(inputs["input_ids"][0])[:50]
 
 > There is another possible improvement of chunking with the SBERT model ([SentenceTransformers Documentation — Sentence-Transformers  documentation](https://www.sbert.net)) - 📰 [How to chunk text into paragraphs using python](https://medium.com/@npolovinkin/how-to-chunk-text-into-paragraphs-using-python-8ae66be38ea6).
 
-### Fine-tuning model
+### ⚙️ Fine-tuning model
+
+- 🔸 **Change prompt**
+
+_For example:_
+
+From → `Extract keywords from this text:`, to → `Extract keywords and key phrases from this text:`
+
+- 🔸 **Temperature**
+
+Remember that the model predicts which text is most likely to follow the text preceding it. Temperature is a value between 0 and 1 that essentially lets you control how confident the model should be when making these predictions. Lowering temperature means it will take fewer risks, and completions will be more accurate and deterministic. Increasing temperature will result in more diverse completions.
+
+Given some text, the model determines which token is most likely to come next. _For example,_ the text _**“Horses are my favorite”**_ is most likely to be followed with the token _**“ animal”**_.
+
+<img src="https://raw.githubusercontent.com/ElizaLo/NLP-Natural-Language-Processing/master/Language%20Models/img/probabilities.png" width="737" height="201"/>
+
+This is where temperature comes into play. If you submit this prompt 4 times with temperature set to 0, the model will always return _**“ animal”**_ next because it has the highest probability. If you increase the temperature, it will take more risks and consider tokens with lower probabilities.
+
+<img src="https://raw.githubusercontent.com/ElizaLo/NLP-Natural-Language-Processing/master/Language%20Models/img/temperature.png" width="713" height="201"/>
+
+It’s usually best to set a low temperature for tasks where the desired output is well-defined. Higher temperature may be useful for tasks where variety or creativity are desired, or if you'd like to generate a few variations for your end users or human experts to choose from.
 
 ### 💭 Conclusions
 
@@ -156,11 +215,12 @@ tokenizer.decode(inputs["input_ids"][0])[:50]
 - Words in upper case are divided wrong into the tokens (e.g. FEBRUARY, CUISINE, RESEARCH, MENU, etc.). It is necessary to reduce all words to lowercase or to the form of ordinary sentences, where only the capital letter in the word is large.
 
 ### 💡 Ideas
+
 - Run the model with different `temperature` values and join results together to achieve more extracted keywords. 
 - Run the model with different `temperature` values and count how many words are generated with each.
-- - Reduce all words to lowercase or to the form of ordinary sentences, where only the capital letter in the word is large.
+- Reduce all words to lowercase or to the form of ordinary sentences, where only the capital letter in the word is large.
 - Clean texts to make them more structured and coherent.
-- ** Chunk/divide the input text:** divide the text into several smaller ones and make a keywords extraction for each of them separately and then combine it into one concatenated keywords list.
+- **Chunk/divide the input text:** divide the text into several smaller ones and make a keywords extraction for each of them separately and then combine it into one concatenated keywords list.
 - Make chunking of documents, try and compare the results of summarization of **different GPT-3 models**: `text-davinci-003`, `text-curie-001`, `text-babbage-001` and `text-ada-001`.
 
 ### ❓ Questions
@@ -176,6 +236,28 @@ tokenizer.decode(inputs["input_ids"][0])[:50]
 - 📰 **Articles:**
   - [Aligning Language Models to Follow Instructions](https://openai.com/blog/instruction-following/) by OpenAI
 - :gear: **Notebook:** 
+
+### Models referred to as "GPT 3.5" in OpenAI
+
+> Read more - [Model index for researchers](https://beta.openai.com/docs/model-index-for-researchers)
+
+GPT-3.5 series is a series of models that was trained on a blend of text and code from before Q4 2021. The following models are in the GPT-3.5 series:
+
+1. `code-davinci-002` is a base model, so good for pure code-completion tasks
+2. `text-davinci-002` is an InstructGPT model based on `code-davinci-002`
+3. `text-davinci-003` is an improvement on `text-davinci-002`
+
+### InstructGPT models in OpenAI (January 2022)
+
+We offer variants of InstructGPT models trained in 3 different ways:
+
+| TRAINING METHOD | MODELS |
+| :---        |          :--- |
+|<p>**SFT**</p><p>Supervised fine-tuning on human demonstrations</p>|`davinci-instruct-beta`|
+|<p>**FeedME**</p><p>Supervised fine-tuning on human-written demonstrations and on model samples rated 7/7 by human labelers on an overall quality score</p>|`text-davinci-001`, `text-davinci-002`, `text-curie-001`, `text-babbage-001`|
+|<p>**PPO**</p><p>Reinforcement learning with reward models trained from comparisons by humans</p>|`text-davinci-003`|
+
+The SFT and PPO models are trained similarly to the ones from the 📄 [InstructGPT](https://arxiv.org/abs/2203.02155) paper. FeedME (short for "feedback made easy") models are trained by distilling the best completions from all of our models. Our models generally used the best available datasets at the time of training, and so different engines using the same training methodology might be trained on different data.
 
 ## 🔹 ChatGPT
 
@@ -193,6 +275,33 @@ tokenizer.decode(inputs["input_ids"][0])[:50]
 |[Awesome ChatGPT](https://github.com/humanloop/awesome-chatgpt)|Curated list of awesome tools, demos, docs for ChatGPT and GPT-3|
 |[ChatGPT](https://github.com/acheong08/ChatGPT)|Lightweight package for interacting with ChatGPT's API by OpenAI. Uses reverse engineered official API.|
 |[]()| |
+
+## 💠 Models by OpenAI
+
+The OpenAI API is powered by a family of models with different capabilities and price points. You can also customize our base models for your specific use case with [fine-tuning](https://beta.openai.com/docs/guides/fine-tuning).
+
+<img src="https://raw.githubusercontent.com/ElizaLo/NLP-Natural-Language-Processing/master/Language%20Models/img/OpenAI_models_3.png" width="794" height="188"/>
+
+## 💠 Models featured in OpenAI Research
+
+> Read more -> [Model index for researchers](https://beta.openai.com/docs/model-index-for-researchers)
+
+These are the most proximate models featured in our research papers that are available in the API today. Please note that not all models available in the API correspond to a paper, and even for models that are listed below there may be subtle differences that do not allow for exact replication of the paper.
+
+<img src="https://raw.githubusercontent.com/ElizaLo/NLP-Natural-Language-Processing/master/Language%20Models/img/OpenAI_models_1.png" width="785" height="518"/>
+<img src="https://raw.githubusercontent.com/ElizaLo/NLP-Natural-Language-Processing/master/Language%20Models/img/OpenAI_models_2.png" width="789" height="626"/>
+
+1. This model is deprecated and listed here for historical information only.
+2. These parameters are what is indicated in the **paper**, and in some cases may differ slightly from what is in the API.
+3. `code-cushman-001` is a stronger, multilingual version of the Codex 12B model in [Evaluating Large Language Models Trained on Code](https://arxiv.org/abs/2107.03374).
+
+### 📄 Papers
+
+- [[2005.14165] Language Models are Few-Shot Learners](https://arxiv.org/abs/2005.14165)
+- [[2107.03374] Evaluating Large Language Models Trained on Code](https://arxiv.org/abs/2107.03374)
+- [[2201.10005] Text and Code Embeddings by Contrastive Pre-Training](https://arxiv.org/abs/2201.10005)
+- [[2009.01325] Learning to summarize from human feedback](https://arxiv.org/abs/2009.01325)
+- [[2203.02155] Training language models to follow instructions with human feedback](https://arxiv.org/abs/2203.02155)
 
 ## 🔹 Pathways Language Model (PaLM)
 

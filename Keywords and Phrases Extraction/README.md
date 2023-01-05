@@ -17,41 +17,7 @@
 - 📰 **Articles:**
   - [State of the Art GPT-3 Summarizer For Any Size Document or Format](https://www.width.ai/post/gpt3-summarizer)
 - :gear: **Notebook:** 
-  - [GPT-3.ipynb](https://github.com/ElizaLo/NLP-Natural-Language-Processing/blob/master/Text%20Summarization/GPT-3.ipynb) - GPT-3 - Generative Pre-trained Transformer 3, **_model_**: `text-davinci-003` (released: _November 2022_)
-
-#### Zero Shot Text Summarization with GPT-3
-
-Zero shot text summarization refers to using GPT-3 to summarize a given text input without providing any examples in the prompt. We simply provide the instructions for what we want GPT-3 to do and provide the text. 
-
-The GPT-3 playground provides another example of summarization by simply adding a “tl;dr” to the end of the text passage. They consider this a “no instruction” example as they have not specified an initial task and rely entirely on the underlying language models' understanding of what “tl;dr” means.
-
-**Zero Shot Summarization Explained**
-
-Zero shot based GPT-3 prompts allow you to utilize the underlying model's understanding of your task given through instructions or headers in the prompt without being affected by examples. The model is only steered by any headers and instructions and it leverages these to grow its understanding of what you consider correct. At the end of the day, most GPT-3 tasks are somewhat relative. What you consider a correct response vs what the model considers correct vs what a client considers correct can all be somewhat different. In summarization, it can mean an emphasis on specific keywords, topics, or phrases. It can mean a specific length or contain specific proper nouns. 
-
-Because we haven’t included any real information through examples or a more specific prompt you’re at the mercy of the models underlying understanding. This makes it more difficult to steer the model towards what we might consider a good summary. This is the key flaw in zero shot summarization, as it becomes much harder to fit our prompt to a test dataset as the variation grows. Language changes to just the header and instruction cause less and less change as a few things happen:
-1. The size of the input text grows or becomes exponentially shorter. This also depends on the [GPT-3 engine](https://beta.openai.com/docs/engines/gpt-3)
-2. The variance in the type or input text or origin of the input text grows. If we’ve fit a nice zero shot summarization model to paragraphs out of a textbook, then move to research papers we will most likely see a drop in accuracy.
-‍
-This makes zero shot summarizers relatively unstable and very hard to use in production without a full natural language processing pipeline. There are some use cases where it does make sense. 
-
-**Large Document Zero Shot Summarization Problems**
-
-You’ll need to split the input text into smaller chunks to pass through GPT-3. Should I just try to fill up as much of the prompt as I can with each run to minimize the total runs? One problem with this is that your model's ability to understand each sentence and its importance to the overall chunk will go down as the size grows. This doesn’t really affect extractive summarization as much you can simply just increase the sentence count, but abstractive will take a hit as it becomes harder to decide what information is valuable enough to fit into a summary as the “possible information pool” grows. You also limit the size of your summary that can be generated. 
-
-Smaller chunks allow for more understanding per chunk but increase the risk of split contextual information. Let’s say you split a dialog or topic in half when chunking to summarize. If the contextual information from that dialog or topic is small or hard to decipher per chunk that model might not include it at all in the summary for either chunk. You’ve now taken an important part of the overall text and split the contextual information about it in half reducing the model's likelihood to consider it important. On the other side you might produce two summaries of the two chunks dominated by that dialog or topic.
-
-#### **Few Shot Summarization**
-
-Few shot learning with GPT-3 refers to taking the underlying task agnostic large language model and showing the prompt actual examples of how to complete the task. The model combines its trained understanding of how to predict the next token in a language sequence and the “pattern” it picks up on in the prompt through examples to produce a much higher accuracy result. Accuracy is an odd idea here, as it really just follows the examples and tries to fit its quick learning to the new input. As you can imagine, if your examples are incorrect (sentiment analysis) or don't contain the output you would want, you’ll get a result that you don’t want. 
-
-Few shot learning with relevant examples has been shown to **boost the accuracy of GPT-3 up to 30%** for some tasks, and the boost for summarization is no different. Relevant prompt examples help guide our GPT-3 summarizer to include specific language and topics in our summary without needing overly structured prompt instructions that can lead to overfitting. 
-
-One key difference is our new ability to steer the model towards results that exactly fit what we want without needing multiple steps. We can use our examples to affect both extractive and abstractive type summarizations to account for what we want. 
-
-One of the main differences between the two systems is how we set up the architecture for producing summaries. It’s no secret that GPT-3 performs better when the examples provided are relevant to the input text. Examples that discuss the same topics, are from the same news article or are closely related help GPT-3 better understand how to map input language to output language for our specific task. 
-
-Most of full scale production summarization architectures are few shot learning based as seen them to produce the most flexibility and highest “accuracy” towards our goal. 
+  - [GPT-3.ipynb](https://github.com/ElizaLo/NLP-Natural-Language-Processing/blob/master/Text%20Summarization/GPT-3.ipynb) - GPT-3 - Generative Pre-trained Transformer 3, **_model_**: `text-davinci-003` (released: _November 2022_) 
 
 #### GPT-3 Tokenization
 
@@ -71,7 +37,6 @@ Models understand and process text by breaking it down into tokens. Tokens can b
 > Common words like _**“cat”**_ are a single token, while less common words are often broken down into multiple tokens. _For example,_ _**“Butterscotch”**_ translates to four tokens: _**“But”**_, _**“ters”**_, _**“cot”**_, and _**“ch”**_.
 
 The number of tokens processed in a given API request depends on the length of both your inputs and outputs. As a rough rule of thumb, 1 token is approximately 4 characters or 0.75 words for English text. One limitation to keep in mind is that your text prompt and generated completion combined must be no more than the model's maximum context length (for most models this is 2048 tokens, or about 1500 words). Check out [tokenizer tool](https://beta.openai.com/tokenizer) to learn more about how text translates to tokens.
-
 
 #### `text-davinci-003` model
 
@@ -97,6 +62,28 @@ Leike points out that the new GPT model still has “important limitations” an
 
 From → `Extract keywords from this text:`, to → `Extract keywords and key phrases from this text:`
 
+💠 **Prompt Design**
+
+This simple text-in, text-out interface means you can "program" the model by providing instructions or just a few examples of what you'd like it to do. Its success generally depends on the complexity of the task and the quality of your prompt. A good rule of thumb is to think about how you would write a word problem for a middle schooler to solve. A well-written prompt provides enough information for the model to know what you want and how it should respond.
+
+GPT-3 models by OpenAI can do everything from generating original stories to performing complex text analysis. Because they can do so many things, you have to be explicit in describing what you want. Showing, not just telling, is often the secret to a good prompt.
+
+**There are basic guidelines to creating prompts:**
+
+- **Show and tell.** Make it clear what you want either through instructions, examples, or a combination of the two. If you want the model to rank a list of items in alphabetical order or to classify a paragraph by sentiment, show it that's what you want. 
+- **Use plain language to describe your inputs and outputs.** As a best practice, start with plain language descriptions. While you can often use shorthand or keys to indicate the input and output, it's best to start by being as descriptive as possible and then working backwards to remove extra words and see if performance stays consistent
+- **Provide quality data.** If you're trying to build a classifier or get the model to follow a pattern, make sure that there are enough examples. Be sure to proofread your examples — the model is usually smart enough to see through basic spelling mistakes and give you a response, but it also might assume this is intentional and it can affect the response. → that’s why you may need text pre-processing/cleaning and Grammatical Error Correction (GEC).
+- **You need fewer examples for familiar tasks.** For Tweet sentiment classifier, you don't need to provide any examples. This is because the API already has an understanding of sentiment and the concept of a Tweet. If you're building a classifier for something the API might not be familiar with, it might be necessary to provide more examples.
+- **Check your settings.** The `temperature` and `top_p` settings control how deterministic the model is in generating a response. If you're asking it for a response where there's only one right answer, then you'd want to set these lower. If you're looking for more diverse responses, then you might want to set them higher. The number one mistake people use with these settings is assuming that they're "cleverness" or "creativity" controls.
+
+‼️ **Troubleshooting**
+
+If you're having trouble getting the API to perform as expected, follow this checklist:
+1. Is it clear what the intended generation should be?
+2. Are there enough examples?
+3. Did you check your examples for mistakes? (The API won't tell you directly)
+4. Are you using `temperature`` and top_p` correctly?
+
 - 🔸 **Temperature**
 
 > See more details and examples in 📂 [Language Models](https://github.com/ElizaLo/NLP-Natural-Language-Processing/tree/master/Language%20Models#fine-tuning-model) folder
@@ -104,6 +91,8 @@ From → `Extract keywords from this text:`, to → `Extract keywords and key ph
 Remember that the model predicts which text is most likely to follow the text preceding it. Temperature is a value between 0 and 1 that essentially lets you control how confident the model should be when making these predictions. Lowering temperature means it will take fewer risks, and completions will be more accurate and deterministic. Increasing temperature will result in more diverse completions.
 
 It’s usually best to set a low temperature for tasks where the desired output is well-defined. Higher temperature may be useful for tasks where variety or creativity are desired, or if you'd like to generate a few variations for your end users or human experts to choose from.
+
+‼️ The actual completion you see may differ because the API is stochastic by default. This means that you might get a slightly different completion every time you call it, even if your prompt stays the same. You can control this behavior with the [temperature](https://beta.openai.com/docs/api-reference/completions/create#completions/create-temperature) setting.
 
 📰 **Articles**
 

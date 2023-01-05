@@ -112,6 +112,14 @@ GPT-3.5 series is a series of models that was trained on a blend of text and cod
 2. `text-davinci-002` is an InstructGPT model based on `code-davinci-002`
 3. `text-davinci-003` is an improvement on `text-davinci-002`
 
+### Davinci
+
+Davinci is the most capable model family and can perform any task the other models can perform and often with less instruction. For applications requiring a lot of understanding of the content, like summarization for a specific audience and creative content generation, Davinci is going to produce the best results.
+
+Another area where Davinci shines is in understanding the intent of text. Davinci is quite good at solving many kinds of logic problems and explaining the motives of characters. Davinci has been able to solve some of the most challenging AI problems involving cause and effect.
+
+- ➡️ Good at: **Complex intent, cause and effect, summarization for audience**
+
 ### `text-davinci-003` model
 
 > OpenAI releases a new language model for GPT-3 trained with human feedback (**November 2022**). It brings numerous improvements, according to OpenAI.
@@ -136,21 +144,85 @@ The API is powered by a set of models with different capabilities and price poin
 
 Each of the GPT-3 models has its own USP. Pre-Davinci models such as **Curie**, **Babbage**, and **Ada** can do specific tasks very well at a faster rate and at a lower cost.
 
-- **Curie** `text-curie-001` is suitable for classification and sentiment analysis tasks. The model also produces results for queries, and answers questions, and can be used as a general-purpose chatbot. The comparison shows that it can do many of the tasks of Davinci, but for 10% of the cost.
-
-- **Babbage** `text-babbage-001` is best suited for simple classification tasks and performs SEO text analysis.
-
-- **Ada** `text-ada-001`, the fastest of all models, is capable of tasks such as text parsing, address correction, and less complex classification tasks.
-
-> **Другие модели от OpenAI на базе GPT-3**
-> 
 > Каждая из моделей GPT-3 имеет свое УТП. Модели, предшествовавшие **Davinci**, такие как **Curie**, **Babbage** и **Ada**, могут очень хорошо выполнять специфичные задачи с более высокой скоростью и за меньшую стоимость.
-> 
-> - **Curie** `text-curie-001` подходит для задач классификация и анализа настроений. Модель также выдает результаты на запросы, отвечает на вопросы и может использоваться в качестве чат-бота общего назначения. Сравнение показывает, что она может выполнять многие задачи Davinci, но за 10% стоимости.
-> 
-> - **Babbage** `text-babbage-001` лучше всего подходит для простых задач классификации и выполняет SEO-анализ текста.
-> 
-> - **Ada** `text-ada-001`, самая быстрая из всех моделей, способна выполнять такие задачи, как синтаксический анализ текста, исправление адреса и менее сложные задачи классификации.
+
+### Curie
+
+Curie is extremely powerful, yet very fast. While Davinci is stronger when it comes to analyzing complicated text, Curie is quite capable for many nuanced tasks like sentiment classification and summarization. Curie is also quite good at answering questions and performing Q&A and as a general service chatbot.
+
+While Davinci is more capable when it comes to comprehending text and generating responses that are more nuanced like summarizing for a child or emulating human speaking patterns, Curie is highly capable of analyzing text, answering direct questions, and providing key points.
+
+Curie `text-curie-001` is suitable for classification and sentiment analysis tasks. The model also produces results for queries, and answers questions, and can be used as a general-purpose chatbot. The comparison shows that it can do many of the tasks of Davinci, but for 10% of the cost.
+
+> Curie `text-curie-001` подходит для задач классификация и анализа настроений. Модель также выдает результаты на запросы, отвечает на вопросы и может использоваться в качестве чат-бота общего назначения. Сравнение показывает, что она может выполнять многие задачи Davinci, но за 10% стоимости.
+
+Curie is highly capable of getting important information from text and very useful for a variety of applications including:
+- Turning technical documents into bullet points
+- Extracting important information from email
+- Getting key points from customer service communication
+
+
+- ➡️ Good at: **Language translation, complex classification, text sentiment, summarization**
+
+### Babbage
+
+Babbage can perform straightforward tasks like simple classification. It’s also quite capable when it comes to Semantic Search ranking how well documents match up with search queries.
+
+Babbage `text-babbage-001` is best suited for simple classification tasks and performs SEO text analysis.
+
+> Babbage `text-babbage-001` лучше всего подходит для простых задач классификации и выполняет SEO-анализ текста.
+
+Babbage is good at picking up obvious patterns in text and then using that as a reference to generate text. Babbage can also perform broad classification tasks like assigning categories to industries, genres and media content. For creative applications, Babbage is able to understand enough structure to create simple plots and titles.
+
+- **Idea iteration**
+
+You can give Babbage a prompt as simple as “Provide 7 tips for better YouTube videos,” and it will automatically create a list of practical advice. You can do this for just about any topic that is reasonably well known. 
+
+- **Sentence completion**
+
+Babbage can work as a great brainstorming tool and help someone complete their thoughts. If you start a paragraph or sentence, Babbage can quickly get the context and serve as a writing assistant.
+
+- **Plot generation**
+
+If you provide Babbage with a list of plot ideas from a specific genre, it can continue adding to that list. If you select the good ones and delete the others, you can keep sending the growing list to the API and improve the results.
+
+- ➡️ Good at: **Moderate classification, semantic search classification**
+
+### Ada
+
+Ada is usually the fastest model and can perform tasks like parsing text, address correction and certain kinds of classification tasks that don’t require too much nuance. Ada’s performance can often be improved by providing more context.
+
+Ada `text-ada-001`, the fastest of all models, is capable of tasks such as text parsing, address correction, and less complex classification tasks.
+
+> Ada `text-ada-001`, самая быстрая из всех моделей, способна выполнять такие задачи, как синтаксический анализ текста, исправление адреса и менее сложные задачи классификации.
+
+Ada is extremely fast and capable when it comes to tasks where creativity is more important than precision. This can be very useful for creative applications and for generating large datasets.
+
+- **Random data**
+
+Ada can quickly generate large amounts of data like names and addresses to be used for experimenting, building machine models and testing applications.
+
+- **Character descriptions**
+
+You can use Ada to create character descriptions by sending a handful of examples to the API. By adjusting the temperature and repetition settings you can control the randomness of the generated examples.
+
+- ➡️ Good at: **Parsing text, simple classification, address correction, keywords**
+
+Davinci is the most capable model, and Ada is the fastest.
+
+<img src="https://raw.githubusercontent.com/ElizaLo/NLP-Natural-Language-Processing/master/Language%20Models/img/OpenAI_models_4.png" width="790" height="387"/>
+
+While Davinci is generally the most capable, the other models can perform certain tasks extremely well with significant speed or cost advantages. For example, Curie can perform many of the same tasks as Davinci, but faster and for 1/10th the cost.
+
+### Codex
+
+The Codex models are descendants of GPT-3 models that can understand and generate code. Their training data contains both natural language and billions of lines of public code from GitHub. Learn more.
+
+They’re most capable in Python and proficient in over a dozen languages including **JavaScript**, **Go**, **Perl**, **PHP**, **Ruby**, **Swift**, **TypeScript**, **SQL**, and even **Shell**.
+
+Currently offered two Codex models:
+
+<img src="https://raw.githubusercontent.com/ElizaLo/NLP-Natural-Language-Processing/master/Language%20Models/img/OpenAI_models_5.png" width="790" height="284"/>
 
 To learn more, visit [models documentation](https://beta.openai.com/docs/models).
 
@@ -191,6 +263,28 @@ _For example:_
 
 From → `Extract keywords from this text:`, to → `Extract keywords and key phrases from this text:`
 
+💠 **Prompt Design**
+
+This simple text-in, text-out interface means you can "program" the model by providing instructions or just a few examples of what you'd like it to do. Its success generally depends on the complexity of the task and the quality of your prompt. A good rule of thumb is to think about how you would write a word problem for a middle schooler to solve. A well-written prompt provides enough information for the model to know what you want and how it should respond.
+
+GPT-3 models by OpenAI can do everything from generating original stories to performing complex text analysis. Because they can do so many things, you have to be explicit in describing what you want. Showing, not just telling, is often the secret to a good prompt.
+
+**There are basic guidelines to creating prompts:**
+
+- **Show and tell.** Make it clear what you want either through instructions, examples, or a combination of the two. If you want the model to rank a list of items in alphabetical order or to classify a paragraph by sentiment, show it that's what you want. 
+- **Use plain language to describe your inputs and outputs.** As a best practice, start with plain language descriptions. While you can often use shorthand or keys to indicate the input and output, it's best to start by being as descriptive as possible and then working backwards to remove extra words and see if performance stays consistent
+- **Provide quality data.** If you're trying to build a classifier or get the model to follow a pattern, make sure that there are enough examples. Be sure to proofread your examples — the model is usually smart enough to see through basic spelling mistakes and give you a response, but it also might assume this is intentional and it can affect the response. → that’s why you may need text pre-processing/cleaning and Grammatical Error Correction (GEC).
+- **You need fewer examples for familiar tasks.** For Tweet sentiment classifier, you don't need to provide any examples. This is because the API already has an understanding of sentiment and the concept of a Tweet. If you're building a classifier for something the API might not be familiar with, it might be necessary to provide more examples.
+- **Check your settings.** The `temperature` and `top_p` settings control how deterministic the model is in generating a response. If you're asking it for a response where there's only one right answer, then you'd want to set these lower. If you're looking for more diverse responses, then you might want to set them higher. The number one mistake people use with these settings is assuming that they're "cleverness" or "creativity" controls.
+
+‼️ **Troubleshooting**
+
+If you're having trouble getting the API to perform as expected, follow this checklist:
+1. Is it clear what the intended generation should be?
+2. Are there enough examples?
+3. Did you check your examples for mistakes? (The API won't tell you directly)
+4. Are you using `temperature`` and top_p` correctly?
+
 - 🔸 **Temperature**
 
 Remember that the model predicts which text is most likely to follow the text preceding it. Temperature is a value between 0 and 1 that essentially lets you control how confident the model should be when making these predictions. Lowering temperature means it will take fewer risks, and completions will be more accurate and deterministic. Increasing temperature will result in more diverse completions.
@@ -204,6 +298,13 @@ This is where temperature comes into play. If you submit this prompt 4 times wit
 <img src="https://raw.githubusercontent.com/ElizaLo/NLP-Natural-Language-Processing/master/Language%20Models/img/temperature.png" width="713" height="201"/>
 
 It’s usually best to set a low temperature for tasks where the desired output is well-defined. Higher temperature may be useful for tasks where variety or creativity are desired, or if you'd like to generate a few variations for your end users or human experts to choose from.
+
+**Use a low temperature when extracting data**
+
+_For example,_ we’ve set the temperature low because we’re looking for straight-forward answers to questions that the customer comment provides. We’re not asking the model to try to be creative with its responses – especially for yes or no questions.
+
+‼️ The actual completion you see may differ because the API is stochastic by default. This means that you might get a slightly different completion every time you call it, even if your prompt stays the same. You can control this behavior with the [temperature](https://beta.openai.com/docs/api-reference/completions/create#completions/create-temperature) setting.
+
 
 ### 💭 Conclusions
 

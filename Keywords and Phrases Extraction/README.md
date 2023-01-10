@@ -58,6 +58,13 @@ Leike points out that the new GPT model still has “important limitations” an
 
 ####  ⚙️ Fine-tuning model
 
+Fine-tuning lets you get more out of the models available through the API by providing:
+
+1. Higher quality results than prompt design
+2. Ability to train on more examples than can fit in a prompt
+3. Token savings due to shorter prompts
+4. Lower latency requests
+
 - 🔸 **Change prompt**
 
 From → `Extract keywords from this text:`, to → `Extract keywords and key phrases from this text:`

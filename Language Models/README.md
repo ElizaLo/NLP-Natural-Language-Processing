@@ -2,6 +2,7 @@
 
 | Title | Description, Information |
 | :---:         |          :--- |
+|**Universal Language Model Fine-tuning for Text Classification (ULMFiT)**|<p> 📄 **Paper:** [Universal Language Model Fine-tuning for Text Classification](https://arxiv.org/abs/1801.06146) by Jeremy Howard, Sebastian Ruder</p><p>Inductive transfer learning has greatly impacted computer vision, but existing approaches in NLP still require task-specific modifications and training from scratch. We propose Universal Language Model Fine-tuning (ULMFiT), an effective transfer learning method that can be applied to any task in NLP, and introduce techniques that are key for fine-tuning a language model. Our method significantly outperforms the state-of-the-art on six text classification tasks, reducing the error by 18-24% on the majority of datasets. Furthermore, with only 100 labeled examples, it matches the performance of training from scratch on 100x more data. We open-source our pretrained models and code.</p>|
 | **GPT-3** | 📄 **Paper:** [Language Models are Few-Shot Learners](https://arxiv.org/abs/2005.14165v4), [News Summarization and Evaluation in the Era of GPT-3](https://arxiv.org/pdf/2209.12356.pdf), [Papers with Code - GPT-3 Explained](https://paperswithcode.com/method/gpt-3)|
 |**InstructGPT**| 📄 **Paper:** [Training language models to follow instructions with human feedback](https://arxiv.org/abs/2203.02155)|
 |**Pathways Language Model (PaLM)**|📄 **Paper:** [PaLM: Scaling Language Modeling with Pathways](https://arxiv.org/abs/2204.02311) |
@@ -56,6 +57,8 @@ You’ll need to split the input text into smaller chunks to pass through GPT-3.
 Smaller chunks allow for more understanding per chunk but increase the risk of split contextual information. Let’s say you split a dialog or topic in half when chunking to summarize. If the contextual information from that dialog or topic is small or hard to decipher per chunk that model might not include it at all in the summary for either chunk. You’ve now taken an important part of the overall text and split the contextual information about it in half reducing the model's likelihood to consider it important. On the other side you might produce two summaries of the two chunks dominated by that dialog or topic.
 
 ### **Few Shot Summarization**
+
+GPT-3 has been pre-trained on a vast amount of text from the open internet. When given a prompt with just a few examples, it can often intuit what task you are trying to perform and generate a plausible completion. This is often called "few-shot learning."
 
 Few shot learning with GPT-3 refers to taking the underlying task agnostic large language model and showing the prompt actual examples of how to complete the task. The model combines its trained understanding of how to predict the next token in a language sequence and the “pattern” it picks up on in the prompt through examples to produce a much higher accuracy result. Accuracy is an odd idea here, as it really just follows the examples and tries to fit its quick learning to the new input. As you can imagine, if your examples are incorrect (sentiment analysis) or don't contain the output you would want, you’ll get a result that you don’t want. 
 
@@ -256,6 +259,33 @@ tokenizer.decode(inputs["input_ids"][0])[:50]
 > There is another possible improvement of chunking with the SBERT model ([SentenceTransformers Documentation — Sentence-Transformers  documentation](https://www.sbert.net)) - 📰 [How to chunk text into paragraphs using python](https://medium.com/@npolovinkin/how-to-chunk-text-into-paragraphs-using-python-8ae66be38ea6).
 
 ### ⚙️ Fine-tuning model
+
+Fine-tuning lets you get more out of the models available through the API by providing:
+
+1. Higher quality results than prompt design
+2. Ability to train on more examples than can fit in a prompt
+3. Token savings due to shorter prompts
+4. Lower latency requests
+
+Fine-tuning improves on few-shot learning by training on many more examples than can fit in the prompt, letting you achieve better results on a wide number of tasks. **Once a model has been fine-tuned, you won't need to provide examples in the prompt anymore.** This saves costs and enables lower-latency requests.
+
+At a high level, fine-tuning involves the following steps:
+
+1. Prepare and upload training data
+2. Train a new fine-tuned model
+3. Use your fine-tuned model
+
+Data must be a [JSONL](https://jsonlines.org/) document, where each line is a prompt-completion pair corresponding to a training example. You can use [CLI data preparation tool](https://beta.openai.com/docs/guides/fine-tuning/cli-data-preparation-tool) to easily convert your data into this file format.
+
+``` Jsonl
+{"prompt": "<prompt text>", "completion": "<ideal generated text>"}
+{"prompt": "<prompt text>", "completion": "<ideal generated text>"}
+{"prompt": "<prompt text>", "completion": "<ideal generated text>"}
+...
+```
+Designing your prompts and completions for fine-tuning is different from designing your prompts for use with our base models (Davinci, Curie, Babbage, Ada). In particular, while prompts for base models often consist of multiple examples ("few-shot learning"), for fine-tuning, each training example generally consists of a single input example and its associated output, without the need to give detailed instructions or include multiple examples in the same prompt.
+
+The more training examples you have, the better. **It's recommend having at least a couple hundred examples. In general, were found that each doubling of the dataset size leads to a linear increase in model quality.**
 
 - 🔸 **Change prompt**
 

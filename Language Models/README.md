@@ -287,6 +287,31 @@ Designing your prompts and completions for fine-tuning is different from designi
 
 The more training examples you have, the better. **It's recommend having at least a couple hundred examples. In general, were found that each doubling of the dataset size leads to a linear increase in model quality.**
 
+Every fine-tuning job starts from a base model, which defaults to **curie**. The choice of model influences both the performance of the model and the cost of running your fine-tuned model. Your model can be one of: `ada`, `babbage`, `curie`, or `davinci`.
+
+You may continue to use all the other [Completions](https://beta.openai.com/docs/api-reference/completions) parameters like `temperature`, `frequency_penalty`, `presence_penalty`, etc, on these requests to fine-tuned models.
+
+💠 **Preparing your dataset**
+
+**Data formatting**
+
+To fine-tune a model, you'll need a set of training examples that each consist of a single input ("prompt") and its associated output ("completion"). This is notably different from using our base models, where you might input detailed instructions or multiple examples in a single prompt.
+
+- Each prompt should end with a fixed separator to inform the model when the prompt ends and the completion begins. A simple separator which generally works well is `\n\n###\n\n`. The separator should not appear elsewhere in any prompt.
+- Each completion should start with a whitespace due to our [tokenization](https://beta.openai.com/tokenizer), which tokenizes most words with a preceding whitespace.
+- Each completion should end with a fixed stop sequence to inform the model when the completion ends. A stop sequence could be `\n`, `###`, or any other token that does not appear in any completion.
+- For inference, you should format your prompts in the same way as you did when creating the training dataset, including the same separator. Also specify the same stop sequence to properly truncate the completion.
+
+💠 **General best practices**
+
+Fine-tuning performs better with more high-quality examples. To fine-tune a model that performs better than using a high-quality prompt with our base models, you should provide at least a few hundred high-quality examples, ideally vetted by human experts. From there, performance tends to linearly increase with every doubling of the number of examples. Increasing the number of examples is usually the best and most reliable way of improving performance.
+
+**Classifiers** are the easiest models to get started with. For classification problems we suggest using `ada`, which generally tends to perform only very slightly worse than more capable models once fine-tuned, whilst being significantly faster and cheaper.
+
+If you are fine-tuning on a pre-existing dataset rather than writing prompts from scratch, be sure to manually review your data for offensive or inaccurate content if possible, or review as many random samples of the dataset as possible if it is large.
+
+----
+
 - 🔸 **Change prompt**
 
 _For example:_
@@ -315,6 +340,16 @@ If you're having trouble getting the API to perform as expected, follow this che
 3. Did you check your examples for mistakes? (The API won't tell you directly)
 4. Are you using `temperature`` and top_p` correctly?
 
+- 🔸 **Hyperparameters**
+
+That said, tweaking the hyperparameters used for fine-tuning can often lead to a model that produces higher quality output. In particular, you may want to configure the following:
+
+- `model:` The name of the base model to fine-tune. You can select one of "ada", "babbage", "curie", or "davinci". To learn more about these models, see the [Models](https://beta.openai.com/docs/models) documentation.
+- `n_epochs` - defaults to 4. The number of epochs to train the model for. An epoch refers to one full cycle through the training dataset.
+- `batch_size` - defaults to ~0.2% of the number of examples in the training set, capped at 256. The batch size is the number of training examples used to train a single forward and backward pass. In general, we've found that larger batch sizes tend to work better for larger datasets.
+- `learning_rate_multiplier` - defaults to 0.05, 0.1, or 0.2 depending on final `batch_size`. The fine-tuning learning rate is the original learning rate used for pretraining multiplied by this multiplier. We recommend experimenting with values in the range 0.02 to 0.2 to see what produces the best results. Empirically, we've found that larger learning rates often perform better with larger batch sizes.
+- `compute_classification_metrics` - defaults to False. If True, for fine-tuning for classification tasks, computes classification-specific metrics (accuracy, F-1 score, etc) on the validation set at the end of every epoch.
+
 - 🔸 **Temperature**
 
 Remember that the model predicts which text is most likely to follow the text preceding it. Temperature is a value between 0 and 1 that essentially lets you control how confident the model should be when making these predictions. Lowering temperature means it will take fewer risks, and completions will be more accurate and deterministic. Increasing temperature will result in more diverse completions.
@@ -335,6 +370,10 @@ _For example,_ we’ve set the temperature low because we’re looking for strai
 
 ‼️ The actual completion you see may differ because the API is stochastic by default. This means that you might get a slightly different completion every time you call it, even if your prompt stays the same. You can control this behavior with the [temperature](https://beta.openai.com/docs/api-reference/completions/create#completions/create-temperature) setting.
 
+#### Example notebooks
+
+- [Example notebooks - OpenAI API](https://beta.openai.com/docs/guides/fine-tuning/example-notebooks) :
+  - :octocat: [openai-cookbook/examples/fine-tuned_qa at main · openai/openai-cookbook](https://github.com/openai/openai-cookbook/tree/main/examples/fine-tuned_qa) 
 
 ### 💭 Conclusions
 

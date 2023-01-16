@@ -1,4 +1,4 @@
-# Word Embeddings
+<img src="https://raw.githubusercontent.com/ElizaLo/NLP-Natural-Language-Processing/master/img/Word_Embeddings.png" width="1050" height="150"/>
 
 - [Word Embeddings](https://paperswithcode.com/task/word-embeddings) on Papers with Code
 
@@ -64,7 +64,7 @@ As of the late 2010s, contextually-meaningful embeddings such as [ELMo](https://
 ### Context-Based Vector Space Model (Semantic)
 
 - ELMo
-- Transformers (BERT)
+- Transformers (BERT, GPT-3)
 
 ### Other
 
@@ -115,6 +115,7 @@ As of the late 2010s, contextually-meaningful embeddings such as [ELMo](https://
             - [BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding](https://arxiv.org/pdf/1810.04805.pdf)
             - [FROM Pre-trained Word Embeddings TO Pre-trained Language Models — Focus on BERT](https://medium.com/@adriensieg/from-pre-trained-word-embeddings-to-pre-trained-language-models-focus-on-bert-343815627598)
          - GPT & GPT-2 (Generative Pre-Training)
+         - GPT-3
          - Transformer XL (meaning extra long)
          - XLNet (Generalized Autoregressive Pre-training)
          - ENRIE (Enhanced Representation through kNowledge IntEgration)
@@ -398,13 +399,117 @@ Word2Vec was presented in two initial papers released within a month of each oth
 
 ------
 
-## Tokenization
+# Context-Based Vector Space Model (Semantic)
 
-### Readady Solutions
+## Transformers
+
+### 🔹 Generative Pre-trained Transformer (GPT-3)
+
+> Read more about GPT-3 model in 📂 [**Language Models**](https://github.com/ElizaLo/NLP-Natural-Language-Processing/tree/master/Language%20Models) folder
+
+- [Embeddings](https://beta.openai.com/docs/guides/embeddings/embeddings) on OpenAI
+
+OpenAI’s text embeddings measure the relatedness of text strings. Embeddings are most commonly used for:
+
+- **Search** (where results are ranked by relevance to a query string)
+- **Clustering** (where text strings are grouped by similarity)
+- **Recommendations** (where items with related text strings are recommended)
+- **Anomaly detection** (where outliers with little relatedness are identified)
+- **Diversity measurement** (where similarity distributions are analyzed)
+- **Classification** (where text strings are classified by their most similar label)
+
+**Embedding models**
+
+OpenAI offers one second-generation embedding model (denoted with `-002` in the model ID) and sixteen first-generation models (denoted with `-001` in the model ID).
+
+**Limitations & risks**
+
+**_Limitation:_** Models are most reliable for mainstream English that is typically found on the Internet. Our models may perform poorly on regional or group dialects.
+
+Researchers have found ([Blodgett & O’Connor, 2017](https://arxiv.org/abs/1707.00061)) that common NLP systems don’t perform as well on African American English as they do on mainstream American English. Our models may similarly perform poorly on dialects or uses of English that are not well represented on the Internet.
+
+💠 **Text/Topic Segmentation / Chunking of long texts (longer than `4097`)**
+
+> Read more about Topic and Text Segmentation in 📂 [**Topic and Text Segmentation**](https://github.com/ElizaLo/NLP-Natural-Language-Processing/tree/master/Topic%20and%20Text%20Segmentation) folder
+
+Chunking can be made with Fast Tokenizers from HuggingFace ([Fast tokenizers in the QA pipeline - Hugging Face Course](https://huggingface.co/course/chapter6/3b?fw=pt#handling-long-contexts)) with GPT-2 tokenizer fast ([OpenAI GPT2](https://huggingface.co/docs/transformers/model_doc/gpt2#transformers.GPT2TokenizerFast)) since GPT-3 and GPT-2 has the same tokenizer.
+
+```python
+
+from transformers import GPT2TokenizerFast
+
+
+tokenizer = GPT2TokenizerFast.from_pretrained("gpt2")
+
+inputs = tokenizer(
+    long_context,
+    stride=50,
+    max_length=3400,
+    truncation=True,
+    return_overflowing_tokens=True,
+    return_offsets_mapping=True,
+)
+
+tokenizer.decode(inputs["input_ids"][0])[:50]
+```
+
+**How can I tell how many tokens a string will have before I embed it?**
+
+For second-generation embedding models, as of Dec 2022, there is not yet a way to count tokens locally. The only way to get total token counts is to submit an API request.
+
+- If the request succeeds, you can extract the number of tokens from the response: `response[“usage”][“total_tokens”]`
+- If the request fails for having too many tokens, you can extract the number of tokens from the error message: _e.g._, `This model's maximum context length is 8191 tokens, however you requested 10000 tokens (10000 in your prompt; 0 for the completion). Please reduce your prompt; or completion length.`
+
+For first-generation embedding models, which are based on GPT-2/GPT-3 tokenization, you can count tokens in a few ways:
+
+- For one-off checks, the [OpenAI tokenizer](https://beta.openai.com/tokenizer) page is convenient
+- In Python, [transformers.GPT2TokenizerFast](https://huggingface.co/docs/transformers/model_doc/gpt2#transformers.GPT2TokenizerFast) (the GPT-2 tokenizer is the same as GPT-3)
+- In JavaScript, [gpt-3-encoder](https://www.npmjs.com/package/gpt-3-encoder)
+
+Python example:
+
+```python
+from transformers import GPT2TokenizerFast
+
+def num_tokens_from_string(string: str, tokenizer) -> int:
+    return len(tokenizer.encode(string))
+
+string = "your text here"
+tokenizer = GPT2TokenizerFast.from_pretrained("gpt2")
+
+num_tokens_from_string(string, tokenizer)
+```
+
+> There is another possible improvement of chunking with the SBERT model ([SentenceTransformers Documentation — Sentence-Transformers  documentation](https://www.sbert.net)) - 📰 [How to chunk text into paragraphs using python](https://medium.com/@npolovinkin/how-to-chunk-text-into-paragraphs-using-python-8ae66be38ea6).
+
+📰 **Articles:**
+
+- [New and Improved Embedding Model](https://openai.com/blog/new-and-improved-embedding-model/), OpenAI blog
+
+------
+
+<img src="https://raw.githubusercontent.com/ElizaLo/NLP-Natural-Language-Processing/master/img/Vector_Databases.png" width="1050" height="150"/>
+
+How can I retrieve K nearest embedding vectors quickly?
+
+For searching over many vectors quickly, we recommend using a vector database.
+
+| Title | Description, Information |
+| :---:         |          :--- |
+|[Pinecone](https://www.pinecone.io/)| A fully managed vector database|
+|[Weaviate](https://weaviate.io/)|<p>Weaviate is an open source vector search engine that stores both objects and vectors, allowing for combining vector search with structured filtering with the fault-tolerance and scalability of a cloud-native database, all accessible through GraphQL, REST, and various language clients.</p><ul><li> :octocat: [Weaviate](https://github.com/semi-technologies/weaviate) - The ML-first vector search engine</li></ul>|
+|[Faiss](https://engineering.fb.com/2017/03/29/data-infrastructure/faiss-a-library-for-efficient-similarity-search/)| A vector search algorithm by Facebook|
+
+------
+
+<img src="https://raw.githubusercontent.com/ElizaLo/NLP-Natural-Language-Processing/master/img/Tokenization.png" width="1050" height="150"/>
+
+## Readady Solutions
 
 | Title | Description, Information |
 | :---:         |          :--- |
 |[Tokenizers](https://github.com/huggingface/tokenizers)|Fast State-of-the-Art Tokenizers optimized for Research and Production by [HuggingFace](https://huggingface.co/)|
+|[tiktoken](https://github.com/openai/tiktoken)|tiktoken is a fast [BPE](https://en.wikipedia.org/wiki/Byte_pair_encoding) tokeniser for use with OpenAI's models.|
 
 ------
 
@@ -429,9 +534,6 @@ Word2Vec was presented in two initial papers released within a month of each oth
 - [Word Embedding in NLP: One-Hot Encoding and Skip-Gram Neural Network](https://towardsdatascience.com/word-embedding-in-nlp-one-hot-encoding-and-skip-gram-neural-network-81b424da58f2)
 - [Everything about Embeddings](https://medium.com/@b.terryjack/nlp-everything-about-word-embeddings-9ea21f51ccfe)
 - [The Ultimate Guide To Different Word Embedding Techniques In NLP - KDnuggets](https://www.kdnuggets.com/2021/11/guide-word-embedding-techniques-nlp.html)
-
----
-- [Language model](https://en.wikipedia.org/wiki/Language_model)
 
 ------
 

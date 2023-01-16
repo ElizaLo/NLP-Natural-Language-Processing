@@ -1,4 +1,4 @@
-# Language Models
+<img src="https://raw.githubusercontent.com/ElizaLo/NLP-Natural-Language-Processing/master/img/Language_Models.png" width="1050" height="150"/>
 
 | Title | Description, Information |
 | :---:         |          :--- |
@@ -233,7 +233,7 @@ To learn more, visit [models documentation](https://beta.openai.com/docs/models
 
 - [OpenAI’s latest GPT-3 model generates better and longer texts](https://the-decoder.com/openais-latest-gpt-3-model-generates-better-and-longer-texts/)
 
-### Text/Topic Segmentation / Chuncking of long texts (longer than `4097`)
+### 💠 Text/Topic Segmentation / Chunking of long texts (longer than `4097`)
 
 Chunking can be made with Fast Tokenizers from HuggingFace ([Fast tokenizers in the QA pipeline - Hugging Face Course](https://huggingface.co/course/chapter6/3b?fw=pt#handling-long-contexts)) with GPT-2 tokenizer fast ([OpenAI GPT2](https://huggingface.co/docs/transformers/model_doc/gpt2#transformers.GPT2TokenizerFast)) since GPT-3 and GPT-2 has the same tokenizer.
 
@@ -254,6 +254,33 @@ inputs = tokenizer(
 )
 
 tokenizer.decode(inputs["input_ids"][0])[:50]
+```
+
+**How can I tell how many tokens a string will have before I embed it?**
+
+For second-generation embedding models, as of Dec 2022, there is not yet a way to count tokens locally. The only way to get total token counts is to submit an API request.
+
+- If the request succeeds, you can extract the number of tokens from the response: `response[“usage”][“total_tokens”]`
+- If the request fails for having too many tokens, you can extract the number of tokens from the error message: _e.g._, `This model's maximum context length is 8191 tokens, however you requested 10000 tokens (10000 in your prompt; 0 for the completion). Please reduce your prompt; or completion length.`
+
+For first-generation embedding models, which are based on GPT-2/GPT-3 tokenization, you can count tokens in a few ways:
+
+- For one-off checks, the [OpenAI tokenizer](https://beta.openai.com/tokenizer) page is convenient
+- In Python, [transformers.GPT2TokenizerFast](https://huggingface.co/docs/transformers/model_doc/gpt2#transformers.GPT2TokenizerFast) (the GPT-2 tokenizer is the same as GPT-3)
+- In JavaScript, [gpt-3-encoder](https://www.npmjs.com/package/gpt-3-encoder)
+
+Python example:
+
+```python
+from transformers import GPT2TokenizerFast
+
+def num_tokens_from_string(string: str, tokenizer) -> int:
+    return len(tokenizer.encode(string))
+
+string = "your text here"
+tokenizer = GPT2TokenizerFast.from_pretrained("gpt2")
+
+num_tokens_from_string(string, tokenizer)
 ```
 
 > There is another possible improvement of chunking with the SBERT model ([SentenceTransformers Documentation — Sentence-Transformers  documentation](https://www.sbert.net)) - 📰 [How to chunk text into paragraphs using python](https://medium.com/@npolovinkin/how-to-chunk-text-into-paragraphs-using-python-8ae66be38ea6).

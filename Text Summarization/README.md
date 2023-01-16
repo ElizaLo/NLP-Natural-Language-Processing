@@ -273,6 +273,12 @@ ROUGE, or Recall-Oriented Understudy for Gisting Evaluation, measures the simila
 | :---:         |          :--- |
 |[Cohere AI](https://docs.cohere.ai)|[Text Summarization](https://docs.cohere.ai/docs/text-summarization-guide) - This article demonstrates a simple way of using Cohere's generation models to summarize text.|
 
-## :page_facing_up: Articles
+## :octocat: GitHub Repositories
+
+| Title | Description, Information |
+| :---:         |          :--- |
+|[awesome-text-summarization](https://github.com/icoxfog417/awesome-text-summarization)|The guide to tackle with the Text Summarization|
+
+## :newspaper: Articles
 
 - [Bootcamp Tech Blog #4: Long Document Summarization](https://cinnamonai.medium.com/bootcamp-tech-blog-4-long-document-summarization-6bc25e3add94)

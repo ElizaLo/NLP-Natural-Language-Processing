@@ -1,4 +1,4 @@
-# Keywords and Phrases Extraction
+<img src="https://raw.githubusercontent.com/ElizaLo/NLP-Natural-Language-Processing/master/img/Keywords_and_Phrases_Extraction.png" width="1050" height="150"/>
 
 ## Models
 
@@ -7,6 +7,8 @@
 | **GPT-3** | 📄 **Paper:** [Language Models are Few-Shot Learners](https://arxiv.org/abs/2005.14165v4), [News Summarization and Evaluation in the Era of GPT-3](https://arxiv.org/pdf/2209.12356.pdf), [Papers with Code - GPT-3 Explained](https://paperswithcode.com/method/gpt-3)|
 
 ### 🔹 GPT-3: Generative Pre-trained Transformer
+
+> Read more about GPT-3 model in 📂 [Language Models](https://github.com/ElizaLo/NLP-Natural-Language-Processing/tree/master/Language%20Models) folder
 
 - 📄 **Paper:** [Language Models are Few-Shot Learners](https://arxiv.org/abs/2005.14165)
   - 📃 Other related papers: [News Summarization and Evaluation in the Era of GPT-3](https://arxiv.org/abs/2209.12356)
@@ -57,6 +59,8 @@ Leike points out that the new GPT model still has “important limitations” an
 - [OpenAI’s latest GPT-3 model generates better and longer texts](https://the-decoder.com/openais-latest-gpt-3-model-generates-better-and-longer-texts/)
 
 ####  ⚙️ Fine-tuning model
+
+> Read all details about **Fine-tuning GPT-3 model** in 📂 [Language Models - ⚙️ Fine-tuning](https://github.com/ElizaLo/NLP-Natural-Language-Processing/blob/master/Language%20Models/README.md#%EF%B8%8F-fine-tuning-model) folder
 
 Fine-tuning lets you get more out of the models available through the API by providing:
 
@@ -152,7 +156,7 @@ It’s usually best to set a low temperature for tasks where the desired output 
 
 📰 **Articles**
 
-- []()
+- [How to sample from language models](https://towardsdatascience.com/how-to-sample-from-language-models-682bceb97277)
 
 #### 🔺 Evaluation Metrics
 

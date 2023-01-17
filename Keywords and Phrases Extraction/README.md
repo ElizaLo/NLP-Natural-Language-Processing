@@ -93,7 +93,7 @@ If you're having trouble getting the API to perform as expected, follow this che
 1. Is it clear what the intended generation should be?
 2. Are there enough examples?
 3. Did you check your examples for mistakes? (The API won't tell you directly)
-4. Are you using `temperature`` and top_p` correctly?
+4. Are you using `temperature` and `top_p` correctly?
 
 💠 **Separator**
 

@@ -34,13 +34,13 @@
 
 <img src="https://github.com/ElizaLo/NLP-Natural-Language-Processing/blob/master/Language%20Models/img/ezgif.com-gif-maker.jpg" width="700" height="394"/>
 
-### Zero Shot Text Summarization with GPT-3
+### 📚 Zero Shot Text Summarization with GPT-3
 
 Zero shot text summarization refers to using GPT-3 to summarize a given text input without providing any examples in the prompt. We simply provide the instructions for what we want GPT-3 to do and provide the text. 
 
 The GPT-3 playground provides another example of summarization by simply adding a “tl;dr” to the end of the text passage. They consider this a “no instruction” example as they have not specified an initial task and rely entirely on the underlying language models' understanding of what “tl;dr” means.
 
-**Zero Shot Summarization Explained**
+📘 **Zero Shot Summarization Explained**
 
 Zero shot based GPT-3 prompts allow you to utilize the underlying model's understanding of your task given through instructions or headers in the prompt without being affected by examples. The model is only steered by any headers and instructions and it leverages these to grow its understanding of what you consider correct. At the end of the day, most GPT-3 tasks are somewhat relative. What you consider a correct response vs what the model considers correct vs what a client considers correct can all be somewhat different. In summarization, it can mean an emphasis on specific keywords, topics, or phrases. It can mean a specific length or contain specific proper nouns. 
 
@@ -50,13 +50,13 @@ Because we haven’t included any real information through examples or a more sp
 ‍
 This makes zero shot summarizers relatively unstable and very hard to use in production without a full natural language processing pipeline. There are some use cases where it does make sense. 
 
-**Large Document Zero Shot Summarization Problems**
+📚 **Large Document Zero Shot Summarization Problems**
 
 You’ll need to split the input text into smaller chunks to pass through GPT-3. Should I just try to fill up as much of the prompt as I can with each run to minimize the total runs? One problem with this is that your model's ability to understand each sentence and its importance to the overall chunk will go down as the size grows. This doesn’t really affect extractive summarization as much you can simply just increase the sentence count, but abstractive will take a hit as it becomes harder to decide what information is valuable enough to fit into a summary as the “possible information pool” grows. You also limit the size of your summary that can be generated. 
 
 Smaller chunks allow for more understanding per chunk but increase the risk of split contextual information. Let’s say you split a dialog or topic in half when chunking to summarize. If the contextual information from that dialog or topic is small or hard to decipher per chunk that model might not include it at all in the summary for either chunk. You’ve now taken an important part of the overall text and split the contextual information about it in half reducing the model's likelihood to consider it important. On the other side you might produce two summaries of the two chunks dominated by that dialog or topic.
 
-### **Few Shot Summarization**
+### 📗 **Few Shot Summarization**
 
 GPT-3 has been pre-trained on a vast amount of text from the open internet. When given a prompt with just a few examples, it can often intuit what task you are trying to perform and generate a plausible completion. This is often called "few-shot learning."
 
@@ -89,7 +89,7 @@ Models understand and process text by breaking it down into tokens. Tokens can b
 
 The number of tokens processed in a given API request depends on the length of both your inputs and outputs. As a rough rule of thumb, 1 token is approximately 4 characters or 0.75 words for English text. One limitation to keep in mind is that your text prompt and generated completion combined must be no more than the model's maximum context length (for most models this is 2048 tokens, or about 1500 words). Check out [tokenizer tool](https://beta.openai.com/tokenizer) to learn more about how text translates to tokens.
 
-### Key concepts for GPT-3 by OpenAI
+### 🔑 Key concepts for GPT-3 by OpenAI
 
 > Our models are used for both research purposes and developer use cases in production. Researchers often learn about our models from papers that we have published, but there is often not a perfect match between what is available in the OpenAI API and what is published in a paper.
 >
@@ -115,7 +115,7 @@ GPT-3.5 series is a series of models that was trained on a blend of text and cod
 2. `text-davinci-002` is an InstructGPT model based on `code-davinci-002`
 3. `text-davinci-003` is an improvement on `text-davinci-002`
 
-### Davinci
+### 🔸 Davinci
 
 Davinci is the most capable model family and can perform any task the other models can perform and often with less instruction. For applications requiring a lot of understanding of the content, like summarization for a specific audience and creative content generation, Davinci is going to produce the best results.
 
@@ -149,7 +149,7 @@ Each of the GPT-3 models has its own USP. Pre-Davinci models such as **Curie**, 
 
 > Каждая из моделей GPT-3 имеет свое УТП. Модели, предшествовавшие **Davinci**, такие как **Curie**, **Babbage** и **Ada**, могут очень хорошо выполнять специфичные задачи с более высокой скоростью и за меньшую стоимость.
 
-### Curie
+### 🔸 Curie
 
 Curie is extremely powerful, yet very fast. While Davinci is stronger when it comes to analyzing complicated text, Curie is quite capable for many nuanced tasks like sentiment classification and summarization. Curie is also quite good at answering questions and performing Q&A and as a general service chatbot.
 
@@ -167,7 +167,7 @@ Curie is highly capable of getting important information from text and very usef
 
 - ➡️ Good at: **Language translation, complex classification, text sentiment, summarization**
 
-### Babbage
+### 🔸 Babbage
 
 Babbage can perform straightforward tasks like simple classification. It’s also quite capable when it comes to Semantic Search ranking how well documents match up with search queries.
 
@@ -191,7 +191,7 @@ If you provide Babbage with a list of plot ideas from a specific genre, it can c
 
 - ➡️ Good at: **Moderate classification, semantic search classification**
 
-### Ada
+### 🔸 Ada
 
 Ada is usually the fastest model and can perform tasks like parsing text, address correction and certain kinds of classification tasks that don’t require too much nuance. Ada’s performance can often be improved by providing more context.
 
@@ -217,7 +217,7 @@ Davinci is the most capable model, and Ada is the fastest.
 
 While Davinci is generally the most capable, the other models can perform certain tasks extremely well with significant speed or cost advantages. For example, Curie can perform many of the same tasks as Davinci, but faster and for 1/10th the cost.
 
-### Codex
+### 🔸 Codex
 
 The Codex models are descendants of GPT-3 models that can understand and generate code. Their training data contains both natural language and billions of lines of public code from GitHub. Learn more.
 
@@ -233,7 +233,9 @@ To learn more, visit [models documentation](https://beta.openai.com/docs/models
 
 - [OpenAI’s latest GPT-3 model generates better and longer texts](https://the-decoder.com/openais-latest-gpt-3-model-generates-better-and-longer-texts/)
 
-### 💠 Text/Topic Segmentation / Chunking of long texts (longer than `4097`)
+### 💠 Text and Topic Segmentation / Chunking of long texts (longer than `4097`)
+
+> Read more about segmentation of long text in 📂 [Topic and Text Segmentation](https://github.com/ElizaLo/NLP-Natural-Language-Processing/tree/master/Topic%20and%20Text%20Segmentation) folder
 
 Chunking can be made with Fast Tokenizers from HuggingFace ([Fast tokenizers in the QA pipeline - Hugging Face Course](https://huggingface.co/course/chapter6/3b?fw=pt#handling-long-contexts)) with GPT-2 tokenizer fast ([OpenAI GPT2](https://huggingface.co/docs/transformers/model_doc/gpt2#transformers.GPT2TokenizerFast)) since GPT-3 and GPT-2 has the same tokenizer.
 
@@ -283,7 +285,7 @@ tokenizer = GPT2TokenizerFast.from_pretrained("gpt2")
 num_tokens_from_string(string, tokenizer)
 ```
 
-> There is another possible improvement of chunking with the SBERT model ([SentenceTransformers Documentation — Sentence-Transformers  documentation](https://www.sbert.net)) - 📰 [How to chunk text into paragraphs using python](https://medium.com/@npolovinkin/how-to-chunk-text-into-paragraphs-using-python-8ae66be38ea6).
+- 💡 There is another possible improvement of chunking with the SBERT model ([SentenceTransformers Documentation — Sentence-Transformers  documentation](https://www.sbert.net)) - 📰 [How to chunk text into paragraphs using python](https://medium.com/@npolovinkin/how-to-chunk-text-into-paragraphs-using-python-8ae66be38ea6).
 
 ### ⚙️ Fine-tuning model
 
@@ -309,7 +311,31 @@ num_tokens_from_string(string, tokenizer)
 - `logit_bias` _(map, Optional, Defaults to null)_ – Modify the likelihood of specified tokens appearing in the completion. Accepts a json object that maps tokens (specified by their token ID in the GPT tokenizer) to an associated bias value from -100 to 100. You can use this [tokenizer tool](https://beta.openai.com/tokenizer?view=bpe) (which works for both GPT-2 and GPT-3) to convert text to token IDs. Mathematically, the bias is added to the logits generated by the model prior to sampling. The exact effect will vary per model, but values between -1 and 1 should decrease or increase likelihood of selection; values like -100 or 100 should result in a ban or exclusive selection of the relevant token. **_As an example,_** you can pass `{"50256": -100}` to prevent the `<|endoftext|>` token from being generated.
 - `user` _(string, Optional)_ – A unique identifier representing your end-user, which can help OpenAI to monitor and detect abuse. [Learn more](https://beta.openai.com/docs/guides/safety-best-practices/end-user-ids).
 
+###  🌡️ **Temperature**
+
+📰 [How to sample from language models](https://towardsdatascience.com/how-to-sample-from-language-models-682bceb97277)
+
+Remember that the model predicts which text is most likely to follow the text preceding it. Temperature is a value between 0 and 1 that essentially lets you control how confident the model should be when making these predictions. Lowering temperature means it will take fewer risks, and completions will be more accurate and deterministic. Increasing temperature will result in more diverse completions.
+
+Given some text, the model determines which token is most likely to come next. _For example,_ the text _**“Horses are my favorite”**_ is most likely to be followed with the token _**“ animal”**_.
+
+<img src="https://raw.githubusercontent.com/ElizaLo/NLP-Natural-Language-Processing/master/Language%20Models/img/probabilities.png" width="737" height="201"/>
+
+This is where temperature comes into play. If you submit this prompt 4 times with temperature set to 0, the model will always return _**“ animal”**_ next because it has the highest probability. If you increase the temperature, it will take more risks and consider tokens with lower probabilities.
+
+<img src="https://raw.githubusercontent.com/ElizaLo/NLP-Natural-Language-Processing/master/Language%20Models/img/temperature.png" width="713" height="201"/>
+
+It’s usually best to set a low temperature for tasks where the desired output is well-defined. Higher temperature may be useful for tasks where variety or creativity are desired, or if you'd like to generate a few variations for your end users or human experts to choose from.
+
+**Use a low temperature when extracting data**
+
+_For example,_ we’ve set the temperature low because we’re looking for straight-forward answers to questions that the customer comment provides. We’re not asking the model to try to be creative with its responses – especially for yes or no questions.
+
+‼️ The actual completion you see may differ because the API is stochastic by default. This means that you might get a slightly different completion every time you call it, even if your prompt stays the same. You can control this behavior with the [temperature](https://beta.openai.com/docs/api-reference/completions/create#completions/create-temperature) setting.
+
 ------
+
+### 🔃 Training
 
 Fine-tuning lets you get more out of the models available through the API by providing:
 
@@ -389,9 +415,11 @@ If you're having trouble getting the API to perform as expected, follow this che
 1. Is it clear what the intended generation should be?
 2. Are there enough examples?
 3. Did you check your examples for mistakes? (The API won't tell you directly)
-4. Are you using `temperature`` and top_p` correctly?
+4. Are you using `temperature` and `top_p` correctly?
 
-- 🔸 **Hyperparameters**
+-----
+
+### 🔢 **Hyperparameters**
 
 That said, tweaking the hyperparameters used for fine-tuning can often lead to a model that produces higher quality output. In particular, you may want to configure the following:
 
@@ -401,29 +429,7 @@ That said, tweaking the hyperparameters used for fine-tuning can often lead to a
 - `learning_rate_multiplier` - defaults to 0.05, 0.1, or 0.2 depending on final `batch_size`. The fine-tuning learning rate is the original learning rate used for pretraining multiplied by this multiplier. We recommend experimenting with values in the range 0.02 to 0.2 to see what produces the best results. Empirically, we've found that larger learning rates often perform better with larger batch sizes.
 - `compute_classification_metrics` - defaults to False. If True, for fine-tuning for classification tasks, computes classification-specific metrics (accuracy, F-1 score, etc) on the validation set at the end of every epoch.
 
-- 🔸 **Temperature**
-
-📰 [How to sample from language models](https://towardsdatascience.com/how-to-sample-from-language-models-682bceb97277)
-
-Remember that the model predicts which text is most likely to follow the text preceding it. Temperature is a value between 0 and 1 that essentially lets you control how confident the model should be when making these predictions. Lowering temperature means it will take fewer risks, and completions will be more accurate and deterministic. Increasing temperature will result in more diverse completions.
-
-Given some text, the model determines which token is most likely to come next. _For example,_ the text _**“Horses are my favorite”**_ is most likely to be followed with the token _**“ animal”**_.
-
-<img src="https://raw.githubusercontent.com/ElizaLo/NLP-Natural-Language-Processing/master/Language%20Models/img/probabilities.png" width="737" height="201"/>
-
-This is where temperature comes into play. If you submit this prompt 4 times with temperature set to 0, the model will always return _**“ animal”**_ next because it has the highest probability. If you increase the temperature, it will take more risks and consider tokens with lower probabilities.
-
-<img src="https://raw.githubusercontent.com/ElizaLo/NLP-Natural-Language-Processing/master/Language%20Models/img/temperature.png" width="713" height="201"/>
-
-It’s usually best to set a low temperature for tasks where the desired output is well-defined. Higher temperature may be useful for tasks where variety or creativity are desired, or if you'd like to generate a few variations for your end users or human experts to choose from.
-
-**Use a low temperature when extracting data**
-
-_For example,_ we’ve set the temperature low because we’re looking for straight-forward answers to questions that the customer comment provides. We’re not asking the model to try to be creative with its responses – especially for yes or no questions.
-
-‼️ The actual completion you see may differ because the API is stochastic by default. This means that you might get a slightly different completion every time you call it, even if your prompt stays the same. You can control this behavior with the [temperature](https://beta.openai.com/docs/api-reference/completions/create#completions/create-temperature) setting.
-
-#### Example notebooks
+### Example notebooks
 
 - [Example notebooks - OpenAI API](https://beta.openai.com/docs/guides/fine-tuning/example-notebooks) :
   - :octocat: [openai-cookbook/examples/fine-tuned_qa at main · openai/openai-cookbook](https://github.com/openai/openai-cookbook/tree/main/examples/fine-tuned_qa) 
@@ -503,7 +509,7 @@ The SFT and PPO models are trained similarly to the ones from the 📄 [Instruct
 
 The OpenAI API is powered by a family of models with different capabilities and price points. You can also customize our base models for your specific use case with [fine-tuning](https://beta.openai.com/docs/guides/fine-tuning).
 
-<img src="https://raw.githubusercontent.com/ElizaLo/NLP-Natural-Language-Processing/master/Language%20Models/img/OpenAI_models_3.png" width="794" height="188"/>
+<img src="https://raw.githubusercontent.com/ElizaLo/NLP-Natural-Language-Processing/master/Language%20Models/img/OpenAI_models_3.png" width="790" height="387"/>
 
 ## 💠 Models featured in OpenAI Research
 

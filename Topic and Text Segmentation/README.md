@@ -1,4 +1,4 @@
-# Topic Segmentation
+<img src="https://raw.githubusercontent.com/ElizaLo/NLP-Natural-Language-Processing/master/img/Topic_Segmentation.png" width="1050" height="150"/>
 
 - [Papers with Code - Topic Segmentation](https://paperswithcode.com/search?q_meta=&q_type=&q=Topic+Segmentation)
 
@@ -16,7 +16,7 @@
 | :---:         |          :--- |
 |[Awesome Topic Segmentation](https://github.com/sedflix/awesome-topic-segmentation)|awesome topic/text segmentation list|
 
-# Text Segmentation
+<img src="https://raw.githubusercontent.com/ElizaLo/NLP-Natural-Language-Processing/master/img/Text_Segmentation.png" width="1050" height="150"/>
 
 Text segmentation deals with the correct division of a document into semantically coherent blocks.
 

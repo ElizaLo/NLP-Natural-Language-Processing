@@ -1,9 +1,9 @@
-# Text Summarization
+<img src="https://raw.githubusercontent.com/ElizaLo/NLP-Natural-Language-Processing/master/img/Text_Summarization.png" width="1050" height="150"/>
 
 - [Text Summarization](https://paperswithcode.com/task/text-summarization) on **PapersWithCode**
-- []()
 
-----
+## Types of Text Summarization
+
 <img src="https://raw.githubusercontent.com/ElizaLo/NLP-Natural-Language-Processing/master/Text%20Summarization/img/ML7062-img1.jpg" width="644" height="233">
 
 - You can apply text summarization to **identify key sentences within a document** or **identify key sentences across multiple documents**.
@@ -162,6 +162,8 @@ The main con we see with long text summarization using **BertSum** is the underl
 
 ### GPT-3: Generative Pre-trained Transformer
 
+> Read more about GPT-3 model in 📂 [Language Models](https://github.com/ElizaLo/NLP-Natural-Language-Processing/tree/master/Language%20Models) folder
+
 - 📄 **Paper:** [Language Models are Few-Shot Learners](https://arxiv.org/abs/2005.14165)
   - 📃 Other related papers: [News Summarization and Evaluation in the Era of GPT-3](https://arxiv.org/abs/2209.12356)
   - [Papers with Code - GPT-3 Explained](https://paperswithcode.com/method/gpt-3)
@@ -173,13 +175,13 @@ The main con we see with long text summarization using **BertSum** is the underl
 - :gear: **Notebook:** 
   - [GPT-3.ipynb](https://github.com/ElizaLo/NLP-Natural-Language-Processing/blob/master/Text%20Summarization/GPT-3.ipynb) - GPT-3 - Generative Pre-trained Transformer 3, **_model_**: `text-davinci-003` (released: _November 2022_)
 
-#### Zero Shot Text Summarization with GPT-3
+#### 📚 Zero Shot Text Summarization with GPT-3
 
 Zero shot text summarization refers to using GPT-3 to summarize a given text input without providing any examples in the prompt. We simply provide the instructions for what we want GPT-3 to do and provide the text. 
 
 The GPT-3 playground provides another example of summarization by simply adding a “tl;dr” to the end of the text passage. They consider this a “no instruction” example as they have not specified an initial task and rely entirely on the underlying language models' understanding of what “tl;dr” means.
 
-**Zero Shot Summarization Explained**
+📘 **Zero Shot Summarization Explained**
 
 Zero shot based GPT-3 prompts allow you to utilize the underlying model's understanding of your task given through instructions or headers in the prompt without being affected by examples. The model is only steered by any headers and instructions and it leverages these to grow its understanding of what you consider correct. At the end of the day, most GPT-3 tasks are somewhat relative. What you consider a correct response vs what the model considers correct vs what a client considers correct can all be somewhat different. In summarization, it can mean an emphasis on specific keywords, topics, or phrases. It can mean a specific length or contain specific proper nouns. 
 
@@ -189,13 +191,13 @@ Because we haven’t included any real information through examples or a more sp
 ‍
 This makes zero shot summarizers relatively unstable and very hard to use in production without a full natural language processing pipeline. There are some use cases where it does make sense. 
 
-**Large Document Zero Shot Summarization Problems**
+📚 **Large Document Zero Shot Summarization Problems**
 
 You’ll need to split the input text into smaller chunks to pass through GPT-3. Should I just try to fill up as much of the prompt as I can with each run to minimize the total runs? One problem with this is that your model's ability to understand each sentence and its importance to the overall chunk will go down as the size grows. This doesn’t really affect extractive summarization as much you can simply just increase the sentence count, but abstractive will take a hit as it becomes harder to decide what information is valuable enough to fit into a summary as the “possible information pool” grows. You also limit the size of your summary that can be generated. 
 
 Smaller chunks allow for more understanding per chunk but increase the risk of split contextual information. Let’s say you split a dialog or topic in half when chunking to summarize. If the contextual information from that dialog or topic is small or hard to decipher per chunk that model might not include it at all in the summary for either chunk. You’ve now taken an important part of the overall text and split the contextual information about it in half reducing the model's likelihood to consider it important. On the other side you might produce two summaries of the two chunks dominated by that dialog or topic.
 
-#### **Few Shot Summarization**
+#### 📗 **Few Shot Summarization**
 
 Few shot learning with GPT-3 refers to taking the underlying task agnostic large language model and showing the prompt actual examples of how to complete the task. The model combines its trained understanding of how to predict the next token in a language sequence and the “pattern” it picks up on in the prompt through examples to produce a much higher accuracy result. Accuracy is an odd idea here, as it really just follows the examples and tries to fit its quick learning to the new input. As you can imagine, if your examples are incorrect (sentiment analysis) or don't contain the output you would want, you’ll get a result that you don’t want. 
 

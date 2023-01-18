@@ -2,7 +2,7 @@
 
 - [Text Summarization](https://paperswithcode.com/task/text-summarization) on **PapersWithCode**
 
-## Types of Text Summarization
+## 🔷 Types of Text Summarization
 
 <img src="https://raw.githubusercontent.com/ElizaLo/NLP-Natural-Language-Processing/master/Text%20Summarization/img/ML7062-img1.jpg" width="644" height="233">
 
@@ -14,22 +14,38 @@
 
 - Most text summarization systems are based on **extractive summarization** because accurate abstractive text summarization is difficult to achieve.
 
-## Datasets
+## 📑 Datasets
 
 - [Multi-News: a Large-Scale Multi-Document Summarization Dataset and Abstractive Hierarchical Model](https://arxiv.org/pdf/1906.01749v3.pdf)
   - > While compressing information into a shorter text is the goal of summarization, this dataset tests the ability of abstractive models to generate fluent text concise in meaning while also coherent in the entirety of its generally longer output, which we consider an interesting challenge. 
-- 
+  - 
+## :gear: Tools
 
-## Models
+| Title | Description, Information |
+| :---:         |          :--- |
+|[Cohere AI](https://docs.cohere.ai)|[Text Summarization](https://docs.cohere.ai/docs/text-summarization-guide) - This article demonstrates a simple way of using Cohere's generation models to summarize text.|
+|[sumy](https://pypi.org/project/sumy/)|Simple library and command line utility for extracting summary from HTML pages or plain texts. The package also contains simple evaluation framework for text summaries. Implemented summarization methods are described in the documentation. I also maintain a list of alternative implementations of the summarizers in various programming languages.|
+
+## :octocat: GitHub Repositories
+
+| Title | Description, Information |
+| :---:         |          :--- |
+|[awesome-text-summarization](https://github.com/icoxfog417/awesome-text-summarization)|The guide to tackle with the Text Summarization|
+
+## :newspaper: Articles
+
+- [Bootcamp Tech Blog #4: Long Document Summarization](https://cinnamonai.medium.com/bootcamp-tech-blog-4-long-document-summarization-6bc25e3add94)
+
+## ⚙️ Models
 
 | Title | Description, Information |
 | :---:         |          :--- |
 | **BART: Denoising Sequence-to-Sequence Pre-training for Natural Language Generation, Translation, and Comprehension - Model Overview** | 📄 **Paper:** [BART: Denoising Sequence-to-Sequence Pre-training for Natural Language Generation, Translation, and Comprehension](https://arxiv.org/abs/1910.13461), **abstractive** summarization |
 | **SBERT: Sentence-BERT: Sentence Embeddings using Siamese BERT-Networks** | 📄 **Paper:** [Sentence-BERT: Sentence Embeddings using Siamese BERT-Networks](https://arxiv.org/abs/1908.10084), **extractive** summarization |
 
-### Extractive summarization
+### 💠 Extractive summarization
 
-### SBERT: Sentence-BERT: Sentence Embeddings using Siamese BERT-Networks
+### 🔹 SBERT: Sentence-BERT: Sentence Embeddings using Siamese BERT-Networks
 
  In SBERT you can create a summary with the ability to say how many sentences you want. 
 
@@ -40,9 +56,9 @@
   - 🤗 **HuggingFace:** 
     - [sentence-transformers](https://huggingface.co/models?library=sentence-transformers&sort=downloads)
 
-### Abstractive summarization
+### 💠 Abstractive summarization
 
-### BART: Denoising Sequence-to-Sequence Pre-training for Natural Language Generation, Translation, and Comprehension - Model Overview
+### 🔹 BART: Denoising Sequence-to-Sequence Pre-training for Natural Language Generation, Translation, and Comprehension - Model Overview
 
 - 📄 **Paper:** [BART: Denoising Sequence-to-Sequence Pre-training for Natural Language Generation, Translation, and Comprehension](https://arxiv.org/abs/1910.13461)
 - :hammer_and_wrench: **Implementations:**
@@ -117,7 +133,7 @@ summaries = [summary["summary_text"] for summary in output]
   - [Padding and truncation](https://huggingface.co/docs/transformers/pad_truncation)
   - [pipeline parameters not read by the deployed endpoint](https://issuehint.com/issue/aws/sagemaker-huggingface-inference-toolkit/37)
 
-## Long Text Summarization
+## 📚 Long Text Summarization
 
 Long documents introduce new problems to the process of summarization:
 
@@ -146,7 +162,7 @@ The main con we see with long text summarization using **BertSum** is the underl
 2. Manage a new level of data variance considering each text chunk doesn’t contain all contextual information from above. 
 3. Manage combining chunk outputs at the end.
 
-### Models
+### ⚙️ Models
 
 | Title | Description, Information |
 | :---:         |          :--- |
@@ -160,7 +176,7 @@ The main con we see with long text summarization using **BertSum** is the underl
 - [GPT3-text-summarization](https://github.com/juan-csv/GPT3-text-summarization)
 - [Awesome GPT-3](https://github.com/elyase/awesome-gpt3)
 
-### GPT-3: Generative Pre-trained Transformer
+### 🔹 GPT-3: Generative Pre-trained Transformer
 
 > Read more about GPT-3 model in 📂 [Language Models](https://github.com/ElizaLo/NLP-Natural-Language-Processing/tree/master/Language%20Models) folder
 
@@ -209,7 +225,7 @@ One of the main differences between the two systems is how we set up the archite
 
 Most of full scale production summarization architectures are few shot learning based as seen them to produce the most flexibility and highest “accuracy” towards our goal. 
 
-#### GPT-3 Tokenization
+#### ▪️ GPT-3 Tokenization
 
 - [GPT-3 Online Tokenizer](https://beta.openai.com/tokenizer)
 
@@ -268,19 +284,3 @@ ROUGE, or Recall-Oriented Understudy for Gisting Evaluation, measures the simila
 - ROUGE-1: refers to the overlap of unigram (each word) between the two
 - ROUGE-2: refers to the overlap of bigram (each two consecutive words) between the two
 - ROUGE-L: refers to the longest common sequence between the two
-
-## :gear: Tools
-
-| Title | Description, Information |
-| :---:         |          :--- |
-|[Cohere AI](https://docs.cohere.ai)|[Text Summarization](https://docs.cohere.ai/docs/text-summarization-guide) - This article demonstrates a simple way of using Cohere's generation models to summarize text.|
-
-## :octocat: GitHub Repositories
-
-| Title | Description, Information |
-| :---:         |          :--- |
-|[awesome-text-summarization](https://github.com/icoxfog417/awesome-text-summarization)|The guide to tackle with the Text Summarization|
-
-## :newspaper: Articles
-
-- [Bootcamp Tech Blog #4: Long Document Summarization](https://cinnamonai.medium.com/bootcamp-tech-blog-4-long-document-summarization-6bc25e3add94)

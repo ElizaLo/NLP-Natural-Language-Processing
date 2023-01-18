@@ -1,4 +1,4 @@
-# Data Augmentation
+<img src="https://raw.githubusercontent.com/ElizaLo/NLP-Natural-Language-Processing/master/img/Data_Augmentation.png" width="1050" height="150"/>
 
 [**Data augmentation**](https://en.wikipedia.org/wiki/Data_augmentation) in data analysis are techniques used to increase the amount of data by adding slightly modified copies of already existing data or newly created synthetic data from existing data. It acts as a [regularizer](https://en.wikipedia.org/wiki/Regularization_(mathematics)) and helps reduce [overfitting](https://en.wikipedia.org/wiki/Overfitting) when training a machine learning model. It is closely related to [oversampling](https://en.wikipedia.org/wiki/Oversampling_and_undersampling_in_data_analysis) in data analysis.
 

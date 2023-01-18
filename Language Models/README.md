@@ -3,9 +3,34 @@
 | Title | Description, Information |
 | :---:         |          :--- |
 |**Universal Language Model Fine-tuning for Text Classification (ULMFiT)**|<p> 📄 **Paper:** [Universal Language Model Fine-tuning for Text Classification](https://arxiv.org/abs/1801.06146) by Jeremy Howard, Sebastian Ruder</p><p>Inductive transfer learning has greatly impacted computer vision, but existing approaches in NLP still require task-specific modifications and training from scratch. We propose Universal Language Model Fine-tuning (ULMFiT), an effective transfer learning method that can be applied to any task in NLP, and introduce techniques that are key for fine-tuning a language model. Our method significantly outperforms the state-of-the-art on six text classification tasks, reducing the error by 18-24% on the majority of datasets. Furthermore, with only 100 labeled examples, it matches the performance of training from scratch on 100x more data. We open-source our pretrained models and code.</p>|
+| **GPT-1** | 📄 **Paper:** [Papers with Code - Improving Language Understanding by Generative Pre-Training](https://paperswithcode.com/paper/improving-language-understanding-by)|
+|**GPT-2**| 📄 **Paper:** [Language Models are Unsupervised Multitask Learners](https://d4mucfpksywv.cloudfront.net/better-language-models/language-models.pdf)|
 | **GPT-3** | 📄 **Paper:** [Language Models are Few-Shot Learners](https://arxiv.org/abs/2005.14165v4), [News Summarization and Evaluation in the Era of GPT-3](https://arxiv.org/pdf/2209.12356.pdf), [Papers with Code - GPT-3 Explained](https://paperswithcode.com/method/gpt-3)|
+|**Gopher**| 📄 **Paper:** |
+|**Megatron**| 📄 **Paper:** |
 |**InstructGPT**| 📄 **Paper:** [Training language models to follow instructions with human feedback](https://arxiv.org/abs/2203.02155)|
-|**Pathways Language Model (PaLM)**|📄 **Paper:** [PaLM: Scaling Language Modeling with Pathways](https://arxiv.org/abs/2204.02311) |
+|**Pathways Language Model (PaLM)**| 📄 **Paper:** [PaLM: Scaling Language Modeling with Pathways](https://arxiv.org/abs/2204.02311) |
+|**Chinchilla**| 📄 **Paper:** [Training Compute-Optimal Large Language Models](https://arxiv.org/abs/2203.15556v1)|
+
+# ♦️ Generative Pre-trained Transformer (GPT)
+
+Before GPT-1, most Natural Language Processing (NLP) models were trained for particular tasks like classification, translation, etc. They all were using supervised learning. This type of learning comes with two issues: lack of annotated data and failure to generalize tasks.
+
+- 📰 **Articles:**
+  - [Everything We Know About GPT-4]([https://www.width.ai/post/gpt3-summarizer](https://www.datacamp.com/blog/what-we-know-gpt4)) - short history about all GPTs
+  - [The Journey of Open AI GPT models](https://medium.com/walmartglobaltech/the-journey-of-open-ai-gpt-models-32d95b7b7fb2)
+
+## 🔹 GPT-1: Generative Pre-trained Transformer
+
+- 📄 **Paper:** [Papers with Code - Improving Language Understanding by Generative Pre-Training](https://paperswithcode.com/paper/improving-language-understanding-by)
+
+GPT-1 (117M parameters) paper ([Improving Language Understanding by Generative Pre-Training](https://paperswithcode.com/paper/improving-language-understanding-by)) was published in 2018. It has proposed a generative language model that was trained on unlabeled data and fine-tuned on specific downstream tasks such as classification and sentiment analysis. 
+
+## 🔹 GPT-2: Generative Pre-trained Transformer
+
+- 📄 **Paper:** [Language Models are Unsupervised Multitask Learners](https://d4mucfpksywv.cloudfront.net/better-language-models/language-models.pdf)
+
+GPT-2 (1.5B parameters) paper ([Language Models are Unsupervised Multitask Learners](https://d4mucfpksywv.cloudfront.net/better-language-models/language-models.pdf)) was published in 2019. It was trained on a larger dataset with more model parameters to build an even more powerful language model. GPT-2 uses task conditioning, Zero-Shot Learning, and Zero Short Task Transfer to improve model performance.
 
 ## 🔹 GPT-3: Generative Pre-trained Transformer
 
@@ -20,9 +45,11 @@
   - :octocat: [minGPT](https://github.com/karpathy/minGPT) by **Andrej Karpathy**
   > A minimal PyTorch re-implementation of the OpenAI GPT (Generative Pretrained Transformer) training
   - :octocat: [nanoGPT](https://github.com/karpathy/nanoGPT) by **Andrej Karpathy**
+    - :octocat: [nanogpt-lecture](https://github.com/karpathy/ng-video-lecture) 
   > The simplest, fastest repository for training/finetuning medium-sized GPTs.
 - 📰 **Articles:**
   - [State of the Art GPT-3 Summarizer For Any Size Document or Format](https://www.width.ai/post/gpt3-summarizer)
+  - [A Beginner's Guide to GPT-3](https://www.datacamp.com/blog/a-beginners-guide-to-gpt-3)
 - :gear: **Notebook:** 
   - [GPT-3.ipynb](https://github.com/ElizaLo/NLP-Natural-Language-Processing/blob/master/Text%20Summarization/GPT-3.ipynb) - GPT-3 - Generative Pre-trained Transformer 3, **_model_**: `text-davinci-003` (released: _November 2022_)
   
@@ -532,20 +559,36 @@ These are the most proximate models featured in our research papers that are ava
 - [[2009.01325] Learning to summarize from human feedback](https://arxiv.org/abs/2009.01325)
 - [[2203.02155] Training language models to follow instructions with human feedback](https://arxiv.org/abs/2203.02155)
 
-## 🔹 Pathways Language Model (PaLM)
+# ♦️ Gopher
+
+- 📄 **Paper:** 
+- 📰 **Articles:**
+  - [Language modelling at scale: Gopher, ethical considerations, and retrieval](https://www.deepmind.com/blog/language-modelling-at-scale-gopher-ethical-considerations-and-retrieval) by DeepMind Research
+
+# ♦️ Megatron
+
+- 📄 **Paper:** 
+- 📰 **Articles:**
+  - [Using DeepSpeed and Megatron to Train Megatron-Turing NLG 530B, the World’s Largest and Most Powerful Generative Language Model](https://developer.nvidia.com/blog/using-deepspeed-and-megatron-to-train-megatron-turing-nlg-530b-the-worlds-largest-and-most-powerful-generative-language-model/) by NVIDIA Developer
+
+# ♦️ Pathways Language Model (PaLM)
 
 - 📄 **Paper:** [PaLM: Scaling Language Modeling with Pathways](https://arxiv.org/abs/2204.02311)
 - 📰 **Articles:**
   - [Pathways Language Model (PaLM): Scaling to 540 Billion Parameters for Breakthrough Performance](https://ai.googleblog.com/2022/04/pathways-language-model-palm-scaling-to.html) by Google Research
 
-### :octocat: GitHub Repositiories
+# ♦️ Chinchilla
+
+- 📄 **Paper:** [Training Compute-Optimal Large Language Models](https://arxiv.org/abs/2203.15556v1)
+
+## :octocat: GitHub Repositiories
 
 | Title | Description, Information |
 | :---:         |          :--- |
 |[PaLM + RLHF - Pytorch (wip)](https://github.com/lucidrains/PaLM-rlhf-pytorch)|Implementation of RLHF (Reinforcement Learning with Human Feedback) on top of the PaLM architecture. Basically ChatGPT but with PaLM|
 
 
-## :octocat: GitHub Repositiories
+# :octocat: GitHub Repositiories
 
 | Title | Description, Information |
 | :---:         |          :--- |

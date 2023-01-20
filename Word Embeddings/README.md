@@ -422,6 +422,9 @@ OpenAI’s text embeddings measure the relatedness of text strings. Embeddings a
 
 OpenAI offers one second-generation embedding model (denoted with `-002` in the model ID) and sixteen first-generation models (denoted with `-001` in the model ID).
 
+<img src="https://raw.githubusercontent.com/ElizaLo/NLP-Natural-Language-Processing/master/img/Word_Embeddings_OpenAI_1.png" width="599" height="115"/>
+<img src="https://raw.githubusercontent.com/ElizaLo/NLP-Natural-Language-Processing/master/img/Word_Embeddings_OpenAI_2.png" width="739" height="365"/>
+
 **Limitations & risks**
 
 **_Limitation:_** Models are most reliable for mainstream English that is typically found on the Internet. Our models may perform poorly on regional or group dialects.

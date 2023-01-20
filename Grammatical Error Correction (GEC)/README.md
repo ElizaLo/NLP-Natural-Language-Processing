@@ -1,4 +1,4 @@
-# Grammatical Error Correction (GEC)
+<img src="https://raw.githubusercontent.com/ElizaLo/NLP-Natural-Language-Processing/master/img/Grammatical_Error_Correction_1.png" width="1050" height="150"/>
 
 Grammatical Error Correction (GEC) is the task of correcting different kinds of errors in text such as spelling, punctuation, grammatical, and word choice errors.
 

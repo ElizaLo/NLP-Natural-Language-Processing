@@ -1,4 +1,4 @@
-# Search Engine
+<img src="https://raw.githubusercontent.com/ElizaLo/NLP-Natural-Language-Processing/master/img/Text_Search.png" width="1050" height="150"/>
 
 ## Algorithms
 
@@ -22,3 +22,11 @@
 ## Articles
 
 - [How we built an AI-powered search engine (without being Google)](https://towardsdatascience.com/how-we-built-an-ai-powered-search-engine-without-being-google-5ad93e5a8591)
+
+# Zero-shot Text Search
+
+- [Papers with Code - Zero-shot Text Search](https://paperswithcode.com/task/zero-shot-text-search)
+
+# Information retrieval (IR)
+
+- [Information retrieval](https://en.wikipedia.org/wiki/Information_retrieval) on Wikipedia

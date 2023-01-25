@@ -1,4 +1,4 @@
-# Text Pre-Processing
+<img src="https://raw.githubusercontent.com/ElizaLo/NLP-Natural-Language-Processing/master/img/Text_Pre_Processing.png" width="1050" height="150"/>
 
 - Lowercase
 - Remove `stopwords`

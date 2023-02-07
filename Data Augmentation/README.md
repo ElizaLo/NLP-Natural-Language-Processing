@@ -16,13 +16,25 @@ In this technique, we take a random word from the sentence and replace it with i
 
 For implementation, NLTK provides a programmatic [access to WordNet](https://www.nltk.org/howto/wordnet.html). You can also use the [TextBlob API](https://textblob.readthedocs.io/en/dev/quickstart.html#wordnet-integration). Additionally, there is a database called [PPDB](http://paraphrase.org/#/download) containing millions of paraphrases that you can download and use programmatically.
 
+## 🔹 Synonym Replacement
+
+Randomly choose _n_ words from the sentence that are not stop words. Replace each of these words with one of its synonyms chosen at random. 
+
+_For example,_ given the sentence:
+
+_This **article** will focus on summarizing data augmentation **techniques** in NLP._
+
+The method randomly selects n words (say two), the words _**article**_ and _**techniques**_, and replaces them with _**write-up**_ and _**methods**_ respectively.
+
+_This **write-up** will focus on summarizing data augmentation **methods** in NLP._
+
 ### 📄 Papers
 
 | Title | Description, Information |
 | :---:         |          :--- |
 |[Character-level Convolutional Networks for Text Classification](https://arxiv.org/abs/1509.01626)|This article offers an empirical exploration on the use of character-level convolutional networks (ConvNets) for text classification. We constructed several large-scale datasets to show that character-level convolutional networks could achieve state-of-the-art or competitive results. Comparisons are offered against traditional models such as bag of words, n-grams and their TFIDF variants, and deep learning models such as word-based ConvNets and recurrent neural networks.|
 |[Siamese Recurrent Architectures for Learning Sentence Similarity](https://www.aaai.org/ocs/index.php/AAAI/AAAI16/paper/download/12195/12023)|We present a siamese adaptation of the Long Short-Term Memory (LSTM) network for labeled data comprised of pairs of variable-length sequences. Our model is applied to as- sess semantic similarity between sentences, where we ex- ceed state of the art, outperforming carefully handcrafted features and recently proposed neural network systems of greater complexity. For these applications, we provide word- embedding vectors supplemented with synonymic informa- tion to the LSTMs, which use a fixed size vector to encode the underlying meaning expressed in a sentence (irrespective of the particular wording/syntax). By restricting subsequent operations to rely on a simple Manhattan metric, we compel the sentence representations learned by our model to form a highly structured space whose geometry reflects complex semantic relationships. Our results are the latest in a line of findings that showcase LSTMs as powerful language models capable of tasks requiring intricate understanding.|
-|[EDA: Easy Data Augmentation Techniques for Boosting Performance on Text Classification Tasks](https://arxiv.org/abs/1901.11196)|We present EDA: easy data augmentation techniques for boosting performance on text classification tasks. EDA consists of four simple but powerful operations: synonym replacement, random insertion, random swap, and random deletion. On five text classification tasks, we show that EDA improves performance for both convolutional and recurrent neural networks. EDA demonstrates particularly strong results for smaller datasets; on average, across five datasets, training with EDA while using only 50% of the available training set achieved the same accuracy as normal training with all available data. We also performed extensive ablation studies and suggest parameters for practical use.|
+|[EDA: Easy Data Augmentation Techniques for Boosting Performance on Text Classification Tasks](https://arxiv.org/abs/1901.11196)|<p>We present EDA: easy data augmentation techniques for boosting performance on text classification tasks. EDA consists of four simple but powerful operations: synonym replacement, random insertion, random swap, and random deletion. On five text classification tasks, we show that EDA improves performance for both convolutional and recurrent neural networks. EDA demonstrates particularly strong results for smaller datasets; on average, across five datasets, training with EDA while using only 50% of the available training set achieved the same accuracy as normal training with all available data. We also performed extensive ablation studies and suggest parameters for practical use.</p><ul><li> 📰 **Article** [These are the Easiest Data Augmentation Techniques in Natural Language Processing you can think of — and they work.](https://towardsdatascience.com/these-are-the-easiest-data-augmentation-techniques-in-natural-language-processing-you-can-think-of-88e393fd610)</li><li> :octocat: [EDA: Easy Data Augmentation Techniques for Boosting Performance on Text Classification Tasks](https://github.com/jasonwei20/eda_nlp)</li></ul>|
 
 ###  ⚙️ Tools
 
@@ -263,6 +275,14 @@ In this technique, we first choose a random word from the sentence that is not a
 
 <img src="https://raw.githubusercontent.com/ElizaLo/NLP-Natural-Language-Processing/master/Data%20Augmentation/img/nlp-aug-random-insertion.png" width="675" height="201"/>
 
+_For example,_ given the sentence:
+
+_This **article** will focus on summarizing data augmentation **techniques** in NLP._
+
+The method randomly selects n words (say two), the words **_article_** and **_techniques_** find the synonyms as **_write-up_** and **_methods_** respectively. Then these synonyms are inserted at a random position in the sentence.
+
+_This article will focus on **write-up** summarizing data augmentation techniques in NLP **methods**._
+
 ### 📄 Papers
 
 | Title | Description, Information |
@@ -304,6 +324,42 @@ This technique had no impact on the accuracy but helped with the F1 score in the
 |[Atalaya at TASS 2019: Data Augmentation and Robust Embeddings for Sentiment Analysis](https://arxiv.org/abs/1909.11241)|In this article we describe our participation in TASS 2019, a shared task aimed at the detection of sentiment polarity of Spanish tweets. We combined different representations such as bag-of-words, bag-of-characters, and tweet embeddings. In particular, we trained robust subword-aware word embeddings and computed tweet representations using a weighted-averaging strategy. We also used two data augmentation techniques to deal with data scarcity: two-way translation augmentation, and instance crossover augmentation, a novel technique that generates new instances by combining halves of tweets. In experiments, we trained linear classifiers and ensemble models, obtaining highly competitive results despite the simplicity of our approaches.|
 
 # 💠 Albumentation
+
+In this section, we will see how we can apply some of the ideas used in CV data augmentation in NLP. 
+
+For that, we will use the [Albumentations](https://github.com/albumentations-team/albumentations) package. 
+
+## 🔹 Shuffle Sentences Transform
+
+In this transformation, if the given text sample contains multiple sentences these sentences are shuffled to create a new sample. 
+
+_For example:_
+
+`text = ‘<Sentence1>. <Sentence2>. <Sentence4>. <Sentence4>. <Sentence5>. <Sentence5>.’`
+
+Is transformed to:
+
+`text = ‘<Sentence2>. <Sentence3>. <Sentence1>. <Sentence5>. <Sentence5>. <Sentence4>.’`
+
+## 🔹 Exclude duplicate transform
+
+In this transformation, if the given text sample contains multiple sentences with duplicate sentences, these duplicate sentences are removed to create a new sample.
+
+_For example_ given the sample,
+
+`text = ‘<Sentence1>. <Sentence2>. <Sentence4>. <Sentence4>. <Sentence5>. <Sentence5>.’`
+
+We transform it to:
+
+`text = ‘<Sentence1>. <Sentence2>.<Sentence4>. <Sentence5>.’`
+
+There are many other transformations which you can try with this library. You can check this wonderful [notebook](https://www.kaggle.com/code/shonenkov/nlp-albumentations/notebook) to see the complete implementation.
+
+### 📄 Papers
+
+| Title | Description, Information |
+| :---:         |          :--- |
+|[Albumentations: Fast and Flexible Image Augmentations](https://www.mdpi.com/2078-2489/11/2/125)|<p>Data augmentation is a commonly used technique for increasing both the size and the diversity of labeled training sets by leveraging input transformations that preserve corresponding output labels. In computer vision, image augmentations have become a common implicit regularization technique to combat overfitting in deep learning models and are ubiquitously used to improve performance. While most deep learning frameworks implement basic image transformations, the list is typically limited to some variations of flipping, rotating, scaling, and cropping. Moreover, image processing speed varies in existing image augmentation libraries. We present Albumentations, a fast and flexible open source library for image augmentation with many various image transform operations available that is also an easy-to-use wrapper around other augmentation libraries. We discuss the design principles that drove the implementation of Albumentations and give an overview of the key features and distinct capabilities. Finally, we provide examples of image augmentations for different computer vision tasks and demonstrate that Albumentations is faster than other commonly used image augmentation tools on most image transform operations.</p><ul><li>[Albumentations](https://albumentations.ai) - Albumentations is a computer vision tool that boosts the performance of deep convolutional neural networks. The library is widely used in industry, deep learning research, machine learning competitions, and open source projects.</li><li>[Albumentations documentation](https://albumentations.ai/docs/)</li><li> :octocat: [Albumentations](https://github.com/albumentations-team/albumentations) - Albumentations is a Python library for image augmentation. Image augmentation is used in deep learning and computer vision tasks to increase the quality of trained models. The purpose of image augmentation is to create new training samples from the existing data.</li><li>[NLP Albumentations](https://www.kaggle.com/code/shonenkov/nlp-albumentations/notebook) notebook on Kagle</li></ul>|
 
 # 💠 Syntax-tree Manipulation
 

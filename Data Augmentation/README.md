@@ -421,6 +421,10 @@ This technique was first proposed by Anaby-Tavor et al. in their paper [“Not E
 
 <img src="https://raw.githubusercontent.com/ElizaLo/NLP-Natural-Language-Processing/master/Data%20Augmentation/img/nlp-aug-gpt-3.png" width="457.3" height="195.3"/>
 
+### 📰 Articles
+
+- [Text Data Augmentation Using the GPT-2 Language Model](https://towardsdatascience.com/text-data-augmentation-using-gpt-2-language-model-e5384e15b550)
+
 
 ### 📄 Papers
 
@@ -428,6 +432,29 @@ This technique was first proposed by Anaby-Tavor et al. in their paper [“Not E
 | :---:         |          :--- |
 |[Not Enough Data? Deep Learning to the Rescue!](https://arxiv.org/abs/1911.03118)|Based on recent advances in natural language modeling and those in text generation capabilities, we propose a novel data augmentation method for text classification tasks. We use a powerful pre-trained neural network model to artificially synthesize new labeled data for supervised learning. We mainly focus on cases with scarce labeled data. Our method, referred to as language-model-based data augmentation (LAMBADA), involves fine-tuning a state-of-the-art language generator to a specific task through an initial training phase on the existing (usually small) labeled data. Using the fine-tuned model and given a class label, new sentences for the class are generated. Our process then filters these new sentences by using a classifier trained on the original data. In a series of experiments, we show that LAMBADA improves classifiers' performance on a variety of datasets. Moreover, LAMBADA significantly improves upon the state-of-the-art techniques for data augmentation, specifically those applicable to text classification tasks with little data.|
 |[Data Augmentation using Pre-trained Transformer Models](https://arxiv.org/abs/2003.02245)|Language model based pre-trained models such as BERT have provided significant gains across different NLP tasks. In this paper, we study different types of transformer based pre-trained models such as auto-regressive models (GPT-2), auto-encoder models (BERT), and seq2seq models (BART) for conditional data augmentation. We show that prepending the class labels to text sequences provides a simple yet effective way to condition the pre-trained models for data augmentation. Additionally, on three classification benchmarks, pre-trained Seq2Seq model outperforms other data augmentation methods in a low-resource setting. Further, we explore how different pre-trained model based data augmentation differs in-terms of data diversity, and how well such methods preserve the class-label information.|
+
+###  ⚙️ Tools
+
+| Title | Description, Information |
+| :---:         |          :--- |
+|[TextAugmentation-GPT2](https://github.com/prakhar21/TextAugmentation-GPT2)|Fine-tuned pre-trained GPT2 for custom topic specific text generation. Such system can be used for Text Augmentation.|
+
+# ‼️ Things to keep in mind while doing NLP data augmentation
+
+The **main issue faced when training on augmented data** is that algorithms, when done incorrectly, is that you heavily overfit the augmented training data.
+
+**_Some things to keep in mind:_**
+
+- Do not validate using the augmented data.
+- If you’re doing K-fold cross-validation, always keep the original sample and augmented sample in the same fold to avoid overfitting.
+- Always try different augmentation approaches and check which works better.
+- A mix of different augmentation methods is also appreciated but don’t overdo it.
+- Experiment to determine the optimal number of samples to be augmented to get the best results.
+- Keep in mind that data augmentation in NLP does not always help to improve model performance.
+
+# ❓How much augmentation?
+
+Finally, how many augmented sentences should we generate for the real sentence? The answer for this depends on the size of your dataset. If you only have a small dataset, overfitting is more likely so you can generate a larger number of augmented sentences. For larger datasets, adding too much augmented data can be unhelpful since your model may already be able to generalize when there is a large amount of real data. 
 
 # 📄 Papers
 

@@ -303,6 +303,8 @@ This technique had no impact on the accuracy but helped with the F1 score in the
 | :---:         |          :--- |
 |[Atalaya at TASS 2019: Data Augmentation and Robust Embeddings for Sentiment Analysis](https://arxiv.org/abs/1909.11241)|In this article we describe our participation in TASS 2019, a shared task aimed at the detection of sentiment polarity of Spanish tweets. We combined different representations such as bag-of-words, bag-of-characters, and tweet embeddings. In particular, we trained robust subword-aware word embeddings and computed tweet representations using a weighted-averaging strategy. We also used two data augmentation techniques to deal with data scarcity: two-way translation augmentation, and instance crossover augmentation, a novel technique that generates new instances by combining halves of tweets. In experiments, we trained linear classifiers and ensemble models, obtaining highly competitive results despite the simplicity of our approaches.|
 
+# 💠 Albumentation
+
 # 💠 Syntax-tree Manipulation
 
 This technique has been used in the paper by [Coulombe](https://arxiv.org/abs/1812.04718). The idea is to parse and generate the dependency tree of the original sentence, transform it using rules, and generate a paraphrased sentence.

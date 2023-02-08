@@ -2,6 +2,13 @@
 
 [**Data augmentation**](https://en.wikipedia.org/wiki/Data_augmentation) in data analysis are techniques used to increase the amount of data by adding slightly modified copies of already existing data or newly created synthetic data from existing data. It acts as a [regularizer](https://en.wikipedia.org/wiki/Regularization_(mathematics)) and helps reduce [overfitting](https://en.wikipedia.org/wiki/Overfitting) when training a machine learning model. It is closely related to [oversampling](https://en.wikipedia.org/wiki/Oversampling_and_undersampling_in_data_analysis) in data analysis.
 
+**Data Augmentation techniques are applied on below three levels:**
+
+- Character Level
+- Word Level
+- Phrase Level
+- Document Level
+
 # 💠 Lexical Substitution
 
 These approaches try to substitute words present in a text without changing the meaning of the sentence.
@@ -481,6 +488,7 @@ Finally, how many augmented sentences should we generate for the real sentence? 
 - [How to Perform Data Augmentation in NLP Projects](https://www.freecodecamp.org/news/how-to-perform-data-augmentation-in-nlp-projects/)
 - [Text Data Augmentation in Natural Language Processing with Texattack](https://www.analyticsvidhya.com/blog/2022/02/text-data-augmentation-in-natural-language-processing-with-texattack/)
 - [Popular Data Augmentation Techniques in NLP](https://blog.paperspace.com/data-augmentation-for-nlp/)
+- [How does Data Noising Help to Improve your NLP Model?](https://pub.towardsai.net/how-does-data-noising-help-to-improve-your-nlp-model-480619f9fb10)
 
 # 🛠️ Implementation
 
@@ -492,6 +500,7 @@ Finally, how many augmented sentences should we generate for the real sentence? 
 |[MarianNMT](https://marian-nmt.github.io)|Marian is an efficient, free Neural Machine Translation framework written in pure C++ with minimal dependencies. It is mainly being developed by the Microsoft Translator team.|
 |🤗 [HuggingFace - Traslation](https://huggingface.co/models?pipeline_tag=translation&sort=downloads)||
 |:octocat: [contractions](https://github.com/kootenpv/contractions)|This package is capable of resolving contractions and slang.|
+|||
 
 # ⚙️ Tools
 

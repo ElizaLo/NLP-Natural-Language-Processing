@@ -500,7 +500,8 @@ Finally, how many augmented sentences should we generate for the real sentence? 
 |[MarianNMT](https://marian-nmt.github.io)|Marian is an efficient, free Neural Machine Translation framework written in pure C++ with minimal dependencies. It is mainly being developed by the Microsoft Translator team.|
 |🤗 [HuggingFace - Traslation](https://huggingface.co/models?pipeline_tag=translation&sort=downloads)||
 |:octocat: [contractions](https://github.com/kootenpv/contractions)|This package is capable of resolving contractions and slang.|
-|||
+|[NL-Augmenter 🦎 → 🐍](https://github.com/GEM-benchmark/NL-Augmenter)|The NL-Augmenter is a collaborative effort intended to add transformations of datasets dealing with natural language. Transformations augment text datasets in diverse ways, including: randomizing names and numbers, changing style/syntax, paraphrasing, KB-based paraphrasing ... and whatever creative augmentation you contribute.|
+|[AugLy](https://github.com/facebookresearch/AugLy)|AugLy is a data augmentations library that currently supports four modalities (audio, image, text & video) and over 100 augmentations. Each modality’s augmentations are contained within its own sub-library. These sub-libraries include both function-based and class-based transforms, composition operators, and have the option to provide metadata about the transform applied, including its intensity.|
 
 # ⚙️ Tools
 

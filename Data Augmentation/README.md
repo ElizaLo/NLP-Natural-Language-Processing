@@ -490,18 +490,19 @@ Finally, how many augmented sentences should we generate for the real sentence? 
 - [Popular Data Augmentation Techniques in NLP](https://blog.paperspace.com/data-augmentation-for-nlp/)
 - [How does Data Noising Help to Improve your NLP Model?](https://pub.towardsai.net/how-does-data-noising-help-to-improve-your-nlp-model-480619f9fb10)
 
-# 🛠️ Implementation
+# 🛠️ Libraries, frameworks, etc.
 
 | Title | Description, Information |
 | :---:         |          :--- |
 |[nlpaug](https://github.com/makcedward/nlpaug)|This python library helps you with augmenting nlp for your machine learning projects. Visit this introduction to understand about [Data Augmentation in NLP](https://towardsdatascience.com/data-augmentation-in-nlp-2801a34dfc28). `Augmenter` is the basic element of augmentation while `Flow` is a pipeline to orchestra multi augmenter together.|
 |[TextAttack 🐙](https://github.com/QData/TextAttack)|TextAttack is a Python framework for adversarial attacks, data augmentation, and model training in NLP.|
+|[AugLy](https://github.com/facebookresearch/AugLy)|<p>AugLy is a data augmentations library that currently supports four modalities (audio, image, text & video) and over 100 augmentations. Each modality’s augmentations are contained within its own sub-library. These sub-libraries include both function-based and class-based transforms, composition operators, and have the option to provide metadata about the transform applied, including its intensity.</p><ul><li> 📄 **Paper:** [AugLy: Data Augmentations for Robustness](https://arxiv.org/abs/2201.06494)</li><li>[AugLy’s documentation](https://augly.readthedocs.io/en/latest/)</li><li>[AugLy: A new data augmentation library to help build more robust AI models](https://ai.facebook.com/blog/augly-a-new-data-augmentation-library-to-help-build-more-robust-ai-models/)</li></ul>|
+|[NL-Augmenter 🦎 → 🐍](https://github.com/GEM-benchmark/NL-Augmenter)|The NL-Augmenter is a collaborative effort intended to add transformations of datasets dealing with natural language. Transformations augment text datasets in diverse ways, including: randomizing names and numbers, changing style/syntax, paraphrasing, KB-based paraphrasing ... and whatever creative augmentation you contribute.|
 |[NLTK :: Sample usage for wordnet](https://www.nltk.org/howto/wordnet.html)|NLTK provides a programmatic access to WordNet|
 |[MarianNMT](https://marian-nmt.github.io)|Marian is an efficient, free Neural Machine Translation framework written in pure C++ with minimal dependencies. It is mainly being developed by the Microsoft Translator team.|
 |🤗 [HuggingFace - Traslation](https://huggingface.co/models?pipeline_tag=translation&sort=downloads)||
 |:octocat: [contractions](https://github.com/kootenpv/contractions)|This package is capable of resolving contractions and slang.|
-|[NL-Augmenter 🦎 → 🐍](https://github.com/GEM-benchmark/NL-Augmenter)|The NL-Augmenter is a collaborative effort intended to add transformations of datasets dealing with natural language. Transformations augment text datasets in diverse ways, including: randomizing names and numbers, changing style/syntax, paraphrasing, KB-based paraphrasing ... and whatever creative augmentation you contribute.|
-|[AugLy](https://github.com/facebookresearch/AugLy)|AugLy is a data augmentations library that currently supports four modalities (audio, image, text & video) and over 100 augmentations. Each modality’s augmentations are contained within its own sub-library. These sub-libraries include both function-based and class-based transforms, composition operators, and have the option to provide metadata about the transform applied, including its intensity.|
+
 
 # ⚙️ Tools
 

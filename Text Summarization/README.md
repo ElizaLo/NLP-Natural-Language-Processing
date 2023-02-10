@@ -31,6 +31,7 @@
 | Title | Description, Information |
 | :---:         |          :--- |
 |[awesome-text-summarization](https://github.com/icoxfog417/awesome-text-summarization)|The guide to tackle with the Text Summarization|
+|[Law-AI/summarization](https://github.com/Law-AI/summarization)|<p>Implementation of different summarization algorithms applied to legal case judgements.</p><p>This repository contains implementations and datasets made available in the following papers :</p><ul><li>Legal Case Document Summarization: Extractive and Abstractive Methods and their Evaluation accepted at AACL-IJCNLP 2022.</li><li>A Comparative Study of Summarization Algorithms Applied to Legal Case Judgments accepted at ECIR 2019.</li></ul><p>We provide the code base of various Extractive and Abstractive summarization algorithms applied to legal case documents. We also provide three summarization datasets from the Indian and UK Supreme Court case documents.</p>|
 
 ## :newspaper: Articles
 

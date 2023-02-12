@@ -1,12 +1,12 @@
 <img src="https://raw.githubusercontent.com/ElizaLo/NLP-Natural-Language-Processing/master/img/Keywords_and_Phrases_Extraction.png" width="1050" height="150"/>
 
-## Models
+# 💠 Models
 
 | Title | Description, Information |
 | :---:         |          :--- |
 | **GPT-3** | 📄 **Paper:** [Language Models are Few-Shot Learners](https://arxiv.org/abs/2005.14165v4), [News Summarization and Evaluation in the Era of GPT-3](https://arxiv.org/pdf/2209.12356.pdf), [Papers with Code - GPT-3 Explained](https://paperswithcode.com/method/gpt-3)|
 
-### 🔹 GPT-3: Generative Pre-trained Transformer
+## 🔹 GPT-3: Generative Pre-trained Transformer
 
 > Read more about GPT-3 model in 📂 [Language Models](https://github.com/ElizaLo/NLP-Natural-Language-Processing/tree/master/Language%20Models) folder
 
@@ -21,7 +21,7 @@
 - :gear: **Notebook:** 
   - [GPT-3.ipynb](https://github.com/ElizaLo/NLP-Natural-Language-Processing/blob/master/Text%20Summarization/GPT-3.ipynb) - GPT-3 - Generative Pre-trained Transformer 3, **_model_**: `text-davinci-003` (released: _November 2022_) 
 
-#### GPT-3 Tokenization
+### GPT-3 Tokenization
 
 - [GPT-3 Online Tokenizer](https://beta.openai.com/tokenizer)
 
@@ -40,7 +40,7 @@ Models understand and process text by breaking it down into tokens. Tokens can b
 
 The number of tokens processed in a given API request depends on the length of both your inputs and outputs. As a rough rule of thumb, 1 token is approximately 4 characters or 0.75 words for English text. One limitation to keep in mind is that your text prompt and generated completion combined must be no more than the model's maximum context length (for most models this is 2048 tokens, or about 1500 words). Check out [tokenizer tool](https://beta.openai.com/tokenizer) to learn more about how text translates to tokens.
 
-#### `text-davinci-003` model
+### `text-davinci-003` model
 
 > OpenAI releases a new language model for GPT-3 trained with human feedback (**November 2022**). It brings numerous improvements, according to OpenAI.
 
@@ -58,7 +58,7 @@ Leike points out that the new GPT model still has “important limitations” an
 
 - [OpenAI’s latest GPT-3 model generates better and longer texts](https://the-decoder.com/openais-latest-gpt-3-model-generates-better-and-longer-texts/)
 
-####  ⚙️ Fine-tuning model
+###  ⚙️ Fine-tuning model
 
 > Read all details about **Fine-tuning GPT-3 model** in 📂 [Language Models - ⚙️ Fine-tuning](https://github.com/ElizaLo/NLP-Natural-Language-Processing/blob/master/Language%20Models/README.md#%EF%B8%8F-fine-tuning-model) folder
 
@@ -158,14 +158,7 @@ It’s usually best to set a low temperature for tasks where the desired output 
 
 - [How to sample from language models](https://towardsdatascience.com/how-to-sample-from-language-models-682bceb97277)
 
-#### 🔺 Evaluation Metrics
-
-- NDCG (Normalized Discounted Cumulative Gain) 
-- MRR (Mean Reciprocal Rank) 
-- F1
-- MAP (Mean Average Precision)
-
-#### 💭 Conclusions
+### 💭 Conclusions
 
 - The same `temperature` value generated different amounts of words and different words and phrases.
 - This model is very sensitive to the input end, which influences the tokenization and consequently affects the extracted keywords.
@@ -174,7 +167,37 @@ It’s usually best to set a low temperature for tasks where the desired output 
 - Each time model generates text of different lengths. Setting up `max_tokens` doesn’t guarantee that text would be this length.
 - Words in upper case are divided wrong into the tokens (e.g. FEBRUARY, CUISINE, RESEARCH, MENU, etc.). It is necessary to reduce all words to lowercase or to the form of ordinary sentences, where only the capital letter in the word is large.
 
-#### 💡 Ideas
+# 🔺 Evaluation Metrics
+
+- NDCG (Normalized Discounted Cumulative Gain) 
+- MRR (Mean Reciprocal Rank) 
+- F1
+- MAP (Mean Average Precision)
+- Text Similarity Evaluation Metrics:
+  - 
+- 
+
+## 📃 Text Similarity Evaluation Metrics
+
+### Understanding Similarity
+
+Similarity is the distance between two vectors where the vector dimensions represent the features of two objects. In simple terms, similarity is the measure of how different or alike two data objects are. If the distance is small, the objects are said to have a high degree of similarity and vice versa. Generally, it is measured in the range 0 to 1. This score in the range of [0, 1] is called the similarity score.
+
+An important point to remember about similarity is that it’s subjective and highly dependent on the domain and use case.
+
+### 💠 Similarity Measures
+
+#### 🔹 Jaccard Index
+
+Jaccard index, also known as Jaccard similarity coefficient, treats the data objects like sets. It is defined as the size of the intersection of two sets divided by the size of the union. Let’s continue with our previous example:
+
+- **Sentence 1:** `The bottle is empty.`
+- **Sentence 2:** `There is nothing in the bottle.`
+
+To calculate the similarity using Jaccard similarity, we will first perform text normalization to reduce words their roots/lemmas. There are no words to reduce in the case of our example sentences, so we can move on to the next part. Drawing a Venn diagram of the sentences we get:
+
+
+# 💡 Ideas
 
 - Run the model with different `temperature` values and join results together to achieve more extracted keywords. 
 - Run the model with different `temperature` values and count how many words are generated with each.
@@ -183,7 +206,7 @@ It’s usually best to set a low temperature for tasks where the desired output 
 - **Chunk/divide the input text:** divide the text into several smaller ones and make a keywords extraction for each of them separately and then combine it into one concatenated keywords list.
 - Make chunking of documents, try and compare the results of summarization of **different GPT-3 models**: `text-davinci-003`, `text-curie-001`, `text-babbage-001` and `text-ada-001`.
 
-#### ❓ Questions
+# ❓ Questions
 
 - How to evaluate results?
 - How to choose `temperature` value?

@@ -1,5 +1,12 @@
 # Text Similarity 
 
+Text similarity has to determine how ‘close’ two pieces of text are both in surface closeness [lexical similarity] and meaning [semantic similarity].
+
+For instance, how similar are the phrases _**“the cat ate the mouse”**_ with _**“the mouse ate the cat food”**_ by just looking at the words?
+
+- On the surface, if you consider only **word level similarity**, these two phrases appear very similar as 3 of the 4 unique words are an exact overlap. It typically does not take into account the actual meaning behind words or the entire phrase in context.
+- Instead of doing a **word for word comparison**, we also need to pay attention to context in order to capture more of the semantics. To consider semantic similarity we need to focus on **phrase/paragraph levels (or lexical chain level)** where a piece of text is broken into a relevant group of related words prior to computing similarity. We know that while the words significantly overlap, these two phrases actually have **different meaning**.
+
 # Understanding Similarity
 
 Similarity is the distance between two vectors where the vector dimensions represent the features of two objects. In simple terms, similarity is the measure of how different or alike two data objects are. If the distance is small, the objects are said to have a high degree of similarity and vice versa. Generally, it is measured in the range 0 to 1. This score in the range of [0, 1] is called the similarity score.
@@ -222,9 +229,38 @@ def cosine_similarity_scipy(s1, s2):
     s_1 = nlp(s1).vector
     s_2 = nlp(s2).vector
     return 1 - spatial.distance.cosine(s_1, s_2)
+    
+# CountVectorizer Method + Cosine Similarity
+def cosine_distance_countvectorizer_method(s1, s2):
+    
+    # sentences to list
+    allsentences = [s1 , s2]
+    
+    # packages
+    from sklearn.feature_extraction.text import CountVectorizer
+    from scipy.spatial import distance
+    
+    # text to vector
+    vectorizer = CountVectorizer()
+    all_sentences_to_vector = vectorizer.fit_transform(allsentences)
+    text_to_vector_v1 = all_sentences_to_vector.toarray()[0].tolist()
+    text_to_vector_v2 = all_sentences_to_vector.toarray()[1].tolist()
+    
+    # distance of similarity
+    cosine = distance.cosine(text_to_vector_v1, text_to_vector_v2)
+    print('Similarity of two sentences are equal to ',round((1-cosine)*100,2),'%')
+    return cosine
 ```
 
 Cosine similarity is best suitable for where repeated words are more important and can work on any size of the document.
+
+## 🔹 Word Mover’s Distance
+
+WMD uses the **word embeddings of the words in two texts to measure the minimum distance** that the words in one text need to “travel” in semantic space to reach the words in the other text.
+
+### 🛠️ Implementation
+
+- [Word Mover’s Distance](https://radimrehurek.com/gensim/auto_examples/tutorials/run_wmd.html), Gensim’s implemenation of the WMD
 
 # ❓What Metric To Use?
 
@@ -254,3 +290,7 @@ In addition to that, Euclidean distance doesn’t work well with the sparse vect
 
 - [Ultimate Guide To Text Similarity With Python - NewsCatcher](https://newscatcherapi.com/blog/ultimate-guide-to-text-similarity-with-python)
 - [Text Similarity Measures](https://machinelearninggeek.com/text-similarity-measures/#Cosine_Similarity_using_Spacy)
+- [Text Similarities : Estimate the degree of similarity between two texts](https://medium.com/@adriensieg/text-similarities-da019229c894)
+    - :octocat:[adsieg/text_similarity](https://github.com/adsieg/text_similarity) 
+- [Overview of Text Similarity Metrics in Python](https://towardsdatascience.com/overview-of-text-similarity-metrics-3397c4601f50)
+- 

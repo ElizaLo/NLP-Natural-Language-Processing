@@ -293,4 +293,5 @@ In addition to that, Euclidean distance doesn’t work well with the sparse vect
 - [Text Similarities : Estimate the degree of similarity between two texts](https://medium.com/@adriensieg/text-similarities-da019229c894)
     - :octocat:[adsieg/text_similarity](https://github.com/adsieg/text_similarity) 
 - [Overview of Text Similarity Metrics in Python](https://towardsdatascience.com/overview-of-text-similarity-metrics-3397c4601f50)
-- 
+- [Cosine Similarity – Text Similarity Metric](https://studymachinelearning.com/cosine-similarity-text-similarity-metric/)
+- [Understanding and Using Common Similarity Measures for Text Analysis](https://programminghistorian.org/en/lessons/common-similarity-measures#cosine-similarity-and-cosine-distance)

@@ -1,6 +1,6 @@
-# Data Analysis
+<img src="https://raw.githubusercontent.com/ElizaLo/NLP-Natural-Language-Processing/master/img/Data_Analysis.png" width="1050" height="150"/>
 
-## 🛠️ Tools
+# 🛠️ Tools
 
 | Title | Description |
 | :---:         |          :--- |

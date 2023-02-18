@@ -1,4 +1,4 @@
-# Text Similarity 
+<img src="https://raw.githubusercontent.com/ElizaLo/NLP-Natural-Language-Processing/master/img/Text_Similarity.png" width="1050" height="150"/>
 
 Text similarity has to determine how ‘close’ two pieces of text are both in surface closeness [lexical similarity] and meaning [semantic similarity].
 
@@ -52,11 +52,11 @@ Jaccard index, also known as Jaccard similarity coefficient, treats the data obj
 
 To calculate the similarity using Jaccard similarity, we will first perform text normalization to reduce words their roots/lemmas. There are no words to reduce in the case of our example sentences, so we can move on to the next part. Drawing a Venn diagram of the sentences we get:
 
-<img src="" width="1050" height="150"/>
+<img src="https://raw.githubusercontent.com/ElizaLo/NLP-Natural-Language-Processing/master/Text%20Similarity/img/Jaccard_Index.png" width="375" height="223"/>
 
-<img src="" width="1050" height="150"/>
+<img src="https://raw.githubusercontent.com/ElizaLo/NLP-Natural-Language-Processing/master/Text%20Similarity/img/Jaccard_Index_formula.png" width="400" height="108"/>
 
-<img src="" width="1050" height="150"/>
+<img src="https://raw.githubusercontent.com/ElizaLo/NLP-Natural-Language-Processing/master/Text%20Similarity/img/Jaccard_Index_formula_2.png" width="317" height="159"/>
 
 - _Size of the intersection of the two sets:_ **3**
 - _Size of the union of the two sets:_ **1+3+3 = 7**
@@ -74,7 +74,7 @@ def jaccard_similarity(x,y):
 
 Euclidean distance, or L2 norm, is the most commonly used form of the [Minkowski distance](https://en.wikipedia.org/wiki/Minkowski_distance). Generally speaking, when people talk about distance, they refer to Euclidean distance. It uses the Pythagoras theorem to calculate the distance between two points as indicated in the figure below:
 
-<img src="" width="1050" height="150"/>
+<img src="https://raw.githubusercontent.com/ElizaLo/NLP-Natural-Language-Processing/master/Text%20Similarity/img/Pythagoras_theorem.png" width="375" height="225"/>
 
 The larger the distance d between two vectors, the lower the similarity score and vice versa. 
 
@@ -125,17 +125,20 @@ distance_to_similarity(distance)
 
 Cosine Similarity computes the similarity of two vectors as the cosine of the angle between two vectors. It determines whether two vectors are pointing in roughly the same direction. So if the angle between the vectors is 0 degrees, then the cosine similarity is 1. 
 
-<img src="" width="1050" height="150"/>
+<img src="https://raw.githubusercontent.com/ElizaLo/NLP-Natural-Language-Processing/master/Text%20Similarity/img/Cosine_Similarity.png" width="375" height="189"/>
 
 It is given as:
 
-<img src="" width="1050" height="150"/>
+<img src="https://raw.githubusercontent.com/ElizaLo/NLP-Natural-Language-Processing/master/Text%20Similarity/img/Cosine_Similarity_formula.png" width="356" height="175"/>
+
+<img src="https://raw.githubusercontent.com/ElizaLo/NLP-Natural-Language-Processing/master/Text%20Similarity/img/Cosine_Similarity_formula_2.png" width="533" height="139"/>
 
 Where **||v||** represents the length of the vector **v**, **𝜃** denotes the angle between **v** and **w**, and **‘.’** denotes the dot product operator.
 
-'''python
+```python
 def cos_similarity(x,y):
-  """ return cosine similarity between two lists """
+
+  '''return cosine similarity between two lists'''
  
   numerator = sum(a*b for a,b in zip(x,y))
   denominator = squared_sum(x)*squared_sum(y)
@@ -145,7 +148,7 @@ cos_similarity(embeddings[0], embeddings[1])
 
 # OUTPUT
 0.891
-'''
+```
 
 - The implementation of Cosine Similarity in Python using TF-IDF vector of Scikit-learn:
 
@@ -268,7 +271,7 @@ Jaccard similarity takes into account only the set of unique words for each text
 
 Both Euclidean and cosine similarity metrics drop if an additional _‘empty’_ is added to our first example sentence:
 
-<img src="" width="1050" height="150"/>
+<img src="https://raw.githubusercontent.com/ElizaLo/NLP-Natural-Language-Processing/master/Text%20Similarity/img/example.png" width="492" height="167"/>
 
 Jaccard similarity is rarely used when working with text data as it does not work with text embeddings. This means that is limited to assessing the lexical similarity of text, i.e., how similar documents are on a word level.
 

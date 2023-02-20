@@ -170,6 +170,8 @@ The back-translation process is as follows:
 
 <img src="https://raw.githubusercontent.com/ElizaLo/NLP-Natural-Language-Processing/master/Data%20Augmentation/img/nlp-aug-back-translation.png" width="485" height="276"/>
 
+<img src="https://raw.githubusercontent.com/ElizaLo/NLP-Natural-Language-Processing/master/Data%20Augmentation/img/backtranslation-en-fr.png" width="740" height="262"/>
+
 You can also run back-translation using different languages at once to generate more variations. As shown below, we translate an English sentence to a target language and back again to English for three target languages: _French, Mandarin, and Italian_.
 
 <img src="https://raw.githubusercontent.com/ElizaLo/NLP-Natural-Language-Processing/master/Data%20Augmentation/img/nlp-aug-backtranslation-multi.png" width="592" height="276"/>

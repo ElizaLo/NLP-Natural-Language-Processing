@@ -181,6 +181,10 @@ It’s usually best to set a low temperature for tasks where the desired output 
   - Word Mover’s Distance
 - 
 
+Evaluating a Keyword Extraction model is not as straightforward as it is to evaluate a model for a [Classification](https://machinelearningmastery.com/types-of-classification-in-machine-learning/#:~:text=Classification%20is%20a%20task%20that,”%20or%20“not%20spam.”) problem. Keyword extraction is fundamentally a ranking task rather than a classification task, where we would expect to rank relevant keywords or key phrases higher in order than irrelevant key phrases. When it comes to the evaluation of such systems we have to compare two lists of key phrases. Traditional tasks such as classification tasks just predict which class a sample belongs to and therefore, do not consider any form of ranking during evaluation. Keyword extraction on the other hand requires [Rank-Aware evaluation metrics](https://www.coursera.org/lecture/recommender-metrics/rank-aware-top-n-metrics-Wk98r).
+
+## 💠 F<sub>1</sub>, Precision and Recall
+
 ## 💠 Extracting the percentage of shared words between two texts
 
 ```python
@@ -494,5 +498,11 @@ In addition to that, Euclidean distance doesn’t work well with the sparse vect
 # ❓ Questions
 
 - How to evaluate results?
+
+  > It is of extreme importance that one understands the different evaluation metrics and when to use them. Evaluating your model on inadequate metrics and then judging your model based on the improvements achieved on these metrics is a huge trap. Often, especially in the Industry, these metrics are indicators for productionization of newer models. Therefore, as a Data Scientist, one should be aware of the pros and cons of different evaluation metrics in order to avoid falling into this trap.
+
 - How to choose `temperature` value?
 
+# 📰 Articles
+
+- [Exploring Different Keyword Extractors — Evaluation Metrics and Strategies](https://medium.com/gumgum-tech/exploring-different-keyword-extractors-evaluation-metrics-and-strategies-ef874d336773)

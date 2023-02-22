@@ -185,6 +185,53 @@ Evaluating a Keyword Extraction model is not as straightforward as it is to eval
 
 ## 💠 F<sub>1</sub>, Precision and Recall
 
+The inherent assumption when using F<sub>1</sub>, Precision and Recall is that Keyword Extraction is considered as a classification problem. Here we consider a document as a set of tokens. The two classes are whether a token or a set of tokens is a keyword or not a keyword.
+
+This inherent assumption makes this evaluation metric slightly weaker because Keyword Extraction is majorly a Ranking problem rather than a Classification problem. F<sub>1</sub>, Precision and Recall are considered as rank-less metrics because they do not address the ranks of the keywords at all.
+
+Generally these metrics are not targeted to top-K extracted key-phrases. These can be bounded to top-K in the form of _Precision@K_ and _Recall@K_. Their harmonic mean gives _F1@K_. _Precision@K_ gives the percentage of the Top-K extracted key-phrases that are relevant. This does involve some sense on Top-K evaluation, but they still do not evaluate considering the rank. 
+
+To understand the shortcomings of this approach let us consider the figure below which shows _list_1_ as the output of one of our models (model A) and _list_2_ as the output of another different (model B).
+
+<img src="" width="1050" height="150"/>
+
+Both the models extract 6 relevant and 4 irrelevant key-phrases and therefore have a score of _0.6 Precision@10_. But model B seems better because it extracts relevant key-phrases higher up the order as compared to model 1. Therefore we need metrics that are able to capture such differences as well.
+
+- The **precision** is the ratio `tp / (tp + fp)` where `tp` is the number of **true positives** and `fp` the number of **false positives**. The precision is intuitively the ability of the classifier not to label a negative sample as positive.
+- The **recall** is the ratio `tp / (tp + fn)` where `tp` is the number of **true positives** and `fn` the number of **false negatives**. The recall is intuitively the ability of the classifier to find all the positive samples.
+
+```python
+# split the extracted keywords and phrases into a list of individual keywords
+extracted_list = extracted.split(" ")
+
+# split the correct keywords and phrases into a list of individual keywords
+correct_list = correct.split(" ")
+
+# calculate the true positives, false positives, and false negatives
+tp = len(set(extracted_list) & set(correct_list))
+fp = len(set(extracted_list) - set(correct_list))
+fn = len(set(correct_list) - set(extracted_list))
+
+# calculate the precision, recall, and F1-score
+precision = tp / (tp + fp)
+recall = tp / (tp + fn)
+try:
+  f1_score = 2 * (precision * recall) / (precision + recall)
+except:
+  f1_score = 0
+
+# print the results
+print("True Positive:", tp)
+print("False Positive:", fp)
+print("False Negatives:", fn, "\n\n")
+print("Precision:", precision)
+print("Recall:", recall)
+print("F1-score:", f1_score)
+```
+
+These metrics are good at evaluating if we are good at finding relevant key-phrases but we need metrics that evaluate if we are good at finding and ranking relevant key-phrases. What this means is that given two models, we would like the metric to be able to differentiate between the two models based on which model extracts relevant key-phrases higher up the order. Therefore we need metrics such as **Mean Reciprocal Rank, Mean Average Precision (MAP) and nDCG** that allows us to evaluate the quality of the keywords generated based on their Ranks as well.
+
+
 ## 💠 Extracting the percentage of shared words between two texts
 
 ```python

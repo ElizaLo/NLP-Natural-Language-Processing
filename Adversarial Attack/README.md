@@ -1,19 +1,19 @@
-# Adversarial Attack
+<img src="https://raw.githubusercontent.com/ElizaLo/NLP-Natural-Language-Processing/master/img/Adversarial_Attack.png" width="1050" height="150"/>
 
 An Adversarial Attack is a technique to find a perturbation that changes the prediction of a machine learning model. The perturbation can be very small and imperceptible to human eyes.
 
 Adversarial Text refers to a specialised text sequence that is designed specifically to influence the prediction of a language model. Generally, Adversarial Text attack are carried out on Large Language Models (LLMs). Research on understanding different adversarial approaches can help us build effective defense mechanisms to detect malicious text input and build robust language models.
 
-## 📄 Papers
+# 📄 Papers
 
 - [Papers with Code - Adversarial Attack](https://paperswithcode.com/task/adversarial-attack)
 - [Papers with Code - Adversarial Text](https://paperswithcode.com/task/adversarial-text)
 
-## 📰 Articles
+# 📰 Articles
 
 - [Adversarial machine learning](https://en.wikipedia.org/wiki/Adversarial_machine_learning) on Wikipedia
 
-## 🛠️ Libraries, frameworks, etc.
+# 🛠️ Libraries, frameworks, etc.
 
 | Title | Description, Information |
 | :---:         |          :--- |

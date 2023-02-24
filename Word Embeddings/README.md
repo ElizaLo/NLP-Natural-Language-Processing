@@ -546,11 +546,18 @@ For searching over many vectors quickly, we recommend using a vector database.
 
 -------
 
-## Models
+# 💠 Sentence Embedings
 
-### Sentence Embedings
+## 🛠️ Models
 
 | Title | Description, Information |
 | :---:         |          :--- |
-|[SentEval: evaluation toolkit for sentence embeddings](https://github.com/facebookresearch/SentEval)|SentEval is a library for evaluating the quality of sentence embeddings. We assess their generalization power by using them as features on a broad and diverse set of "transfer" tasks. SentEval currently includes 17 downstream tasks. We also include a suite of 10 probing tasks which evaluate what linguistic properties are encoded in sentence embeddings. Our goal is to ease the study and the development of general-purpose fixed-size sentence representations.|
-|[HMTL (Hierarchical Multi-Task Learning model)](https://github.com/huggingface/hmtl)|HMTL is a Hierarchical Multi-Task Learning model which combines a set of four carefully selected semantic tasks (namely Named Entity Recoginition, Entity Mention Detection, Relation Extraction and Coreference Resolution). The model achieves state-of-the-art results on Named Entity Recognition, Entity Mention Detection and Relation Extraction. Using [SentEval](https://github.com/facebookresearch/SentEval), we show that as we move from the bottom to the top layers of the model, the model tend to learn more complex semantic representation.|
+|**[SentEval: evaluation toolkit for sentence embeddings](https://github.com/facebookresearch/SentEval)**|SentEval is a library for evaluating the quality of sentence embeddings. We assess their generalization power by using them as features on a broad and diverse set of "transfer" tasks. SentEval currently includes 17 downstream tasks. We also include a suite of 10 probing tasks which evaluate what linguistic properties are encoded in sentence embeddings. Our goal is to ease the study and the development of general-purpose fixed-size sentence representations.|
+|**[HMTL (Hierarchical Multi-Task Learning model)](https://github.com/huggingface/hmtl)**|HMTL is a Hierarchical Multi-Task Learning model which combines a set of four carefully selected semantic tasks (namely Named Entity Recoginition, Entity Mention Detection, Relation Extraction and Coreference Resolution). The model achieves state-of-the-art results on Named Entity Recognition, Entity Mention Detection and Relation Extraction. Using [SentEval](https://github.com/facebookresearch/SentEval), we show that as we move from the bottom to the top layers of the model, the model tend to learn more complex semantic representation.|
+|**[SentenceTransformers](https://www.sbert.net/index.html)**|<p>SentenceTransformers is a Python framework for state-of-the-art sentence, text and image embeddings.</p><ul><li> 📄 **Paper:** [Sentence-BERT: Sentence Embeddings using Siamese BERT-Networks](https://arxiv.org/pdf/1908.10084.pdf)</li></ul>|
+
+## 📄 Papers
+
+| Title | Description, Information |
+| :---:         |          :--- |
+|**[Universal Sentence Encoder](https://arxiv.org/abs/1803.11175)**|We present models for encoding sentences into embedding vectors that specifically target transfer learning to other NLP tasks. The models are efficient and result in accurate performance on diverse transfer tasks. Two variants of the encoding models allow for trade-offs between accuracy and compute resources. For both variants, we investigate and report the relationship between model complexity, resource consumption, the availability of transfer task training data, and task performance. Comparisons are made with baselines that use word level transfer learning via pretrained word embeddings as well as baselines do not use any transfer learning. We find that transfer learning using sentence embeddings tends to outperform word level transfer. With transfer learning via sentence embeddings, we observe surprisingly good performance with minimal amounts of supervised training data for a transfer task. We obtain encouraging results on Word Embedding Association Tests (WEAT) targeted at detecting model bias. Our pre-trained sentence encoding models are made freely available for download and on TF Hub.|

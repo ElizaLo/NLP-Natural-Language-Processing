@@ -43,6 +43,8 @@ def percent_shared(s1, s2):
 
 # 💠 Similarity Measures
 
+<img src="https://raw.githubusercontent.com/ElizaLo/NLP-Natural-Language-Processing/master/Text%20Similarity/img/text_similarity_measures.png" width="765" height="662"/>
+
 ## 🔹 Jaccard Index
 
 Jaccard index, also known as Jaccard similarity coefficient, treats the data objects like sets. It is defined as the size of the intersection of two sets divided by the size of the union. Let’s continue with our previous example:
@@ -322,3 +324,4 @@ In addition to that, Euclidean distance doesn’t work well with the sparse vect
 - [Overview of Text Similarity Metrics in Python](https://towardsdatascience.com/overview-of-text-similarity-metrics-3397c4601f50)
 - [Cosine Similarity – Text Similarity Metric](https://studymachinelearning.com/cosine-similarity-text-similarity-metric/)
 - [Understanding and Using Common Similarity Measures for Text Analysis](https://programminghistorian.org/en/lessons/common-similarity-measures#cosine-similarity-and-cosine-distance)
+- [What is Text Similarity and How to Implement it?](https://medium.com/msackiit/what-is-text-similarity-and-how-to-implement-it-c74c8b641883)

@@ -169,9 +169,9 @@ It’s usually best to set a low temperature for tasks where the desired output 
 
 # 🔺 Evaluation Metrics
 
+- F<sub>1</sub>, Precision and Recall
 - NDCG (Normalized Discounted Cumulative Gain) 
 - MRR (Mean Reciprocal Rank) 
-- F1
 - MAP (Mean Average Precision)
 - Extracting the percentage of shared words between two texts
 - **_Text Similarity Evaluation Metrics for Keywords Extraction:_**
@@ -193,7 +193,7 @@ Generally these metrics are not targeted to top-K extracted key-phrases. These c
 
 To understand the shortcomings of this approach let us consider the figure below which shows _list_1_ as the output of one of our models (model A) and _list_2_ as the output of another different (model B).
 
-<img src="" width="1050" height="150"/>
+<img src="https://raw.githubusercontent.com/ElizaLo/NLP-Natural-Language-Processing/master/Keywords%20and%20Phrases%20Extraction/img/F1_metrics_keywords_extraction.webp" width="808" height="243"/>
 
 Both the models extract 6 relevant and 4 irrelevant key-phrases and therefore have a score of _0.6 Precision@10_. But model B seems better because it extracts relevant key-phrases higher up the order as compared to model 1. Therefore we need metrics that are able to capture such differences as well.
 
@@ -230,6 +230,8 @@ print("F1-score:", f1_score)
 ```
 
 These metrics are good at evaluating if we are good at finding relevant key-phrases but we need metrics that evaluate if we are good at finding and ranking relevant key-phrases. What this means is that given two models, we would like the metric to be able to differentiate between the two models based on which model extracts relevant key-phrases higher up the order. Therefore we need metrics such as **Mean Reciprocal Rank, Mean Average Precision (MAP) and nDCG** that allows us to evaluate the quality of the keywords generated based on their Ranks as well.
+
+## 💠 
 
 
 ## 💠 Extracting the percentage of shared words between two texts

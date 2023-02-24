@@ -1,6 +1,114 @@
 <img src="https://raw.githubusercontent.com/ElizaLo/NLP-Natural-Language-Processing/master/img/Keywords_and_Phrases_Extraction.png" width="1050" height="150"/>
 
-# 💠 Models
+- **Unsupervised models**
+  - _**Statistical models**_
+    - FirstPhrases
+    - Tf-Idf
+    - KPMiner [(El-Beltagy and Rafea, 2010)](http://www.aclweb.org/anthology/S10-1041.pdf)
+    - YAKE (Yet Another Keyword Extractor) [(Campos et al., 2020)](https://doi.org/10.1016/j.ins.2019.09.013)
+  - _**Graph-based models**_
+    - TextRank [(Mihalcea and Tarau, 2004)](http://www.aclweb.org/anthology/W04-3252.pdf)
+    - SingleRank [(Wan and Xiao, 2008)](http://www.aclweb.org/anthology/C08-1122.pdf)
+    - TopicRank [(Bougouin et al., 2013)](http://aclweb.org/anthology/I13-1062.pdf)
+    - TopicalPageRank [(Sterckx et al., 2015)](http://users.intec.ugent.be/cdvelder/papers/2015/sterckx2015wwwb.pdf)
+    - PositionRank [(Florescu and Caragea, 2017)](http://www.aclweb.org/anthology/P17-1102.pdf)
+    - MultipartiteRank [(Boudin, 2018)](https://arxiv.org/abs/1803.08721)
+- **Supervised models**
+  - _**Feature-based models**_
+    - Kea [(Witten et al., 2005)](https://www.cs.waikato.ac.nz/ml/publications/2005/chap_Witten-et-al_Windows.pdf)
+- **Language Models**
+  - _**Large Languege Models (LLM)**_
+    - BERT
+    - GPT-3 
+
+<img src="https://raw.githubusercontent.com/ElizaLo/NLP-Natural-Language-Processing/master/Keywords%20and%20Phrases%20Extraction/img/Unsupervised_Models.png" width="1050" height="100"/>
+
+# 💠 Statistical Models
+
+| Title | Description, Information |
+| :---:         |          :--- |
+|**FirstPhrases**| 📄 **Paper:** |
+| **Tf-Idf** | 📄 **Paper:** |
+| **KPMiner** | 📄 **Paper:** [KP-Miner: Participation in SemEval-2](https://aclanthology.org/S10-1041.pdf), El-Beltagy and Rafea, 2010 |
+| **YAKE (Yet Another Keyword Extractor)** | 📄 **Paper:** [YAKE! Keyword extraction from single documents using multiple local features](https://www.sciencedirect.com/science/article/abs/pii/S0020025519308588?via%3Dihub), Campos et al., 2020 |
+
+## 🔹 TF
+
+## 🔹 TF-IDF
+
+## 🔹 KPMiner
+
+- 📄 **Paper:** [KP-Miner: Participation in SemEval-2](https://aclanthology.org/S10-1041.pdf), El-Beltagy and Rafea, 2010
+
+## 🔹 YAKE (Yet Another Keyword Extractor)
+
+- 📄 **Paper:** [YAKE! Keyword extraction from single documents using multiple local features](https://www.sciencedirect.com/science/article/abs/pii/S0020025519308588?via%3Dihub), Campos et al., 2020
+- 🛠️ **Implementations:**
+  - :octocat: [Yet Another Keyword Extractor (Yake)](https://github.com/LIAAD/yake)
+    > Single-document unsupervised keyword extraction 
+
+## 📰 Articles
+
+| Title | Description, Information |
+| :---:         |          :--- |
+|[Exploring Different Keyword Extractors — Statistical Approaches](https://medium.com/gumgum-tech/exploring-different-keyword-extractors-statistical-approaches-38580770e282)|In this article, we covered what is Keyword Extraction and why it is important. We looked at three statistical approaches. Term Frequency being the simplest of all, contains a severe drawback of unintelligently focusing on the frequency of the terms. TF-IDF alleviated this issue by incorporating the Inverse Document Frequency to intelligently score the terms not just based on how frequently they occur in a single document but also in the entire corpus. YAKE is a more recent addition to the statistical keyword extractors and provides complex feature engineering in order to score different keywords.|
+
+# 💠 Graph Based Modles
+
+| Title | Description, Information |
+| :---:         |          :--- |
+| **TextRank** | 📄 **Paper:** [TextRank: Bringing Order into Texts](https://aclanthology.org/W04-3252.pdf), Mihalcea and Tarau, 2004 |
+| **SingleRank** | 📄 **Paper:** [CollabRank: Towards a Collaborative Approach to Single-Document Keyphrase Extraction](https://aclanthology.org/C08-1122.pdf), Wan and Xiao, 2008|
+| **TopicRank** | 📄 **Paper:** [TopicRank: Graph-Based Topic Ranking for Keyphrase Extraction](https://aclanthology.org/I13-1062.pdf), Sterckx et al., 2015 |
+| **TopicalPageRank** | 📄 **Paper:** [Topical Word Importance for Fast Keyphrase Extraction](http://users.intec.ugent.be/cdvelder/papers/2015/sterckx2015wwwb.pdf), Sterckx et al., 2015 |
+| **PositionRank** | 📄 **Paper:** [PositionRank: An Unsupervised Approach to Keyphrase Extraction from Scholarly Documents](https://aclanthology.org/P17-1102.pdf), Florescu and Caragea, 2017 |
+| **MultipartiteRank** | 📄 **Paper:** [Unsupervised Keyphrase Extraction with Multipartite Graphs](https://arxiv.org/abs/1803.08721), Boudin, 2018|
+
+## 🔹 TextRank
+
+- 📄 **Paper:** [TextRank: Bringing Order into Texts](https://aclanthology.org/W04-3252.pdf), Mihalcea and Tarau, 2004
+
+## 🔹 SingleRank
+
+- 📄 **Paper:** [CollabRank: Towards a Collaborative Approach to Single-Document Keyphrase Extraction](https://aclanthology.org/C08-1122.pdf), Wan and Xiao, 2008
+
+## 🔹 TopicRank
+
+- 📄 **Paper:** [TopicRank: Graph-Based Topic Ranking for Keyphrase Extraction](https://aclanthology.org/I13-1062.pdf), Sterckx et al., 2015
+
+## 🔹 TopicalPageRank
+
+- 📄 **Paper:**  [Topical Word Importance for Fast Keyphrase Extraction](http://users.intec.ugent.be/cdvelder/papers/2015/sterckx2015wwwb.pdf), Sterckx et al., 2015
+
+## 🔹 PositionRank
+
+- 📄 **Paper:** [PositionRank: An Unsupervised Approach to Keyphrase Extraction from Scholarly Documents](https://aclanthology.org/P17-1102.pdf), Florescu and Caragea, 2017
+
+## 🔹 MultipartiteRank
+
+- 📄 **Paper:** [Unsupervised Keyphrase Extraction with Multipartite Graphs](https://arxiv.org/abs/1803.08721), Boudin, 2018
+
+## 📰 Articles
+
+| Title | Description, Information |
+| :---:         |          :--- |
+|[Exploring Different Keyword Extractors — Graph Based Approaches](https://medium.com/gumgum-tech/exploring-different-keyword-extractors-graph-based-approaches-c46ec6c12c34)|In this article, we covered what are the origins of a graphical method and how it can be employed to generate various keywords extraction methodologies. We looked at TextRank which builds upon the existing PageRank algorithm. We also covered SingleRank which is a slight modification of TextRank. We also looked at TopicRank which explores a different route by finding the ranks of different topics present in the document in order to extract relevant keywords. PositionRank on the other hand focuses more on the position of different terms in the document. |
+
+<img src="https://raw.githubusercontent.com/ElizaLo/NLP-Natural-Language-Processing/master/Keywords%20and%20Phrases%20Extraction/img/Supervised_Models.png" width="1050" height="100"/>
+
+# 💠 Feature-based models
+
+| Title | Description, Information |
+| :---:         |          :--- |
+| **KEA** | 📄 **Paper:** [KEA: Practical Automatic Keyphrase Extraction](https://www.cs.waikato.ac.nz/ml/publications/2005/chap_Witten-et-al_Windows.pdf), Witten et al., 2005 |
+
+## 🔹 KEA
+
+- 📄 **Paper:** [KEA: Practical Automatic Keyphrase Extraction](https://www.cs.waikato.ac.nz/ml/publications/2005/chap_Witten-et-al_Windows.pdf), Witten et al., 2005
+
+<img src="https://raw.githubusercontent.com/ElizaLo/NLP-Natural-Language-Processing/master/Keywords%20and%20Phrases%20Extraction/img/Language_Models.png" width="1050" height="100"/>
+
+# 💠 Large Language Models
 
 | Title | Description, Information |
 | :---:         |          :--- |
@@ -13,7 +121,7 @@
 - 📄 **Paper:** [Language Models are Few-Shot Learners](https://arxiv.org/abs/2005.14165)
   - 📃 Other related papers: [News Summarization and Evaluation in the Era of GPT-3](https://arxiv.org/abs/2209.12356)
   - [Papers with Code - GPT-3 Explained](https://paperswithcode.com/method/gpt-3)
-- :hammer_and_wrench: **Implementations:**
+- 🛠️ **Implementations:**
   - [OpenAI API - GPT-3 Documentation](https://beta.openai.com/docs/models/gpt-3)
   - [Fine-tuning](https://beta.openai.com/docs/guides/fine-tuning)
 - 📰 **Articles:**
@@ -170,9 +278,9 @@ It’s usually best to set a low temperature for tasks where the desired output 
 # 🔺 Evaluation Metrics
 
 - F<sub>1</sub>, Precision and Recall
-- NDCG (Normalized Discounted Cumulative Gain) 
 - MRR (Mean Reciprocal Rank) 
 - MAP (Mean Average Precision)
+- NDCG (Normalized Discounted Cumulative Gain) 
 - Extracting the percentage of shared words between two texts
 - **_Text Similarity Evaluation Metrics for Keywords Extraction:_**
   - Jaccard Index
@@ -231,8 +339,94 @@ print("F1-score:", f1_score)
 
 These metrics are good at evaluating if we are good at finding relevant key-phrases but we need metrics that evaluate if we are good at finding and ranking relevant key-phrases. What this means is that given two models, we would like the metric to be able to differentiate between the two models based on which model extracts relevant key-phrases higher up the order. Therefore we need metrics such as **Mean Reciprocal Rank, Mean Average Precision (MAP) and nDCG** that allows us to evaluate the quality of the keywords generated based on their Ranks as well.
 
-## 💠 
+## 💠 Mean Reciprocal Rank (MRR)
 
+Mean Reciprocal Rank is a measure to evaluate models that return a ranked list of key-phrases to documents. MRR only cares about the single highest-ranked relevant item. If the model returns a relevant key-phrase in the third-highest spot, then that’s what MRR cares about. It doesn’t care if the other relevant key-phrases (assuming there are any) are ranked number 4 or number 20.
+
+MRR gives the averaged ranking of the first correct prediction
+
+<img src="https://raw.githubusercontent.com/ElizaLo/NLP-Natural-Language-Processing/master/Keywords%20and%20Phrases%20Extraction/img/Mean_Reciprocal_Rank_formula.webp" width="306" height="100"/>
+
+Where, _**d**_ is the number of documents and _**rank<sub>i</sub>**_ is the rank at which the first correct key-phrase of document i was found. Consider the example below which shows the computation of MRR over a dataset with 3 documents:
+
+<img src="https://raw.githubusercontent.com/ElizaLo/NLP-Natural-Language-Processing/master/Keywords%20and%20Phrases%20Extraction/img/MRR_keywords_extraction.webp" width="933" height="384"/>
+
+### Pros and Cons
+
+➕ **Pros:**
+
+- Therefore, MRR is appropriate to judge a model when either:
+  - There’s only one relevant key-phrase.
+  - Or, only the highest-ranked key-phrase is needed.
+
+➖ **Cons:**
+
+- If multiple key-phrases are expected and needs to be evaluated then this is not a good evaluation metric.
+- It gives an extracted key-phrase list with a single relevant key-phrase the same weight as the same with multiple relevant key-phrases.
+
+## 💠 Mean Average Precision (MAP)
+
+We previously saw _Precision@K_ metric which used to give the percentage of relevant key-phrases among the top _K_ extracted key-phrases. The drawback of this approach was that it does not consider the extracted list of key-phrases as an ordered list. In other words, it doesn’t evaluate considering the ranks at which relevant key-phrases are extracted.
+
+The goal is to come up with a metric that penalizes if irrelevant key-phrases are extracted higher up the order and gradually decrease the significance of the errors (extraction of irrelevant key-phrase) as we go down the list of extracted key-phrases. Mean Average Precision does just that. Here is how Mean Average Precision is calculated:
+
+1. For each document:
+    - For each relevant key-phrase in the list of extracted key-phrases:
+      - Compute precision of the list till that relevant key-phrase.
+    - Average sub-list precision scores
+2. Finally take the mean of all the Average Precision scores for all the documents.
+
+Let’s visualize this process:
+
+<img src="https://raw.githubusercontent.com/ElizaLo/NLP-Natural-Language-Processing/master/Keywords%20and%20Phrases%20Extraction/img/MAP_keywords_extraction.webp" width="933" height="457"/>
+
+### Pros and Cons
+
+➕ **Pros:**
+
+- Naturally considers the ranking aspect in the evaluation.
+- Penalizes more when irrelevant key-phrases are extracted higher up the list as compared to further down the list.
+
+➖ **Cons:**
+
+- Works really well when there are only binary ratings (relevant/irrelevant). That is when all relevant or irrelevant key-phrases are equally relevant or irrelevant respectively. If fine-grained numerical ratings are involved, that is if there is levels of relevance or irrelevance then this metric fails to evaluate on this fine-grained information.
+- If fine-grained numerical ratings are involved then in order to use this metric, we have make the relevancy binary based on some thresholding.
+
+## 💠 Discounted Cumulative Gain (nDCG)
+
+Just as MAP, nDCG also aims at valuing a relevant key-phrase higher up the predicted list. However, nDCG goes one step further and is able to use the fact that some key-phrases might be more relevant than the others. Therefore it also evaluates based on whether highly relevant key-phrases occur before the key-phrases with medium or low relevance.
+
+First step in calculating nDCG involves calculation of Discounted Cumulative Gain(DCG). DCG aims at capturing the effectiveness of an algorithm by penalizing when highly relevant key-phrases appear lower in the result list. DCG accumulated till a particular rank _**k**_ is given by:
+
+<img src="https://raw.githubusercontent.com/ElizaLo/NLP-Natural-Language-Processing/master/Keywords%20and%20Phrases%20Extraction/img/Discounted_Cumulative_Gain_formula.webp" width="402" height="116"/>
+
+Here _**rel<sub>i</sub>**_ is the graded relevance of key-phrase at position _**i**_. The denominator serves a logarithmic reduction factor to penalize in proportion to the position of the results.
+
+Depending on various factors, the number of predicted key-phrases may vary for every document, which makes DCG not comparable for all the documents. nDCG provides a score which has a proper upper and lower bounds so that we can take a mean across all the result scores to report a final score. This is done using normalization by determining the ideal ranking of key-phrases to in-turn determine the Ideal DCG.
+
+To compute nDCG, for any key-phrase prediction, we have to compute:
+
+- The DCG of the prediction.
+- The DCG of the gold key-phrases, which would give the maximum DCG. This would be the Ideal DCG (IDCG).
+
+<img src="https://raw.githubusercontent.com/ElizaLo/NLP-Natural-Language-Processing/master/Keywords%20and%20Phrases%20Extraction/img/nDCG_formula.webp" width="318" height="89"/>
+
+The value of nDCG would range between 0 and 1. Let’s visualize the nDCG computation in the figure below for a single document when the output of the extracted key-phrases also contain the relevancy ratings.
+
+<img src="https://raw.githubusercontent.com/ElizaLo/NLP-Natural-Language-Processing/master/Keywords%20and%20Phrases%20Extraction/img/nDCG_keywords_extraction.webp" width="915" height="521"/>
+
+To compute the nDCG for multiple documents, simply take the mean of the nDCG of the individual key-phrase predictions of all the documents.
+
+### Pros and Cons
+
+➕ **Pros:**
+
+- nDCG is a good choice of evaluation metric when graded relevance values are available in your dataset. The primary reason for choosing this metric is to take the graded relevance values into account.
+- It is better than MAP in terms of evaluating the position of ranked key-phrases.
+
+➖ **Cons:**
+
+- It does not penalize for false positives, predictions that aren’t relevant. However this can be adjusted by using negative relevance for bad key-phrases in the results.
 
 ## 💠 Extracting the percentage of shared words between two texts
 
@@ -555,3 +749,11 @@ In addition to that, Euclidean distance doesn’t work well with the sparse vect
 # 📰 Articles
 
 - [Exploring Different Keyword Extractors — Evaluation Metrics and Strategies](https://medium.com/gumgum-tech/exploring-different-keyword-extractors-evaluation-metrics-and-strategies-ef874d336773)
+
+# 🛠️ Tools
+
+> _libraries, frameworks, modules, toolkits, etc._
+
+| Title | Description, Information |
+| :---:         |          :--- |
+|[`pke`](https://github.com/boudinfl/pke) - python keyphrase extraction|<p>`pke` is an **open source** python-based **keyphrase extraction** toolkit. It provides an end-to-end keyphrase extraction pipeline in which each component can be easily modified or extended to develop new models. `pke` also allows for easy benchmarking of state-of-the-art keyphrase extraction models, and ships with supervised models trained on the [SemEval-2010](http://aclweb.org/anthology/S10-1004) dataset.</p>|

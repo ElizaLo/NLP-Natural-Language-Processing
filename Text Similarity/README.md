@@ -265,6 +265,30 @@ WMD uses the **word embeddings of the words in two texts to measure the minimum 
 
 - [Word Mover’s Distance](https://radimrehurek.com/gensim/auto_examples/tutorials/run_wmd.html), Gensim’s implemenation of the WMD
 
+## 🔹 Tanimoto Coefficient Similarity Method
+
+### 📄 Papers
+
+- [Tanimoto coefficient based Word Sense Disambiguation](https://www.ijarnd.com/manuscripts/v4i7/V4I7-1141.pdf)
+- [Efficient identification of Tanimoto nearest neighbors](https://link.springer.com/article/10.1007/s41060-017-0064-z)
+
+## 🔹 Semantic Textual Similarity
+
+Semantic Textual Similarity (STS) assigns a score on the similarity of two texts.
+
+### 📄 Papers
+
+- [Universal Sentence Encoder](https://arxiv.org/abs/1803.11175), 2018
+- [Sentence-BERT: Sentence Embeddings using Siamese BERT-Networks](https://arxiv.org/pdf/1908.10084.pdf), 2019
+
+### 📰 Articles
+
+- [BERT For Measuring Text Similarity](https://towardsdatascience.com/bert-for-measuring-text-similarity-eec91c6bf9e1)
+
+### 🛠️ Implementation
+
+- [Semantic Textual Similarity by SBERT.net](https://www.sbert.net/examples/training/sts/README.html)
+
 # ❓What Metric To Use?
 
 Jaccard similarity takes into account only the set of unique words for each text document. This makes it the likely candidate for assessing the similarity of documents when repetition is not an issue. A prime example of such an application is comparing product descriptions. For instance, if a term like _“HD”_ or _“thermal efficiency”_ is used multiple times in one description and just once in another, the Euclidean distance and cosine similarity would drop. On the other hand, if the total number of unique words stays the same, the Jaccard similarity will remain unchanged. 

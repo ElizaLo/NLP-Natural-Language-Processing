@@ -17,7 +17,7 @@
 - [NLP-progress](https://nlpprogress.com) - Repository to track the progress in Natural Language Processing (NLP), including the datasets and the current state-of-the-art for the most common NLP tasks.
   - :octocat: [Tracking Progress in Natural Language Processing](https://github.com/sebastianruder/NLP-progress)
 
-## Natural Language Processing Tasks 
+# 💠 Natural Language Processing Tasks 
 
 > Folders with all materials for specific task/domain
 
@@ -34,7 +34,7 @@
 - [Word Embedings](https://github.com/ElizaLo/NLP-Natural-Language-Processing/tree/master/Word%20Embedings)
 
 
-## 🎓 Courses 
+# 🎓 Courses 
 
   - [Natural Language Processing - Stanford University| Dan Jurafsky, Christopher](https://www.youtube.com/playlist?list=PLLssT5z_DsK8HbD2sPcUIDfQ7zmBarMYv)
   - [Natural Language Processing with Deep Learning (Stanford CS224N)](https://www.youtube.com/playlist?list=PLoROMvodv4rOhcuXMZkNm7j3fVwBBY42z) 
@@ -70,7 +70,7 @@
     - :octocat: [A Code-First Intro to Natural Language Processing](https://github.com/fastai/course-nlp) on GitHub :octocat:
   - :octocat: [CS 4650 and 7650](https://github.com/jacobeisenstein/gt-nlp-class) - Course materials for Georgia Tech CS 4650 and 7650, "Natural Language"
   
-## 📚 Books
+# 📚 Books
 
 - [A lot of NLP books](https://www.dropbox.com/sh/b1c2ulwua9zy574/AACswS1E0IB9LdPDxQ6fexm4a?dl=0) (Natural Language Processing)
 - [Advanced Natural Language Processing with TensorFlow 2](https://github.com/PacktPublishing/Advanced-Natural-Language-Processing-with-TensorFlow-2), published by Packt
@@ -85,7 +85,7 @@
   - > Available as a Book: [NLP in Python - Quickstart Guide](https://www.amazon.in/dp/B07L3PLQS1)
 - 
 
-## YouTube 
+# 🎥 YouTube 
 
 | Title | Description |
 | :---         |          :--- |
@@ -95,7 +95,7 @@
 |[Zero to Hero: NLP with Tensorflow and Keras (GDG Sofia meetup)](https://www.youtube.com/watch?v=ECRUJTKuKKs)| |
 |[Natural Language Processing](https://www.youtube.com/playlist?list=PL8P_Z6C4GcuWfAq8Pt6PBYlck4OprHXsw)|This content is based on Machine Learning University (MLU) Accelerated Natural Language Processing class. Slides, notebooks and datasets are available on [GitHub](https://github.com/aws-samples/aws-machine-learning-university-accelerated-nlp)|
 
-## Web Sites
+# 🖥️ Web Sites
 
 - [Natural Language Processing](https://paperswithcode.com/area/natural-language-processing) on Papers with Code
 - [Chris McCormick](https://mccormickml.com) Blog
@@ -109,11 +109,11 @@
   - > The Gradient is an organization with the missions of making it easier for anyone to learn about AI and of facilitating discussion within the AI community. We were founded in 2017 by a group of students and researchers at the Stanford AI Lab.
 -
 
-## Atricles
+# 📰 Atricles
 
 - [Карьера в IT: NLP Engineer и NLP Researcher](https://dou.ua/lenta/articles/nlp-specialist/?from=tg)
 
-## GitHub Repositories :octocat:
+# :octocat: GitHub Repositories
 
 | Title | Description |
 | :---:         |          :--- |
@@ -129,25 +129,27 @@
 |[Hugging Face](https://github.com/huggingface/blog)|Public repo for HF blog posts|
 |[AllenNLP](https://github.com/allenai/allennlp)|An open-source NLP research library, built on PyTorch. [Allenai.org](https://allenai.org/allennlp)|
 
-## Conferences
+# 🗣️ Conferences
 
 - [NeurIPS](https://nips.cc) - Neural Information Processing Systems
 - [ACL](https://www.aclweb.org/portal/) - ACL Home Association for Computational Linguistics
   - [ACL Anthology](https://aclanthology.org) - The ACL Anthology currently hosts 80890 papers on the study of computational linguistics and natural language processing.
 - 
 
+# 🛠️ Tools
 
-## :hammer_and_wrench: Tools
-
-### Modules
+> NLP libraries, frameworks, modules
 
 | Title | Description |
 | :---:         |          :--- |
 |[Natural Language Toolkit (NLTK)](https://github.com/nltk/nltk)|NLTK - the Natural Language Toolkit - is a suite of open source Python modules, data sets, and tutorials supporting research and development in Natural Language Processing.|
 |[flair](https://github.com/flairNLP/flair)|<ul><p>A very simple framework for state-of-the-art Natural Language Processing (NLP).</p><p>Flair is:</p><li>**A powerful NLP library.** Flair allows you to apply our state-of-the-art natural language processing (NLP) models to your text, such as **named entity recognition (NER), part-of-speech tagging (PoS), special support for biomedical data, sense disambiguation and classification**, with support for a rapidly growing number of languages.</li><li>**A text embedding library.** Flair has simple interfaces that allow you to use and combine different word and document embeddings, including our proposed Flair embeddings, BERT embeddings and ELMo embeddings.</li><li>**A PyTorch NLP framework.** Our framework builds directly on PyTorch, making it easy to train your own models and experiment with new approaches using Flair embeddings and classes.</li></ul>|
+|[textacy](https://github.com/chartbeat-labs/textacy)|`textacy` is a Python library for performing a variety of natural language processing (NLP) tasks, built on the high-performance spaCy library. With the fundamentals --- tokenization, part-of-speech tagging, dependency parsing, etc. --- delegated to another library, `textacy` focuses primarily on the tasks that come before and follow after.|
+|[AllenNLP](https://github.com/allenai/allennlp)|NLP research library, built on PyTorch, for developing state-of-the-art deep learning models on a wide variety of linguistic tasks.|
+|[NLPGym](https://github.com/rajcscw/nlp-gym)|NLPGym is a toolkit to bridge the gap between applications of RL and NLP. This aims at facilitating research and benchmarking of DRL application on natural language processing tasks. The toolkit provides interactive environments for standard NLP tasks such as sequence tagging, question answering, and sequence classification.|
+|[Gensim](https://radimrehurek.com/gensim/index.html)||
 
-
-### Tutorials
+# 👩🏻‍🏫 Tutorials
 
 | Title | Description |
 | :---:         |          :--- |
@@ -155,25 +157,11 @@
 |[Natural Language Processing in Python Tutorial](https://github.com/adashofdata/nlp-in-python-tutorial)|comparing stand up comedians using natural language processing|
 
 
-### Libraries 
-
-| Title | Description |
-| :---:         |          :--- |
-|[AllenNLP](https://github.com/allenai/allennlp)|NLP research library, built on PyTorch, for developing state-of-the-art deep learning models on a wide variety of linguistic tasks.|
-
-
-## Toolkit
-
-| Title | Description |
-| :---:         |          :--- |
-|[NLPGym](https://github.com/rajcscw/nlp-gym)|NLPGym is a toolkit to bridge the gap between applications of RL and NLP. This aims at facilitating research and benchmarking of DRL application on natural language processing tasks. The toolkit provides interactive environments for standard NLP tasks such as sequence tagging, question answering, and sequence classification.|
-
-
-## Leaderboard for NLP
+# 🔝 Leaderboard for NLP
 
 - [ExplainaBoard: An Explainable Leaderboard for NLP](https://github.com/neulab/ExplainaBoard)
 
-### Deep Learning architectures for NLP
+# 💠 Deep Learning architectures for NLP
 
 - [Introduction to Deep Learning for Natural Language Processing](https://github.com/rouseguy/europython2016_dl-nlp)
 - [Deep Learning architectures for NLP](https://github.com/Tixierae/deep_learning_NLP) - Keras, PyTorch, and NumPy Implementations of Deep Learning Architectures for NLP
@@ -192,25 +180,13 @@
 
 🔹 [The Illustrated Transformer](http://jalammar.github.io/illustrated-transformer/)
 
-## Useful NLP Libraries for Python 
-
-- [ ] [Gensim](https://radimrehurek.com/gensim/index.html)
-
 -------------------------------------------------------
 
 # 🔺 Projects
 
 - [**_Spam Detection_**](https://github.com/ElizaLo/ML-with-Jupiter#spam-detection)
 - [**_Text Generator_**](https://github.com/ElizaLo/ML-with-Jupiter#text-generator)
-- **_Quora Insincere Questions Classification_**
 - [**_Question Answering System using BiDAF Model on SQuAD_**](https://github.com/ElizaLo/Question-Answering-based-on-SQuAD)
-
-## Data Analysis for Natural Language Processing
-
-- [Exploratory Data Analysis for Natural Language Processing: A Complete Guide to Python Tools](https://neptune.ai/blog/exploratory-data-analysis-natural-language-processing-tools?utm_source=linkedin&utm_medium=post-in-group&utm_campaign=blog-exploratory-data-analysis-natural-language-processing-tools&utm_content=3063585)
-
-
-## Coreference
 
 ## Question Answering System using BiDAF Model on SQuAD
 
@@ -221,7 +197,6 @@ Implemented a Bidirectional Attention Flow neural network as a baseline on SQuAD
   - [Used Articles](https://github.com/ElizaLo/NLP/tree/master/Question%20Answering%20System/Articles)
   - [Useful Articles](https://github.com/ElizaLo/Question-Answering-based-on-SQuAD#useful-articles)
   - [Useful Links](https://github.com/ElizaLo/Question-Answering-based-on-SQuAD#useful-links)
-  
   
   # Useful Articles
   

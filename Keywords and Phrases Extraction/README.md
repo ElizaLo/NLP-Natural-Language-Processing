@@ -17,7 +17,7 @@
   - _**Feature-based models**_
     - Kea [(Witten et al., 2005)](https://www.cs.waikato.ac.nz/ml/publications/2005/chap_Witten-et-al_Windows.pdf)
 - **Language Models**
-  - _**Large Languege Models (LLM)**_
+  - _**Large Language Models (LLM)**_
     - BERT
     - GPT-3 
 
@@ -53,7 +53,7 @@
 | :---:         |          :--- |
 |[Exploring Different Keyword Extractors — Statistical Approaches](https://medium.com/gumgum-tech/exploring-different-keyword-extractors-statistical-approaches-38580770e282)|In this article, we covered what is Keyword Extraction and why it is important. We looked at three statistical approaches. Term Frequency being the simplest of all, contains a severe drawback of unintelligently focusing on the frequency of the terms. TF-IDF alleviated this issue by incorporating the Inverse Document Frequency to intelligently score the terms not just based on how frequently they occur in a single document but also in the entire corpus. YAKE is a more recent addition to the statistical keyword extractors and provides complex feature engineering in order to score different keywords.|
 
-# 💠 Graph Based Modles
+# 💠 Graph-Based Models
 
 | Title | Description, Information |
 | :---:         |          :--- |
@@ -347,7 +347,7 @@ MRR gives the averaged ranking of the first correct prediction
 
 <img src="https://raw.githubusercontent.com/ElizaLo/NLP-Natural-Language-Processing/master/Keywords%20and%20Phrases%20Extraction/img/Mean_Reciprocal_Rank_formula.webp" width="306" height="100"/>
 
-Where, _**d**_ is the number of documents and _**rank<sub>i</sub>**_ is the rank at which the first correct key-phrase of document i was found. Consider the example below which shows the computation of MRR over a dataset with 3 documents:
+Where, _**d**_ is the number of documents and _**rank<sub>i</sub>**_ is the rank at which the first correct key-phrase of document _**i**_ was found. Consider the example below which shows the computation of MRR over a dataset with 3 documents:
 
 <img src="https://raw.githubusercontent.com/ElizaLo/NLP-Natural-Language-Processing/master/Keywords%20and%20Phrases%20Extraction/img/MRR_keywords_extraction.webp" width="933" height="384"/>
 

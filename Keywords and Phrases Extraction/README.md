@@ -166,6 +166,41 @@ Leike points out that the new GPT model still has “important limitations” an
 
 - [OpenAI’s latest GPT-3 model generates better and longer texts](https://the-decoder.com/openais-latest-gpt-3-model-generates-better-and-longer-texts/)
 
+### `gpt-3.5-turbo` model 
+
+> Most capable GPT-3.5 model and optimized for chat at 1/10th the cost of text-davinci-003. Will be updated with our latest model iteration.
+
+While the new gpt-3.5-turbo model is optimized for chat, it works very well for traditional completion tasks. 
+
+Turbo is the same model family that powers ChatGPT. It is optimized for conversational chat input and output but does equally well on completions when compared with the Davinci model family. Any use case that can be done well in ChatGPT should perform well with the Turbo model family in the API.
+
+The Turbo model family is also the first to receive regular model updates like ChatGPT.
+
+- ➡️ Good at: **Conversation** and **text generation**
+
+🛠️ **Request body**
+
+> ⚠️ **Note:** you need to be using OpenAI Python `v0.27.0` for the code below to work
+
+```python
+openai.ChatCompletion.create(
+  model = "gpt-3.5-turbo",
+  messages=[
+    {"role": "user", "content": "Extract keywords and key phrases from this text and divide by comma:\n\n{}\n\n".format(text)}
+  ],
+  temperature = 0.7,
+  #top_p = 1.0,
+  n = 3,
+  max_tokens = 600,
+  #stream = True,
+  #stop = None,
+  presence_penalty = 1,  #0.0
+  frequency_penalty = 1, #0.8
+  #logit_bias = {} #remove word
+  #user = 'user_1'   
+)
+```
+
 ###  ⚙️ Fine-tuning model
 
 > Read all details about **Fine-tuning GPT-3 model** in 📂 [Language Models - ⚙️ Fine-tuning](https://github.com/ElizaLo/NLP-Natural-Language-Processing/blob/master/Language%20Models/README.md#%EF%B8%8F-fine-tuning-model) folder

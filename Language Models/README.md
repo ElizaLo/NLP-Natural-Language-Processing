@@ -97,7 +97,7 @@ One of the main differences between the two systems is how we set up the archite
 
 Most of full scale production summarization architectures are few shot learning based as seen them to produce the most flexibility and highest “accuracy” towards our goal. 
 
-### GPT-3 Tokenization
+### 🔡 GPT-3 Tokenization
 
 - [GPT-3 Online Tokenizer](https://beta.openai.com/tokenizer)
 
@@ -218,15 +218,99 @@ An example API response looks as follows:
 }
 ```
 
+In Python, the assistant’s reply can be extracted with `response['choices'][0]['message']['content']`.
+
+Every response will include a `finish_reason`. The possible values for `finish_reason` are:
+
+- `stop`: API returned complete model output
+- `length`: Incomplete model output due to [`max_tokens` parameter](https://platform.openai.com/docs/api-reference/chat/create#chat/create-max_tokens) or token limit
+- `content_filter`: Omitted content due to a flag from our content filters
+- `null`: API response still in progress or incomplete
+
+#### 🔡 Tokenization
+
+To see how many tokens are used by an API call, check the usage field in the API response (e.g., `response['usage']['total_tokens']`).
+
+Chat models like `gpt-3.5-turbo` use tokens in the same way as other models, but because of their message-based formatting, it's more difficult to count how many tokens will be used by a conversation.
+
+**Counting tokens for chat API calls**
+
+Below is an example function for counting tokens for messages passed to `gpt-3.5-turbo-0301`.
+The exact way that messages are converted into tokens may change from model to model. So when future model versions are released, the answers returned by this function may be only approximate. The [ChatML documentation](https://github.com/openai/openai-python/blob/main/chatml.md) explains how messages are converted into tokens by the OpenAI API, and may be useful for writing your own function.
+
+To see how many tokens are in a text string without making an API call, use OpenAI’s [tiktoken](https://github.com/openai/tiktoken) Python library. Example code can be found in the OpenAI Cookbook’s guide on [how to count tokens with tiktoken](https://github.com/openai/openai-cookbook/blob/main/examples/How_to_count_tokens_with_tiktoken.ipynb).
+
+Each message passed to the API consumes the number of tokens in the content, role, and other fields, plus a few extra for behind-the-scenes formatting. This may change slightly in the future.
+
+If a conversation has too many tokens to fit within a model’s maximum limit _(e.g., more than **4096** tokens for `gpt-3.5-turbo`)_, you will have to truncate, omit, or otherwise shrink your text until it fits. Beware that if a message is removed from the messages input, the model will lose all knowledge of it.
+
+Note too that very long conversations are more likely to receive incomplete replies. _For example,_ a `gpt-3.5-turbo` conversation that is 4090 tokens long will have its reply cut off after just 6 tokens.
+
+#### Instructing chat models
+
+Best practices for instructing models may change from model version to version. The advice that follows applies to gpt-3.5-turbo-0301 and may not apply to future models.
+
+Many conversations begin with a system message to gently instruct the assistant. For example, here is one of the system messages used for ChatGPT:
+
+`You are ChatGPT, a large language model trained by OpenAI. Answer as concisely as possible. Knowledge cutoff: {knowledge_cutoff} Current date: {current_date}`
+
+In general, `gpt-3.5-turbo-0301` does not pay strong attention to the system message, and therefore important instructions are often better placed in a user message.
+
+If the model isn’t generating the output you want, feel free to iterate and experiment with potential improvements. You can try approaches like:
+
+- Make your instruction more explicit
+- Specify the format you want the answer in
+- Ask the model to think step by step or debate pros and cons before settling on an answer
+
+For more prompt engineering ideas, read the OpenAI Cookbook guide on [techniques to improve reliability](https://github.com/openai/openai-cookbook/blob/main/techniques_to_improve_reliability.md).
+
+Beyond the system message, the temperature and max tokens are [two of many options](https://platform.openai.com/docs/api-reference/chat) developers have to influence the output of the chat models. For temperature, higher values like 0.8 will make the output more random, while lower values like 0.2 will make it more focused and deterministic. In the case of max tokens, if you want to limit a response to a certain length, max tokens can be set to an arbitrary number. This may cause issues for example if you set the max tokens value to 5 since the output will be cut-off and the result will not make sense to users.
+
+#### Chat vs Completions
+
+Because `gpt-3.5-turbo` performs at a similar capability to `text-davinci-003` but at 10% the price per token, we recommend `gpt-3.5-turbo` for most use cases.
+
+For many developers, the transition is as simple as rewriting and retesting a prompt.
+
+For example, if you translated English to French with the following completions prompt:
+
+```python
+Translate the following English text to French: "{text}"
+```
+
+An equivalent chat conversation could look like:
+
+```python
+[
+  {"role": "system", "content": "You are a helpful assistant that translates English to French."},
+  {"role": "user", "content": 'Translate the following English text to French: "{text}"'}
+]
+```
+
+Or even just the user message:
+
+```python
+[
+  {"role": "user", "content": 'Translate the following English text to French: "{text}"'}
+]
+```
 
 
-📄 **Documentation:**
+#### ❓FAQ
+
+- Is fine-tuning available for gpt-3.5-turbo?
+
+No. As of Mar 1, 2023, you can only fine-tune base GPT-3 models. See the fine-tuning guide for more details on how to use fine-tuned models.
+
+
+#### 📄 Documentation:
+
 - [Models - Turbo - OpenAI API](https://platform.openai.com/docs/models/turbo)
 - [Chat completions - OpenAI API](https://platform.openai.com/docs/guides/chat)
 - [Create chat completion - OpenAI API Reference](https://platform.openai.com/docs/api-reference/chat/create)
 - ⚠️ [AttributeError: module ‘openai’ has no attribute ‘ChatCompletion’](https://community.openai.com/t/attributeerror-module-openai-has-no-attribute-chatcompletion/81490)
 
-🛠️ **Request body**
+#### 🛠️ Request body
 
 - `model` _(string, **Required**)_ — ID of the model to use. Currently, only `gpt-3.5-turbo` and `gpt-3.5-turbo-0301` are supported.
 - `messages` _(array, **Required**)_ — The messages to generate chat completions for, in the [chat format](https://platform.openai.com/docs/guides/chat/introduction).

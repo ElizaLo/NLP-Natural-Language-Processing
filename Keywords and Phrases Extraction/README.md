@@ -168,6 +168,8 @@ Leike points out that the new GPT model still has “important limitations” an
 
 ### `gpt-3.5-turbo` model 
 
+> Read more about `gpt-3.5-turbo` model in [📂 Language Models - 🔸 Turbo](https://github.com/ElizaLo/NLP-Natural-Language-Processing/blob/master/Language%20Models/README.md#-turbo) folder
+
 > Most capable GPT-3.5 model and optimized for chat at 1/10th the cost of text-davinci-003. Will be updated with our latest model iteration.
 
 While the new gpt-3.5-turbo model is optimized for chat, it works very well for traditional completion tasks. 

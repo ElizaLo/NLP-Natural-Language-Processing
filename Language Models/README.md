@@ -227,6 +227,33 @@ Every response will include a `finish_reason`. The possible values for `finish_r
 - `content_filter`: Omitted content due to a flag from our content filters
 - `null`: API response still in progress or incomplete
 
+#### 📄 Documentation:
+
+- [Models - Turbo - OpenAI API](https://platform.openai.com/docs/models/turbo)
+- [Chat completions - OpenAI API](https://platform.openai.com/docs/guides/chat)
+- [Create chat completion - OpenAI API Reference](https://platform.openai.com/docs/api-reference/chat/create)
+- ⚠️ [AttributeError: module ‘openai’ has no attribute ‘ChatCompletion’](https://community.openai.com/t/attributeerror-module-openai-has-no-attribute-chatcompletion/81490)
+- :octocat: [openai-python/chatml.md at main · openai/openai-python](https://github.com/openai/openai-python/blob/main/chatml.md)
+
+```python
+!pip show openai
+```
+
+**Output:**
+
+```python
+Name: openai
+Version: 0.27.0
+Summary: Python client library for the OpenAI API
+Home-page: https://github.com/openai/openai-python
+Author: OpenAI
+Author-email: support@openai.com
+License: 
+Location: /opt/conda/lib/python3.9/site-packages
+Requires: aiohttp, requests, tqdm
+Required-by: 
+```
+
 #### 🔡 Tokenization
 
 To see how many tokens are used by an API call, check the usage field in the API response (e.g., `response['usage']['total_tokens']`).
@@ -301,14 +328,6 @@ Or even just the user message:
 - Is fine-tuning available for gpt-3.5-turbo?
 
 No. As of Mar 1, 2023, you can only fine-tune base GPT-3 models. See the fine-tuning guide for more details on how to use fine-tuned models.
-
-
-#### 📄 Documentation:
-
-- [Models - Turbo - OpenAI API](https://platform.openai.com/docs/models/turbo)
-- [Chat completions - OpenAI API](https://platform.openai.com/docs/guides/chat)
-- [Create chat completion - OpenAI API Reference](https://platform.openai.com/docs/api-reference/chat/create)
-- ⚠️ [AttributeError: module ‘openai’ has no attribute ‘ChatCompletion’](https://community.openai.com/t/attributeerror-module-openai-has-no-attribute-chatcompletion/81490)
 
 #### 🛠️ Request body
 

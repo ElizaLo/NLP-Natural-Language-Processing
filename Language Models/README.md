@@ -151,7 +151,7 @@ The Turbo model family is also the first to receive regular model updates like C
 
 - ➡️ Good at: **Conversation** and **text generation**
 
-Using the OpenAI API, you can build your own applications with gpt-3.5-turbo to do things like:
+Using the OpenAI API, you can build your own applications with `gpt-3.5-turbo` to do things like:
 
 - Draft an email or other piece of writing
 - Write Python code
@@ -199,7 +199,7 @@ Including the conversation history helps when user instructions refer to prior m
 
 An example API response looks as follows:
 
-```python
+```yaml
 {
  'id': 'chatcmpl-6p9XYPYSTTRi0xEviKjjilqrWU2Ve',
  'object': 'chat.completion',

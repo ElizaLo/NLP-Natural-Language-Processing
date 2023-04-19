@@ -11,7 +11,7 @@
 
 # 💠 K-Means
 
-- 🛠️ **Implementation: **[sklearn.cluster.KMeans](https://scikit-learn.org/stable/modules/generated/sklearn.cluster.KMeans.html)
+- 🛠️ **Implementation:** [sklearn.cluster.KMeans](https://scikit-learn.org/stable/modules/generated/sklearn.cluster.KMeans.html)
 
 ## 💭 Conclusions
 

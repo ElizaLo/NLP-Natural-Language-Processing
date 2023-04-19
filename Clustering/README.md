@@ -4,10 +4,27 @@
 
 ## 🔹 GPT word embeddings by OpenAI
 
-### ⚙️ Example notebooks
+- 🛠️ **Implementation:**
+    - [Embeddings - OpenAI API](https://platform.openai.com/docs/guides/embeddings)
+    - [Embeddings - API Reference - OpenAI API](https://platform.openai.com/docs/api-reference/embeddings)
+- ⚙️ **Example notebooks:** 
+    - [Obtain_dataset.ipynb](https://github.com/openai/openai-cookbook/blob/main/examples/Obtain_dataset.ipynb)
+    - [Clustering.ipynb](https://github.com/openai/openai-cookbook/blob/main/examples/Clustering.ipynb)
 
-- [Obtain_dataset.ipynb](https://github.com/openai/openai-cookbook/blob/main/examples/Obtain_dataset.ipynb)
-- [Clustering.ipynb](https://github.com/openai/openai-cookbook/blob/main/examples/Clustering.ipynb)
+```python
+# embedding model parameters
+embedding_model = "text-embedding-ada-002"
+embedding_encoding = "cl100k_base"  # this the encoding for text-embedding-ada-002
+max_tokens = 8000  # the maximum for text-embedding-ada-002 is 8191
+
+
+def get_embedding(text, model="text-embedding-ada-002"):
+    text = text.replace("\n", " ")
+    return openai.Embedding.create(input = [text], model=model)['data'][0]['embedding']
+    
+# This may take a few minutes
+df["Text"] = df["Text"].apply(lambda x: get_embedding(x, model=embedding_model))
+```
 
 # 💠 K-Means
 

@@ -34,6 +34,12 @@ df["Text"] = df["Text"].apply(lambda x: get_embedding(x, model=embedding_model))
 
 - The bigger amount of clusters the more “accurate” and defined, meaningful and topic-related clusterisation _(e.g. 400-800 clusters)_.
 - If we have a phrase and not a single word _(e.g. Sports card store, Sheet music store, Used book store, etc.)_ the last word weight the most for this clusterisation algorithm _(e.g. in this case it would be the word “store”, in other examples it was “restaurant”, “bar”, “clinic”, “consultant”, etc.)_.
+- Different K-means algorithms _(“lloyd”, “elkan”, “auto”, “full”)_ similarly cluster data. The only parameter, which influences output is the method for initialization (_k-means++_ or _random_). With cleaned data both of them make meaningful clusterization.
+- The _**random**_ method for initialization works much better and groups better topic-related clusters than _k-means++_.
+- With small amount of clusters there are well-defined topic-related clusters, but also there are some amount of messy clusters which include absolutely different not related topics or too broad topics.
+- With 400+ clusters are more detailed and minor-topic defined as well as general topics well defined, without a mess in clusters.
+
+_For example,_ “lobster“ and “suchi“ could be separated into two clusters, which would be “seafood“ and “Japanese“, but  they united under the "seafood" topic.
 
 # 💠 Find the optimal amount of clusters
 

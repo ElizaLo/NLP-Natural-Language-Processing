@@ -62,6 +62,19 @@ plt.title('Elbow Method For Optimal k')
 plt.show()
 ```
 
+# 💠 Hierarchical clustering
+
+- [Hierarchical clustering](https://en.wikipedia.org/wiki/Hierarchical_clustering)
+
+In data mining and statistics, **hierarchical clustering** (also called **hierarchical cluster analysis** or **HCA**) is a method of cluster analysis that seeks to build a hierarchy of clusters. Strategies for hierarchical clustering generally fall into two categories:
+
+- **Agglomerative:** This is a "bottom-up" approach: Each observation starts in its own cluster, and pairs of clusters are merged as one moves up the hierarchy.
+- **Divisive:** This is a "top-down" approach: All observations start in one cluster, and splits are performed recursively as one moves down the hierarchy.
+
+## Agglomerative Clustering
+
+- 🛠️ **Implementation:** [sklearn.cluster.AgglomerativeClustering](https://scikit-learn.org/stable/modules/generated/sklearn.cluster.AgglomerativeClustering.html#sklearn.cluster.AgglomerativeClustering)
+
 # 💭 Conclusions
 
 - It's important to note that clusters will not necessarily match what you intend to use them for. **A larger amount of clusters will focus on more specific patterns, whereas a small number of clusters will usually focus on largest discrepencies in the data.**

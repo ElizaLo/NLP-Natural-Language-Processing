@@ -11,6 +11,8 @@
 |**InstructGPT**| 📄 **Paper:** [Training language models to follow instructions with human feedback](https://arxiv.org/abs/2203.02155)|
 |**Pathways Language Model (PaLM)**| 📄 **Paper:** [PaLM: Scaling Language Modeling with Pathways](https://arxiv.org/abs/2204.02311) |
 |**Chinchilla**| 📄 **Paper:** [Training Compute-Optimal Large Language Models](https://arxiv.org/abs/2203.15556v1)|
+---
+- [A Survey of Large Language Models](https://arxiv.org/abs/2303.18223)
 
 # ♦️ Generative Pre-trained Transformer (GPT)
 

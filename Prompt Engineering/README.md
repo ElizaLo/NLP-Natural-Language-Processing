@@ -1,12 +1,17 @@
 <img src="https://raw.githubusercontent.com/ElizaLo/NLP-Natural-Language-Processing/master/img/Prompt_Engineering.png" width="1050" height="150"/>
 
-## :octocat: GitHub Repositories
+# 🎓 Courses
+
+- [ChatGPT Prompt Engineering for Developers](https://www.deeplearning.ai/short-courses/chatgpt-prompt-engineering-for-developers/) by DeepLearning.AI and OpenAI
+  - Course folder with notebooks and notes -> 📂 [ChatGPT Prompt Engineering for Developers](https://github.com/ElizaLo/NLP-Natural-Language-Processing/tree/master/Prompt%20Engineering/Courses/ChatGPT%20Prompt%20Engineering%20for%20Developers)
+
+# :octocat: GitHub Repositories
 
 | Title | Description, Information |
 | :---:         |          :--- |
 |[Prompt Engineering Guide](https://github.com/dair-ai/Prompt-Engineering-Guide)|This guide contains a non-exhaustive set of learning guides and tools about prompt engineering. It includes several materials, guides, examples, papers, and much more. The repo is intended to be used as a research and educational reference for practitioners and developers.|
 
-## 💠 Prompt Types
+# 💠 Prompt Types
 
 - Selection-inference prompting
 - Maieutic prompting

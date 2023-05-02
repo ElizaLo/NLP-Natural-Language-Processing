@@ -6,7 +6,9 @@
 
 ## 🗒️ Notes
 
-### Prompts
+### 🔹 Prompts
+
+**Review:**
 
 ```python
 lamp_review = """
@@ -22,7 +24,7 @@ about their customers and products!!
 """
 ```
 ---
-**Input:**
+**Prompt:**
 ```python
 f"""
 What the writer is expressing? The review is delimited with triple backticks. Give your answer as with yes or no and explain why by \
@@ -66,8 +68,7 @@ To what it belongs: customer service
 Citing: "the company happily sent over a new one", "they very quickly got me the missing piece!"
 ```
 ---
-**Input:**
-
+**Prompt:**
 ```
 '''
 Your task is to extract relevant information \
@@ -122,8 +123,7 @@ Dislikes:
 - Overall quality of the product has gone down
 ```
 ---
-**Input:**
-
+**Prompt:**
 ```
 """
 Is the writer of the following review expressing happiness?\

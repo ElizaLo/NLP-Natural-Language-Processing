@@ -14,6 +14,8 @@
 ---
 - [A Survey of Large Language Models](https://arxiv.org/abs/2303.18223)
 
+<img src="https://github.com/ElizaLo/NLP-Natural-Language-Processing/blob/master/Language%20Models/img/LLMs_history.png" width="986" height="563"/>
+
 # ♦️ Generative Pre-trained Transformer (GPT)
 
 Before GPT-1, most Natural Language Processing (NLP) models were trained for particular tasks like classification, translation, etc. They all were using supervised learning. This type of learning comes with two issues: lack of annotated data and failure to generalize tasks.
@@ -584,6 +586,8 @@ This is where temperature comes into play. If you submit this prompt 4 times wit
 
 <img src="https://raw.githubusercontent.com/ElizaLo/NLP-Natural-Language-Processing/master/Language%20Models/img/temperature.png" width="713" height="201"/>
 
+<img src="https://github.com/ElizaLo/NLP-Natural-Language-Processing/blob/master/Prompt%20Engineering/img/temperature.png" width="558" height="577"/>
+
 It’s usually best to set a low temperature for tasks where the desired output is well-defined. Higher temperature may be useful for tasks where variety or creativity are desired, or if you'd like to generate a few variations for your end users or human experts to choose from.
 
 **Use a low temperature when extracting data**
@@ -759,6 +763,10 @@ The SFT and PPO models are trained similarly to the ones from the 📄 [Instruct
   - :hugs: [Illustrating Reinforcement Learning from Human Feedback (RLHF)](https://huggingface.co/blog/rlhf) by HuggingFace
   - [ChatGPT: Optimizing Language Models for Dialogue](https://openai.com/blog/chatgpt/) by OpenAI
 - :gear: **Notebook:** 
+
+### 👥 Chat
+
+<img src="https://github.com/ElizaLo/NLP-Natural-Language-Processing/blob/master/Prompt%20Engineering/img/role.png" width="460" height="475"/>
   
 ### :octocat: GitHub Repositiories
 

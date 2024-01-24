@@ -490,6 +490,7 @@ num_tokens_from_string(string, tokenizer)
 - [New and Improved Embedding Model](https://openai.com/blog/new-and-improved-embedding-model/), OpenAI blog
 
 ------
+## Vector Databases
 
 <img src="https://raw.githubusercontent.com/ElizaLo/NLP-Natural-Language-Processing/master/img/Vector_Databases.png" width="1050" height="150"/>
 
@@ -503,11 +504,22 @@ For searching over many vectors quickly, we recommend using a vector database.
 |[Weaviate](https://weaviate.io/)|<p>Weaviate is an open source vector search engine that stores both objects and vectors, allowing for combining vector search with structured filtering with the fault-tolerance and scalability of a cloud-native database, all accessible through GraphQL, REST, and various language clients.</p><ul><li> :octocat: [Weaviate](https://github.com/semi-technologies/weaviate) - The ML-first vector search engine</li></ul>|
 |[Faiss](https://engineering.fb.com/2017/03/29/data-infrastructure/faiss-a-library-for-efficient-similarity-search/)| A vector search algorithm by Facebook|
 
+---
+## Search Algorithms 
+
+- kNN (brute force)
+- Approximate Nearest Neighbors
+- Hierarchical Navigable Small World (HNSW)
+
+### 📰 Articles
+
+- [Similarity Search, Part 4: Hierarchical Navigable Small World (HNSW)](https://towardsdatascience.com/similarity-search-part-4-hierarchical-navigable-small-world-hnsw-2aad4fe87d37)
+
 ------
 
 <img src="https://raw.githubusercontent.com/ElizaLo/NLP-Natural-Language-Processing/master/img/Tokenization.png" width="1050" height="150"/>
 
-## Readady Solutions
+## Ready Solutions
 
 | Title | Description, Information |
 | :---:         |          :--- |

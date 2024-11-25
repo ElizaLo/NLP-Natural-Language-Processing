@@ -20,11 +20,14 @@ Topic modelling is an unsupervised machine learning method that **helps us disco
 - **Sepervised or semi-supervised**
 	- Guided Latent Dirichlet Allocation (Guided LDA)
 	- Anchored CorEx: Hierarchical Topic Modeling with Minimal Domain Knowledge (CorEx)
+ - [BERTopic](https://maartengr.github.io/BERTopic/index.html)
 
 
 > Dataset for this task:
   > - [A Million News Headlines](https://www.kaggle.com/therohk/million-headlines) - News headlines published over a period of 18 Years 
   
+
+
 ## Papers
 
 - [Latent Dirichlet Allocation (LDA) and Topic modeling: models, applications, a survey](https://paperswithcode.com/paper/171104305/review/)
